@@ -1,0 +1,1706 @@
+{
+  "Aarocokra": {
+    "source": "MPMM",
+    "age": 30,
+    "abilityBonus": {
+      "Dex": 2,
+      "Wis": 1
+    },
+    "languages": ["Common", "Avian", "Aarocokra"],
+    "height": {
+      "size": "Medium",
+      "base": 58,
+      "mod": "1d8"
+    },
+    "weight": {
+      "base": 85,
+      "mod": "5d6"
+    },
+    "speed": 25
+  },
+  "Aasimar": {
+    "source": "MPMM",
+    "age": 160,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 1
+        },
+		{
+          "Any": 1
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 58,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d6"
+    },
+    "speed": 30
+  },
+  "Amphibimen": {
+    "source": "TOHP",
+    "age": 70,
+    "abilityBonus": {
+      "Dex": 2,
+      "Choice": [
+        {
+          "Any": 1
+        }
+	   ]
+    },
+    "languages": ["Common", "Aquan"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "2d4"
+    },
+    "speed": 30
+  },
+  "Arboren": {
+    "source": "TOHP",
+    "age": 500,
+    "abilityBonus": {
+      "Dex": 2,
+      "Wis": 1
+    },
+    "languages": ["Common", "Hedge", "Primordial"],
+    "height": {
+      "size": "Large",
+      "base": 84,
+      "mod": "3d12"
+    },
+    "weight": {
+      "base": 500,
+      "mod": "2d100"
+    },
+    "speed": 25
+  },
+  "Autognome": {
+    "source": "AAG",
+    "age": 500,
+    "abilityBonus": {
+      "Choice": [
+        {
+          "Any": 1
+        },
+        {
+          "Any": 1
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Gnomish"],
+    "height": {
+      "size": "Small",
+      "base": 35,
+      "mod": "2d4"
+    },
+    "weight": {
+      "base": 40,
+      "mod": "1d4"
+    },
+    "speed": 30
+  },
+  "Bugbear": {
+    "source": "MPMM",
+    "age": 80,
+    "abilityBonus": {
+      "Str": 2,
+      "Con": 1
+    },
+    "languages": ["Common", "Orc"],
+    "height": {
+      "size": "Medium",
+      "base": 65,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 400,
+      "mod": "4d10"
+    },
+    "speed": 30
+  },
+  "Centaur": {
+    "source": "MPMM",
+    "age": 60,
+    "abilityBonus": {
+      "Dex": 1,
+      "Choice": [
+        {
+          "Any": 1
+        },
+        {
+          "Any": 1
+        }
+	]
+    },
+    "languages": ["Common", "Hedge", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 65,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 1500,
+      "mod": "4d100"
+    },
+    "speed": 40
+  },
+  "Cervan": {
+    "source": "HWCS",
+    "age": 150,
+    "abilityBonus": {
+      "Con": 2
+    },
+    "languages": ["Common", "Hedge"],
+    "height": {
+      "size": "Medium",
+      "base": 60,
+      "mod": "2d6"
+    },
+    "weight": {
+      "base": 130,
+      "mod": "8d6"
+    },
+    "speed": 30
+  },
+  "Changeling": {
+    "source": "MPMM",
+    "age": 90,
+    "abilityBonus": {
+      "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 110,
+      "mod": "2d4"
+    },
+    "speed": 30
+  },
+  "Construct": {
+    "source": "TOHP",
+    "age": 400,
+    "abilityBonus": {
+      "Choice": [
+        {
+          "Any": 1
+        },
+        {
+          "Any": 1
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 150,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Deity": {
+    "source": "TOHP",
+    "age": 6000,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 2
+        },
+		{
+          "Any": 2
+        }
+      ]
+    },
+    "languages": ["Common", "Celestial", "Any"],
+    "height": {
+      "size": "Large",
+      "base": 72,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 250,
+      "mod": "2d20"
+    },
+    "speed": 40
+  },
+  "Dhampir": {
+    "source": "VRGR",
+    "age": 900,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 60,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 130,
+      "mod": "3d20"
+    },
+    "speed": 35
+  },
+  "Djinn": {
+    "source": "VRGR",
+    "age": 900,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 118,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 900,
+      "mod": "2d100"
+    },
+    "speed": 30
+  },
+  "Eladrin": {
+    "source": "MPMM",
+    "age": 750,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 54,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 90,
+      "mod": "2d4"
+    },
+    "speed": 30
+  },
+  "Fairy": {
+    "source": "MPMM",
+    "age": 750,
+    "abilityBonus": {
+      "Choice": [
+        {
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Small",
+      "base": 40,
+      "mod": "2d4"
+    },
+    "weight": {
+      "base": 40,
+      "mod": "2d4"
+    },
+    "speed": 30
+  },
+  "Fiend": {
+    "source": "TOHP",
+    "age": 2000,
+    "abilityBonus": {
+	  "Str": 2,
+      "Choice": [
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Svalish"],
+    "height": {
+      "size": "Medium",
+      "base": 80,
+      "mod": "2d12"
+    },
+    "weight": {
+      "base": 200,
+      "mod": "2d100"
+    },
+    "speed": 35
+  },
+  "Firbolg": {
+    "source": "TOHP",
+    "age": 500,
+    "abilityBonus": {
+      "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Hedge"],
+    "height": {
+      "size": "Medium",
+      "base": 68,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 200,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Floran": {
+    "source": "TOHP",
+    "age": 20,
+    "abilityBonus": {
+	  "Con": 2,
+      "Choice": [
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Primordial"],
+    "height": {
+      "size": "Medium",
+      "base": 68,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 130,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Gallus": {
+    "source": "HWCS",
+    "age": 70,
+    "abilityBonus": {
+	  "Wis": 2
+    },
+    "languages": ["Common", "Hedge"],
+    "height": {
+      "size": "Medium",
+      "base": 68,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 130,
+      "mod": "2d16"
+    },
+    "speed": 30
+  },
+  "Genasi": {
+    "source": "HWCS",
+    "age": 70,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 60,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Giant": {
+    "source": "TOHP",
+    "age": 1000,
+    "abilityBonus": {
+	  "Str": 2,
+	  "Choice": [
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Giant"],
+    "height": {
+      "size": "Large",
+      "base": 108,
+      "mod": "3d12"
+    },
+    "weight": {
+      "base": 1500,
+      "mod": "5d100"
+    },
+    "speed": 25
+  },
+  "Giff": {
+    "source": "AAG",
+    "age": 90,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 72,
+      "mod": "1d12"
+    },
+    "weight": {
+      "base": 600,
+      "mod": "1d100"
+    },
+    "speed": 30
+  },
+  "Githyanki": {
+    "source": "MTF",
+    "age": 100,
+    "abilityBonus": {
+	  "Str": 2,
+      "Int": 1
+    },
+    "languages": ["Common", "Gith"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Githzerai": {
+    "source": "MTF",
+    "age": 100,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Int": 1
+    },
+    "languages": ["Common", "Gith"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Gnoll": {
+    "source": "MTF",
+    "age": 60,
+    "abilityBonus": {
+	  "Str": 2,
+      "Dex": 1,
+      "Int": -2,
+	  "Cha": -1
+    },
+    "languages": ["Common", "Gnoll"],
+    "height": {
+      "size": "Medium",
+      "base": 53,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Goblin": {
+    "source": "MPMM",
+    "age": 60,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Orc", "Goblin"],
+    "height": {
+      "size": "Small",
+      "base": 40,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 70,
+      "mod": "2d10"
+    },
+    "speed": 30
+  },
+  "Goliath": {
+    "source": "MPMM",
+    "age": 100,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Giant"],
+    "height": {
+      "size": "Medium",
+      "base": 74,
+      "mod": "2d16"
+    },
+    "weight": {
+      "base": 250,
+      "mod": "2d75"
+    },
+    "speed": 30
+  },
+  "Grung": {
+    "source": "OGA",
+    "age": 100,
+    "abilityBonus": {
+	  "Dex": 2,
+	  "Con": 1
+    },
+    "languages": ["Common", "Grung"],
+    "height": {
+      "size": "Small",
+      "base": 40,
+      "mod": "2d6"
+    },
+    "weight": {
+      "base": 40,
+      "mod": "2d8"
+    },
+    "speed": 25
+  },
+  "Hadozee": {
+    "source": "AAG",
+    "age": 100,
+    "abilityBonus": {
+	  "Dex": 2,
+	  "Con": 1
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 54,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 115,
+      "mod": "2d12"
+    },
+    "speed": 30
+  },
+  "Half-Dwarf": {
+    "source": "TOHP",
+    "age": 200,
+    "abilityBonus": {
+	  "Con": 1,
+	  "Choice": [
+        {
+          "Any": 1
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Dwarf"],
+    "height": {
+      "size": "Medium",
+      "base": 50,
+      "mod": "2d6"
+    },
+    "weight": {
+      "base": 140,
+      "mod": "2d6"
+    },
+    "speed": 30
+  },
+  "Half-Giant": {
+    "source": "TOHP",
+    "age": 400,
+    "abilityBonus": {
+	  "Str": 1,
+	  "Choice": [
+        {
+          "Any": 1
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Giant"],
+    "height": {
+      "size": "Medium",
+      "base": 80,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 500,
+      "mod": "2d50"
+    },
+    "speed": 30
+  },
+  "Harengon": {
+    "source": "MPMM",
+    "age": 100,
+    "abilityBonus": {
+	  "Dex": 1,
+	  "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Hedge"],
+    "height": {
+      "size": "Small",
+      "base": 50,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 80,
+      "mod": "2d16"
+    },
+    "speed": 30
+  },
+  "Hedge": {
+    "source": "HWCS",
+    "age": 120,
+    "abilityBonus": {
+	  "Cha": 2,
+	  "Wis": 1
+    },
+    "languages": ["Common", "Hedge"],
+    "height": {
+      "size": "Small",
+      "base": 50,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 80,
+      "mod": "2d16"
+    },
+    "speed": 25
+  },
+  "Hexblood": {
+    "source": "VRGR",
+    "age": 800,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Hobgoblin": {
+    "source": "MPMM",
+    "age": 90,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Goblin"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Kalashtar": {
+    "source": "ERLW",
+    "age": 100,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Cha": 1
+    },
+    "languages": ["Common", "Quari", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Kender": {
+    "source": "DSOTDQ",
+    "age": 100,
+    "abilityBonus": {
+	  "Wis": 2,
+      "Cha": 1
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Small",
+      "base": 50,
+      "mod": "1d8"
+    },
+    "weight": {
+      "base": 80,
+      "mod": "1d20"
+    },
+    "speed": 30
+  },
+  "Kenku": {
+    "source": "MPMM",
+    "age": 60,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Avian"],
+    "height": {
+      "size": "Medium",
+      "base": 62,
+      "mod": "2d4"
+    },
+    "weight": {
+      "base": 85,
+      "mod": "1d20"
+    },
+    "speed": 30
+  },
+  "Khenra": {
+    "source": "PSA",
+    "age": 60,
+    "abilityBonus": {
+	  "Dex": 2,
+	  "Str": 1
+    },
+    "languages": ["Common", "Khenra"],
+    "height": {
+      "size": "Medium",
+      "base": 64,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "1d20"
+    },
+    "speed": 35
+  },
+  "Kobold": {
+    "source": "MPMM",
+    "age": 120,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Small",
+      "base": 58,
+      "mod": "2d6"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "1d20"
+    },
+    "speed": 30
+  },
+  "Kor": {
+    "source": "MPMM",
+    "age": 90,
+    "abilityBonus": {
+	  "Dex": 2,
+	  "Wis": 1
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 64,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Leonin": {
+    "source": "MPMM",
+    "age": 90,
+    "abilityBonus": {
+	  "Con": 2,
+	  "Str": 1
+    },
+    "languages": ["Common", "Leonin"],
+    "height": {
+      "size": "Medium",
+      "base": 70,
+      "mod": "1d16"
+    },
+    "weight": {
+      "base": 200,
+      "mod": "2d25"
+    },
+    "speed": 35
+  },
+  "Lizardfolk": {
+    "source": "MPMM",
+    "age": 60,
+    "abilityBonus": {
+	  "Choice": [
+		{
+          "Any": 2
+        },
+		{
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 64,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d16"
+    },
+    "speed": 30
+  },
+  "Locathah": {
+    "source": "LR",
+    "age": 80,
+    "abilityBonus": {
+	  "Str": 2,
+	  "Dex": 1
+    },
+    "languages": ["Common", "Aquan"],
+    "height": {
+      "size": "Medium",
+      "base": 60,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d16"
+    },
+    "speed": 30
+  },
+  "Loxodon": {
+    "source": "GGR",
+    "age": 450,
+    "abilityBonus": {
+	  "Con": 2,
+	  "Wis": 1
+    },
+    "languages": ["Common", "Loxodon"],
+    "height": {
+      "size": "Medium",
+      "base": 84,
+      "mod": "1d12"
+    },
+    "weight": {
+      "base": 300,
+      "mod": "2d50"
+    },
+    "speed": 30
+  },
+  "Luma": {
+    "source": "HWCS",
+    "age": 70,
+    "abilityBonus": {
+	  "Cha": 2
+    },
+    "languages": ["Common", "Avian"],
+    "height": {
+      "size": "Small",
+      "base": 42,
+      "mod": "1d8"
+    },
+    "weight": {
+      "base": 40,
+      "mod": "2d6"
+    },
+    "speed": 25
+  },
+  "Lupin": {
+    "source": "TOHP",
+    "age": 120,
+    "abilityBonus": {
+	  "Con": 1,
+      "Choice": [
+        {
+          "Str": 2
+        },
+		{
+          "Dex": 2
+        }
+	   ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 66,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 130,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Mapach": {
+    "source": "HWCS",
+    "age": 60,
+    "abilityBonus": {
+	  "Con": 1,
+	  "Wis": 1
+    },
+    "languages": ["Common", "Hedge"],
+    "height": {
+      "size": "Small",
+      "base": 50,
+      "mod": "1d10"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "1d16"
+    },
+    "speed": 30
+  },
+  "Merfolk": {
+    "source": "PSZ",
+    "age": 100,
+    "abilityBonus": {
+	  "Cha": 1
+    },
+    "languages": ["Common", "Aquan", "Merfolk"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "1d10"
+    },
+    "weight": {
+      "base": 110,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Minotaur": {
+    "source": "MPMM",
+    "age": 100,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+	]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 60,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 140,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Myconid": {
+    "source": "MPMM",
+    "age": 24,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+	]
+    },
+    "languages": ["Undercommon"],
+    "height": {
+      "size": "Medium",
+      "base": 50,
+      "mod": "3d8"
+    },
+    "weight": {
+      "base": 80,
+      "mod": "2d10"
+    },
+    "speed": 30
+  },
+  "Naga": {
+    "source": "PSA",
+    "age": 24,
+    "abilityBonus": {
+	  "Con": 2,
+      "Int": 1
+    },
+    "languages": ["Common", "Naga"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Necromancer": {
+    "source": "TOHP",
+    "age": 500,
+    "abilityBonus": {
+	  "Con": 2,
+      "Int": 1
+    },
+    "languages": ["Common", "Svalish"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Ogre": {
+    "source": "TOHP",
+    "age": 120,
+    "abilityBonus": {
+	  "Str": 2
+    },
+    "languages": ["Common", "Orc"],
+    "height": {
+      "size": "Medium",
+      "base": 105,
+      "mod": "1d12"
+    },
+    "weight": {
+      "base": 600,
+      "mod": "2d50"
+    },
+    "speed": 30
+  },
+  "Orc": {
+    "source": "PHB",
+    "age": 120,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Orc"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d6"
+    },
+    "weight": {
+      "base": 135,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Owlin": {
+    "source": "SCC",
+    "age": 100,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Avian"],
+    "height": {
+      "size": "Medium",
+      "base": 50,
+      "mod": "2d6"
+    },
+    "weight": {
+      "base": 110,
+      "mod": "2d12"
+    },
+    "speed": 30
+  },
+  "Plasmoid": {
+    "source": "AAG",
+    "age": 130,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 54,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 90,
+      "mod": "2d10"
+    },
+    "speed": 30
+  },
+  "Porcein": {
+    "source": "AAG",
+    "age": 130,
+    "abilityBonus": {
+	  "Cha": -2,
+      "Con": 3
+    },
+    "languages": ["Common", "Porcein"],
+    "height": {
+      "size": "Medium",
+      "base": 54,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d10"
+    },
+    "speed": 30
+  },
+  "Satyr": {
+    "source": "AAG",
+    "age": 500,
+    "abilityBonus": {
+	  "Dex": -2,
+      "Con": 2
+    },
+    "languages": ["Common", "Satyr", "Hedge"],
+    "height": {
+      "size": "Medium",
+      "base": 54,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d10"
+    },
+    "speed": 35
+  },
+  "Shifter": {
+    "source": "TOHP",
+    "age": 120,
+    "abilityBonus": {
+	  "Dex": 2
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Simic": {
+    "source": "GGR",
+    "age": 120,
+    "abilityBonus": {
+	  "Con": 2,
+	  "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Elvish", "Vedalken"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Siren": {
+    "source": "PSX",
+    "age": 200,
+    "abilityBonus": {
+	  "Cha": 2
+    },
+    "languages": ["Common", "Siren"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 25
+  },
+  "Skaven": {
+    "source": "PSX",
+    "age": 70,
+    "abilityBonus": {
+	  "Dex": 3,
+	  "Cha": -2
+    },
+    "languages": ["Common", "Siren"],
+    "height": {
+      "size": "Medium",
+      "base": 50,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "2d10"
+    },
+    "speed": 35
+  },
+  "Supernatural": {
+    "source": "TOHP",
+    "age": 2000,
+    "abilityBonus": {
+	  "Dex": 2
+    },
+    "languages": ["Common", "Svalish"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 1,
+      "mod": "1d1"
+    },
+    "speed": 40
+  },
+  "Tabaxi": {
+    "source": "MPMM",
+    "age": 90,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Thri-kreen": {
+    "source": "AAG",
+    "age": 35,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 52,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 60,
+      "mod": "2d10"
+    },
+    "speed": 35
+  },
+  "Tortle": {
+    "source": "AAG",
+    "age": 80,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 52,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 80,
+      "mod": "2d10"
+    },
+    "speed": 30
+  },
+  "Triton": {
+    "source": "MPMM",
+    "age": 200,
+    "abilityBonus": {
+	  "Choice": [
+        {
+          "Any": 2
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 54,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "2d10"
+    },
+    "speed": 30
+  },
+  "Troll": {
+    "source": "MPMM",
+    "age": 100,
+    "abilityBonus": {
+	  "Str": 3,
+      "Int": -2
+    },
+    "languages": ["Common", "Troll"],
+    "height": {
+      "size": "Large",
+      "base": 110,
+      "mod": "2d12"
+    },
+    "weight": {
+      "base": 1200,
+      "mod": "2d50"
+    },
+    "speed": 30
+  },
+  "Undead": {
+    "source": "MPMM",
+    "age": 400,
+    "abilityBonus": {
+	  "Con": 3,
+      "Int": -2
+    },
+    "languages": ["Common", "Svalish"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Ursine": {
+    "source": "TOHP",
+    "age": 60,
+    "abilityBonus": {
+	  "Str": 2
+    },
+    "languages": ["Common", "Ursine"],
+    "height": {
+      "size": "Medium",
+      "base": 72,
+      "mod": "2d12"
+    },
+    "weight": {
+      "base": 300,
+      "mod": "2d100"
+    },
+    "speed": 30
+  },
+  "Vedalken": {
+    "source": "GGR",
+    "age": 450,
+    "abilityBonus": {
+	  "Int": 2,
+	  "Wis": 1
+    },
+    "languages": ["Common", "Vedalken"],
+    "height": {
+      "size": "Medium",
+      "base": 72,
+      "mod": "1d6"
+    },
+    "weight": {
+      "base": 160,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Verdan": {
+    "source": "AI",
+    "age": 200,
+    "abilityBonus": {
+	  "Cha": 2,
+	  "Con": 1
+    },
+    "languages": ["Common", "Goblin", "Any"],
+    "height": {
+      "size": "Small",
+      "base": 36,
+      "mod": "2d16"
+    },
+    "weight": {
+      "base": 70,
+      "mod": "3d20"
+    },
+    "speed": 30
+  },
+  "Warforged": {
+    "source": "AI",
+    "age": 150,
+    "abilityBonus": {
+	  "Con": 2,
+	  "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Elvish"],
+    "height": {
+      "size": "Medium",
+      "base": 60,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 150,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Warlock": {
+    "source": "TOHP",
+    "age": 350,
+    "abilityBonus": {
+	  "Wis": 2,
+	  "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Wizard": {
+    "source": "TOHP",
+    "age": 500,
+    "abilityBonus": {
+	  "Wis": 2,
+	  "Choice": [
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d8"
+    },
+    "weight": {
+      "base": 120,
+      "mod": "2d20"
+    },
+    "speed": 30
+  },
+  "Yuan-Ti": {
+    "source": "PHB",
+    "age": 100,
+    "abilityBonus": {
+      "Choice": [
+        {
+          "Any": 1
+        },
+		{
+          "Any": 1
+        },
+        {
+          "Any": 1
+        }
+      ]
+    },
+    "languages": ["Common", "Any"],
+    "height": {
+      "size": "Medium",
+      "base": 56,
+      "mod": "2d10"
+    },
+    "weight": {
+      "base": 100,
+      "mod": "3d4"
+    },
+    "speed": 30
+  }
+}

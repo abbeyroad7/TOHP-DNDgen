@@ -5,7 +5,9 @@ The script is built to pull a random line from multiple official and homebrew D&
 
 #### Examples
 {CONDITION} A tombstone  Reads 'Here lies {NAME}. Cause of death: {SUBJECT}'
+
 ![DeathByEveryone](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/DeathbyEveryone.png)
 
 {CONDITION} Flask of {RACE} beer  Tastes {FLAVOR}
+
 ![UrsineBeer](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/UrsineBeer.png)

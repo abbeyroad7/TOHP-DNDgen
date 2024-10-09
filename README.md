@@ -4,6 +4,10 @@ I built these set of scripts and wordbanks as a means of curating my own generat
 
 By uploading these tools, I'd like the Word Banks to grow with community-fed content, so DMs and players alike can have a repository to upload/generate ideas for homebrewed content.
 
+
+--------------------------------------------------------------------------------------------------------------
+
+
 # LootGen
 A D&D Loot Generator with an emphasis on **"Theater of the Mind"** storytelling. Using AHK (Autohotkey) script, you can bind this utility to any hotkey of your choosing to overlay any Windows-based environment.
 

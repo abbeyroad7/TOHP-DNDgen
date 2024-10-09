@@ -15,7 +15,7 @@ The script is built to randomly select a Prompt line from a loot table and swap 
 
 In addition, the script automatically copies generated text to your Clipboard for ease of use.
 
-## Examples
+## ![Examples](https://github.com/abbeyroad7/TOHP-DNDgen/tree/main/Loot/.Screenshots)
 {CONDITION} A tombstone  Reads 'Here lies {NAME}. Cause of death: {SUBJECT}'
 
 ![DeathByEveryone](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/DeathbyEveryone.png)

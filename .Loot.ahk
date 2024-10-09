@@ -379,6 +379,11 @@ Loop, %Qty%
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{BEAST}", Beastiary)
 			}
+			If (InStr(Loot, "{RACENAME}"))
+			{	;Collapse
+				FileReadLine, RaceName, %Dir%\Banks\RaceNames.txt, RaceNamesRnd
+				Loot := StrReplace(Loot, "{RACENAME}", RaceName)
+			}
 			If (InStr(Loot, "{LOC}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\.Locations.ini

@@ -1,1 +1,1 @@
-A quarter slice of {RACE} {cheese} cheese
+A quarter slice of {RACENAME} {cheese}

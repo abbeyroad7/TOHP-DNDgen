@@ -28,6 +28,29 @@ A quarter slice of {RACENAME} {cheese}
 
 ![UrsineBeer](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/UrsineBeer.png)
 
+## Tags
+
+Current tags include:
+- {CONDITION} Generates different condition states for whatever the loot item is
+- {NAME} Generates a random name across the available name tables
+- {LOC} Generates a random country/city/town/province/landmark name from the World of Terra.
+- {RACE} Generates a random Race description name. Example: Elvish, gnomish, dwarvish
+- {RACENAME} Generates the base name of a random race. Example: Elf, gnome, dwarf
+- {COLOR} Generates a random color and its associated Hex value
+- {1d20} Various different dice rollers that can be used for quantities
+- {BEAST} Generates a random name of a creature or monstrosity
+- {MATERIAL} Generates a random material. Example: Gold, silver, steel
+- {GEM} Generates a random gemstone. Example: Diamond, amber, ruby
+- {FABRIC} Generates a random fabric. Example: Spidersilk, cotton, satin
+- {PATTERN} Generates a random pattern. Example: Striped, checkered, dotted
+- {NOUN} A random noun
+- {ADJ} A random adjective
+- {SUBJECT} Generates from {NAME}, {LOC}, {RACE}, {BEAST}
+- {FLAVOR} Generates a descriptive word for food
+- {CHEESE} Generates a random type of cheese
+- {UP} Uppercases the next character in the sentence
+- {CASE} Title case
+
 --------------------------------------------------------------------------------------------------------------
 
 # NameGen

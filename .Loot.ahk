@@ -1,4 +1,4 @@
-;v1.9.0
+;v1.9.1
 ;Todo
 ;A true dice roller, grab digits from pattern
 ;Banks: food, food ingredients, religions

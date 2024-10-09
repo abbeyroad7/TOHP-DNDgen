@@ -19,7 +19,7 @@ A quarter slice of {RACENAME} {cheese}
 ![UrsineBeer](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/UrsineBeer.png)
 
 # NameGen
-Using a similar approach, the Name Generator is able to generate random names for 13 DND races currently, with plans to extend up through to 71 official/homebrew races!
+Using a similar approach, the Name Generator is able to generate random names for 13 DND races currently, with plans to extend up through to 72 official/homebrew races!
 
 An InputBox will prompt you on which race you would like to prompt for. If you would like to specify gender, add a space followed by either "m" or "f". The generator will then output 3 names, which automatically copy to your Clipboard.
 

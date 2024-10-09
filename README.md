@@ -1,4 +1,4 @@
-# Goal
+# Overview
 
 I built these set of scripts and wordbanks as a means of curating my own generation tool. The various online ones offered very little customization and required me to keep a separate tab open in my browser so I set out to build one that solved these issues.
 

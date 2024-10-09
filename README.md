@@ -30,6 +30,6 @@ Prompt: human m
 3. Domnac Furrs
 
 Prompt: dwarf f
-Gundra Ironale
-Bronmora Lurdig
-Rilda Broadick
+1. Gundra Ironale
+2. Bronmora Lurdig
+3. Rilda Broadick

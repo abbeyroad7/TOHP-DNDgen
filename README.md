@@ -13,4 +13,5 @@ The script is built to randomly select a Prompt line from a loot table and swap 
 ![UrsineBeer](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/UrsineBeer.png)
 
 A quarter slice of {RACENAME} {cheese}
+
 ![AarokocraCheese](https://github.com/abbeyroad7/TOHP-DNDgen/blob/main/Loot/.Screenshots/AarokocraCheese.png)

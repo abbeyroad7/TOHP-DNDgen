@@ -1,5 +1,7 @@
-;v1.9.1
+;v1.9.2
 ;Todo
+;A hyperlink tag
+;A hover GUI to show original bank
 ;A true dice roller, grab digits from pattern
 ;Banks: food, food ingredients, religions
 ;Items, 5e.tools
@@ -378,6 +380,15 @@ Loop, %Qty%
 				FileReadLine, Beastiary, %Dir%\Banks\Beastiary\Beastiary%1d12%.txt, BeastiaryRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{BEAST}", Beastiary)
+			}
+			If (InStr(Loot, "{MAMMAL}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Beastiary\.Mammals.ini
+					Mammal_Lines = %A_Index%
+				Random, MammalRnd, 1, Mammal_Lines
+				FileReadLine, Mammal, %Dir%\Banks\Beastiary\.Mammals.ini, MammalRnd
+				;Msgbox %Mammals%	;Debug
+				Loot := StrReplace(Loot, "{MAMMAL}", Mammal)
 			}
 			If (InStr(Loot, "{RACENAME}"))
 			{	;Collapse

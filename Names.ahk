@@ -1,4 +1,4 @@
-;v2.1.0
+;v2.1.1
 ;;Todo
 ;GUI
 #Requires AutoHotkey v1.1+
@@ -74,11 +74,14 @@ Generate:
 			Goto, Combine
 		Loop, Read, %LastFile_0%
 		s0Lines = %A_Index%
-		Msgbox %First% %Last_0%
+		Clipboard = %First% %Last_0%
+		Msgbox %Clipboard%
 		Goto, End
 	}
 	Combine:
-	Msgbox %First% %Last_1%%Last_2b%
+	Clipboard = %First% %Last_1%%Last_2b%
+	ClipWait
+	Msgbox %Clipboard%
 	End:
 }
 return

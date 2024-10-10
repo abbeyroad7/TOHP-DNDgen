@@ -406,11 +406,7 @@ A vial of {COLOR} venom
 A vial of antivenom
 A {COLOR} vest
 A violin
-Jewelry made from volcanic rock	Encrusted with {MATERIAL} and {GEM}
-A poster that reads '{NAME} wanted dead or alive'	Reward: {1d100} GP
-A mechanical watch made of {MATERIAL}
-A bird whistle
-A {COLOR} wind-chime made out of {MATERIAL}
-{1d2} wolfseye
-{1d2} wolf fangs
-A bundle of wolfvein
+Cheesecake
+{loc} chocolate
+{race} chocolate
+A clay sculpture of a {subject}

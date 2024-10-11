@@ -10,7 +10,6 @@
 ;edit noun names for books, Nouns1.txt done
 ;edit nouns for loot, queue\nouns1
 ;Fill out race names db
-;move lists to Obsidian vault, syncthing
 ;Natural language syntax, for words ending in s, a/an, etc.
 ;GUI input
 ;GUI to regen certain aspects

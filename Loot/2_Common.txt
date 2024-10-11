@@ -695,10 +695,22 @@ A soldier's uniform
 {1d6} cuts of venison
 A bottle of apple vinegar
 A bottle of {RACE} vodka
+A bottle of {RACE} whiskey	{FLAVOR} taste
+A bottle of {RACE} red wine	{FLAVOR} taste
+A bottle of {RACE} white wine	{FLAVOR} taste
+A bottle of {RACE} wine	{FLAVOR} taste
 A {race} chess set
 A spicejar of cinnamon
 A jar of clover
 A jar of cocoa powder
 A bag of {race} coffee grounds
-A gold coin with the face of {name},,Representing {loc}
+A gold coin with the face of {name}	Representing {loc}
 A {material} compass
+A small bag of walnuts
+A small washcloth
+A small jar of {COLOR} wax
+A bag of wheat grains
+{1d4} rolls of gauze
+A wrench
+A bag of yeast
+A quarter slice of {RACE} {cheese}

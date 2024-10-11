@@ -1,4 +1,4 @@
-;v1.9.3
+;v1.9.4
 ;Todo
 ;A hyperlink tag
 ;A hover GUI to show original bank
@@ -373,10 +373,10 @@ Loop, %Qty%
 		}
 			If (InStr(Loot, "{BEAST}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\Beastiary%1d12%.txt
+				Loop, Read, %Dir%\Banks\Beastiary\.Global\Beastiary%1d12%.txt
 					Beastiary_Lines = %A_Index%
 				Random, BeastiaryRnd, 1, Beastiary_Lines
-				FileReadLine, Beastiary, %Dir%\Banks\Beastiary\Beastiary%1d12%.txt, BeastiaryRnd
+				FileReadLine, Beastiary, %Dir%\Banks\Beastiary\.Global\Beastiary%1d12%.txt, BeastiaryRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{BEAST}", Beastiary)
 			}

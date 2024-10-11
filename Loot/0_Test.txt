@@ -1,1 +1,1 @@
-{mammal}
+A {mammal} eating a {reptile}

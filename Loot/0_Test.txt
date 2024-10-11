@@ -1,1 +1,1 @@
-A quarter slice of {RACENAME} fermented cheese made from {MAMMAL} milk
+{color} cod

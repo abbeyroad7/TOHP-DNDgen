@@ -1,4 +1,4 @@
-;v1.9.2
+;v1.9.3
 ;Todo
 ;A hyperlink tag
 ;A hover GUI to show original bank
@@ -402,6 +402,15 @@ Loop, %Qty%
 				FileReadLine, Location, %Dir%\Banks\.Locations.ini, LocRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{LOC}", Location)
+			}
+			If (InStr(Loot, "{REGION}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\.Regions.ini
+					Region_Lines = %A_Index%
+				Random, RegionRnd, 1, Region_Lines
+				FileReadLine, Region, %Dir%\Banks\.Regions.ini, RegionRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{Region}", Region)
 			}
 			If (InStr(Loot, "{FLAVOR}"))
 			{	;Collapse

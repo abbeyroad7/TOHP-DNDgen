@@ -68,3 +68,8 @@ Prompt: dwarf f
 1. Gundra Ironale
 2. Bronmora Lurdig
 3. Rilda Broadick
+
+# Installation
+You will need a working install of Autohotkey which you can get [here]([https://www.autohotkey.com/].
+
+Download or clone the Github and launch either ".Loot.ahk" or ".Names.ahk".

@@ -1,5 +1,7 @@
 ;v2.0.1
 ;Todo
+;Inputbox prompts/rather than qty
+;Animal mixer
 ;A hyperlink tag
 ;A hover GUI to show original bank
 ;A true dice roller, grab digits from pattern
@@ -383,73 +385,73 @@ Loop, %Qty%
 			}
 			If (InStr(Loot, "{Amphibian}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Amphibian.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Amphibian\%Habitat%.ini
 					Amphibian_Lines = %A_Index%
 				Random, AmphibianRnd, 1, Amphibian_Lines
-				FileReadLine, Amphibian, %Dir%\Banks\Beastiary\%Habitat%\.Amphibian.ini, AmphibianRnd
+				FileReadLine, Amphibian, %Dir%\Banks\Beastiary\Amphibian\%Habitat%.ini, AmphibianRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Amphibian}", Amphibian)
 			}
 			If (InStr(Loot, "{Aquatic}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Aquatic.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Aquatic\%Habitat%.ini
 					Aquatic_Lines = %A_Index%
 				Random, AquaticRnd, 1, Aquatic_Lines
-				FileReadLine, Aquatic, %Dir%\Banks\Beastiary\%Habitat%\.Aquatic.ini, AquaticRnd
+				FileReadLine, Aquatic, %Dir%\Banks\Beastiary\Aquatic\%Habitat%.ini, AquaticRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Aquatic}", Aquatic)
 			}
 			If (InStr(Loot, "{Bird}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Birds.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Birds\%Habitat%.ini
 					Bird_Lines = %A_Index%
 				Random, BirdRnd, 1, Bird_Lines
-				FileReadLine, Bird, %Dir%\Banks\Beastiary\%Habitat%\.Birds.ini, BirdRnd
+				FileReadLine, Bird, %Dir%\Banks\Beastiary\Birds\%Habitat%.ini, BirdRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Bird}", Bird)
 			}
 			If (InStr(Loot, "{Fish}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Fish.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Fish\%Habitat%.ini
 					Fish_Lines = %A_Index%
 				Random, FishRnd, 1, Fish_Lines
-				FileReadLine, Fish, %Dir%\Banks\Beastiary\%Habitat%\.Fish.ini, FishRnd
+				FileReadLine, Fish, %Dir%\Banks\Beastiary\Fish\%Habitat%.ini, FishRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Fish}", Fish)
 			}
 			If (InStr(Loot, "{Insect}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Insects.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Insects\%Habitat%.ini
 					Insect_Lines = %A_Index%
 				Random, InsectRnd, 1, Insect_Lines
-				FileReadLine, Insect, %Dir%\Banks\Beastiary\%Habitat%\.Insects.ini, InsectRnd
+				FileReadLine, Insect, %Dir%\Banks\Beastiary\Insects\%Habitat%.ini, InsectRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Insect}", Insect)
 			}
 			If (InStr(Loot, "{Monstrosity}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Monstrosities.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Monstrosities\%Habitat%.ini
 					Monstrosity_Lines = %A_Index%
 				Random, MonstrosityRnd, 1, Monstrosity_Lines
-				FileReadLine, Monstrosity, %Dir%\Banks\Beastiary\%Habitat%\.Monstrosities.ini, MonstrosityRnd
+				FileReadLine, Monstrosity, %Dir%\Banks\Beastiary\Monstrosities\%Habitat%.ini, MonstrosityRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Monstrosity}", Monstrosity)
 			}
 			If (InStr(Loot, "{REPTILE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Reptiles.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Reptiles\%Habitat%.ini
 					Reptile_Lines = %A_Index%
 				Random, ReptileRnd, 1, Reptile_Lines
-				FileReadLine, Reptile, %Dir%\Banks\Beastiary\%Habitat%\.Reptiles.ini, ReptileRnd
-				;Msgbox %Mammals%	;Debug
+				FileReadLine, Reptile, %Dir%\Banks\Beastiary\Reptiles\%Habitat%.ini, ReptileRnd
+				;Msgbox %Reptile%	;Debug
 				Loot := StrReplace(Loot, "{REPTILE}", Reptile)
 			}
 			If (InStr(Loot, "{MAMMAL}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\%Habitat%\.Mammals.ini
+				Loop, Read, %Dir%\Banks\Beastiary\Mammals\%Habitat%.ini
 					Mammal_Lines = %A_Index%
 				Random, MammalRnd, 1, Mammal_Lines
-				FileReadLine, Mammal, %Dir%\Banks\Beastiary\%Habitat%\.Mammals.ini, MammalRnd
+				FileReadLine, Mammal, %Dir%\Banks\Beastiary\Mammals\%Habitat%.ini, MammalRnd
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{MAMMAL}", Mammal)
 			}

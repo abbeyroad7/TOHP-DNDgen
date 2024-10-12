@@ -1,1 +1,1 @@
-A {mammal} eating a {REPTILE}
+An unknown creature with the face of a {mammal} and the legs of a {REPTILE}

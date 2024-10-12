@@ -2,7 +2,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-page = requests.get("https://en.wikipedia.org/wiki/List_of_birds_of_Afghanistan")
+url = input('URL ')
+page = requests.get(url)
 
 # Scrape webpage
 soup = BeautifulSoup(page.content, 'lxml')

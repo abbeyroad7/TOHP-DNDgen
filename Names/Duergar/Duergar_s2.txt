@@ -32,3 +32,8 @@ helm
 brew
 gem
 shield
+honor
+sorrow
+gore
+flay
+flayer

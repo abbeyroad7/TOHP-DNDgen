@@ -410,3 +410,7 @@ Cheesecake
 {loc} chocolate
 {race} chocolate
 A clay sculpture of a {subject}
+A wheel of {RACE} {cheese}
+A wheel of {RACE} {cheese}
+A map of the constellations in the nightsky
+A chef's hat

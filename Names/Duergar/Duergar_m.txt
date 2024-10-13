@@ -37,6 +37,7 @@ Brynjar
 Bundus
 Bunkom
 Bunron
+Emduhr
 Daergrom
 Daerkom
 Daernir
@@ -132,6 +133,7 @@ Mimir
 Mordahr
 Mordin
 Morik
+Mormus
 Mundi
 Murnir
 Naddod

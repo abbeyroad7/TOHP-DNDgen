@@ -714,3 +714,9 @@ A bag of wheat grains
 A wrench
 A bag of yeast
 A quarter slice of {RACE} {cheese}
+A quarter slice of {RACE} {cheese}
+A quarter slice of {RACE} {cheese}
+A {RACE} cookbook
+A cookbook from {LOC}
+{1d4} chocolate-chip cookies
+{1d4} cookies made with {SPICE}

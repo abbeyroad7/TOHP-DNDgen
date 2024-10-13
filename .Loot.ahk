@@ -1,4 +1,4 @@
-;v2.0.1
+;v2.0.3
 ;Todo
 ;Inputbox prompts/rather than qty
 ;Animal mixer
@@ -504,6 +504,15 @@ Loop, %Qty%
 				FileReadLine, Cheese, %Dir%\Banks\Foods\.Cheese.ini, cheeseRnd
 				;Msgbox %Cheese%	;Debug
 				Loot := StrReplace(Loot, "{cheese}", Cheese)
+			}
+			If (InStr(Loot, "{spice}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Foods\.spices.ini
+					spiceLines = %A_Index%
+				Random, spiceRnd, 1, spiceLines
+				FileReadLine, spice, %Dir%\Banks\Foods\.spices.ini, spiceRnd
+				;Msgbox %spice%	;Debug
+				Loot := StrReplace(Loot, "{spice}", spice)
 			}
 			If (InStr(Loot, "{MATERIAL}"))
 			{	;Collapse

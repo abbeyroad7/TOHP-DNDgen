@@ -1,6 +1,4 @@
 Golden
-Bright
-Ever
 Stremn
 Curt
 Memn
@@ -40,3 +38,10 @@ Iron
 Oaken
 Frost
 Mountain
+Neck
+Ore
+Doom
+Murder
+Kill
+Steel
+Hoard

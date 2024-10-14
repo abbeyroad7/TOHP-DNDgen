@@ -414,3 +414,4 @@ A wheel of {RACE} {cheese}
 A wheel of {RACE} {cheese}
 A map of the constellations in the nightsky
 A chef's hat
+A piece of coral	{COLOR}-colored

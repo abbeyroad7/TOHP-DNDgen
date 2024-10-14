@@ -314,3 +314,5 @@ A random twig
 Eating utensils
 A collection of butterfly wings
 A {material} club
+Bits of coral pieces
+A cork from a bottle of {BEVERAGE}

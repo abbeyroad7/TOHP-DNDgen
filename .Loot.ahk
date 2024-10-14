@@ -1,5 +1,6 @@
-;v2.0.3
+;v2.1.0
 ;Todo
+;Tag identifiers to signal qty, FRUIT.3
 ;Inputbox prompts/rather than qty
 ;Animal mixer
 ;A hyperlink tag
@@ -478,6 +479,15 @@ Loop, %Qty%
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{Region}", Region)
 			}
+			If (InStr(Loot, "{BEVERAGE}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Foods\.Beverages.ini
+					BEVERAGE_Lines = %A_Index%
+				Random, BEVERAGERnd, 1, BEVERAGE_Lines
+				FileReadLine, BEVERAGE, %Dir%\Banks\Foods\.BEVERAGEs.ini, BEVERAGERnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{BEVERAGE}", BEVERAGE)
+			}
 			If (InStr(Loot, "{FLAVOR}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\.Flavors.ini
@@ -505,7 +515,7 @@ Loop, %Qty%
 				;Msgbox %Cheese%	;Debug
 				Loot := StrReplace(Loot, "{cheese}", Cheese)
 			}
-			If (InStr(Loot, "{spice}"))
+			If (InStr(Loot, "{SPICE}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\Foods\.spices.ini
 					spiceLines = %A_Index%
@@ -513,6 +523,15 @@ Loop, %Qty%
 				FileReadLine, spice, %Dir%\Banks\Foods\.spices.ini, spiceRnd
 				;Msgbox %spice%	;Debug
 				Loot := StrReplace(Loot, "{spice}", spice)
+			}
+			If (InStr(Loot, "{FRUIT}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Foods\.FRUITs.ini
+					FRUIT_Lines = %A_Index%
+				Random, FRUITRnd, 1, FRUIT_Lines
+				FileReadLine, FRUIT, %Dir%\Banks\Foods\.FRUITs.ini, FRUITRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{FRUIT}", FRUIT)
 			}
 			If (InStr(Loot, "{MATERIAL}"))
 			{	;Collapse

@@ -1,1 +1,1 @@
-{1d4} cookies spiced with {SPICE}
+A cork from a bottle of {BEVERAGE}

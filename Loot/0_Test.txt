@@ -1,1 +1,1 @@
-A cork from a bottle of {BEVERAGE}
+A translator codex for the {LANGUAGE} language

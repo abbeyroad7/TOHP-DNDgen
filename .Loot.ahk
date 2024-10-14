@@ -1,4 +1,6 @@
-;v2.1.0
+;v2.2.0
+;Bugs
+;If category prompt is entered, it does not exit the mode correctly
 ;Todo
 ;Tag identifiers to signal qty, FRUIT.3
 ;Inputbox prompts/rather than qty
@@ -20,8 +22,7 @@
 ;Icons, export snapshot to clipboard
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
 ;Foundry importer
-Debug = 0	;1=off
-
+Debug = 1	;1=off
 Habitat = Temperate	;Specify your world's habitat
 
 ;Import
@@ -93,6 +94,7 @@ Loop, Read, %Dir%\Banks\RaceNames.txt
    RaceNames_Lines = %A_Index%
 }
 Start:
+NC = 0
 Inputbox, QtyMax,,,,200,100
 	If QtyMax < 1
 		Exit
@@ -183,6 +185,11 @@ Loop, %Qty%
 				{
 					Loot = {1d100} copper pieces
 				}
+			If (Instr(Prompt, "name"))
+				{
+					Loot = {NAME}
+					NC = 1
+				}
 			Goto, Randomize	;Skip rarity tables
 		}
 	
@@ -255,23 +262,6 @@ Loop, %Qty%
 			FileReadLine, Race, %Dir%\Banks\Races.txt, RaceRnd
 			;Msgbox Race:%Race% Noun:%Noun% Adj:%Adj%	;Testing
 	}
-		LootReplacements:
-			{	;Collapse
-				Loot := StrReplace(Loot, "{1d100}", 1d100)
-				Loot := StrReplace(Loot, "{1d50}", 1d50)
-				Loot := StrReplace(Loot, "{1d20}", 1d20)
-				Loot := StrReplace(Loot, "{1d12}", 1d12)
-				Loot := StrReplace(Loot, "{1d8}", 1d8)
-				Loot := StrReplace(Loot, "{1d6}", 1d6)
-				Loot := StrReplace(Loot, "{1d4}", 1d4)
-				Loot := StrReplace(Loot, "{1d2}", 1d2)
-				Loot := StrReplace(Loot, "{COLOR}", COLOR.1)
-				Loot := StrReplace(Loot, "{COLOR}", COLOR.1)
-				Loot := StrReplace(Loot, "{NOUN}", Noun)
-				Loot := StrReplace(Loot, "{ADJ}", Adj)
-				Loot := StrReplace(Loot, "{RACE}", Race)
-				Loot := StrReplace(Loot, A_Tab, "`n`n")
-			}
 		IfStatements:
 		{	;Collapse
 			If (InStr(Loot, "{SUBJECT}"))
@@ -374,6 +364,15 @@ Loop, %Qty%
 				FileReadLine, Fabrics, %Dir%\Banks\.Fabrics.ini, FabricRnd
 				;Msgbox %Patterns%	;Debug
 				Loot := StrReplace(Loot, "{FABRIC}", Fabrics)
+			}
+			If (InStr(Loot, "{LANGUAGE}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\.LANGUAGEs.ini
+					LANGUAGE_Lines = %A_Index%
+				Random, LANGUAGERnd, 1, LANGUAGE_Lines
+				FileReadLine, LANGUAGEs, %Dir%\Banks\.LANGUAGEs.ini, LANGUAGERnd
+				;Msgbox %Patterns%	;Debug
+				Loot := StrReplace(Loot, "{LANGUAGE}", LANGUAGEs)
 			}
 			If (InStr(Loot, "{BEAST}"))
 			{	;Collapse
@@ -564,6 +563,23 @@ Loop, %Qty%
 						Material = bone
 				Loot := StrReplace(Loot, "{MATERIAL}", Material)
 			}
+			LootReplacements:
+			{	;Collapse
+				Loot := StrReplace(Loot, "{1d100}", 1d100)
+				Loot := StrReplace(Loot, "{1d50}", 1d50)
+				Loot := StrReplace(Loot, "{1d20}", 1d20)
+				Loot := StrReplace(Loot, "{1d12}", 1d12)
+				Loot := StrReplace(Loot, "{1d8}", 1d8)
+				Loot := StrReplace(Loot, "{1d6}", 1d6)
+				Loot := StrReplace(Loot, "{1d4}", 1d4)
+				Loot := StrReplace(Loot, "{1d2}", 1d2)
+				Loot := StrReplace(Loot, "{COLOR}", COLOR.1)
+				Loot := StrReplace(Loot, "{COLOR}", COLOR.1)
+				Loot := StrReplace(Loot, "{NOUN}", Noun)
+				Loot := StrReplace(Loot, "{ADJ}", Adj)
+				Loot := StrReplace(Loot, "{RACE}", Race)
+				Loot := StrReplace(Loot, A_Tab, "`n`n")
+			}
 			If (InStr(Loot, "{CASE}"))	;Mixed case, use for titles
 				{
 					Loot := StrReplace(Loot, "{CASE}")
@@ -584,8 +600,16 @@ Loop, %Qty%
 					Loot := StrReplace(Loot, A_TAB, "`n`n")
 				}
 		}
-		Msgbox {%Condition%} %Loot%
-		Clipboard = {%Condition%} %Loot%
+		If NC = 0
+		{
+			Msgbox {%Condition%} %Loot%
+			Clipboard = {%Condition%} %Loot%
+		}
+		If NC = 1
+		{
+			Msgbox %Loot%
+			Clipboard = %Loot%
+		}
 }
 
 Goto, Start

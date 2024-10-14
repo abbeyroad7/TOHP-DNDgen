@@ -327,3 +327,7 @@ A mechanical watch made of {MATERIAL}	Encrusted with {GEM}
 {1d8} lbs of whale blubber
 A whistle that can mimic the voice of a {BEAST}
 A whistle that can mimic the voice of a {RACE}
+A crown made of {MATERIAL} and {GEM}
+A gold crown with a large {GEM} encrusted in the center
+A pair of handcuffs	Inscribed near the keyhole is a strange Arcanic symbol.
+{1d4} small black spheres	A short fuse protrudes from the top. When lit, it envelops the surrounding 15ft in a sphere of darkness for a duration of 60s.

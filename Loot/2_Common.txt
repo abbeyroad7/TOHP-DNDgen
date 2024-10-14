@@ -1,4 +1,3 @@
-Item	Description
 Pie Bombs	Three jet black spheres, about the size of an apple, that smell distinctly of cooked pastry. 
 Bale of Furs	A large bale of rare furs.
 Dehydrated Homunculi	A dried out and preserved homunculus. This one is a winged humanoid creature, similar to a small gargoyles or tiny demon. It's eye have been replaced with beads and it is stiff and unmoving.
@@ -27,7 +26,6 @@ Bedroll	A sheepskin bedroll.
 Bloodstone	This dark red-brown heliotrope can sometimes be mistaken for a Stone of Invisibility but this one bears no overt magical powers.
 Bonesaw	The bonesaw was used to amputate body parts after the skin had already been cut through with the amputation knife.
 Brandistock	"This peculiar spear-like weapon is popular among travelers and law enforcement. The brandistock's three-pronged head is retractable, which renders it indistinguishable from a quarterstaff (unless closely inspected). Extending the blades is instantaneous, but pulling them back requires you to spend an action.
-"
 Brass Chamber Pot	A brass chamber pot in which has been hidden 3 pieces of rosy quartz.
 Brass Knuckles	A set of brass knuckles. Used, but in good condition.
 Bronze Tower Shield	A tower shield of bronze, cast into the likeness of a chimera�s heads and enameled to provide the appropriate colors. +3 AC, Strength 17, Stealth Disadvantage.
@@ -36,10 +34,7 @@ Carthus Tome of Pyromancy	An old pyromancy tome from Carthus containing pyromanc
 Carved Wooden Mantle	A carved wooden mantle, meant to be mounted above a fireplace, crafted of ash-wood and stained a medium brown. The left side is carved in images of demons and flames, the right in images of angels and air. The top is carved into an idyllic forest theme and has a moon above the left corner and a sun above the right.
 Cat Pendant	An electrum pendant shaped like a curled-up cat.
 Cestus	A reinforced gauntlet which protects the knuckles and transforms mere punches into lethal blows. This weapon cannot be disarmed. It takes an action to don or doff a cestus.
-
 Chalcedony Gemstone	"This pale white gemstone has a waxy luster and is slightly translucent. 
-
-"
 Chicken Eggs	A dozen chicken eggs; hollowed out and filled with white flour.
 Child's Mittens and Hat	Rabbit-fur mittens and hat sized for a child.
 Chrysoprase Gemstone	An apple-green gemstone consisting of a variety of chalcedony that contains nickel.
@@ -60,7 +55,6 @@ Dart	{1d20} normal bone darts. They resemble fletched knitting needles, about 1 
 Dead Warrior	The skeletal remains of a long-dead warrior, wearing a suit of plate armor which still glistens as if it had been polished yesterday. The name of every warrior to ever don the armor has been inscribed upon the front and back of the chest plate, covering nearly every inch of its surface with precisely written, black runes. A careful inspection of the armor will reveal that there remains room for one last name.
 Door Rubble	The remnants of a massive door of stone which has been smashed into rubble. A magic mouth which had once adorned the door remains intact. As the PCs draw near it will issue its warning: �Disturb not this chamber, lest the world suffer.� Whatever the mouth was set to guard is gone � the chamber beyond the broken door is empty.
 Double Spear	"The double spear is a polearm comprising of a wooden haft with a short thrusting blade at either end. It can be used in one or two hands like a spear, but in the hands of a master both heads can be used effectively. If you use the Double Weapon Master feat to make an additional attack with a double spear, it deals 1d6 piercing damage.
-"
 Dragon Banner	A battle pennant, triangular in shape, of a black dragon on red silk. The staff is a silver-tipped lance. (Pennant: 30gp, Lance: 25gp)
 Dragon Head Shield	A large copper shield, embossed with a copper dragon�s head. �Elvalynte� is inscribed on the interior in a flowing script. (34gp)
 Drow Medallion	An electrum drow house-medallion bearing the image of a crimson scorpion with the house name inscribed on the back in the drow tongue (House Ulrather).
@@ -132,18 +126,15 @@ Moradin's Magical Bestiary	A bestiary!
 Onyx Gemstone	This gemstone has opaque bands of black and white across it's surface.
 Orb Of Venom	Orb of venom-Applies to all of user attacks. Target takes an additional 1d4 poison damage on their next turn.
 Orcish Cookbook	"This appears to be a cookbook written by an unnamed Orc. It has some insightful notes on how best to cook Owlbear and a rather unpleasant section on what spices go well with human flesh.
-"
 Potion of Healing	A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action. 
 Pouch	A cloth or leather pouch that can hold up to 20 sling bullets or 50 blowgun needles, among other things. 
 Pouch of Healing Potions	A large carry pouch made from the skin of a monkey. Inside are {1d6} Potions of Healing. 
 Sardonyx Gemstone	Bands of white-yellow sard cross the surface of this dark onyx gemstone.
 Scythe	"This weapon is inspired by the common farming implement used to cut swaths of grown hay, but it has a straight handle and a heavier blade. Despite its humble origins, the scythe is recognized as a symbol of death in many cultures because of its use in reaping.
-"
 Seimai's Guide to Healing Tonics	A relatively small compendium of information about healing tonics.
 Shandon Gem	"Shandon is another name for natrolite; its slender, colorless crystals yield tiny faceted gems used often in veils and robes in order to capture the beading effect of water glistening upon the material.	"
 Skydrop Gem	"Skydrop is the common name given to clear or lightly colored tektite material; fragments of glass of celestial (meteoric) origin, found in the vast shifting sands of Anauroch and other deserts.	"
 Spade	"A spade is a simple tool designed for digging soil, the head can be made of any material that can hold its shape, but is most frequently made of metal to facilitate cutting into soil.
-"
 Star Diopside Gem	"Star Diopside is the most prized form of a hard, durable gemstone that is rarely found in attractive colours. It is usually too dark for beauty, however mountain and streambed-pebble crystals of a pale green hue make attractive stones such as diopside. When a gem is found that is darker green it can be cut in such a fashion so to produce four- or six-rayed stars.	"
 Star Rose Quartz	This gemstone is a polished pink sphere. When viewed at a specific angle with a source of light an asterism (star-effect) is visible across it's surface. 
 Sunstone Gem	"Sunstone is a feldspar jem, closely related to moonstone, and more properly known as oligoclase. Sunstone can be colorless or faintly greenish and of facet grade, but most common by far is its softer (cabochon) variety. This yields gemstones that have bright red or orange spangles (minute crystals) suspended in a nearly colorless background in a parallel fashion, giving the whole a rich golden or redish brown color.	"
@@ -201,7 +192,6 @@ Pendulum
 A Dungeon of One's Own 	A dusty scroll which contains a political essay written by a witch called Virginia Woolfsblood. The essay delves into the systemic oppression of witches and advocates for the magical education and liberation of women in general.
 Amethyst	A common, bright purple gemstone.
 Sand Crown Crown	"When used (worn), this seemingly golden crown turns to sand and falls to the ground where it reforms into a crown. Any gold, silver, or copper item it is placed near will also gain this property. A coin would only turn to sand when it was being used (spent), etc
-"
 Satchel	A thick leather satchel containing an adventurer's� kit: 6 wax candles, two pieces of white chalk, two pieces of red chalk, a small bag of (100) clay marbles, a whistle, four pieces of charcoal, three large sacks, six iron pitons, a hammer, a tinderbox with flint and steel, 2 empty copper vials, a chunk of coal, and three large sheets of paper.
 Satyr Pipes	Silver pan/satyr pipes/flute
 Scroll Case	Nigh-indestructible scroll case � leviathan ivory, jewel encrusted, demon paintings on side � scraps of scroll inside
@@ -720,3 +710,21 @@ A {RACE} cookbook
 A cookbook from {LOC}
 {1d4} chocolate-chip cookies
 {1d4} cookies made with {SPICE}
+A camp cot
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A translator codex for the {LANGUAGE} language
+A translator codex for the {LANGUAGE} language

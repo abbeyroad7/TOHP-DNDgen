@@ -121,7 +121,6 @@ Lucky Dodge Belt	Once an encounter, the player can choose to roll a d20 and use 
 Magic Litmus Paper	Litmus magic paper: This paper can be used as a standard action by rubbing it on an object. It either detects no magic and can be used again, or changed color and brightness to reflect the school(s) and strengths of magic on the object.
 Meal Table	A stone table in the midst of the wilderness which is, nevertheless, always filled with a fresh meal whenever travelers come across it.
 Medallion of Courage	"Once per day, swift. remove AC of target granted by armor, last one turn. user takes penalty to AC equal to target for same duration.
-"
 Menesta's Book of Stored Skill	This magical book has no discernable writings on the outside, or on any page. As soon as it is opened up, ask the player for the first three skills that come to mind. As soon as they tell you, the first page of the book becomes a table of contents with three chapters. The names of the chapters are the three skills they mentioned. Turning to the page of a skill chapter causes the book to disappear in a colored burst of light�and leaves the user with a permanent +1 rank to said skill. If their ranks are maxed out, the book is wasted.
 Merchant's Dagger Box	A merchant�s leather case containing a selection of twenty well-made daggers of varying designs.
 Minting Tools	A set of dies and hammers for minting the king's coinage.
@@ -143,7 +142,6 @@ The Rhinocles Helm	The Rhinocles helm is a large iron cap with visor shaped like
 Tourmaline Gemstone	A multi colored rectangular Tourmaline gemstone.
 Townshend's Cudgel	"Townshend's Crudgels was invented by its namesake, Peter ""Unknown"" Townshend, a traveling bard who wished his lute to both give beauty and take it away (preferably with a good old fashioned thrashing). His lute design, later copied by some of his admirers, was a simple oak lute, reinforced with an iron shell, to maintain the soft vibration of the sound against the wooden interior, and to give the lute the strength to crack open an orc's skull with a well placed blow.
 This weapon functions both as a lute and a weapon. When used as a lute, it is considered to be a lute and does not require a separate proficiency bonus to play. However, if the user rolls a critical miss with the weapon (a 1 on an attack roll) the lute may become slightly damaged and will require the user to spend an hour to retune it. If the instrument is not returned, whenever the instrument is played, the user is disadvantaged on the Perform check. This weapon can also be used as a bard's spellcasting focus.
-"
 Water Opal	"Water Opal is a colourless, clear opal with a play of colour. It is rare and valuable in the Realms, where it is used in scrying devices.	"
 Potion of False Bluff	A potion vial containing a sweet. honey-smelling golden syrup. There is a label on the vial written in common, which reads "Potion of Deception".
 Potion of Harmless Flaying	A pearlescent green potion in a glass vial that seems to swirl playfully when started at.
@@ -415,3 +413,14 @@ A wheel of {RACE} {cheese}
 A map of the constellations in the nightsky
 A chef's hat
 A piece of coral	{COLOR}-colored
+A patch bearing a familial crest	{NAME}
+A bag of {GEM}s
+A bag of {GEM}s
+A bag of {GEM}s
+A bag of {GEM}s
+A bag of {GEM}s
+A {COLOR} leather bound book	Titled 'A Spellbook on the Chrystallography of {GEM}s'
+A {COLOR} leather bound book	Titled 'A Spellbook on the Chrystallography of {GEM}s'
+A mysterious cube made of {MATERIAL}
+A pair of handcuffs
+{1d12} poison-tipped darts

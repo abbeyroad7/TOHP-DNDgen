@@ -1,1 +1,1 @@
-A {SPELL} scroll	Level {SpellTable}
+{flora}	Plant sample

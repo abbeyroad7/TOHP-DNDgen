@@ -319,3 +319,10 @@ A cork from a bottle of {BEVERAGE}
 A vial of desert sand
 A {RACE} doll
 A drawing of a {NOUN}
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample

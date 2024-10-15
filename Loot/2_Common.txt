@@ -735,3 +735,29 @@ Earmuffs made of {mammal} fur
 {1d4} {bird} eggs
 {1d4} {bird} eggs
 {1d4} {bird} eggs
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples
+{1d4} {flora}	Plant samples

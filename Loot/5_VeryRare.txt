@@ -86,3 +86,4 @@ A historical treaty drafted between humans and {RACE}s
 A whistle that can mimic the voice of any Sapient creature
 A dagger with a strange Arcanic symbol scratched into the hilt	Collects sentient life-force
 A dream-walker scroll	One-time use, allows the casters to dreamwalk into any sleeping creature's dreams
+A deed to an estate in {loc}

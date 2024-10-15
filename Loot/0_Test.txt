@@ -1,1 +1,1 @@
-An unlabeled {color} elixir.	Smells of {spice}. {UP}{flavor} taste.	Effect: For {duration} hours, you are transformed into a {BEAST}.	Use Wild Shape rules.
+A {beast}

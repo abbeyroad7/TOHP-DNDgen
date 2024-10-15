@@ -5,23 +5,23 @@ Bloka Tao's Spoon of Cooking	A plain wooden spoon that appears to have been used
 Bloka Tao's Spoon of Cooking	A plain wooden spoon that appears to have been used in many, many meals. The spoon comes in a stained walnut box with two brass hinges and a brass hook on the front. No other markings are present. [Any markings made on the box or spoon will disappear in 24 hours. The box itself is magical in nature and will alter any spoon made to the same size of the Spoon of Cooking to become a duplicate of the Spoon of Cooking.]
 Mr. Hammer's Crazy Staff	A staff that could change into a hammer and give him extra strength while it was in that mode.
 Navigational Calculator	A gear-driven ships navigational calculator enclosed in a jewelwood box.
-New Year's Sword	The silver hilt of a sword with a grip of black leather. The blade is missing, or never existed to begin with. One night per year, however, on the eve of the new year, the hilt is possessed of a ghostly blade � allowing it to perform its duties as a sword once more.
-Obsidian Charm	A charm of twisted black obsidian. Touching the charm unleashes strange, ghostly visions from a strange and alien world � utterly different in every particular, but eerily similar to our own world in its broad scope and form.
+New Year's Sword	The silver hilt of a sword with a grip of black leather. The blade is missing, or never existed to begin with. One night per year, however, on the eve of the new year, the hilt is possessed of a ghostly blade ' allowing it to perform its duties as a sword once more.
+Obsidian Charm	A charm of twisted black obsidian. Touching the charm unleashes strange, ghostly visions from a strange and alien world ' utterly different in every particular, but eerily similar to our own world in its broad scope and form.
 Owlbear Costume	An owlbear costume. Gives the wearer a +10 to disguise when attempting to disguise as an Owlbear.
-Phoenix Choker	Ash of phoenix in necklace choker � instant revive to wearer (takes 10 rounds/1 minute)
+Phoenix Choker	Ash of phoenix in necklace choker ' instant revive to wearer (takes 10 rounds/1 minute)
 Phoenix Restorative Potion	Potion 3: Phoenix Restorative. The next time the drinker is reduced to 0 hit points, they deal area fire damage, and return to full health, only happens once. The player has no special knowledge this is true, but the flavor of the draught burns their throat but leaves them feeling oddly optimistic. Fire damage dealt should be based on circumstance, but if you can get away with lots, it'd be the most fun.
 {1d20} Ammunition +2	You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hit a target, the ammunition is no longer magical. Value listed is for individual units.
 {1d6} Beads of Force	This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can. An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and it's magic causes it to weigh only 1 pound, regardless of the weight of creatures inside. 
-A Study of Orcs, by Darius Woodherd	A large tome bound in thick bison-hide that is a common-orcish language primer, as well as a primer on orcish culture. The author of the primer, Darius Woodherd, seems to have added a lot of information on orcish heraldry and politics, as well. Darius spent almost twenty years amongst the orcs of the north, and eventually married an orc before being killed a score of years ago in a rival tribe�s ambush. 
+A Study of Orcs, by Darius Woodherd	A large tome bound in thick bison-hide that is a common-orcish language primer, as well as a primer on orcish culture. The author of the primer, Darius Woodherd, seems to have added a lot of information on orcish heraldry and politics, as well. Darius spent almost twenty years amongst the orcs of the north, and eventually married an orc before being killed a score of years ago in a rival tribe's ambush. 
 Adamant Leaf	A large, nearly unbreakable leaf from Tree of Adamant.
 Alexandrite Emerald	A transparent dark green Alexandrite emerald.
 Amulet of Health	This amulet is a golden disk on a chain. It usually bears the image of a lion or other powerful animal. 
-Ancient Temple Replica	Miniature golden replica of ancient mythical temple � location map inside
-Animated Pet Rock	Animated pet rock � capable of killing people!
-Animated Toy Soldier	A tiny toy soldier which marches ceaselessly back and forth � eternally vigilant and pissed off if anyone disturbs.
+Ancient Temple Replica	Miniature golden replica of ancient mythical temple ' location map inside
+Animated Pet Rock	Animated pet rock ' capable of killing people!
+Animated Toy Soldier	A tiny toy soldier which marches ceaselessly back and forth ' eternally vigilant and pissed off if anyone disturbs.
 Aphrodisiac Root	A dirty canvas bag containing twenty pounds of an aphrodisiac root.
 Aquamarine	Aquamarine is a hard, transparent form of beryl, blue-green in colour. These sought after gems are found primarily among the tribes that roam the tundra.
-Arbalest	A large arbalest/bolt thrower. It is disassembled and crated for shipping. It requires four strong men to lift. When reassembled, it hurls a 5� bolt for 2d12 damage. 
+Arbalest	A large arbalest/bolt thrower. It is disassembled and crated for shipping. It requires four strong men to lift. When reassembled, it hurls a 5' bolt for 2d12 damage. 
 Architect's Underwear of Confidence	This loincloth causes the wearer to have extremely elevated self confidence. As a result, they get +2 on Bluff Diplomacy and Intimidate checks, and -2 on Listen Search Spot and Appraise checks, they also tend to make reckless decisions more often.
 Armor +1	You have a +1 bonus to AC while wearing this armor.
 Armor of Barbarian Rage	This is a set of Studded Leather Armour that has been enchanted with the spirit of a long dead barbarian warrior. Once per day it allows the user to channel it's rageful spirit.
@@ -34,8 +34,8 @@ Bad Coin	A coin that always comes up tails. Placing it anywhere tails side down 
 Bag of Angel Feathers	{1d6} angel feathers aura of good; razor sharp; stronger than steel (can be used as weapon like dagger)
 Bag of Ash	The Bag of Ash acts like a jar of infinite water, except it just makes a grey, sooty ash.
 Bag of Beans	Inside this heavy cloth bag are 3d4 dry beans. The bag weights 1/2 pound plus 1/4 pound for each bean it contains.
-Bag of Tricks, Rust	This ordinary rust coloured cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag�s color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
-Bag of Tricks, Tan	"This ordinary tan cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag�s color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
+Bag of Tricks, Rust	This ordinary rust coloured cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
+Bag of Tricks, Tan	"This ordinary tan cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
 Ballistic Fist Hammer	Ballistic Fist Hammer (Hammer with each side acting as ballistic fists from Fallout series)
 Banshee Spirit Dagger	"Despite appearing to be a normal dagger, even those not able to recognise the presence of magic can tell that there is something imbued in the unassuming metal hilt and blade.
 Belt of Baby Fire Giant Strength	"To all intents and purposes this resembles a Belt of Fire Giant Stength, and it certainly does have a giant's strength enchantment on it; unfortunately, the it was accidentally made with the strength of a baby fire giant. Fire giant babies have roughly the same strength as an average human man.
@@ -48,15 +48,15 @@ Berserker Axe	You gain +1 bonus to attack and damage rolls made with this magic 
 Bioluminescent Fluid Lantern	Shake this lantern well and you get 2d4 hours of light. It takes a standard action to shake the lantern and requires 8 hours to 'recharge'.
 Black Opal	"Black Opal has a greenish hue with black mottling and gold flecks. Usually found in ancient hot springs, the gem is tumbled smooth and cut cabochon. The phrase in the north ""Black as an opal"" is used as a subtle form of praise for kind-hearted rogues and the like.	"
 Black Pearl	A dark blue-black Pearl.
-Blacksalt�s Luckmaker	A worn coin with notched edges.
+Blacksalt's Luckmaker	A worn coin with notched edges.
 Bleeding Rock	A hard, roughly cut piece of basalt rock which bleeds when pressure is applies to it.
 Blindfold of Reading	Allows comprehension of all written languages. Unfortunately, said comprehension is only granted when the blindfold is worn over the eyes - meaning you cannot see to read anything. Perhaps your group can find a work around?
-Blindfold of Trap Awareness	Semi-reliable Blindfold of Trap Awareness, sends shivers down the wearer�s spine when traps are near � or at random times.
+Blindfold of Trap Awareness	Semi-reliable Blindfold of Trap Awareness, sends shivers down the wearer's spine when traps are near ' or at random times.
 Blood Scabbard	A scabbard stained the dark color of rust.
 Blue Sapphire Ring	A silver ring with a transparent blue-white sapphire.
 Blue Spinel Ring	A silver ring with a Blue Spinel gemstone embedded on it.
-Bolt of Chaos	Crossbow bolt of chaos � 1 random effect on hit
-Bone Crushing Mace	Bone crushing mace � critical renders limb useless; two handed by any smaller than large
+Bolt of Chaos	Crossbow bolt of chaos ' 1 random effect on hit
+Bone Crushing Mace	Bone crushing mace ' critical renders limb useless; two handed by any smaller than large
 Bone Stylus	Write the name of your antagonist in your flesh and he will leave you be. Causes one hit point of damage for every letter inscribed in the bearer's flesh. Lasts until the damage is healed.
 Booming Scepter	An elegant, decorative hand held scepter made of bronze and small jewels. You can hear a mild humming resonance when held to your ear.
 Boots of Feral Leaping	Plain leather boots, tattered and worn, but glistening with a soft white light similar to the sunlight reflecting off freshly fallen snow.
@@ -78,54 +78,54 @@ Chimera's Mantel	This Cloak is woven together from the fur of a lion and goat ov
 Cinder Glove	A left-handed glove. It remains warm regardless of atmosphere, and is almost painfully hot to be touched with.
 Circlet of Inconsolable Weeping	Cursed. Anything who puts on this circlet is sent into an irreversible state of misery for 1d4 hours.
 Coiling Rope (50 feet)	This rope coils itself after 10 rounds of being uncoiled, regardless of what is happening to it. It will undo all knots and will wind itself up around one end (always the same end). This process always takes 1 round.
-Collapsible Rod	1�, 10�, or 20� � any size you need!
+Collapsible Rod	1', 10', or 20' ' any size you need!
 Countdown Cutlass	A large sword with jewels that sequentially light up after activation. After the last jewel is lit, the sword will explode!
 Cowardly Blade	A normal, if not well-crafted looking shortsword. There is a sigil of a chicken on the bottom of the pommel.
 Crate of Chaos Mushrooms	This wooden crate is about 60cm by 60cm by 40cm, with 'Chaos Mushrooms' burned into the lid in Sylvan. It fizzes with a faint magical aura, and smells delicious
 Crescent Armor Spikes	A set of Armor Spikes made out of thick, sharp silver. They can be attached to full or half-plate, and behave like normal armor spikes. However, they grow faintly in total darkness - - enough for the wearer to see 5 ft, or for another person to see the wearer from up to 50 ft away.
 Crystal Prism	Crystal prism (d20 x 10 gp)
-Cursed Tarot Cards	Demonic themed tarot/playing cards � extra planar repercussions based on game played; tarot tales come true
+Cursed Tarot Cards	Demonic themed tarot/playing cards ' extra planar repercussions based on game played; tarot tales come true
 Dagger of Bleeding	DC save to avoid bleeding damage
-Dehydrated Minotaur Helm	A preserved Minotaur head, old but still retaining most detail. The skin is old and decrepit, yet both the horns have been dipped in molten gold. When donned, this helmet magically causes the wearer to appear as a living minotaur�as well as protecting the wearer against critical hits. The user's stats remain the same, however, and the player only appears to be a minotaur (+4 on intimidate checks).
+Dehydrated Minotaur Helm	A preserved Minotaur head, old but still retaining most detail. The skin is old and decrepit, yet both the horns have been dipped in molten gold. When donned, this helmet magically causes the wearer to appear as a living minotaur'as well as protecting the wearer against critical hits. The user's stats remain the same, however, and the player only appears to be a minotaur (+4 on intimidate checks).
 Digiridoom	A long, Hollow wooden rod with a narrow opening at one end, and a wider one at the other.
 Dowsing Compass	Like a regular compass, except with multiple needles each pointing toward different useful things, such as: north, the nearest source of fresh water, the strongest nearby evil aura, nearest large concentration of gold, nearest civilization (exact definition of civilization may vary by user), and nearest storm. Needles lengthen and shorten as the object gets closer or further away.
 Dowsing Rod	Object of secret door detection/lay out visualization
 Dragon Comb Set	A set of golden combs shapes as dragons, each set with red garnets as the eyes.
-Dragon Scale Tombe	Trained rat in wooden cage � sniffs out gold in exchange for treats. One trail ration per sniff.
+Dragon Scale Tombe	Trained rat in wooden cage ' sniffs out gold in exchange for treats. One trail ration per sniff.
 Dreaming Nightfeather	A long, black feather with violet iridescence. The shaft glows softly white in moonlight.
 Elixir of Madness	Upon taking a single sip of this potion, you are afflicted with some form of madness. Roll 1dOn a 1-3 you are afflicted with a short-term madness (DMG p. 259); on a 4-5 you are afflicted with a long-term madness (DMG p. 260); on a 6 you are afflicted with an indefinite madness.(DMG p. 260). The remainder of the elixir loses its magical properties, becoming merely a foul tasting liquid.
 Embroidered Gloves	An embroidered glove set designed for human sized hands, each with jewel chips.
 Emerald	An Emerald is a brilliant green beryl, cleaved along straight box like lines, with rectangular cutting in the finished gem. Emeralds are often connected with health, and so are used ornamentally for such a purpose.
-Extra-Dimensional Flask	Extra dimensional flask � holds 1 gallon
+Extra-Dimensional Flask	Extra dimensional flask ' holds 1 gallon
 Eye Patch	An eye patch with a mock eye set in blue sapphire and moonstone.
 Filligins Uncontrollable Flame	A small wooden box with a silver embossed flame on the lid. Inside is a pipe-shape horn that spouts a tiny flame that can not be snuffed. The box is not flammable.
-Filthy Bucket	A filthy bucket, bolted to the floor, � full of urine, containing silver coins, rings and necklaces.
+Filthy Bucket	A filthy bucket, bolted to the floor, ' full of urine, containing silver coins, rings and necklaces.
 Fire Blanket	A heavy rug that has been kept rolled up. When unrolled, it reveals that the surface of the rug is permanently on fire. When rolled back up the fire disappears.
 Fire Opal	This Fire Opal is a translucent fiery red colour and is set within a broken brooch. It takes no effort to wedge it out.
 Fire Opal Chain	A fine gold chain set with a fire opal.
 Flail of Flagellation	This imposing, three-headed flail has a +2 bonus to attack and damage rolls. Any creature that takes damage from this flail may immediately make a saving throw against any one ongoing effect that is affecting them.
 Frostbite Lilly	A pure white lily that becomes rigid when picked. Its petals are icy cold and shatter like glass if mishandled.
 Gauntlets	The curse of the gauntlets was that no magic would ever help you, beneficial or baneful and anything you were in contact with would lose its magical properties while you're touching it. found out the contact one when visiting flying mage's tower. I was no longer welcome there, but with certain classes the gloves are pretty sweet even considering the downside. Oh also the curse had a very specific trigger, the gauntlets could only be removed if you cast remove curse on them and then had a chaotic neutral halfling pull them off of you with the intention of stealing them. even if you hacked your arms off and then had regeneration cast on you your hands would grow back with the gauntlets on them.
-Giant Temple Candles	Six giant temple candles. Each is 6� tall, 1� thick, and weighs 100 lbs. They are made of fine white wax, rolled in gold dust, and set with emeralds. (320 gps each)
+Giant Temple Candles	Six giant temple candles. Each is 6' tall, 1' thick, and weighs 100 lbs. They are made of fine white wax, rolled in gold dust, and set with emeralds. (320 gps each)
 Girdle of Femininity/Masculinity	"The cursed Girdle of Femininity and Masculinity, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover.	"
 Gold Circlet	A gold circlet set with four aquamarines.
 Gold Idol	A small gold idol.
-Gold Plated Idols	Gold plated idols � possession = death penalty
+Gold Plated Idols	Gold plated idols ' possession = death penalty
 Grog of Substantial Whimsy
-Hammer of Thunderous Power	Thunder Hammer � deafening or stunned, DC save, 40� radius
+Hammer of Thunderous Power	Thunder Hammer ' deafening or stunned, DC save, 40' radius
 Harp	A carved harp of exotic wood with an ivory inlay and zircon gems.
 Headband of Enslavement	Description needed.
 Headdress of the Dawn Dancer	At the end of a long rest, a Bard attuned to this item may perform a dancing ritual while wearing it. That bard makes a Performance check. Each creature that watches the whole ritual performance may replace their result for one attack roll, ability check, or saving throw with the result of the bard's performance check. The ritual performance takes 5 minutes to complete. 
-Helm of Confusion	 Helm � cherubic infant embellishment, emits confusion spell at wil
+Helm of Confusion	 Helm ' cherubic infant embellishment, emits confusion spell at wil
 Helm of Unsurvivable Knowledge	A 'God-Helmet' that explained the universe when you put it on. It usually just fried your brain though, small chance of enlightenment or instant death.
 Hollow Glass Sphere	A hollow glass sphere of surprising proportions: nearly three meters across. If it is broken those nearby will catch the barest scent of alien perfumes, hinting at strange lands belonging to the ancient time when the sphere was first forged and air trapped within it.
 Hyperstone	Once per day this item grants one extra attack for it's user.
-Javelin of Explosions	5x range, normal range 5x dmg, 2xs range = 4xs dmg, 3xs range = 3xs dmg, etc� - explodes & destroyed after use except at 5xs or 4xs range
+Javelin of Explosions	5x range, normal range 5x dmg, 2xs range = 4xs dmg, 3xs range = 3xs dmg, etc' - explodes & destroyed after use except at 5xs or 4xs range
 Jeweled Anklet	A jeweled anklet.
 Lost Diamond	A sizeable cut diamond with bluish tint.
 Magmatic Elixir	A viscous potion in a clear glass bottle. It is uncomfortably hot to hold, and glows a faint orange in darkness.
 Magnetic Grappling Hook	Self-guided grappling hook - +10 to ranged attack roll for aiming
-Malluf's Not-Quite-Full, Not-Quite-Empty Quiver	 Near-Empty-Ever-Full One Arrow Quiver � always only 1 arrow, will reappear after being shot.
+Malluf's Not-Quite-Full, Not-Quite-Empty Quiver	 Near-Empty-Ever-Full One Arrow Quiver ' always only 1 arrow, will reappear after being shot.
 Mantle Set	An embroidered silk and velvet mantle set with numerous moonstones. 
 Masterpiece Painting	An old painting, a lot treasure by a painter of some renoun.
 Mongrel Collar	A black leather collar, stiff from wear and riddled with bite marks.
@@ -163,26 +163,26 @@ The Clegane Bowl	This large basin has bloodstains permanently ingrained in it. A
 The Iron Thorn	This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
 Tome of Alchemy	A large tome, bound in leather and clasped with gold. A closer inspection of this volume will reveal that each page is perfectly preserved dragon scale which has been inscribed with the black blood of a fiend. The book describes the four spirits (quicksilver, orpiment, sal ammoniac, sulfur) and seven bodies (gold, silver, iron, quicksilver, lead, tin, copper) of traditional alchemy.
 Topaz	A yellow facet cut Topaz gemstone.
-Uncut Diamond	An uncut chunk of raw diamond. It is easily the size of a dwarf�s fist and is likely worth a substantial sum to the right jewel maker.
+Uncut Diamond	An uncut chunk of raw diamond. It is easily the size of a dwarf's fist and is likely worth a substantial sum to the right jewel maker.
 Wand of Arcane Errata	A wand with runic inscriptions that have been scratched out and rewritten several times
 Wand of Prestidigitation	A black and white painted Oakwood wand, with card suits painted down the length of the wand beyond the handle.
 War Mask	This mask has been painted gold and appears to be a ceremonial mask worn to battle.
 Wellwizard's Teacups	A pair of elegantly decorated teacups that always feel warm to the touch. If filled with any liquid, it will somehow seep through invisible cracks in the cup.
 Whispering Bauble	A glass orb with a small slit opening, braced by fine grey metal.
-Yellow Sapphire	A transparent fiery yellow or yellow� green Sapphire.
+Yellow Sapphire	A transparent fiery yellow or yellow' green Sapphire.
 Potion of Extra Health	A foul smelling liquid that shifts between bright red and burgundy as it swirls around it's flask.
 Maester Sword	A shiny silver sword with a purple hilt. There are three orange pommels at the center of the hilt that each resembles a triangle, placed together so they create a larger triangle as a group. The guard is shaped like two outstretched wings and along the blade of this sword are etchings in Elvish that read "The Blade of Evil's Bane". Looking into the history of this sword will tell of an order of Maesters who, upon growing weary of merely recording the passage of history, decided to make it themselves.
-Gale Boomerang	This oddly-shaped weapon looks like it might be made of roc�s feathers, bound together and strengthened by magic. There is a small emerald set in the weapon�s vertex amidst gilded furnishings that mark it as a weapon of some distinction.
+Gale Boomerang	This oddly-shaped weapon looks like it might be made of roc's feathers, bound together and strengthened by magic. There is a small emerald set in the weapon's vertex amidst gilded furnishings that mark it as a weapon of some distinction.
 Potion of Purple Ooze	A potion vial containing a purple concoction, labelled simply "Ooze". The bubbling, slimy fluid is dark purple with emerald accretions on the side. It smells like butyric acid (vomit) and tastes worse.
 Power Treads	Grants the following, +2 fort saves, +2 reflex saves, +2 will saves
 Pregnancy Figure	The tiny figurine of a fertility goddess, carved from a rare, fist-sized pearl. Found deep beneath the surface of the earth, for two weeks after it is brought to the surface any woman touching the figurines will become pregnant. After the two week period has expired, the figure will never work again (or until returned to its original spot for 1d12 months).
 Ring of Ghosts	Ring of Ghosts: the wearer of the ring can see and communicate with the ghost of any intelligent being that has died in the past 24 hours within a 1 mile radius. After the 24 hours, the ghost disappears. The ghosts are only visible and audible to the wearer, but remain intangible. Also, the ghosts likely aren't very cooperative if the players killed them.
-Rust-Dust Bomb	Rust-dust Bomb � metallic eating dust
+Rust-Dust Bomb	Rust-dust Bomb ' metallic eating dust
 Scroll of Cursed Gibberish	Without a successful Arcana check of 25, this scroll appears to be a Scroll of Comprehend Language. When used, however a DC save must be made or the user will be unable to speak anything but gibberish for 1d20 days.
 Scroll of Summon Moose	Summons a moose.
 Self-Incinerating Pellets	extra planar/dimensional transport/escape to pocket dimension with scrying/teleportation stone/orb
 Shadoweave Armor	Shadoweave armor is woven with darkness imbued into its silk. +6 armor +6 max bonus
-Sting	Monster presence detecting weapon (Hobbit � Sting, Orcs/Goblins)
+Sting	Monster presence detecting weapon (Hobbit ' Sting, Orcs/Goblins)
 Undead Knife	Knife of a god of undeath. It turned whoever owned it immediately undead.
 Urn of Shadows	Urn of shadows-starts with no charges, user can grant allies 10HP, or deal 10 damage to enemies. gains additional uses for every 2 creatures that die within 40ft radius of holder
 Worldly Tortoise	A small tortoise (STR 2, DEX 1, WIL 6, 1hp, Armour 1) that knows the way to anywhere you ask, but gets there very slowly. 
@@ -273,7 +273,7 @@ Shield that can block magic for a short time
 Boots that enhance jumping ability  
 A lantern that reveals the presence of hidden beings  
 A bracelet that allows brief control over animals  
-Armor that enhances the wearer�s endurance  
+Armor that enhances the wearer's endurance  
 Sword that speaks to its wielder telepathically  
 A mask that allows the wearer to see in the dark  
 Ring that protects against curses  
@@ -304,7 +304,7 @@ A ring that prevents aging
 A staff that grants control over shadows  
 A mask that lets the wearer mimic voices perfectly  
 A mirror that shows the true form of any being  
-A cloak that enhances the wearer�s stealth  
+A cloak that enhances the wearer's stealth  
 A ring that enhances speed  
 A bow that fires silent arrows
 {1d4} Vials of {COLOR} acid
@@ -337,3 +337,9 @@ A pair of handcuffs	Inscribed near the keyhole is a strange Arcanic symbol.
 {1d4} {color} elixirs	Labeled: {effect}
 {1d4} {color} elixirs	Labeled: {effect}
 {1d4} {color} elixirs	Labeled: {effect}
+A vial of life energy	The soul of an Unknown Sapient. Restores to max HP if inhaled.
+A leather-bound {color} book	Titled 'The Ethics of {subject}'
+An explosive petard	Used to blast walls or gates. Blasts inward in a 5-foot radius, dealing 4d8 damage to the target.
+A tunnel bomb	An explosive device placed in a tunnel dug under an enemy's fortifications or forces to destroy them from below. Blasts upwards, dealing 6d8 damage in a 10ft cone.
+The eye of a {beast}
+A small bottle of fairy dust

@@ -11,7 +11,7 @@ Black Velvet Mask	An ornate black velvet mask sitched with silver thread.
 Blank Scroll	A blank scroll. It could have any spell in the world on it, eventually. The possibilities are endless.
 Blanket	A thick woolen blanket. Something like this is perfect for wrapping up during those long cold nights spent staring at a cave wall.
 Blood Stained Dress	A blood-stained dress which, despite being found in ruins which have lain undisturbed for centuries, is still a vibrant, stunning blue.
-Blood-Soaked Book	A blood-soaked book; a partially written history about a long-lost keep on the borderlands. The last written page is done in a different hand, and is scrawled with �The rules have changed!� in large, bold letters. Roughly a third of the book (of 100 pages) has been used. 
+Blood-Soaked Book	A blood-soaked book; a partially written history about a long-lost keep on the borderlands. The last written page is done in a different hand, and is scrawled with 'The rules have changed!' in large, bold letters. Roughly a third of the book (of 100 pages) has been used. 
 Blue Quartz Gem	A small quartz gemstone shaped in a bevelled square. It is transparent pale blue in color.
 Blue Scarf	A finely woven blue wool scarf.
 Bone Butter Churn	A butter churn made of bone slats, bound with hoops of silver. A scrimshaw scene depicting a crowd of human villagers beating a Halfling with shovels and hoes wraps around it.
@@ -31,26 +31,26 @@ Carved Beads	A string of wooden carved beads, tied into a bracelet.
 Horseshoe
 Copper Ring	A simple piece of jewlery.
 Copper Chalice	A small copper chalice with a silver filigree.
-Crowbar	Using a crowbar grants advantage to Strength checks where the crowbar�s leverage can be applied.
+Crowbar	Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.
 Crude Box	A wooden box. Carved by someone who has had no formal training in woodworking, and it shows.
 Crude Holy Symbol	A crudely carved wooden holy symbol.
 Crude Pipe	A crudely carved wooden pipe.
 Curious Powder Box	Metal box of unidentifiable powder.
 Dead Fey	A long-dead fey, dried and petrified as a trophy and hanging from ceiling.
 Deer Bust	The mounted head of a deer, it's impossibly massive horns have broken in places.
-Demon's Vale Wine	A one-gallon cask of Demon�s Vale Wine; a fiery red wine known to be made from hot peppers.
+Demon's Vale Wine	A one-gallon cask of Demon's Vale Wine; a fiery red wine known to be made from hot peppers.
 Dice (6 Sided)	{1d6} six sided dice. Probably used in some silly tabletop game.
 Dire Bat Wings	Hanging from a drying rack are two large Dire Bat wings. It is unclear how long they have been seperated from the rest of the bat, but they are in good condition and could potentially be used as a crafting material.
 Disk of Balance	A disk of finely polished stone. On one side, the Elvish rune for death is inscribed in blackest obsidian. Upon the other, the Dwarven rune for life is inscribed in the palest ivory.
 Weight Training Equipment	The party finds a complete set of bronze and carved stone weight training equipment issued to the 4th army of some Ancient Empire. There is an inscription in one of the weights that reads "Dost thou even lift, brother?"
 Dried Flower	A flower that has been dried out to preserve it.
-Dust Ruby	A ruby the size of a man�s fist which sparkles and gleams with the promise of untold wealth in the faintest of lights, but which crumbles to dust upon the lightest touch.
-Electrum Bracer	An archer�s bracer of leather and electrum.
+Dust Ruby	A ruby the size of a man's fist which sparkles and gleams with the promise of untold wealth in the faintest of lights, but which crumbles to dust upon the lightest touch.
+Electrum Bracer	An archer's bracer of leather and electrum.
 Leather Ball	A leather ball stuffed with chicken feathers. On a DC 15 peception check the player can find an electrum ring amongst the feathers.
 Empty Vial	An empty vial, just waiting to be filled with something more valuable than itself.
 Eye Agate Gem	This simple agate gem has translucent circles of white dotted around its surface which bring to mind the image of an eye.
 Fat Cat Statue	A life sized copper statue of a fat cat with amber eyes that purrs when stroked. Curiously, it does not detect as magic.
-Fine Cheese	A 5� diameter wheel of fine, aged cheese
+Fine Cheese	A 5' diameter wheel of fine, aged cheese
 Fishing Tackle	Useful for catching fish.
 Flesh Shield	A small wooden shield bound in human skin bearing a tattoo that appears to be some sort of map. The skin is held in place with a rim of beaten copper.
 Flint & Steel	A carved steel striker and a piece of shaped flint that allows the user to start a fire.
@@ -82,10 +82,10 @@ Iron Buckle	An iron belt buckle that's beginning to rust.
 Iron Earring	An iron earring. Missing it's twin.
 Iron Nail	A large iron nail, useful for fixing things together.
 Iron Spike	A large iron spike, useful for fixing heavy items together.
-Iron Torc	An iron torc with six small silver figurines: A hare, a horse, a spear, a wolf�s head, a simple circle, and an oak tree.
+Iron Torc	An iron torc with six small silver figurines: A hare, a horse, a spear, a wolf's head, a simple circle, and an oak tree.
 Ivory Peg Leg	Whale ivory leg prosthetic
 Jar o' Eyeballs	A jar containing six eyeballs (2 human, 1 goblin, 1 ogre, 1 worg, and 1 hawk) in a clear liquid.
-Jerked Meats	� of jerked meat
+Jerked Meats	' of jerked meat
 Keg o' Nails	A 35 lb keg of iron nails
 Knee Breeches	A pair of bear fur knee breeches, slightly worn from having been used when horse riding.
 Lantern	A slightly rusty old lantern with a glass casing.
@@ -101,7 +101,7 @@ Magical Ring of Engagement	Someone used this to get married
 Magnifying Glass	
 Malachite Gem	A large malachite gem. It is striated light and dark green across its polished surface.
 Man Mask	A mask carved to look like the face of a man, but which has been fitted for something wholly other.
-Mechanical Mice	Mechanical mice which run through the walls of an ancient keep. They have done so for longer than written record can attest. They seem to be a benign presence � lacking even the slightest pestilent qualities of their flesh-and-blood counterparts � and have become an accepted presence here. Who their creator was, how they are fueled, and what purpose they serve (if any) are mysteries which may never be solved.
+Mechanical Mice	Mechanical mice which run through the walls of an ancient keep. They have done so for longer than written record can attest. They seem to be a benign presence ' lacking even the slightest pestilent qualities of their flesh-and-blood counterparts ' and have become an accepted presence here. Who their creator was, how they are fueled, and what purpose they serve (if any) are mysteries which may never be solved.
 Mistletoe	{1d4} sprigs of mistletoe
 Moss Agate Gem	A beautiful moss agate gem. It is a translucent pink with a mossy gray texture.
 Net	An unused fishing net made out of spun mammoth hairs.
@@ -109,7 +109,7 @@ Obsidian Gem	A small opaque black gem.
 Oil	A flask of oil suitable for use in a lantern. 
 Old Hat	A ragged old hat with a moth eaten brim.
 Old Pouch	An old pouch. Works as any pouch might, but it has a hole in it.
-Old Round Shield	Father�s old round shield, beneath the boss is the sigil of ______, valiant conduct by the bearer may draw the eye of the God.
+Old Round Shield	Father's old round shield, beneath the boss is the sigil of ______, valiant conduct by the bearer may draw the eye of the God.
 Old Saddlebag	A rotten saddlebag with a few coins spilling out. The copper coins have some verdigris and the silver coins are badly tarnished.
 Old Wheelbarrow	A rotting wheelbarrow holding 167 torches.
 Parchment	A spare bit of parchment.
@@ -147,7 +147,7 @@ Wooden Board	A weather worn wooden board, inscribed with patterns which make it 
 Wooden Spike	A long wooden spike, used to fix soft items together or kill vampires while they sleep.
 Wormrose Incense	
 Wormscrape	A narcotic made from the petal of a wormrose flower.
-Raisins	� tin of raisins.
+Raisins	' tin of raisins.
 Club	A crude club made to clobber animals and people alike, carved roughly from a thick cedar branch.
 Quarterstaff	A length of stoud wood ranging six to nine feet in length and shod with metal at both ends.
 Sickle	A farming tool that can be used as a weapon if needed. It has a long curved blade attached to a short wooden handle.
@@ -173,11 +173,11 @@ Sack of Flower Bulbs	A sack of prized flower bulbs
 Sales Receipt	Receipt for delivery of slaves
 Sausages	Package of d6 sausages
 Service Record	A scroll detailing the bound service of two men-at-arms sworn to six months of service.
-Silver Brooch	A silver brooch depicting a mage�s tower. (This could be a pass for magical wards at the mage�s tower, at the DM�s discretion.)
+Silver Brooch	A silver brooch depicting a mage's tower. (This could be a pass for magical wards at the mage's tower, at the DM's discretion.)
 Silver Spoons	A set of 8 silver spoons.
 Snail Dye	A 1 quart jar of rare purple snail dye.
 Straw Broom	A straw broom
-Tactical Defense Stick	Tactical defense stick�
+Tactical Defense Stick	Tactical defense stick'
 Wolfsbane	{1d8} springs of wolfsbane
 Peg Leg	You'll never know if the owner willingly parted with this prosthetic. You do know that it makes an effective cudgel.
 Prick Axe	A pick axe has a curved iron head that is useful for breaking up rocky surfaces. A prick axe has an uncomfortable knobbly handle and the axe head constantly falls off.
@@ -261,7 +261,7 @@ Wooden spinning top
 Single boot with a broken lace
 Small pouch of sunflower seeds
 Broken ink pen
-Tattered book of children�s stories
+Tattered book of children's stories
 Green glass bottle filled with sand
 Charcoal drawing of a cat
 Wooden ring with a sun symbol carved in it
@@ -326,3 +326,4 @@ A drawing of a {NOUN}
 {flora}	Plant sample
 {flora}	Plant sample
 {flora}	Plant sample
+A pair of eyeglasses

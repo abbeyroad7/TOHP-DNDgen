@@ -316,3 +316,6 @@ A collection of butterfly wings
 A {material} club
 Bits of coral pieces
 A cork from a bottle of {BEVERAGE}
+A vial of desert sand
+A {RACE} doll
+A drawing of a {NOUN}

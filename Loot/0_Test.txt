@@ -1,1 +1,1 @@
-A translator codex for the {LANGUAGE} language
+A {SPELL} scroll	Level {SpellTable}

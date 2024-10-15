@@ -728,3 +728,10 @@ A {GEM}
 A {GEM}
 A translator codex for the {LANGUAGE} language
 A translator codex for the {LANGUAGE} language
+Earmuffs made of {mammal} fur
+{1d4} {reptile} eggs
+{1d4} {reptile} eggs
+{1d4} {bird} eggs
+{1d4} {bird} eggs
+{1d4} {bird} eggs
+{1d4} {bird} eggs

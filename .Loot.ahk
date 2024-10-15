@@ -1,9 +1,10 @@
-;v2.2.0
-;Bugs
+;v2.4.0
+;# Restructure
+;Rewrite code to loop through tags
+;# Bugs
 ;If category prompt is entered, it does not exit the mode correctly
-;Todo
+;# Todo
 ;Tag identifiers to signal qty, FRUIT.3
-;Inputbox prompts/rather than qty
 ;Animal mixer
 ;A hyperlink tag
 ;A hover GUI to show original bank
@@ -12,7 +13,6 @@
 ;Items, 5e.tools
 ;Weapons, seperate from general db, prompt-only
 ;Combine names and loot.ahk
-;edit noun names for books, Nouns1.txt done
 ;edit nouns for loot, queue\nouns1
 ;Fill out race names db
 ;Natural language syntax, for words ending in s, a/an, etc.
@@ -22,9 +22,8 @@
 ;Icons, export snapshot to clipboard
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
 ;Foundry importer
-Debug = 1	;1=off
+Debug = 0	;1=off
 Habitat = Temperate	;Specify your world's habitat
-
 ;Import
 {	;collapse import
 #Requires AutoHotkey v1.1+
@@ -96,8 +95,15 @@ Loop, Read, %Dir%\Banks\RaceNames.txt
 Start:
 NC = 0
 Inputbox, QtyMax,,,,200,100
-	If QtyMax < 1
-		Exit
+	Modes:
+	{
+		If QtyMax = Coast
+			Habitat = Coast
+		If QtyMax = Temperate
+			Habitat = Temperate
+		If QtyMax < 1
+			Exit
+	}
 	If (InStr(QtyMax, A_Space))
 		{
 			QtyMaxPrompt := StrSplit(QtyMax, A_Space)
@@ -428,6 +434,15 @@ Loop, %Qty%
 				;Msgbox %Mammals%	;Debug
 				Loot := StrReplace(Loot, "{Insect}", Insect)
 			}
+			If (InStr(Loot, "{Flora}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Beastiary\Flora\%Habitat%.ini
+					Flora_Lines = %A_Index%
+				Random, FloraRnd, 1, Flora_Lines
+				FileReadLine, Flora, %Dir%\Banks\Beastiary\Flora\%Habitat%.ini, FloraRnd
+				;Msgbox %Mammals%	;Debug
+				Loot := StrReplace(Loot, "{Flora}", Flora)
+			}
 			If (InStr(Loot, "{Monstrosity}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\Beastiary\Monstrosities\%Habitat%.ini
@@ -562,6 +577,40 @@ Loop, %Qty%
 					If MaterialRnd = 20
 						Material = bone
 				Loot := StrReplace(Loot, "{MATERIAL}", Material)
+			}
+			If (InStr(Loot, "{SPELL}"))
+			{	;Collapse
+				Random, SpellRnd, 0, 100
+				{	;Collapse
+					If SpellRnd between 0 and 50
+						SpellTable = 0
+					If SpellRnd between 51 and 64
+						SpellTable = 1
+					If SpellRnd between 65 and 74
+						SpellTable = 2
+					If SpellRnd between 75 and 81
+						SpellTable = 3
+					If SpellRnd between 82 and 87
+						SpellTable = 4
+					If SpellRnd between 88 and 92
+						SpellTable = 5
+					If SpellRnd between 93 and 96
+						SpellTable = 6
+					If SpellRnd between 97 and 98
+						SpellTable = 7
+					If SpellRnd = 99
+						SpellTable = 8
+					If SpellRnd = 100
+						SpellTable = 9
+				}
+				
+				Loop, Read, %Dir%\Banks\Spells\%SpellTable%.ini
+					SPELL_Lines = %A_Index%
+				Random, SPELLRnd, 1, SPELL_Lines
+				FileReadLine, SPELL, %Dir%\Banks\Spells\%SpellTable%.ini, SPELLRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{SPELLTABLE}", SpellTable)
+				Loot := StrReplace(Loot, "{SPELL}", SPELL)
 			}
 			LootReplacements:
 			{	;Collapse

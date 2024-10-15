@@ -272,25 +272,25 @@ Alchemist's Fire	This sticky, adhesive fluid ignites when exposed to air. As an 
 Silver Ring	A simple silver ring that bears no inscription or identifying marks on it's surface.
 Sharpening Sheath	A dagger sheath of hardened leather, set with a number of cheap decorative stones. Any dagger kept within this sheath is automatically sharpened as if it were a fresh blade.
 Frosted Dagger	A simple dagger with a blue hilt. The blade is almost always covered in frost.
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
-{1d100} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
 Tin lantern, missing a candle
 Polished wooden staff with simple carvings
 Small sack of flour

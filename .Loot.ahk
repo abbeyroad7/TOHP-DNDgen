@@ -22,7 +22,7 @@
 ;Icons, export snapshot to clipboard
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
 ;Foundry importer
-Debug = 0	;1=off
+Debug = 1	;1=off
 Habitat = Temperate	;Specify your world's habitat
 ;Import
 {	;collapse import

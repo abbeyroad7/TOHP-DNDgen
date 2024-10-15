@@ -196,17 +196,17 @@ Algernon's Cloak	"Algernon's cloak is imbued with magical properties such that t
 Exceptionally Roguish Hat	"A wide, leather hat, garnished with gold-inlaid thread and exotic bird feathers. Very Vogue.
 Ring of Contrariness	
 Bag of Hurling	
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
-{1d100} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
 Sword that bursts into flame when drawn  
 Ring that grants brief invisibility once per day  
 Amulet that wards against disease  

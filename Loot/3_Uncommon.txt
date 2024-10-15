@@ -214,15 +214,15 @@ Hypnotic Spinning Top
 Blood Amulet	A bronze circle held by a red ribbon.
 Adventurer's Robe	"This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.	"
 Air Elemental Statue	This enchanted statuette depicts the swirling form of an air elemental. When stood close, you can feel a cooling breeze swirling around the statuette.
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
-{1d100} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
 Glass magnifying lens with an odd tint  
 Bronze compass that occasionally spins on its own  
 Steel hammer engraved with dwarven runes  

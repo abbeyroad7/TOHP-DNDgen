@@ -118,7 +118,7 @@ Headband of Enslavement	Description needed.
 Headdress of the Dawn Dancer	At the end of a long rest, a Bard attuned to this item may perform a dancing ritual while wearing it. That bard makes a Performance check. Each creature that watches the whole ritual performance may replace their result for one attack roll, ability check, or saving throw with the result of the bard's performance check. The ritual performance takes 5 minutes to complete. 
 Helm of Confusion	 Helm � cherubic infant embellishment, emits confusion spell at wil
 Helm of Unsurvivable Knowledge	A 'God-Helmet' that explained the universe when you put it on. It usually just fried your brain though, small chance of enlightenment or instant death.
-Hollow Glass Sphere	A hollow glass sphere of surprising proportions � nearly three meters across. If it is broken those nearby will catch the barest scent of alien perfumes, hinting at strange lands belonging to the ancient time when the sphere was first forged and air trapped within it.
+Hollow Glass Sphere	A hollow glass sphere of surprising proportions: nearly three meters across. If it is broken those nearby will catch the barest scent of alien perfumes, hinting at strange lands belonging to the ancient time when the sphere was first forged and air trapped within it.
 Hyperstone	Once per day this item grants one extra attack for it's user.
 Javelin of Explosions	5x range, normal range 5x dmg, 2xs range = 4xs dmg, 3xs range = 3xs dmg, etc� - explodes & destroyed after use except at 5xs or 4xs range
 Jeweled Anklet	A jeweled anklet.
@@ -331,3 +331,9 @@ A crown made of {MATERIAL} and {GEM}
 A gold crown with a large {GEM} encrusted in the center
 A pair of handcuffs	Inscribed near the keyhole is a strange Arcanic symbol.
 {1d4} small black spheres	A short fuse protrudes from the top. When lit, it envelops the surrounding 15ft in a sphere of darkness for a duration of 60s.
+{1d4} {color} elixirs	Labeled: {effect}
+{1d4} {color} elixirs	Labeled: {effect}
+{1d4} {color} elixirs	Labeled: {effect}
+{1d4} {color} elixirs	Labeled: {effect}
+{1d4} {color} elixirs	Labeled: {effect}
+{1d4} {color} elixirs	Labeled: {effect}

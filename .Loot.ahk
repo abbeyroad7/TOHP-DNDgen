@@ -1,4 +1,4 @@
-;v2.4.1
+;v2.6.1
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -22,7 +22,8 @@
 ;Icons, export snapshot to clipboard
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
 ;Foundry importer
-Debug = 1	;1=off
+Debug = 0	;1=off
+Level = 4	;Specify player's current level
 Habitat = Temperate	;Specify your world's habitat
 ;Import
 {	;collapse import
@@ -612,6 +613,44 @@ Loop, %Qty%
 				Loot := StrReplace(Loot, "{SPELLTABLE}", SpellTable)
 				Loot := StrReplace(Loot, "{SPELL}", SPELL)
 			}
+			If (InStr(Loot, "{EFFECT}"))
+			{	;Collapse
+				Random, EFFECTRnd, 0, 100
+				{	;Collapse
+					If EFFECTRnd between 0 and 70
+						EFFECTTable = Effect
+					If EFFECTRnd between 61 and 94
+						EFFECTTable = Condition
+					If EFFECTRnd between 95 and 100
+						EFFECTTable = Disease
+				}
+				Loop, Read, %Dir%\Banks\EFFECTs\%EFFECTTable%.ini
+					EFFECT_Lines = %A_Index%
+				Random, EFFECTRnd, 1, EFFECT_Lines
+				FileReadLine, EFFECT, %Dir%\Banks\EFFECTs\%EFFECTTable%.ini, EFFECTRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{EFFECT}", EFFECT)
+			}
+			If (InStr(Loot, "{DURATION}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Effects\Duration.ini
+					DURATION_Lines = %A_Index%
+				Random, DURATIONRnd, 1, DURATION_Lines
+				FileReadLine, DURATION, %Dir%\Banks\Effects\Duration.ini, DURATIONRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{DURATIONTABLE}", DURATIONTable)
+				Loot := StrReplace(Loot, "{DURATION}", DURATION)
+			}
+			If (InStr(Loot, "{ABILITY}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Effects\ABILITY.ini
+					ABILITY_Lines = %A_Index%
+				Random, ABILITYRnd, 1, ABILITY_Lines
+				FileReadLine, ABILITY, %Dir%\Banks\Effects\ABILITY.ini, ABILITYRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{ABILITYTABLE}", ABILITYTable)
+				Loot := StrReplace(Loot, "{ABILITY}", ABILITY)
+			}
 			LootReplacements:
 			{	;Collapse
 				Loot := StrReplace(Loot, "{1d100}", 1d100)
@@ -629,6 +668,14 @@ Loop, %Qty%
 				Loot := StrReplace(Loot, "{RACE}", Race)
 				Loot := StrReplace(Loot, A_Tab, "`n`n")
 			}
+			If (InStr(Loot, "{hp}"))
+			{	;Collapse
+				Random, hpRnd, 1, %Level%
+				hp := Round(hpRnd * 7 / 2.6)
+				;Msgbox %hp%
+				
+				Loot := StrReplace(Loot, "{hp}", hp)
+			}
 			If (InStr(Loot, "{CASE}"))	;Mixed case, use for titles
 				{
 					Loot := StrReplace(Loot, "{CASE}")
@@ -644,7 +691,7 @@ Loop, %Qty%
 					StringUpper, NextLetter, NextLetter, T	;uppercase
 					Loot := StrReplace(Loot, LetterPos, NextLetter)
 				}
-			If (InStr(Loot, "`t"))	;Use to uppercase individual tags
+			If (InStr(Loot, "`t"))	;Tab
 				{
 					Loot := StrReplace(Loot, A_TAB, "`n`n")
 				}

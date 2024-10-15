@@ -761,3 +761,11 @@ Earmuffs made of {mammal} fur
 {1d4} {flora}	Plant samples
 {1d4} {flora}	Plant samples
 {1d4} {flora}	Plant samples
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}	{condition}

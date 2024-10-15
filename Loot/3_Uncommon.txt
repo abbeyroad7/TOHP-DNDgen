@@ -426,7 +426,6 @@ A pair of handcuffs
 {1d12} poison-tipped darts
 A {material} doorknob	The party wonders which door this must belong to.
 A ceremonious, hand-crossbow used for dueling
-A {color} elixir of {fruit}, {spice} and {beverage}
 A {SPELL} scroll	Level {SpellTable}
 A {SPELL} scroll	Level {SpellTable}
 A {SPELL} scroll	Level {SpellTable}
@@ -439,3 +438,14 @@ A {SPELL} scroll	Level {SpellTable}
 A {SPELL} scroll	Level {SpellTable}
 A {SPELL} scroll	Level {SpellTable}
 A {SPELL} scroll	Level {SpellTable}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}
+A {color} elixir	Labeled: {effect}

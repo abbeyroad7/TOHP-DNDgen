@@ -28,6 +28,10 @@ A quarter slice of {RACENAME} {cheese}
 
 ![UrsineBeer](https://github.com/abbeyroad7/TOHP-D-Dgen/blob/main/Loot/.Screenshots/UrsineBeer.png)
 
+An unlabeled {color} elixir. Smells of {spice}	{effect}
+
+![WildshapeElixir](https://github.com/abbeyroad7/TOHP-DNDgen/blob/main/Loot/.Screenshots/WildshapeElixir.png)
+
 ## Tags
 
 Current tags include:

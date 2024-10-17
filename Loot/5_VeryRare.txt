@@ -87,3 +87,4 @@ A whistle that can mimic the voice of any Sapient creature
 A dagger with a strange Arcanic symbol scratched into the hilt	Collects sentient life-force
 A dream-walker scroll	One-time use, allows the casters to dreamwalk into any sleeping creature's dreams
 A deed to an estate in {loc}
+A holocane	A magical wind-instrument that emits a cloud of Arcane light, depicting a holographic scene corresponding to the vision of its player.	Must be attuned to play well.

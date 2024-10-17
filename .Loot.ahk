@@ -1,4 +1,4 @@
-;v2.7.0
+;v2.7.1
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -195,6 +195,14 @@ Loop, %Qty%
 			If (Instr(Prompt, "name"))
 				{
 					Loot = {NAME}
+					NC = 1
+				}
+			If (Instr(Prompt, "rare"))
+				{
+					;Msgbox rarity set to Rare
+					Rarity = 4_Rare.txt
+					fLines = %4_Lines%
+					;Msgbox %4_Lines%
 					NC = 1
 				}
 			Goto, Randomize	;Skip rarity tables
@@ -650,6 +658,16 @@ Loop, %Qty%
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{ABILITYTABLE}", ABILITYTable)
 				Loot := StrReplace(Loot, "{ABILITY}", ABILITY)
+			}
+			If (InStr(Loot, "{bonusmod}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Effects\bonusmod.ini
+					bonusmod_Lines = %A_Index%
+				Random, bonusmodRnd, 1, bonusmod_Lines
+				FileReadLine, bonusmod, %Dir%\Banks\Effects\bonusmod.ini, bonusmodRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{bonusmodTABLE}", bonusmodTable)
+				Loot := StrReplace(Loot, "{bonusmod}", bonusmod)
 			}
 			LootReplacements:
 			{	;Collapse

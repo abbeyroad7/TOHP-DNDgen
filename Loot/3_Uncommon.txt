@@ -453,4 +453,7 @@ An engagement ring made of {material}	A large {gem} lay in the center.
 A sealed envelope addressed to {name}	About {subject}
 A sealed envelope addressed to {name}	About {subject}
 An essay titled 'The Theory of {subject}'
-An executioner's hood
+An executioner's hood	Grants +1 to Intimidation
+A {color} hat	Looks {adj}. Grants +{bonusmod} CHA
+A {color} hat	Out of fashion. Some may consider it retro.	Grants +/-{bonusmod} CHA against a DC10
+A {color} fedora

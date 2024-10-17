@@ -14,7 +14,7 @@ Ornate Axe Head	An unhafted axe head of exceptional craftsmanship. It's faces ar
 Ornate Smoking Pipe	An ivory and copper smoking pipe with stale tobacco inside.
 Ornate Wooden Leg	A wooden leg, carved to appear as a standing leopard with green agate eyes. (Agates: 4gp each; the whole leg, with eyes: 10gp)
 Phoenix Egg	"Phoenix Egg" from a peddler in the City of Brass. After consulting with a few scholars, he later found that (at least in my world lore) Phoenixes are born of primal energy and not hatched, and that he had in fact purchased a very large jar of Alchemist's Fire.
-Piglet	A piglet.
+Piglet	A piglet named {name}
 Poison Dagger	Refillable curved poison dagger
 Poisoned Throwing Needles	Pouch of poisoned throwing needles (see dagger damage & dart range)
 "The Art of Potionmaking" by Zygmunt Brigge	A large, leather-bound tome has a large illustrated potion vial stitched into the front cover. Above the illustration, written in Dwarven is the title; "The Art of Potionmaking". Further examination reveals this to be a comprehensive guide to potionmaking written by a Dwarf called Zygmunt Brigge.
@@ -761,12 +761,12 @@ Earmuffs made of {mammal} fur
 {1d4} {flora}	Plant samples
 {1d4} {flora}	Plant samples
 {1d4} {flora}	Plant samples
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
-An unlabeled {color} elixir. Smells of {spice}	{condition}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
+An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
 White-out	Blot out mistakes on paper

@@ -327,3 +327,5 @@ A drawing of a {NOUN}
 {flora}	Plant sample
 {flora}	Plant sample
 A pair of eyeglasses
+A {bird} feather
+The beak of a {bird}

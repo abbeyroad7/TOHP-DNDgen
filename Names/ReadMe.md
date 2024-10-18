@@ -1,1 +1,12 @@
-Gallus = Human first names, bird-like last names
+Gallus = Human firstnames, bird-like last names
+Genasi = Human firstnames mixed with elemental names, human last names
+Giff = English town names for surnames
+Githyanki = ChatGPT "warfare"
+Githzerai = ChatGPT "philosophy" "nirvana" "limbo plane"
+Gnoll = Same list for m/f. No surnames
+Goblin = warrior template + some accessorial goblin descriptors
+Goliath = s1 used as nickname
+Grung = s2 nicknames
+Hadozee = Human template
+Half-Elf = human/elf names
+Orc = s1 nicknames

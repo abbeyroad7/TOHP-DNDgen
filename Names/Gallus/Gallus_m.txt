@@ -12,11 +12,6 @@ Abramo
 Abramus
 Abyl
 Adam
-Adamo
-Adamos
-Adamus
-Adannius
-Adanno
 Adrian
 Adrio
 Adrios
@@ -24,10 +19,6 @@ Adrjan
 Adros
 Adryan
 Adym
-Aedam
-Aedrian
-Aedrio
-Aedyn
 Aeli
 Aelijah
 Aemo
@@ -677,6 +668,8 @@ Otio
 Ottios
 Owen
 Owyn
+Pluck
+Puck
 Raen
 Remmos
 Remo
@@ -835,5 +828,4 @@ Zachaery
 Zachar
 Zacharus
 Zeckus
-Zeek
 Zeke

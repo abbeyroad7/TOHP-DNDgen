@@ -1,4 +1,4 @@
-;v2.1.1
+;v2.2.0
 ;;Todo
 ;GUI
 #Requires AutoHotkey v1.1+
@@ -65,6 +65,14 @@ Generate:
 	FileReadLine, Last_1, %LastFile_1%, %LastRnd_1%
 	FileReadLine, Last_2, %LastFile_2%, %LastRnd_2%
 		StringLower, Last_2b, Last_2
+	
+	ColorFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Colors.ini
+	Loop, Read, %ColorFile%
+	C_Lines = %A_Index%
+	Random, ColorRnd, 1, %C_Lines%
+	FileReadLine, COLOR, %ColorFile%, %ColorRnd%
+	COLOR := StrSplit(COLOR, A_Tab)
+	Last_1 := StrReplace(Last_1, "{COLOR}", Color.1)
 	
 	Output:
 	If FileExist(LastFile_0)

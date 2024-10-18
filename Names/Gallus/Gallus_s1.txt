@@ -1,118 +1,38 @@
-Cluck
-Feather
-Beakon
-Pecklin
-Scratch
-Roostan
-Talon
-Cackle
+Barb
+Brood
+Cap
+Cotton
+Crop
+Farm
+Field
+Fley
+Flock
+Bant
+Gall
+Gizz
+Gob
+Clag
+Good
+Hann
+Hatch
+Hayw
+Hen
+Klor
+Krah
+Landw
+Light
+Nist
+Gack
+Plume
+Kam
+Rooster
 Spur
-Crowell
-Wattle
-Fowlis
-Beaker
-Gallus
-Cocker
-Broodrick
-Pluck
-Chirt
-Wingston
-Flapper
-Beakley
-Combson
-Peeper
-Roosterick
-Scratchton
-Spurley
-Feathorick
-Cuckow
-Peckson
-Clacker
+Tall
+Talon
 Thatch
-Featherwick
-Gallin
-Crowther
-Roosley
-Wattleton
-Fowlrick
-Chirp
-Spurston
-Henton
-Beakson
-Cockley
-Wingrick
-Brooder
-Hatchwell
-Peckler
-Cacklewick
-Plucker
-Combick
-Fowlston
-Crowden
-Talrick
-Clackston
-Chicker
-Beakster
-Clackerick
-Spurwell
-Crowan
-Cockson
-Feathwell
-Peckor
-Roosterley
-Chirpston
-Combwell
-Gallwick
-Brooster
-Roostor
-Featherick
-Wattlewick
-Scratcher
-Hatchlin
-Talbert
-Flapton
-Combden
-Peckston
-Gallrick
-Clackerden
-Spurton
-Cuckler
-Talman
-Feathorn
-Beakerick
-Roosterston
-Plackton
-Crowlin
-Hatchley
-Peckwell
-Broodwick
-Winglin
-Cackley
-Flaprick
-Rooslan
-Beakwin
-Fowlton
-Spurlin
-Talworth
-Combson
-
-Clifford Yellowflap
-Brynlee Stoneflit
-Parisa Woodruddy
-Baylee Frosthatch
-Beverley Lighttalk
-Sherin Skygore
-Landyn Icefen
-Blake Shadowroost
-Ford Fairloon
-Berkley Crowpeace
-Slade Frostcliff
-Edvard Jadestone
-Baran Frostcaw
-Slade Cottonfog
-Faye Goodroot
-Marleigh Goodhoot
-Bradley Sagewing
-Wynton Coldcrest
-Leighton Oddshaper
-Baylee Sprucechatter
+Wing
+Wood
+Worm
+{COLOR}
+{COLOR}
+{COLOR}

@@ -1,0 +1,261 @@
+Anchor Chain
+Anchor Splash
+Armor Clank
+Armor Crash
+Badger Scratch
+Baker
+Barker
+Bather
+Bear Growl
+Bear Stomp
+Beaver Call
+Beaver Chew
+Bee Buzzer
+Bell Drop
+Bell Ring
+Bison Stomp
+Blacksmith Clank
+Boar Charge
+Book Slam
+Bouncer
+Bowstring Flick
+Bowstring Stretch
+Braker
+Brander
+Bruiser
+Brush Stroke
+Bubbler
+Burner
+Butcher
+Buzzer
+Cackler
+Caster
+Cat Call
+Cat Hiss
+Cat Purr
+Cauldron Bubble
+Cauldron Splash
+Cauldron Swirl
+Chirper
+Chisel Carve
+Chisel Tick
+Chitter
+Chomper
+Chopper
+Clamor
+Clanger
+Clawer
+Cleaver
+Clicker
+Clinker
+Clipper
+Clubber
+Clucker
+Cobbler
+Cooker
+Cork Pop
+Cougher
+Cow Moo
+Cow Stomp
+Cower
+Coyote Cackle
+Coyote Howl
+Crate Creak
+Crate Smash
+Cricketer
+Crier Bell
+Crinkler
+Crocodiler
+Crow Call
+Crow Rustle
+Crusher
+Deer Stomp
+Dino Chew
+Dino Roar
+Dino Snort
+Dipper
+Dog Yelp
+Dog Yowl
+Dogger
+Dove Rustle
+Dove Swoop
+Dragger
+Dragon Swoop
+Dribbler
+Driller
+Dripper
+Ducker
+Elephant Roar
+Elephant Stampede
+Elephant Stomp
+Engraver
+Etcher
+Exploder
+Fire Crackle
+Flopper
+Flusher
+Fox Yelp
+Fox Yowl
+Frog Croak
+Frogger
+Fruit Squish
+Furnace Door
+Giggler
+Giraffe Smash
+Glass Shatter
+Gnasher
+Gnawer
+Goat Baa
+Goat Bleat
+Goater
+Goose Hiss
+Gouger
+Grain Mill
+Grain Trash
+Greaser
+Growler
+Gusher
+Hammer Clank
+Hammer Crash
+Hammer Drop
+Hatchet Chop
+Hatchet Cut
+Hatchet Split
+Hee-Haw
+Hiccup
+Hide Drop
+Hide Flick
+Hoe Scrape
+Hoe Scratch
+Horse Blow
+Horse Neigh
+Horse Sneeze
+Horse Stamp
+Horser
+Hyena Laugh
+Impaler
+Inscriber
+Itcher
+Jackal Rustle
+Jangler
+Jingler
+Kettle Bubble
+Kettle Splash
+Knocker
+Lasher
+Leather Drop
+Leather Flick
+Lion Roar
+Locker
+Lugger
+Lute Pluck
+Lute String
+Mallet Crash
+Mallet Drop
+Mangler
+Mauler
+Molder
+Monkey Rustle
+Mouse Rustle
+Mouse Squeak
+Nail Drop
+Nail Tingle
+Neigher
+Nestler
+Net Cast
+Net Splash
+Nibbler
+Oinker
+Owl Rustle
+Paddler
+Page Turn
+Paint Drop
+Paint Squeeze
+Paint Stroke
+Panther Roar
+Parrot Call
+Parrot Rustle
+Parrot Squawk
+Parroter
+Piercer
+Pigeon Coo
+Pigeoner
+Piper
+Potion Bubble
+Potion Crash
+Potion Gush
+Potion Swirl
+Prodder
+Quail Call
+Quail Rustle
+Quailer
+Rabbit Yelp
+Raker
+Rat Squeak
+Rat Yelp
+Ripper
+Roaster
+Rook Rustle
+Rooker
+Rope Slap
+Rope Whip
+Ruffler
+Rustler
+Sail Flick
+Sail Slap
+Saw Pull
+Saw Wobble
+Scorcher
+Scratcher
+Scribbler
+Seal Bark
+Shaker
+Shearer
+Sheep Bleat
+Ship Creak
+Singer
+Slammer
+Slicer
+Snake Hiss
+Snaker
+Sneezer
+Snorer
+Snorter
+Spade Drop
+Spitter
+Splasher
+Squawker
+Squeaker
+Squealer
+Squirrel Rustle
+Squisher
+Stampede
+Stamper
+Steel Clank
+Steel Crash
+Steel Drop
+Stomper
+Strangler
+Striker
+Strummer
+Swan Cry
+Swatter
+Swiper
+Tinkerer
+Toad Croak
+Tree Fall
+Tweeter
+Vulture Scream
+Walloper
+Warbler
+Whacker
+Whistler
+Wolf Growl
+Wolf Howl
+Wolf Yelp
+Wolverine Yelp
+Wood Chop
+Wood Crack
+Wood Creak
+Wood Drop
+Wood Scrape

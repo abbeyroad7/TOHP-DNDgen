@@ -1,8 +1,11 @@
-;v2.2.0
+;v3.0.0
 ;;Todo
 ;GUI
+;Tagging system for races
+;Cleanup code, brackets
 #Requires AutoHotkey v1.1+
 Vars:
+Habitat = Temperate
 Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
 Inputbox, Race,,,,200,100
 	If InStr(Race, " ")
@@ -72,7 +75,22 @@ Generate:
 	Random, ColorRnd, 1, %C_Lines%
 	FileReadLine, COLOR, %ColorFile%, %ColorRnd%
 	COLOR := StrSplit(COLOR, A_Tab)
+	Last_0 := StrReplace(Last_0, "{COLOR}", Color.1)
 	Last_1 := StrReplace(Last_1, "{COLOR}", Color.1)
+	Last_2 := StrReplace(Last_2, "{COLOR}", Color.1)
+	
+	If (InStr(Last_0, "{FLORA}")) || If (InStr(Last_1, "{FLORA}")) || If (InStr(Last_2, "{FLORA}"))
+			{	;Collapse
+				FloraFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Beastiary\Flora\%Habitat%.ini
+				Loop, Read, %FloraFile%
+					Flora_Lines = %A_Index%
+				Random, FloraRnd, 1, Flora_Lines
+				FileReadLine, Flora, %FloraFile%, FloraRnd
+				;Msgbox %Mammals%	;Debug
+				Last_0 := StrReplace(Last_0, "{FLORA}", Flora)
+				Last_1 := StrReplace(Last_1, "{FLORA}", Flora)
+				Last_2 := StrReplace(Last_2, "{FLORA}", Flora)
+			}
 	
 	Output:
 	If FileExist(LastFile_0)

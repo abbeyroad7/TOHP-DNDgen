@@ -1,3 +1,5 @@
+Humblewood template = sanitized petnames
+
 Gallus = Human firstnames, bird-like last names
 Genasi = Human firstnames mixed with elemental names, human last names
 Giff = English town names for surnames
@@ -10,3 +12,8 @@ Grung = s2 nicknames
 Hadozee = Human template
 Half-Elf = human/elf names
 Orc = s1 nicknames
+Kor = elf surnames
+Simic = elven, human, vedalken
+Tiefling = Human surnames
+Troll = nickname surnames
+Ursine = Russian names

@@ -49,6 +49,7 @@ Daisy
 Dana
 Dani
 Daphne
+Dari
 Darla
 Darlene
 Dodie
@@ -99,6 +100,7 @@ Kitty
 Lady
 Laika
 Lainey
+Lali
 Lassie
 Libby
 Lily
@@ -109,12 +111,14 @@ Luna
 Maddie
 Maeve
 Maggie
+Maza
 Mia
 Millie
 Misty
 Mollie
 Molly
 Mona
+Moxy
 Nova
 Peggy
 Penny
@@ -141,7 +145,10 @@ Willow
 Winnie
 Wren
 Yumi
+Ziki
+Zima
 Zo
 Zoe
+Zori
 Zuzu
 Zyrtec

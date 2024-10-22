@@ -59,6 +59,7 @@ Kiba
 Kit
 Lamb Chop
 Lenny
+Levi
 Lucky
 Major
 Max
@@ -103,4 +104,6 @@ Trip Hazard
 Tripp
 Willy
 Winston
+Winston
 Wolf
+Wolt

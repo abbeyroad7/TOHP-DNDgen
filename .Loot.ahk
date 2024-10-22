@@ -1,4 +1,4 @@
-;v2.7.1
+;v2.7.2
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -197,13 +197,18 @@ Loop, %Qty%
 					Loot = {NAME}
 					NC = 1
 				}
+			If (Instr(Prompt, "flora"))
+				{
+					Loot = {FLORA}
+					NC = 1
+				}
 			If (Instr(Prompt, "rare"))
 				{
 					;Msgbox rarity set to Rare
 					Rarity = 4_Rare.txt
 					fLines = %4_Lines%
 					;Msgbox %4_Lines%
-					NC = 1
+					;NC = 1
 				}
 			Goto, Randomize	;Skip rarity tables
 		}
@@ -257,7 +262,6 @@ Loop, %Qty%
 		Random, ColorRnd, 1, %C_Lines%
 		Random, RaceRnd, 1, %Race_Lines%
 		Random, RaceNamesRnd, 1, %RaceNames_Lines%
-		If (Prompt = "")	;Empty prompt grabs from rarity table
 			FileReadLine, Loot, %Dir%\%Rarity%, %FirstRnd%
 			FileReadLine, COLOR, %Dir%\Banks\.Colors.ini, %ColorRnd%
 			FileReadLine, RaceNames, %Dir%\Banks\RaceNames.txt, %RaceNamesRnd%

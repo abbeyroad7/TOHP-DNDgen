@@ -1,42 +1,88 @@
-;v3.0.0
+;v3.4.0
 ;;Todo
 ;GUI
 ;Tagging system for races
 ;Cleanup code, brackets
+;Unify global script/names script
+;Integrate into Foundry actor macro
 #Requires AutoHotkey v1.1+
-Vars:
+#SingleInstance
+Import:
+{
 Habitat = Temperate
 Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
+RaceDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient
+RaceList = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names\.List.txt
 Inputbox, Race,,,,200,100
 	If InStr(Race, " ")
 		{
 			RaceMF := StrSplit(Race, " ")
 			Race := RaceMF.1
 			Gender := RaceMF.2
-			Goto, Import
+				if (Gender = "m")
+					ImgDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%\Male
+				if (Gender = "f")
+					ImgDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%\Female
+			Goto, Start
+		}
+	If Race =
+		{
+			Loop, Read, %RaceList%
+				Races_Lines = %A_Index%
+			Random, RacesRnd, 1, Races_Lines
+			FileReadLine, Race, %RaceList%, RacesRnd
+			;Msgbox %Race%	;Debug
 		}
 ;Race = Dragonborn
 Random, MF, 1, 2
 	if (MF = "1")
+	{
 		Gender = m
+		ImgDir = %RaceDir%\%Race%\Male
+	}
 	if (MF = "2")
+	{
 		Gender = f
+		ImgDir = %RaceDir%\%Race%\Female
+	}
 
-Import:
+Start:
 FirstFile = %Dir%\%Race%\%Race%_%Gender%.txt
 LastFile_0 = %Dir%\%Race%\%Race%_s0.txt
 LastFile_1 = %Dir%\%Race%\%Race%_s1.txt
 LastFile_2 = %Dir%\%Race%\%Race%_s2.txt
-;Msgbox %First%
+;Msgbox %FirstFile%
 
+if !FileExist(FirstFile)
+	{
+		Msgbox Error 404: %RACE% not found
+		Reload
+	}
+}
 
 Image:
-;Sapient = D:\Documents\Notes\DND\DND\Quartz\DM\Homebrew\Sapient
-;Loop, Files, %Sapient%\*.*, R
-;Image = %Sapient%\%Picture%
-;Gui, Add, Picture,, %Image%
-;Gui, Color, FFFFFF
-;Gui, +LastFound -Caption +AlwaysOnTop +ToolWindow -Border
+{
+Gui, Destroy
+
+
+array := []  ; initialise array
+loop, files, %ImgDir%\*.*  ; match any file
+    array.push(a_loopFileFullPath)  ; append file to the end of the array
+
+total_file_count := array.maxIndex()
+random, random_number, 1, % total_file_count
+random_file := array[random_number]
+Clipboard = %random_file%
+;msgBox, % random_file
+	
+	Gui, Margin, 0, 0
+	Gui , Add, Picture, h600 w-1, %random_file%
+
+	Gui, Color, %color%
+	Gui, +LastFound -Caption +ToolWindow -Border +Resize
+	;Winset, TransColor, %color%
+	Gui, Show, x400 y150
+}
 
 CountNames:
 Loop, Read, %FirstFile%
@@ -107,7 +153,22 @@ Generate:
 	Combine:
 	Clipboard = %First% %Last_1%%Last_2b%
 	ClipWait
-	Msgbox %Clipboard%
+	GUI, new
+	GUI, add, text,, %Clipboard%
+	;Msgbox %Clipboard%
+	Gui, Show, x800 y450
 	End:
+}
+Msgbox
+Reload
+
+EndofFile:
+{
+Escape::
+{
+	Gui, Destroy
+	Reload
+}
++Escape::ExitApp
 }
 return

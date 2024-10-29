@@ -11,9 +11,9 @@ By uploading these tools, I'd like the Word Banks to grow with community-fed con
 # LootGen
 A D&D Loot Generator with an emphasis on **"Theater of the Mind"** storytelling. Using AHK (Autohotkey) script, you can bind this utility to any hotkey of your choosing to overlay any Windows-based environment.
 
-The script is built to randomly select a Prompt line from a loot table and swap out any present tag identifiers with a random line from a corresponding wordbank. Tag identifiers are read as {COLOR}, {RACE}, {BEAST} in the Table and can further add variety in the responses to yield a unique response every time the generator is run.
+Due to its random nature, this tool is meant to be used as a **supplementary** literary device and any generations/details can be used/discarded at will by the GM using them.
 
-Due to its random nature, this tool is meant to be used as a *supplementary* literary device and any generations/details can be used/discarded at will by the GM using them.
+The script is built to randomly select a Prompt line from a loot table and swap out any present tag identifiers with a random line from a corresponding wordbank. Tag identifiers are read as {COLOR}, {RACE}, {BEAST} in the Table and can further add variety in the responses to yield a unique response every time the generator is run.
 
 In addition, the script copies generated text to your Clipboard for ease of use.
 

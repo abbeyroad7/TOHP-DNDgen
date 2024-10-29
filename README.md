@@ -13,7 +13,9 @@ A D&D Loot Generator with an emphasis on **"Theater of the Mind"** storytelling.
 
 The script is built to randomly select a Prompt line from a loot table and swap out any present tag identifiers with a random line from a corresponding wordbank. Tag identifiers are read as {COLOR}, {RACE}, {BEAST} in the Table and can further add variety in the responses to yield a unique response every time the generator is run.
 
-In addition, the script automatically copies generated text to your Clipboard for ease of use.
+Due to its random nature, this tool is meant to be used as a *supplementary* literary device and any generations/details can be used/discarded at will by the GM using them.
+
+In addition, the script copies generated text to your Clipboard for ease of use.
 
 ## ![Examples](https://github.com/abbeyroad7/TOHP-DNDgen/tree/main/Loot/.Screenshots)
 {CONDITION} A tombstone  Reads 'Here lies {NAME}. Cause of death: {SUBJECT}'

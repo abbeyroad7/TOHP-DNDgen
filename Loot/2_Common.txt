@@ -28,13 +28,12 @@ Bonesaw	The bonesaw was used to amputate body parts after the skin had already b
 Brandistock	"This peculiar spear-like weapon is popular among travelers and law enforcement. The brandistock's three-pronged head is retractable, which renders it indistinguishable from a quarterstaff (unless closely inspected). Extending the blades is instantaneous, but pulling them back requires you to spend an action.
 Brass Chamber Pot	A brass chamber pot in which has been hidden 3 pieces of rosy quartz.
 Brass Knuckles	A set of brass knuckles. Used, but in good condition.
-Bronze Tower Shield	A tower shield of bronze, cast into the likeness of a chimera's heads and enameled to provide the appropriate colors. +3 AC, Strength 17, Stealth Disadvantage.
 Carnelian Gemstone	This is an opaque orange gemstone set in a small brooch.
 Carthus Tome of Pyromancy	An old pyromancy tome from Carthus containing pyromancies crafted for battle. It gives the impression it might have fallen through from a different plane of existence.
 Carved Wooden Mantle	A carved wooden mantle, meant to be mounted above a fireplace, crafted of ash-wood and stained a medium brown. The left side is carved in images of demons and flames, the right in images of angels and air. The top is carved into an idyllic forest theme and has a moon above the left corner and a sun above the right.
 Cat Pendant	An electrum pendant shaped like a curled-up cat.
 Cestus	A reinforced gauntlet which protects the knuckles and transforms mere punches into lethal blows. This weapon cannot be disarmed. It takes an action to don or doff a cestus.
-Chalcedony Gemstone	"This pale white gemstone has a waxy luster and is slightly translucent. 
+Chalcedony Gemstone	This pale white gemstone has a waxy luster and is slightly translucent. 
 Chicken Eggs	A dozen chicken eggs; hollowed out and filled with white flour.
 Child's Mittens and Hat	Rabbit-fur mittens and hat sized for a child.
 Chrysoprase Gemstone	An apple-green gemstone consisting of a variety of chalcedony that contains nickel.
@@ -49,7 +48,6 @@ Colloquial Black Speech for Orcs, Trolls and Men	This book appears to be a phras
 Copper Bars	Four bars of copper.
 Copper Necklace	A copper necklace set with a small amulet shaped into a symbol representing the sun.
 Copper Tongue Scraper	A copper tongue scraper
-Cow	A cow. It's a real hoofer.
 Crystal Vase	A large crystal vase, silver trimmed, with a dozen dead roses and some stagnant water within.
 Dart	{1d20} normal bone darts. They resemble fletched knitting needles, about 1 foot in length. Not used often by themselves, but rather as ammunition in a blowgun. Can be dipped in poison and used as an effective delivery device.
 Dead Warrior	The skeletal remains of a long-dead warrior, wearing a suit of plate armor which still glistens as if it had been polished yesterday. The name of every warrior to ever don the armor has been inscribed upon the front and back of the chest plate, covering nearly every inch of its surface with precisely written, black runes. A careful inspection of the armor will reveal that there remains room for one last name.
@@ -66,7 +64,7 @@ Electrum Sheet	A large (18'x28'), rectangular electrum sheet with ancient writin
 Elephant Tusks	A collection of six elephant tusks.
 Fairy Wing Cage	A small wooden case holding four pairs of fairy wings.
 Field Tent	A large, ornate field tent such as a lord would have, room for 12 persons
-Fire Agate Gem	"Fire Agate is the name given to chalcedony which contains thin lines of iridescent goethite. When properly cut, the iridescence displays red, brown, gold, and green hues, and the finest specimens are partly translucent.	"
+Fire Agate Gem	"Fire Agate is the name given to chalcedony which contains thin lines of iridescent goethite. When properly cut, the iridescence displays red, brown, gold, and green hues, and the finest specimens are partly translucent.
 Flask Bandolier	A bandolier holding 8 silver flasks (empty (x3), brandy (x2), acid (x1), ogre blood (x1), gold dust (x1, value of gold: 12gp). (Flasks: 3gp each, bandolier: 5gp, ogre blood (to alchemist): 12gp, acid: 10gp, brandy: 
 Flask Belt	Utility belt of flasks
 Fluted Short Spear	A ceremonial short spear; ash wood with an iron point. Seven red and three blue dyed vulture feathers are attached to the head of the spear. The iron is fluted to whistle through the air, if thrown.
@@ -96,10 +94,9 @@ Iol Gem	Iol is actually short for Iolite (cordierite), although a common nicknam
 Iron Flask	An iron flask holding a viscous liquid of intense, emerald-green that smells faintly of citrus fruit. The liquid is a concentrated, magical dye for clothing and the like, equal to four full barrels of normal dye. If consumed, it turns the drinker green for a full month.
 Ivory Dress	A lovely ivory-colored dress of silk with flowing sleeves. The dress has tiny pearls sewn at the neckline.
 Ivory Mice	A small sack containing 32 carved ivory mice
-Jade Fountain	A decorative fountain, crafted elegantly from a single block of jade and decorated with gold leaf, in which the water flows in the wrong direction.
 Jade Pendant	A small, white jade pendant without necklace. The pendant depicts a unicorn rampant with a cracked back leg.
 Jallak's Shield	A small steel shield, triangular, emblazoned with a griffon device in red on a field of gray. This battered shield is inscribed on the interior with the words: 'May this shield be your protection in battle, Jallak. Honor the Galbrand name.'
-Jasper Gem	"Jasper is an opaque quartz found in reds, browns, and blacks. Very rare specimens are blue or have bands of blue against the other colours. Jasper can be crushed and used in making potions and magical devices which protect against poison.	"
+Jasper Gem	"Jasper is an opaque quartz found in reds, browns, and blacks. Very rare specimens are blue or have bands of blue against the other colours. Jasper can be crushed and used in making potions and magical devices which protect against poison.
 Jewel Wood	A 6' stack of 1' x 8' x 12' planks of rare, scented jewel wood
 Kilan Wester's Royal Recipes	A large tome filled with over one hundred recipes for wild boar, goose, and venison; written by Kilan Wester, a former royal chef (retired).
 Knife Vest	Knife vest ' holds {1d8} knives!
@@ -120,7 +117,7 @@ Masterwork Gaming Darts	With an elegant hinged case of black onyx, the character
 Matroshka Seeds	Within a wooden box carved with pastoral scenes lies a leather purse, and within the purse are a handful of seeds. If these seeds are planted, they will take root and grow into plants of unnatural shape, hue, and life unlike anything seen upon this world, and operating by utterly alien principles.
 Medicinal Herbs	A cabinet containing 24 glass jars of various medicinal herbs
 Mineral Oil	2 oz bottle of mineral oil
-Moonstone	"Moonstone is an opaque, white feldspar gem polished to a bluish sheen. Old legends say that the sight of a moonstone would cause a lycanthrope to revert to his animal form. Whether or not this is true is unknown as anyone close enough to find out apparently hasn't lived to tell the tale. However moonstones have been used in spells that effect this particular curse.	"
+Moonstone	"Moonstone is an opaque, white feldspar gem polished to a bluish sheen. Old legends say that the sight of a moonstone would cause a lycanthrope to revert to his animal form. Whether or not this is true is unknown as anyone close enough to find out apparently hasn't lived to tell the tale. However moonstones have been used in spells that effect this particular curse.
 Moonstone Sheath	A dagger sheath of bronze, set with a small moonstone.
 Moradin's Magical Bestiary	A bestiary!
 Onyx Gemstone	This gemstone has opaque bands of black and white across it's surface.
@@ -132,13 +129,13 @@ Pouch of Healing Potions	A large carry pouch made from the skin of a monkey. Ins
 Sardonyx Gemstone	Bands of white-yellow sard cross the surface of this dark onyx gemstone.
 Scythe	"This weapon is inspired by the common farming implement used to cut swaths of grown hay, but it has a straight handle and a heavier blade. Despite its humble origins, the scythe is recognized as a symbol of death in many cultures because of its use in reaping.
 Seimai's Guide to Healing Tonics	A relatively small compendium of information about healing tonics.
-Shandon Gem	"Shandon is another name for natrolite; its slender, colorless crystals yield tiny faceted gems used often in veils and robes in order to capture the beading effect of water glistening upon the material.	"
-Skydrop Gem	"Skydrop is the common name given to clear or lightly colored tektite material; fragments of glass of celestial (meteoric) origin, found in the vast shifting sands of Anauroch and other deserts.	"
+Shandon Gem	"Shandon is another name for natrolite; its slender, colorless crystals yield tiny faceted gems used often in veils and robes in order to capture the beading effect of water glistening upon the material.
+Skydrop Gem	"Skydrop is the common name given to clear or lightly colored tektite material; fragments of glass of celestial (meteoric) origin, found in the vast shifting sands of Anauroch and other deserts.
 Spade	"A spade is a simple tool designed for digging soil, the head can be made of any material that can hold its shape, but is most frequently made of metal to facilitate cutting into soil.
-Star Diopside Gem	"Star Diopside is the most prized form of a hard, durable gemstone that is rarely found in attractive colours. It is usually too dark for beauty, however mountain and streambed-pebble crystals of a pale green hue make attractive stones such as diopside. When a gem is found that is darker green it can be cut in such a fashion so to produce four- or six-rayed stars.	"
+Star Diopside Gem	"Star Diopside is the most prized form of a hard, durable gemstone that is rarely found in attractive colours. It is usually too dark for beauty, however mountain and streambed-pebble crystals of a pale green hue make attractive stones such as diopside. When a gem is found that is darker green it can be cut in such a fashion so to produce four- or six-rayed stars.
 Star Rose Quartz	This gemstone is a polished pink sphere. When viewed at a specific angle with a source of light an asterism (star-effect) is visible across it's surface. 
-Sunstone Gem	"Sunstone is a feldspar jem, closely related to moonstone, and more properly known as oligoclase. Sunstone can be colorless or faintly greenish and of facet grade, but most common by far is its softer (cabochon) variety. This yields gemstones that have bright red or orange spangles (minute crystals) suspended in a nearly colorless background in a parallel fashion, giving the whole a rich golden or redish brown color.	"
-Tchazar Gem	"Tchazar is the common name given to aragonite, a straw-yellow gemstone found in elongated, prism-shaped crystal form. It is soft and fragile, and requires skilled cutting to yield faceted gems..	"
+Sunstone Gem	"Sunstone is a feldspar jem, closely related to moonstone, and more properly known as oligoclase. Sunstone can be colorless or faintly greenish and of facet grade, but most common by far is its softer (cabochon) variety. This yields gemstones that have bright red or orange spangles (minute crystals) suspended in a nearly colorless background in a parallel fashion, giving the whole a rich golden or redish brown color.
+Tchazar Gem	"Tchazar is the common name given to aragonite, a straw-yellow gemstone found in elongated, prism-shaped crystal form. It is soft and fragile, and requires skilled cutting to yield faceted gems..
 The Recipes and Ruminations of One Dradeel of Tethir	The Recipes and Ruminations of One Dradeel of Tethir is a book with food recipes from Dradeel. Even a casual look will inform the reader that he was a wizard with an addled mind.
 The Three Rules to Poisoncraft	This tatty old tome is missing a number of pages, leaving whatever the third rule of Poisoncraft was completely unknown. Hopefully you'll manage with the first two, unlike whomever owned this book before you.
 Tobacco Cask	A small cedar cask of dwarven pipe tobacco.
@@ -149,10 +146,10 @@ Unfinished Zircon Gem	This gemstone has not yet been finished, but even in its u
 Unusable Scroll	A tattered, and sadly unusable, scroll fragment, inscribed with a spell unknown to any living mage.
 Usk Brandy	A five gallon cask of usk brandy.
 Vial of Antitoxin	A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs. 
-Waterstar Gem	"Waterstar is also called achroite or colourless tourmaline and is rare in the Realms. This stone is riddled with flaws and inclusions and hence only a small portion is fit for cutting.	"
+Waterstar Gem	"Waterstar is also called achroite or colourless tourmaline and is rare in the Realms. This stone is riddled with flaws and inclusions and hence only a small portion is fit for cutting.
 Wooden Wind Chimes	A set of wooden wind chimes which plays a different tune depending upon the direction of the wind which disturbs it.
-Ziose Gemstone	"Ziose is the name given by sages to a particular facet-grade variety of ziosite; a rare mineral that yields cut stones that flash three vivid hues depending on how the light catches them; purple, blue, and red, or purple, green, and red. Very large (fist- or foot-sized) gems are found and are prized for use in pendants and brooches.	"
-Zircon Gemstone	"Zircon is a brownish crystal found in igneous (volcanic) rocks. Zircon attains its pale blue shade with heating and cutting (usually facet-cut).	"
+Ziose Gemstone	"Ziose is the name given by sages to a particular facet-grade variety of ziosite; a rare mineral that yields cut stones that flash three vivid hues depending on how the light catches them; purple, blue, and red, or purple, green, and red. Very large (fist- or foot-sized) gems are found and are prized for use in pendants and brooches.
+Zircon Gemstone	"Zircon is a brownish crystal found in igneous (volcanic) rocks. Zircon attains its pale blue shade with heating and cutting (usually facet-cut).
 Ram's Head Mace	A silver-headed heavy mace, the head of which is shaped into the likeness of a ram's head.
 Random Monster Taxidermy	Random monster taxidermy
 Raven Statue	A life-size basalt statue of a raven.
@@ -245,14 +242,14 @@ Wrought Iron Sign	A large, wrought-iron sign crafted to read: 'Beware of Wyvern'
 Zombie Dust	A small, brown glass jar, sealed with wax, with a gray dust inside. A white label is affixed to the jar, and reads: 'Zombie Dust' in a shaky script. (It is zombie dust.)
 Terrible Thermometer	This thermometer has a long, silver blade and a pommeled wooden handle. "Come here, monster! I just want to take your temperature!"
 Double Axe	A normal hand axe, only there's two of them.
-Belt of Fattening	
-Morph Blade	
-Lucky Coin	
-Wand of Pillows	
-Gravedigger	
-Giggle Water	
-Entangled Coins	
-Ring of Fire Detection	
+Belt of Fattening
+Morph Blade
+Lucky Coin
+Wand of Pillows
+Gravedigger
+Giggle Water
+Entangled Coins
+Ring of Fire Detection
 Drunkard's Hat	A simple straw hat.
 Leather Armor	The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.
 Padded Armor	Padded armor consists of quilted layers of cloth and batting.
@@ -272,6 +269,63 @@ Alchemist's Fire	This sticky, adhesive fluid ignites when exposed to air. As an 
 Silver Ring	A simple silver ring that bears no inscription or identifying marks on it's surface.
 Sharpening Sheath	A dagger sheath of hardened leather, set with a number of cheap decorative stones. Any dagger kept within this sheath is automatically sharpened as if it were a fresh blade.
 Frosted Dagger	A simple dagger with a blue hilt. The blade is almost always covered in frost.
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
+{1d50} copper pieces
 {1d50} copper pieces
 {1d50} copper pieces
 {1d50} copper pieces
@@ -377,7 +431,6 @@ Wooden rake with several missing tines
 Small jar of honey
 Iron shovel with a rusty blade
 Pair of bronze earrings shaped like leaves
-Wooden needle case with a single needle
 Sack of carrots
 Set of wooden eating utensils
 Folded cloth apron
@@ -389,14 +442,9 @@ Worn map of a nearby town
 Pair of iron shears
 Bundle of hay
 Small iron frying pan
-Old brass padlock with no key
 Carved wooden totem in the shape of a fish
-Simple clay mug
 Torn piece of sailcloth
 Set of iron tongs
-Cracked lantern
-Ragged leather coin purse
-Bundle of sewing needles
 Clay brick
 Rusted garden trowel
 Empty wine bottle
@@ -407,38 +455,22 @@ Old, tattered woolen blanket
 Small wooden mallet
 Empty birdcage
 Torn handkerchief
-Oil lamp, out of fuel
-Dull pair of scissors
-A spool of thread
+Oil lamp	Needs oil.
 Small hand broom
-Tools and Items of Use
 Set of iron fishing weights
 Half-used stick of chalk
 Empty leather quiver
-Broken wooden shield
 Small hammer with a chipped head
 Pair of work gloves
-A single carpenter's nail
-Old horseshoe file
-Tarnished bronze chisel
-Worn-out saddle bag
-Coil of thin wire
-A small pair of rusty pliers
 A single whetstone
-Broken pickaxe head
-Folded bundle of rope
+Folded bundle of rope	{1d50} ft
 Pair of mud-caked boots
 Set of carpenter's tools
 Small hand-held bellows
-Box of iron nails
 Pouch of dried fish hooks
 Large burlap sack
-Empty spice jar
 Metal flask with a dent
-Small ceramic jar with a missing lid
-Old clay vase
 Worn-out coin pouch
-A wooden crate, half-broken
 Leather satchel with a torn strap
 Empty steel flask
 Permanently Damp Rag	A damp rag which carries a faint musty smell.
@@ -454,7 +486,6 @@ Bundle of dried flowers
 Bronze ring engraved with leaves
 Faded, water-stained family portrait
 Worn-out stuffed animal
-A simple brass hairpin
 Small wooden carving of a ship
 Woven basket, partially damaged
 Brass candle snuffer
@@ -468,7 +499,6 @@ Miscellaneous Mundane Items
 Pack of dried tobacco leaves
 Small iron cauldron
 Wooden ruler, splintered at one end
-Empty scroll case
 Torn map of a faraway land
 Folded paper fan
 Old wooden stool with three legs
@@ -506,6 +536,15 @@ Small iron horseshoe charm
 {CASE}Book	Reads '{ADJ} {NOUN}'
 {CASE}Book	Reads '{ADJ} {NOUN}'
 {CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
+{CASE}Book	Reads '{ADJ} {NOUN}'
 {CASE}Book	Reads '{RACE} {NOUN}'
 {CASE}Book	Reads '{RACE} {NOUN}'
 {CASE}Book	Reads '{RACE} {NOUN}'
@@ -543,6 +582,19 @@ Small iron horseshoe charm
 {CASE}Book	Reads 'The {SUBJECT}'
 {CASE}Book	Reads 'The {SUBJECT}'
 {CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads 'The {SUBJECT}'
+{CASE}Book	Reads '{SUBJECT}s'
+{CASE}Book	Reads '{SUBJECT}s'
+{CASE}Book	Reads '{SUBJECT}s'
+{CASE}Book	Reads '{SUBJECT}s'
+{CASE}Book	Reads '{SUBJECT}s'
 {CASE}Book	Reads '{SUBJECT}s'
 {CASE}Book	Reads '{SUBJECT}s'
 {CASE}Book	Reads '{SUBJECT}s'
@@ -555,8 +607,22 @@ Bottle of rubbing alcohol
 {CASE}Book	Reads 'The Study of {SUBJECT}'
 {CASE}Book	Reads 'The Study of {SUBJECT}'
 {CASE}Book	Reads 'The Study of {SUBJECT}'
+{CASE}Book	Reads 'The Study of {SUBJECT}'
+{CASE}Book	Reads 'The Study of {SUBJECT}'
+{CASE}Book	Reads 'The Study of {SUBJECT}'
 An apple
 An apricot
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
+{1d12} arrows
 {1d12} arrows
 A {MATERIAL} ashtray
 A {COLOR} backpack capable of holding +{1d6} of weight
@@ -572,8 +638,7 @@ A banner for {LOC}
 A container filled with basil
 A basket of {BEAST} skins
 A tincture holding {1d100} {COLOR} beads
-{1d4} duck beaks
-{1d4} bird beaks
+{1d4} {BIRD} beaks
 A sack of beans
 A basket of bees	If party opens, beeswarm
 A beehive tucked away in a basket	If party opens, beeswarm
@@ -609,7 +674,13 @@ A {COLOR} belt made of {FABRIC}
 A {COLOR} belt made of {FABRIC}
 {1d8} of {color}berries
 A pair of bifocals
-A {COLOR} bird's feather
+A {COLOR} {BIRD} feather
+A {COLOR} {BIRD} feather
+A {COLOR} {BIRD} feather
+A {COLOR} {BIRD} feather
+A {COLOR} {BIRD} feather
+A {COLOR} {BIRD} feather
+A {COLOR} {BIRD} feather
 {1d4} crisp biscuits
 A {COLOR} blanket made from {FABRIC}
 A wooden board
@@ -654,11 +725,11 @@ A {COLOR} toga made of {FABRIC}
 A bottle of tonic water
 A {COLOR} tophat
 A {COLOR} towel made of {FABRIC}
-A children's toy of {SUBJECT}	Made in {LOC}
-A children's toy of {SUBJECT}	Made in {LOC}
-A children's toy of {SUBJECT}	Made in {LOC}
-A children's toy of {SUBJECT}	Made in {LOC}
-A children's toy of {SUBJECT}	Made in {LOC}
+A children's toy of a {SUBJECT}	Made in {LOC}
+A children's toy of a {SUBJECT}	Made in {LOC}
+A children's toy of a {SUBJECT}	Made in {LOC}
+A children's toy of a {SUBJECT}	Made in {LOC}
+A children's toy of a {SUBJECT}	Made in {LOC}
 A portable eating tray
 {1d20} tree seeds
 A trenching mattock	{RACE} shovel used to dig trenches
@@ -770,3 +841,81 @@ An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
 An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
 An unlabeled {color} elixir. Smells of {spice}. {UP}{flavor} taste.	{effect}
 White-out	Blot out mistakes on paper
+A {material} figurine of a {SUBJECT}
+A fishing reel
+A small net	Large enough to ensnare small creatures
+{FABRIC} sandals
+A sack of flour
+A forged military ID
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} {fruit}s
+{1d4} glass beakers
+{1d4} glass beakers
+A map of the surrounding area
+{COLOR} {FABRIC} gloves
+A tiny bottle of adhesive
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A glass jug of {MAMMAL} milk
+A religious totem for {GOD}
+A {COLOR} gown made of {FABRIC}
+A small bag of grains
+A wrapped salad bowl of {NUT}s, {FRUIT}s and {VEGETABLE}s
+A small bag containing {NUT}s
+A small bag containing {NUT}s
+A small bag containing {NUT}s
+A small bag containing {NUT}s
+A small bag containing {NUT}s
+A small bag containing {NUT}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+{1d8} {Vegetable}s
+A book that reads 'A Guide to {SUBJECT}'
+A hacksaw
+A hammer
+A handsaw
+A {color} hat	Made of {MATERIAL}. +{bonusmod} CHA
+An unfashionable {color} hat	Made of {MATERIAL}. -1 CHA
+A hatchet
+A {color} haversack made of {material}	+10 carrying weight when used in conjunction with a backpack.
+A soldier's helmet	Made of steel. +1AC
+A jar of bee's honey
+A jar of bee's honey
+A {color} hood made from {fabric}
+A large fishing hook	12" tall
+A dog collar with the name {NAME}
+A child's doll of a dragon, woven from leather cords
+{1d20} arrows
+{1d20} arrows
+{1d20} arrows
+{1d20} arrows
+{1d20} arrows
+A bag of ball bearings	As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.

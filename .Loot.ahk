@@ -1,13 +1,14 @@
-;v2.7.2
+;v3.0.0
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
 ;If category prompt is entered, it does not exit the mode correctly
 ;# Todo
-;Tag identifiers to signal qty, FRUIT.3
+;Add Item pictures to lootbanks
+;Specify rolltables, wildmagic
+;Tag identifiers to signal qty, FRUIT.3, simplifyt base code to recursive loop
 ;Animal mixer
 ;A hyperlink tag
-;A hover GUI to show original bank
 ;A true dice roller, grab digits from pattern
 ;Banks: food, food ingredients, religions
 ;Items, 5e.tools
@@ -16,12 +17,11 @@
 ;edit nouns for loot, queue\nouns1
 ;Fill out race names db
 ;Natural language syntax, for words ending in s, a/an, etc.
-;GUI input
 ;GUI to regen certain aspects
 ;Loop tags
 ;Icons, export snapshot to clipboard
+;Grab first image off of google
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
-;Foundry importer
 Debug = 1	;1=off
 Level = 4	;Specify player's current level
 Habitat = Temperate	;Specify your world's habitat
@@ -202,6 +202,21 @@ Loop, %Qty%
 					Loot = {FLORA}
 					NC = 1
 				}
+			If (Instr(Prompt, "vegetable"))
+				{
+					Loot = {vegetable}
+					NC = 1
+				}
+			If (Instr(Prompt, "fruit"))
+				{
+					Loot = {fruit}
+					NC = 1
+				}
+			If (Instr(Prompt, "spell"))
+				{
+					Loot = {spell}
+					NC = 1
+				}
 			If (Instr(Prompt, "rare"))
 				{
 					;Msgbox rarity set to Rare
@@ -224,27 +239,27 @@ Loop, %Qty%
 			Rarity = 0_Test.txt
 			fLines = %0_Lines%
 		}
-		If RarityRnd between 1 and 45
+		If RarityRnd between 1 and 35
 		{
 			Rarity = 1_Mundane.txt
 			fLines = %1_Lines%
 		}
-		If RarityRnd between 46 and 79
+		If RarityRnd between 36 and 80
 		{
 			Rarity = 2_Common.txt
 			fLines = %2_Lines%
 		}
-		If RarityRnd between 80 and 90
+		If RarityRnd between 81 and 92
 		{
 			Rarity = 3_Uncommon.txt
 			fLines = %3_Lines%
 		}
-		If RarityRnd between 91 and 96
+		If RarityRnd between 93 and 98
 		{
 			Rarity = 4_Rare.txt
 			fLines = %4_Lines%
 		}
-		If RarityRnd between 97 and 99
+		If RarityRnd between 98 and 99
 		{
 			Rarity = 5_VeryRare.txt
 			fLines = %5_Lines%
@@ -255,6 +270,7 @@ Loop, %Qty%
 			fLines = %6_Lines%
 		}	
 	}	
+	
 	
 	Randomize:
 	{
@@ -497,6 +513,15 @@ Loop, %Qty%
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{LOC}", Location)
 			}
+			If (InStr(Loot, "{GOD}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\.Gods.ini
+					Loc_Lines = %A_Index%
+				Random, LocRnd, 1, Loc_Lines
+				FileReadLine, God, %Dir%\Banks\.Gods.ini, LocRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{GOD}", God)
+			}
 			If (InStr(Loot, "{REGION}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\.Regions.ini
@@ -560,36 +585,32 @@ Loop, %Qty%
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{FRUIT}", FRUIT)
 			}
-			If (InStr(Loot, "{MATERIAL}"))
+			If (InStr(Loot, "{Vegetable}"))
 			{	;Collapse
-				Random, MaterialRnd, 1, 18
-					If MaterialRnd = 1
-						Material = gold
-					If MaterialRnd between 2 and 3
-						Material = silver
-					If MaterialRnd = 4
-						Material = platinum
-					If MaterialRnd between 5 and 6
-						Material = copper
-					If MaterialRnd = between 7 and 8
-						Material = bronze
-					If MaterialRnd = 9
-						Material = obsidian
-					If MaterialRnd = 10
-						Material = imitation gold
-					If MaterialRnd = 11
-						Material = diamond
-					If MaterialRnd between 12 and 13
-						Material = steel
-					If MaterialRnd between 14 and 15
-						Material = metal
-					If MaterialRnd between 16 and 18
-						Material = wood
-					If MaterialRnd = 19
-						Material = platinum
-					If MaterialRnd = 20
-						Material = bone
-				Loot := StrReplace(Loot, "{MATERIAL}", Material)
+				Loop, Read, %Dir%\Banks\Foods\.Vegetables.ini
+					Loc_Lines = %A_Index%
+				Random, LocRnd, 1, Loc_Lines
+				FileReadLine, Vegetable, %Dir%\Banks\Foods\.Vegetables.ini, LocRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{Vegetable}", Vegetable)
+			}
+			If (InStr(Loot, "{Nut}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Foods\.Nuts.ini
+					Loc_Lines = %A_Index%
+				Random, LocRnd, 1, Loc_Lines
+				FileReadLine, Nut, %Dir%\Banks\Foods\.Nuts.ini, LocRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{Nut}", Nut)
+			}
+			If (InStr(Loot, "{Material}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\.Materials.ini
+					Loc_Lines = %A_Index%
+				Random, LocRnd, 1, Loc_Lines
+				FileReadLine, Material, %Dir%\Banks\.Materials.ini, LocRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{Material}", Material)
 			}
 			If (InStr(Loot, "{SPELL}"))
 			{	;Collapse
@@ -720,26 +741,69 @@ Loop, %Qty%
 		}
 		If NC = 0
 		{
-			Msgbox {%Condition%} %Loot%
-			Clipboard = {%Condition%} %Loot%
+			Generation = {%Condition%} %Loot%
+			;Clipboard = %Generation%
 		}
 		If NC = 1
 		{
-			Msgbox %Loot%
-			Clipboard = %Loot%
+			Generation = %Loot%
+			;Clipboard = %Generation%
 		}
+		
+		GUICode:
+		{
+			Action := []
+			Action%A_Index% = %Generation%
+			;Msgbox %Action1%
+			GUI, Color, 050505	;GUI bg color
+			Gui, Font, s10 cGray, Centaur
+			GUI, add, text, gAction, (%CONDITION%) %Rarity%
+	
+			Gui, Font, s14 cWhite, Centaur bold
+			GUI, add, button, gAction w700, %Loot%
+		}
+		
+}	;End of Qty loop
+
+;Goto, Start
+
+GUIShow:
+{
+	Gui -Caption
+	Gui, Show, AutoSize Center
+	pause
 }
 
-Goto, Start
+Action:
+{
+	MouseGetPos, , , id, control
+	GuiControlGet buttonText, , %control%
+	Clipboard = ## %buttonText%`n`n
+	
+	FoundryImport:
+		{
+		FoundryCheck:
+			{
+			SetTitleMatchMode, 2
+			if WinExist("Foundry Virtual Tabletop")
+				Winactivate, Foundry Virtual Tabletop
+			else
+			{
+				Msgbox,,,Foundry instance not found. Returning...,2
+				Return
+			}
+		}
+		Send ^v
+		
+	}
+}
 
-;MainGUI:
-;	GUI_Color := StrReplace(Color.2, "#")
-;	Gui, Add, Text,, Enter command:
-;	Gui, Add, Edit, vLoot
-;	Gui, Add, Button, default, OK
-;	
-;	Gui, Color, %GUI_Color%
-;	Gui -Caption
-;	Gui,Show
-;
-;Exit
+EndofFile:
+{
+Escape::
+{
+	Reload
+}
++Escape::ExitApp
+}
+return

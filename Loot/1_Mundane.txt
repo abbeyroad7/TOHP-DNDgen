@@ -41,8 +41,6 @@ Deer Bust	The mounted head of a deer, it's impossibly massive horns have broken 
 Demon's Vale Wine	A one-gallon cask of Demon's Vale Wine; a fiery red wine known to be made from hot peppers.
 Dice (6 Sided)	{1d6} six sided dice. Probably used in some silly tabletop game.
 Dire Bat Wings	Hanging from a drying rack are two large Dire Bat wings. It is unclear how long they have been seperated from the rest of the bat, but they are in good condition and could potentially be used as a crafting material.
-Disk of Balance	A disk of finely polished stone. On one side, the Elvish rune for death is inscribed in blackest obsidian. Upon the other, the Dwarven rune for life is inscribed in the palest ivory.
-Weight Training Equipment	The party finds a complete set of bronze and carved stone weight training equipment issued to the 4th army of some Ancient Empire. There is an inscription in one of the weights that reads "Dost thou even lift, brother?"
 Dried Flower	A flower that has been dried out to preserve it.
 Dust Ruby	A ruby the size of a man's fist which sparkles and gleams with the promise of untold wealth in the faintest of lights, but which crumbles to dust upon the lightest touch.
 Electrum Bracer	An archer's bracer of leather and electrum.
@@ -56,7 +54,6 @@ Flesh Shield	A small wooden shield bound in human skin bearing a tattoo that app
 Flint & Steel	A carved steel striker and a piece of shaped flint that allows the user to start a fire.
 Fool's Gold	A handheld water pan with a number of chunks of pyrite in it, otherwise known as "Fool's Gold". You might be able to convince someone that these nuggets are real gold, but not for very long.
 Fragrant Torches	A bag containing {1d8} torches infused with pleasant fragrances. This may have been owned by a tanner, to cover the overwhelming stench of tannin that is used in the leathermaking process.
-Frolee's Guide to Follicle Perfection	A wizard called Frolee appears to have mass produced a five page guide to mustaches and beards. It has a unique, hairy cover made out of bearskin.
 Garlic	A wreath of eight garlic buds.
 Gem	A teal gem.
 Gem of Azurite	A small Azurite gem. It is opaque and a deep mottled blue in colour.
@@ -95,13 +92,11 @@ Lead Coins	Satchel of {1d20} gold painted lead coins.
 Leather Quiver	
 Leather Satchel	
 Little Riding Hood	A bright red hooded cape sized for a child, spattered with dried blood.
-Lynx Eye Gem	"Lynx eye is a specific type of labradorite (a feldspar gemstone). Labradorite as a class of stones is pale to dark gray and has patches of colored reflections. This ""flash"" is most commonly blue but can be of all shades. ""Green Flash"" labradorite is called lynx eye in the Realms.	"
+Lynx Eye Gem	"Lynx eye is a specific type of labradorite (a feldspar gemstone). Labradorite as a class of stones is pale to dark gray and has patches of colored reflections. This ""flash"" is most commonly blue but can be of all shades. ""Green Flash"" labradorite is called lynx eye in the Realms.
 Lynx Eye Gem	Lynx eye is a special type of labradorite. It is pale to dark grey and has patches of coloured reflections. This "flash" is most commonly blue but can be of all shades. "Green Flash" labradorite is called Lynx Eye in the local regions.
-Magical Ring of Engagement	Someone used this to get married
 Magnifying Glass	
 Malachite Gem	A large malachite gem. It is striated light and dark green across its polished surface.
 Man Mask	A mask carved to look like the face of a man, but which has been fitted for something wholly other.
-Mechanical Mice	Mechanical mice which run through the walls of an ancient keep. They have done so for longer than written record can attest. They seem to be a benign presence ' lacking even the slightest pestilent qualities of their flesh-and-blood counterparts ' and have become an accepted presence here. Who their creator was, how they are fueled, and what purpose they serve (if any) are mysteries which may never be solved.
 Mistletoe	{1d4} sprigs of mistletoe
 Moss Agate Gem	A beautiful moss agate gem. It is a translucent pink with a mossy gray texture.
 Net	An unused fishing net made out of spun mammoth hairs.
@@ -133,7 +128,7 @@ Tin Cup	A tin drinking cup.
 Tinderbox	A full tinderbox.
 Tobacco	A small amount of tobacco wrapped in a large soft leaf.
 Torch	A short stick with oil-soaked cloth wrapped around one end so it can burn as a torch.
-Turquoise Gem	"Turquoise is an opaque aqua stone with darker mottling, and is found in the more arid reaches of the Realms. Horsemen will often place a sliver of this stone in a horse's harness as a sign of good luck.	"
+Turquoise Gem	"Turquoise is an opaque aqua stone with darker mottling, and is found in the more arid reaches of the Realms. Horsemen will often place a sliver of this stone in a horse's harness as a sign of good luck.
 Unreadable Note	A paper note that's been left on a damp floor. It's completely illegible.
 Used Whetstone	An old whetstone and a half-used vial of oil. The stone itself is ever-so-slightly worn into a curve from years of use, but it will be decades before it's wear renders it useless.
 Vanishing Ring	
@@ -171,7 +166,7 @@ Mudbrick Chocolate	Well, it's brown, but that doesn't necessarily make it chocol
 Wooden Plate	A carved wooden plate.
 Sack of Flower Bulbs	A sack of prized flower bulbs
 Sales Receipt	Receipt for delivery of slaves
-Sausages	Package of d6 sausages
+Sausages	Package of {1d6} sausages
 Service Record	A scroll detailing the bound service of two men-at-arms sworn to six months of service.
 Silver Brooch	A silver brooch depicting a mage's tower. (This could be a pass for magical wards at the mage's tower, at the DM's discretion.)
 Silver Spoons	A set of 8 silver spoons.
@@ -318,7 +313,7 @@ Bits of coral pieces
 A cork from a bottle of {BEVERAGE}
 A vial of desert sand
 A {RACE} doll
-A drawing of a {NOUN}
+A drawing of a {SUBJECT}
 {flora}	Plant sample
 {flora}	Plant sample
 {flora}	Plant sample
@@ -329,3 +324,29 @@ A drawing of a {NOUN}
 A pair of eyeglasses
 A {bird} feather
 The beak of a {bird}
+A bag of fingernails
+A fishing hook
+A roll of sticky paper	Used to trap insects like flies
+A framed portrait of a female {RACE}
+A framed portrait of a male {RACE}
+{1d4} small metal gears
+Cracked lantern
+Bundle of sewing needles
+Simple clay mug
+Old brass padlock with no key
+Wooden needle case with a single needle
+Dull pair of scissors
+A spool of thread
+Broken wooden shield
+Small ceramic jar with a missing lid
+Old clay vase
+A single carpenter's nail
+Old horseshoe file
+Tarnished bronze chisel
+Worn-out saddle bag
+Coil of thin wire
+A small pair of rusty pliers
+Broken pickaxe head
+Box of iron nails
+Empty spice jar
+Empty scroll case

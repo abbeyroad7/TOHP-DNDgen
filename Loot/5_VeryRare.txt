@@ -8,8 +8,8 @@ Polymorphed Adventurers Potions	The potions are a polymorphed group of famous he
 Amulet of the Planes	"While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure , you and each creature and object within 15 feet of you travel to a random destination.
 Roll 1d100. On a 1- 60, you travel to a random location on the plane you named. On a 61- 100, you travel to a randomly determined plane of existence. "
 Amulets of Inedibility	These two amulets are enchanted as a pair and both must be worn at the same time for the enchantment to work. Anything wearing it cannot be considered as food.
-Anderson's Medallion	Once per day, you can remove AC of target granted by armor, last until end of your next turn. User takes -2 to AC for same duration. (I think lasting until the end of combat might be a bit op, also  I have named it after Hans Christian Anderson because it makes me thing of the Emperor's New Clothes)
-Animated Rope	Smart {1d50} rope – obeys simple commands, animated like snake
+Anderson's Medallion	Once per day, you can remove AC of target granted by armor, last until end of your next turn.
+Animated Rope	{1d50} feet of magical rope – obeys simple commands, animated like a snake
 Animated Shield	While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.
 Armor +2	You have a +2 bonus to AC while wearing this armor.
 Back to the Beginning Ring	When you take off this ring and it transports you to where you first put it on and disappears.
@@ -28,7 +28,7 @@ Crown of Fingers	A crown of severed, mummified fingers. Each finger bears three 
 Crystal Pyramid	A finely-crafted, clear crystal pyramid with no noticeable impurities.
 Cursed Eye	Allows a blind user to see but at a cost. (will at random cause you to attack others)
 Dark Gemini Ring	A set of dark blue rings, which rotate freely against each other, but cannot be separated.
-Diamond	"Diamond is a hard clear gem which can be clear blue-white, rich blue, yelow or pink. The hardest of all the gemstones, and among the most valuable. Diamonds are usually found in northern mountains by underground races, and then traded to the surface world.	"
+Diamond	Diamond is a hard clear gem which can be clear blue-white, rich blue, yelow or pink. The hardest of all the gemstones, and among the most valuable. Diamonds are usually found in northern mountains by underground races, and then traded to the surface world.
 Donkey Legs	"These wooden donkey legs can be attached to anything  (but are not strong enough to carry literally anything).  Once attached, the thing will follow you around like a loyal donkey.  For example, you can attach them to a heavy statue and then have it walk itself out of the dungeon.  Donkey legs are as strong as two donkeys!
 Earthbreaker Totem	A thick shaft of wood with totemic carvings. It has a slight gradual spike shape, being thinner and sharper at one end, and thick and flat at the other.
 Eldhand's Mind Slug	In the laboratory, vault, or home of the famed (and thought long dead) Eldhand the Scholar sits a small glass box. Across the lid is a grid of very tiny holes for air. The box contains a pink, slimy slug admidst some wet sawdust. A tag on the box reads “Eldhand.” The bug can be killed easily, like any slug. However, placing the slug near one's nose or mouth allows it to crawl up into the player's brain. The player will go into a coma for 3d4 hours and, upon awakening, will find that the voice of Eldhand the Scholar can be heard inside their head. He is quite sarcastic, pessimistic, and usually upset that someone so “pea-brained” ended up finding him. However, he can be convinced to give help in scholarly matters—granting the host +6 on all Knowledge Arcana, Knowledge History, and Spellcraft checks. He is reluctant to give out help unless you have proven yourself a more than worthy host. But he is generally willing to help in exchange for your player eating some odd or expensive food item (plums, goat cheese, and Ruby Port liquor tend to be his favorites).
@@ -90,3 +90,21 @@ A deed to an estate in {loc}
 A holophoner	A magical wind-instrument that emits a cloud of Arcane light, depicting a holographic scene corresponding to the vision of its player.	Must be attuned to play well.
 7-leaf clover	Grants the luck feature
 Deceptive Lucky Coin	Can be activated as a bonus action, this coin gives Advantage on attack rolls at the cost of dealing out Disadvantage on a nearby creature's attack roll.
+A set of wings made from {BIRD} feathers	Its use allows for the ability to glide through mild wind currents.
+A flugelhorn made of {MATERIAL}	Plays {adj}
+A glockenspiel	Tuned to the musical notes to play traditional {RACE} music
+A vial of raw Arcane energy	May be used as a spellcasting focus for spells requiring up to 100GP worth of materials.
+A vial of raw Arcane energy	May be used as a spellcasting focus for spells requiring up to 100GP worth of materials.
+A vial of raw Arcane energy	May be used as a spellcasting focus for spells requiring up to 100GP worth of materials.
+A vial of raw Arcane energy	May be used as a spellcasting focus for spells requiring up to 100GP worth of materials.
+Aetheric Gauntlets	Crafted with silvery leather and adorned with small, floating gemstones, these gauntlets channel a subtle hum of arcane energy.	The wearer can cast an invisible Mage Hand at will and use it with +10 pounds of force.
+Gauntlets of Emberforge	These gauntlets are forged from volcanic rock. They are warm when worn and glow faintly with red embers.	The wearer gains resistance to fire damage. Once per day, the wearer can slam their fists together to create a fiery shockwave, dealing 3d8 fire damage to all creatures within 5 feet.
+Gauntlets of Wild Surge	Fashioned from entwined branches and bark that twist around the wearer’s arms, these gauntlets pulse with wild, untamed energy.	A spellcaster can use the gauntlets to risk a “wildsurge” at the cost of spending 1 hit dice, casting a spell at one level higher than normal. Doing so requires a roll on the Wild Magic table.
+Bag of Holding	This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents.	Retrieving an item from the bag requires an action.
+A book that reads 'The Horror of {SUBJ}'
+A book that reads 'Horrors of the {BEAST}'
+A book of poetry written by undead elves
+A dragon's tooth, engraved with an unknown sigil
+A dagger carved from a dragon's talon
+A leather pouch filled with tiny draconic teeth
+A bagpipe	Made from wooden reeds and a {COLOR} {PATTERN} bag

@@ -44,7 +44,7 @@ Boots of the Winterlands	A pair of hide boots lined with dense, warm white fur. 
 Box o' Diseases	An ornate box containing corked vials of different diseases
 Box of Evil Miniatures	A collection of humanoid figurines, each poised in an unspeakable act of evil. They are packed in box which has been wrapped in lamb's wool.
 Bracers of Archery	While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.
-Bracers of Binding	"The bracers appear to be Bracers of Specialization, but when donned, bind the wearer wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the Drow. The recipient, believing them to be very powerful, will often don them before examinating them. At this point, the drow find it amusing to conjure a hook horror.	"
+Bracers of Binding	"The bracers appear to be Bracers of Specialization, but when donned, bind the wearer wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the Drow. The recipient, believing them to be very powerful, will often don them before examinating them. At this point, the drow find it amusing to conjure a hook horror.
 Brass Dragon Egg	A delicate brass dragon egg; hollowed out and painted into a seascape, resting on a wooden stand.
 Brass Mug	A plain brass mug with a surprisingly ornate jade inlay.
 Bronze Caltrops	A cask full of bronze caltrops.
@@ -65,10 +65,9 @@ Crayon Torches	This set of 12 torches burn different colors. There are two sets 
 Crystal Sword	When used this sword will deliver 1 instant hit for max damage, including bonuses. Once used, the sword shatters into crystal shards. Anyone within one square must roll reflex or take 1d4 damage from shard pieces.
 Dagger of Slicing	Dagger of slicing ' ignores armor bonus
 Death Talker Charm	Charm that tells 1 truth about a creature killed in the area
-Debt of a Soul	Debt of a Soul ' contract of soul ownership
-Deck of Cards	An ancient deck of cards with five suits ' clovers, swords, clubs, hearts, and dragons.
+Debt of a Soul	Debt of a Soul A soul-ownership contract for {NAME}
+Deck of Cards	An ancient deck of cards with five suits: Clovers, Swords, Clubs, Hearts, and Dragons.
 Decrepit Skeleton in Armor	The skeletal remains of a long-dead warrior, wearing a suit of plate armor which has long since tarnished. The name of every warrior to ever die by the last wearer's hand has been inscribed upon the front and back of the chest plate, covering nearly every inch of its surface with chaotically written, black runes.
-Dragon Balm	Dragon balm ' reduced heat damage
 Dragon Statuette	A statuette of a dragon, forged from the finest mithril, which responds to yes or no questions which are posed to it in draconic. The answers given may appear prophetic or oracular, but are actually random.
 Druid's Magnet	A wood chip which acts as a magnet, despite its non-metallic nature.
 Drums of Endurance	Once per day, give +10ft to movement, and +1 to attack and damage rolls to all allies.
@@ -77,7 +76,6 @@ Dust of Appearance	Stack of 4, user covers 20ft radius in magic dust that shows 
 Dust of Coughing and Sneezing	Magical dust that makes anyone cough and sneeze (combat)
 Dust of Dispelling	stack of 4, user covers 20ft radius in magic dust that shows anything that is hidden or dispellable.
 Edible Greatsword	Works like a normal greatsword. Great tasting and low in calories! Regenerates 6 inches per day.
-Eldritch Flint & Steel	Eldritch flint & steel ' 10' reach ' blinding/minor burns
 Elven Engraved Combs	An elegant carved comb of oak, engraved with the name Aethelren and decorated with twin dragons. Elsewhere, a similar comb of ash, engraved with the name Ilthorien and decorated with twin unicorns, can be found.
 Empty Mason Jar	This magical mason jar is made of uneven, lumpy, blue-green glass with a copper lid. No matter what is placed in this transparent jar, it will always appear to be empty from the outside--so long as the lid is on. On the lid is pressed 'calasse,' Elven for 'clean.' It cannot hold more than its actual volume.
 Enchanted Apple	A purple-colored apple. (This enchanted apple has all the properties of a potion of Cure Light Wounds. 50gp)
@@ -88,7 +86,7 @@ Finely Woven Rug	A finely made 10' x 12' wool floor rug. The center of the rug d
 Flask of Nightmare Ale	Half-full flask of nightmare ale ' 1 sip = 1d4 hours fear check per hour; full measure = 1d4 hours horrifying hallucinations vs DC save for early retirement
 Flask of St. Cuthbert	A pair of steel flasks, sealed with wax bearing the symbol of St. Cuthbert. (Holy water, 25 gp each)
 Fundial	A sundial which runs backwards.
-Garnet Gemstone	"Garnet is a general class of crystals ranging from deep red to violet in colour. a typical cut for this rare isometric gem is 12 to 24 sides, with the very rare 36 sides being known from time to time. it is rumored a 48-sided garnet exists although none have ever been able to track down its location.	"
+Garnet Gemstone	Garnet is a general class of crystals ranging from deep red to violet in colour. a typical cut for this rare isometric gem is 12 to 24 sides, with the very rare 36 sides being known from time to time. it is rumored a 48-sided garnet exists although none have ever been able to track down its location.
 Giant-King's Necklace	Giant-King's platinum necklace with crimson diamond worn by dragon
 Giant's Arrow	A huge arrow, with a steel tip and copper wire inlaid spirally down the shaft. To a medium or large creature, it behaves just like a javelin. However, when thrown, it whistles loudly.
 Glaive	This is a short pole-arm resembling a Fauchard or Guan do, with an additional spike for thrusting. It deals slashing damage when wielded in one hand and piercing damage when wielded in two hands.
@@ -103,7 +101,7 @@ Golden Tablet	A tablet of pure gold, inscribed with the core rites and beliefs o
 Greataxe of Blindness	This is a large greataxe, with a steel shaft and silver floating blade much like the Telescoping Glaive. 
 Heart Shaped Token	A small, heart-shaped token carved out of rose-colored sandstone, holding the mad soul of a princess who was trapped there by a sorcerer many centuries ago. Her body remains in the hidden royal sepulchers of her homeland, perfectly preserved by ancient magic.
 Hero Dolls	These start getting made after the party does something particularly heroic. Little cloth dolls that look like party members, when squeezed, the caster spouts illusionary flames, the cleric spouts prayers "Praise Avandra!", the fighter has kung-fu action where he swings his sword.
-Horn Coral Gem	"Horn Coral, which is also called night coral, is a deep black coral, similar to angel's skin save for its solid color. It is incredibly difficult to work with, and is used in jewelry as a polished twig or branch of material, or is cut cabochon.	"
+Horn Coral Gem	A deep black coral, similar to angel's skin save for its solid color. It is incredibly difficult to work with, and is used in jewelry as a polished twig or branch of material, or is cut cabochon.
 Immovable Rod	This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
 Ivory Statuette	A carved sculpture of jungle animals on an ivory tusk.
 Jade Buttons	A small collection of antique Jade buttons.
@@ -125,16 +123,16 @@ Menesta's Book of Stored Skill	This magical book has no discernable writings on 
 Merchant's Dagger Box	A merchant's leather case containing a selection of twenty well-made daggers of varying designs.
 Minting Tools	A set of dies and hammers for minting the king's coinage.
 Mithral Armor	Mithril is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
-Moonbar Gemstone	"Moonbar is a pearly white, opaque gemstone, usually pale blue with green and gold mottling. Related in type to fire and black opals, but is only slightly more common.	"
+Moonbar Gemstone	"Moonbar is a pearly white, opaque gemstone, usually pale blue with green and gold mottling. Related in type to fire and black opals, but is only slightly more common.
 Moss Earplugs	Two peanut-sized balls of moss sit atop gnarled wooden knobs. Placing one of them in each ear causes total deafness'or total hearing protection, whichever your preference. The player cannot hear anything, and must succeed on a DC 16 Will save to speak a single sentence comprehensibly. However, they are totally immune to all sonic attacks and songs and can fall asleep extremely well. The earplugs can be removed at will.
-Pearl	"Pearls consist of layers of aragonite agonizingly formed around a bit of grit or other irritant inside oysters and other mollusks. The resulting pearl has a rich, deep luster. Most of the pearls in the realms are white, however there are varieties that are much more rare such as rainbow and black.	"
+Pearl	"Pearls consist of layers of aragonite agonizingly formed around a bit of grit or other irritant inside oysters and other mollusks. The resulting pearl has a rich, deep luster. Most of the pearls in the realms are white, however there are varieties that are much more rare such as rainbow and black.
 Pouch of Healing Potions	A large carry pouch made from the skin of a monkey. Inside are {1d6} Potions of Greater Healing. 
 Pouch of Mushrooms	A small brown pouch that smells faintly musty. Inside it are {1d4} colourful mushrooms that are unrecognizable, even to a particularly knowledgeable alchemist or naturist. If determined, a painstaking delve through a herbalists library might identify the mushrooms as "sub-space mushrooms" in a madly written diary of a man claiming to be a deposed king called Cooper.
 Ring of Dubious Might	A silver ring, encrusted with a small topaz. Upon wearing it on their finger, the wearer feels incredibly strong and confident. However, entering combat, their confidence immediately dissipates, leaving them terrified.
 Sentient Dagger of Sneaking	This sentient dagger attempts to help anytime it's owner tries to sneak by whistling inconspicuously.  For some reason it seems to have been discarded.
 Silk Robe	A long silk robe with golden embroidery.
 Silver Necklace	This silver necklace has a gemstone pendant.
-Sphene Gem	"Sphene is a soft, brittle gemstone (and, like scapra, easily worked by unskilled cutters) of various yellow to green shades, the most prized of these being a fine emerald green.	"
+Sphene Gem	"Sphene is a soft, brittle gemstone (and, like scapra, easily worked by unskilled cutters) of various yellow to green shades, the most prized of these being a fine emerald green.
 Spinel Necklace	A spun leather necklace of deep green Spinel beads.
 Tapestry	A large, well-made tapestry depicting a local duke.
 The Rhinoclean Helm	The Rhinoclean helm is a large iron cap with visor shaped like the head of a certain kind of beetle. The helm's wearer has advantage on bull rushes and can stand up from being prone once on each of its turns without expending movement. 
@@ -142,7 +140,7 @@ The Rhinocles Helm	The Rhinocles helm is a large iron cap with visor shaped like
 Tourmaline Gemstone	A multi colored rectangular Tourmaline gemstone.
 Townshend's Cudgel	"Townshend's Crudgels was invented by its namesake, Peter ""Unknown"" Townshend, a traveling bard who wished his lute to both give beauty and take it away (preferably with a good old fashioned thrashing). His lute design, later copied by some of his admirers, was a simple oak lute, reinforced with an iron shell, to maintain the soft vibration of the sound against the wooden interior, and to give the lute the strength to crack open an orc's skull with a well placed blow.
 This weapon functions both as a lute and a weapon. When used as a lute, it is considered to be a lute and does not require a separate proficiency bonus to play. However, if the user rolls a critical miss with the weapon (a 1 on an attack roll) the lute may become slightly damaged and will require the user to spend an hour to retune it. If the instrument is not returned, whenever the instrument is played, the user is disadvantaged on the Perform check. This weapon can also be used as a bard's spellcasting focus.
-Water Opal	"Water Opal is a colourless, clear opal with a play of colour. It is rare and valuable in the Realms, where it is used in scrying devices.	"
+Water Opal	"Water Opal is a colourless, clear opal with a play of colour. It is rare and valuable in the Realms, where it is used in scrying devices.
 Potion of False Bluff	A potion vial containing a sweet. honey-smelling golden syrup. There is a label on the vial written in common, which reads "Potion of Deception".
 Potion of Harmless Flaying	A pearlescent green potion in a glass vial that seems to swirl playfully when started at.
 Raven Feather Fans	A pair of pole mounted fans made of giant raven feathers
@@ -173,7 +171,7 @@ Shrunken Head	Shrunken head with command word ' 1 ray spell per hour
 Signet Ring of Gold	A large signet ring of gold, worked with a unicorn crest. Any commoner who dons the ring will suddenly discover its metal heated to unbearable levels ' causing one hit point of damage per round. However, anyone with noble blood (however slight), or destined to become a noble at some point in the future, who does the same will suffer only a momentary flash of pain (with an accompanying 1 hp of damage). They will find that the unicorn crest has reshaped itself to their own heraldry, which has also been branded in miniature form upon the back of the finger. From this point forward, they can put on or remove the ring at will without any further ill effects.
 Skull Idol	Gold dipped idol of several skulls
 Smoke of Deceit	One time use only, grants perfect hide and move silently rolls to all allies. effect is lost if moved within 10ft of enemy
-Aeger's Hide	"This heavy and thick bear hide is all that remains of the fabled Aeger. Several hundred years ago, the Aeger, a giant bear, terrorized hundreds of small villages up and down the Sword Coast. The bear was invulnerable to fire, cold, or acid. Finally the young men and women of several villages banded together, forming a militia almost two hundred people strong. The Aeger was surrounded and finally slain. Less than a dozen villagers survived, and they carved the Aeger's hide amongst themselves. Out of one of the pieces this armor was created.	"
+Aeger's Hide	"This heavy and thick bear hide is all that remains of the fabled Aeger. Several hundred years ago, the Aeger, a giant bear, terrorized hundreds of small villages up and down the Sword Coast. The bear was invulnerable to fire, cold, or acid. Finally the young men and women of several villages banded together, forming a militia almost two hundred people strong. The Aeger was surrounded and finally slain. Less than a dozen villagers survived, and they carved the Aeger's hide amongst themselves. Out of one of the pieces this armor was created.
 Solomon's Fishing Pole	A cursed fishing pole made of blackened ash. It will never catch a fish ' although, if one attempts to use it unbaited, they will succeed in catching skeleton fish.
 Sortida Compass	Brass dungeon compass, runic markings, always points to nearest exit.
 Spider-Silk Rope	Giant spider silk rope ' sticks to most surfaces (including oiled gloves)
@@ -194,7 +192,7 @@ Thunder Pommel	When embedded in the hilt of a weapon. -deal and additional 1d6 l
 Tiny Phantasm	A floating mass of swirling colours the size of a penny. It follows your every command and leaves a multicolour trail across any surface it touches. Cannot physically interact in any other way.
 Totem Pole	A pinewood totem pole of the northern barbarians, bearing six faces (from top to bottom): a hawk, a demon, an elk, a man, a fox, and a white dragon. The hawk has a silver feather on the left side of its face (8gp), the demon has a gold nose-ring (6gp), the elk has copper antlers (4gp), the man has electrum eyes (3gp each), the fox has a black onyx nose (15gp), and the dragon has ivory teeth (30 teeth worth 1gp each). The pole is fifteen feet tall and weighs 200 pounds. (4.57m, 90.7kg)
 Trap Detection Key	A token/key designed to deactivate all traps within the dungeon, requires activation at security box in secret depths of deepest part of dungeon
-Triple Barreled Crossbow	Triple 'barreled' crossbow
+Double-barreled Crossbow	Loads 2 bolts. Multi-attack rules.
 Troll-Rubber Boots	Troll-rubber boots.
 Underworld Currency	Underworld Currency ' lead coins; purple rocks/crystals, fairy dust, dragon scales, dna globules (rocks/capsules with runic understanding of specific creatures), tally bones, soul traps/crystals
 Visikus	This dagger belonged to the great druid, Marcek, a wise and cunning elf who fell only to the fiery Wyrm, Brazzemel, during his quest to reclaim the lost Eladrin spell tomes. Marcek inherited this dagger from his master and mentor, Garbasen the Sage, who crafted it with ancient Eladrin magic. Covered in etched runes and jewels, this dagger holds a legendary history and a powerful magic core.
@@ -212,8 +210,35 @@ Sword of Frost
 Axe of Blood	
 Hypnotic Spinning Top	
 Blood Amulet	A bronze circle held by a red ribbon.
-Adventurer's Robe	"This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.	"
+Adventurer's Robe	"This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
 Air Elemental Statue	This enchanted statuette depicts the swirling form of an air elemental. When stood close, you can feel a cooling breeze swirling around the statuette.
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
+{1d50} silver pieces
 {1d50} silver pieces
 {1d50} silver pieces
 {1d50} silver pieces
@@ -338,7 +363,13 @@ A {MATERIAL} bangle
 A banjo
 A bankvault key
 A banknote worth {1d100} GP
-A bear pelt
+A {MAMMAL} pelt
+A {MAMMAL} pelt
+A {MAMMAL} pelt
+A {MAMMAL} pelt
+A {MAMMAL} pelt
+A {MAMMAL} pelt
+A {MAMMAL} pelt
 {1d4} Bear claws
 {1d2} Bearseye
 Beavertail
@@ -413,7 +444,7 @@ A wheel of {RACE} {cheese}
 A map of the constellations in the nightsky
 A chef's hat
 A piece of coral	{COLOR}-colored
-A patch bearing a familial crest	{NAME}
+A patch bearing a familial crest	Inscribed with the name: {NAME}
 A bag of {GEM}s
 A bag of {GEM}s
 A bag of {GEM}s
@@ -457,3 +488,34 @@ An executioner's hood	Grants +1 to Intimidation
 A {color} hat	Looks {adj}. Grants +{bonusmod} CHA
 A {color} hat	Out of fashion. Some may consider it retro.	Grants +/-{bonusmod} CHA against a DC10
 A {color} fedora
+A folded {region} flag
+An origami scultpure of a {subject}
+A book that reads 'Folktales of the {RACE}s'
+A book that reads 'Folktales of the {RACE}s'
+A book that reads '{REGION} Folklore'
+A book that reads '{REGION} Folklore'
+A pair of {MATERIAL} gauntlets	+1 AC and advantage on Athletics checks involving pushing or pulling.
+A novel that reads 'Mystery of the {SUBJECT}'
+A ouija board	Made with Common and additional characters for {LANGUAGE}
+{1d4} {BIRD} talons
+Frolee's Guide to Follicle Perfection	A wizard called Frolee appears to have mass produced a five page guide to mustaches and beards. It has a unique, hairy cover made out of bearskin.
+A glowstone headlamp	Emits light from a 20ft cone
+{beast} eyes
+A family heirloom	Made of {MATERIAL} and a {GEM}. Inscribed with the {BEASt}-crest of {NAME}
+A family heirloom	Made of {MATERIAL} and a {GEM}. Inscribed with the {BEASt}-crest of {NAME}
+A {race} warhorn	When blown, the horn may summon nearby creatures
+A {race} warhorn	When blown, the horn may summon nearby creatures
+A {race} warhorn	When blown, the horn may summon nearby creatures
+An ingot of {MATERIAL}
+An ingot of {MATERIAL}
+An ingot of {MATERIAL}
+An ingot of {MATERIAL}
+An ingot of {MATERIAL}
+Adjustable stilts	The stilts take 1 minute to put on or remove. They increase the height of any humanoid wearing them by 2 to 5 feet. Each stilt weighs 8 pounds and is 1 foot long when fully collapsed.
+Alchemist's Doom	This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's doom as an improvised weapon. On a hit, the target takes 7 (2d6) fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC10 Dexterity check to extinguish the flames.
+Alchemist's Fire	When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning.
+A {MATERIAL} amulet with a {GEM} inlay
+{1d6} ankheg eggs
+Aquarium Ball	This clear, 1-inch-thick glass orb is the size of a large melon and hangs from a thick chain. It can hold up to 2 gallons of freshwater or saltwater, allowing it to house aquatic creatures such as fish or frogs. The cap near the top of the ball can be unscrewed for access. One Tiny creature or two Diminutive creatures can fit comfortably into an aquarium ball. The water within the orb must be changed daily in order to keep the creatures within alive. Otherwise, the inhabitants begin to slowly suffocate.
+Assassin's Blood	A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned.
+Backpack Parachute	A humanoid wearing this piece of gear can deploy the parachute as a reaction while falling, or as an action otherwise. The parachute requires at least a 10-foot cube of unoccupied space in which to deploy, and it doesn't open fast enough to slow a fall of less than 60 feet. If it has sufficient time and space to deploy properly, the parachute allows its wearer to land without taking falling damage. Once it has been used, the parachute takes 10 minutes to repack.

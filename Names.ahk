@@ -1,10 +1,11 @@
-;v3.4.0
+;v3.06.11
 ;;Todo
 ;GUI
 ;Tagging system for races
 ;Cleanup code, brackets
-;Unify global script/names script
-;Integrate into Foundry actor macro
+;New name in mind
+;D20 stats, race, weapons, etc
+;When importing to foundry, seperate pics by race
 #Requires AutoHotkey v1.1+
 #SingleInstance
 Import:
@@ -53,7 +54,8 @@ LastFile_1 = %Dir%\%Race%\%Race%_s1.txt
 LastFile_2 = %Dir%\%Race%\%Race%_s2.txt
 ;Msgbox %FirstFile%
 
-if !FileExist(FirstFile)
+RaceSetDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%
+if !FileExist(RaceSetDir)
 	{
 		Msgbox Error 404: %RACE% not found
 		Reload
@@ -64,7 +66,6 @@ Image:
 {
 Gui, Destroy
 
-
 array := []  ; initialise array
 loop, files, %ImgDir%\*.*  ; match any file
     array.push(a_loopFileFullPath)  ; append file to the end of the array
@@ -73,8 +74,11 @@ total_file_count := array.maxIndex()
 random, random_number, 1, % total_file_count
 random_file := array[random_number]
 Clipboard = %random_file%
-;msgBox, % random_file
-	
+;MsgBox, % random_file
+}
+
+ImageGUI:
+{
 	Gui, Margin, 0, 0
 	Gui , Add, Picture, h600 w-1, %random_file%
 
@@ -146,29 +150,92 @@ Generate:
 			Goto, Combine
 		Loop, Read, %LastFile_0%
 		s0Lines = %A_Index%
-		Clipboard = %First% %Last_0%
-		Msgbox %Clipboard%
+		NameArray = %First% %Last_0%
+		;Msgbox %Clipboard%
 		Goto, End
 	}
 	Combine:
-	Clipboard = %First% %Last_1%%Last_2b%
-	ClipWait
-	GUI, new
-	GUI, add, text,, %Clipboard%
-	;Msgbox %Clipboard%
-	Gui, Show, x800 y450
+	NameArray := []
+	NameArray%A_Index% = %First% %Last_1%%Last_2b%
+	;MsgBox % NameArray%A_Index%
+	
 	End:
+	GUICode:
+	{
+	GUI, Color, 050505	;GUI bg color
+	Gui, Font, s14 cWhite, Centaur
+	GUI, add, button, gAction%A_Index%, % NameArray%A_Index%	;Alt+first character as keyboard shortcut using &
+	Gui, Show, AutoSize Center
+	}
 }
-Msgbox
+pause	;press Escape to resume
 Reload
+
+
+Action1:
+{
+	;MsgBox % NameArray1
+	FoundryName = % NameArray1
+	Goto, FoundryImport
+}
+Action2:
+{
+	FoundryName = % NameArray2
+	Goto, FoundryImport
+}
+Action3:
+{
+	FoundryName = % NameArray3
+	Goto, FoundryImport
+}
+
+FoundryImport:
+{
+	SleepDur = 50
+	ImgPath = %random_file%
+	;Msgbox %ImgPath%
+	
+	;FoundryImage := StrReplace(random_file, "\", "/")
+	;FoundryImage := StrSplit(FoundryImage, "Data/")
+	;FoundryImage := % FoundryImage.2
+	
+	FoundryImage = moulinette/tiles/custom/TOHP/Tokens/NPC/%FoundryName%.webp
+	
+	SetTitleMatchMode, 2
+	if WinExist("Foundry Virtual Tabletop")
+		Winactivate, Foundry Virtual Tabletop
+	else
+	{
+		Msgbox,,,Foundry instance not found. Returning...,2
+		Return
+	}
+	
+	MouseGetPos, PosX, PosY
+	MouseClick, right, 929, 1363	;Right click macro
+	MouseClick, left, 932, 1234	;Edit macro menu
+	
+	Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
+	MouseClick, left, 1232, 831	;body
+	Send ^a{Backspace}^v
+	MouseClick, left, 1477, 1018	;Execute
+	Sleep 50
+	Send {Escape 2}
+	Clipboard = %FoundryName%
+	;MouseMove, PosX, PosY	;Return to OG pos
+	Run, %ImgPath%
+	Run, "K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\NPC\.NewBorder.pdn"
+	
+	Sleep 1000
+	FileMove, %ImgPath%, K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\NPC\.Saved\BaseImg\%FoundryName%.*
+	ExitApp
+}
 
 EndofFile:
 {
-Escape::
++Escape::
 {
-	Gui, Destroy
 	Reload
 }
-+Escape::ExitApp
+^+Escape::ExitApp
 }
 return

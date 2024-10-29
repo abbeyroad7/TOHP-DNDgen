@@ -33,10 +33,8 @@ Backpack of Effortlessness	Halves the weight of anything placed inside of it. No
 Bad Coin	A coin that always comes up tails. Placing it anywhere tails side down causes it to flip itself over after 1 round. It takes 50 pounds of pressure to prevent this flip.
 Bag of Angel Feathers	{1d6} angel feathers aura of good; razor sharp; stronger than steel (can be used as weapon like dagger)
 Bag of Ash	The Bag of Ash acts like a jar of infinite water, except it just makes a grey, sooty ash.
-Bag of Beans	Inside this heavy cloth bag are 3d4 dry beans. The bag weights 1/2 pound plus 1/4 pound for each bean it contains.
 Bag of Tricks, Rust	This ordinary rust coloured cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
 Bag of Tricks, Tan	"This ordinary tan cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
-Ballistic Fist Hammer	Ballistic Fist Hammer (Hammer with each side acting as ballistic fists from Fallout series)
 Banshee Spirit Dagger	"Despite appearing to be a normal dagger, even those not able to recognise the presence of magic can tell that there is something imbued in the unassuming metal hilt and blade.
 Belt of Baby Fire Giant Strength	"To all intents and purposes this resembles a Belt of Fire Giant Stength, and it certainly does have a giant's strength enchantment on it; unfortunately, the it was accidentally made with the strength of a baby fire giant. Fire giant babies have roughly the same strength as an average human man.
 Belt of Dwarvenkind	"While wearing this belt, you gain the following benefits: Your Constitution score increases by 2, to a maximum of You have advantage on Charisma (Persuasion) checks made to interact with dwarves.
@@ -46,7 +44,7 @@ Belt of Hill Giant Strength	"While wearing this belt, your Strength score change
 equal to or greater than 21, the item has no effect on you."
 Berserker Axe	You gain +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon your hit point maximum increased by 1 for each level you have attained.
 Bioluminescent Fluid Lantern	Shake this lantern well and you get 2d4 hours of light. It takes a standard action to shake the lantern and requires 8 hours to 'recharge'.
-Black Opal	"Black Opal has a greenish hue with black mottling and gold flecks. Usually found in ancient hot springs, the gem is tumbled smooth and cut cabochon. The phrase in the north ""Black as an opal"" is used as a subtle form of praise for kind-hearted rogues and the like.	"
+Black Opal	"Black Opal has a greenish hue with black mottling and gold flecks. Usually found in ancient hot springs, the gem is tumbled smooth and cut cabochon. The phrase in the north ""Black as an opal"" is used as a subtle form of praise for kind-hearted rogues and the like.
 Black Pearl	A dark blue-black Pearl.
 Blacksalt's Luckmaker	A worn coin with notched edges.
 Bleeding Rock	A hard, roughly cut piece of basalt rock which bleeds when pressure is applies to it.
@@ -61,12 +59,12 @@ Bone Stylus	Write the name of your antagonist in your flesh and he will leave yo
 Booming Scepter	An elegant, decorative hand held scepter made of bronze and small jewels. You can hear a mild humming resonance when held to your ear.
 Boots of Feral Leaping	Plain leather boots, tattered and worn, but glistening with a soft white light similar to the sunlight reflecting off freshly fallen snow.
 Boots of Levitation	While you wear these boots, you can use an action to cast the levitate spell on yourself at will. 
-Boots of Speed	While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest. 
-Bottle	Once per day, restores 4d2 HP.This goes up to 4d4 at 5, 6d4 at 10,  8d4 at 15 and 10d4 at Cannot use during Combat
+Boots of Speed	While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest.
+Bottle of Life	Once per day, restores 4d2 HP.This goes up to 4d4 at 5, 6d4 at 10,  8d4 at 15 and 10d4 at 20. Cannot use during combat.
 Bottle of Giant's Urine	This bottle stinks before it's even been opened. The stench of it's contents will protect whomever can stomach to wear it from almost any wandering predators. It's very difficult to get said stench out of adventuring gear, however. Potency may vary on weather, but it should ward of predators for at least a day or two.
 Bottle Stopper	A reusable bottle cork embossed with gold leaf and set with amethysts.
 Bowl of Commanding Water Elementals	"While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again
-until the next dawn. The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons."
+until the next dawn. The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons.
 Bracers of Defense	"While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.
 Brazier of Commanding Fire Elementals	While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the conjure elemental spell. The brazier can't be used this way again until the next dawn. 
 Buckler of Friendship	This buckler has been enchanted with the power to protect you and your allies.
@@ -78,7 +76,7 @@ Chimera's Mantel	This Cloak is woven together from the fur of a lion and goat ov
 Cinder Glove	A left-handed glove. It remains warm regardless of atmosphere, and is almost painfully hot to be touched with.
 Circlet of Inconsolable Weeping	Cursed. Anything who puts on this circlet is sent into an irreversible state of misery for 1d4 hours.
 Coiling Rope (50 feet)	This rope coils itself after 10 rounds of being uncoiled, regardless of what is happening to it. It will undo all knots and will wind itself up around one end (always the same end). This process always takes 1 round.
-Collapsible Rod	1', 10', or 20' ' any size you need!
+Collapsible Rod
 Countdown Cutlass	A large sword with jewels that sequentially light up after activation. After the last jewel is lit, the sword will explode!
 Cowardly Blade	A normal, if not well-crafted looking shortsword. There is a sigil of a chicken on the bottom of the pommel.
 Crate of Chaos Mushrooms	This wooden crate is about 60cm by 60cm by 40cm, with 'Chaos Mushrooms' burned into the lid in Sylvan. It fizzes with a faint magical aura, and smells delicious
@@ -105,9 +103,9 @@ Fire Opal	This Fire Opal is a translucent fiery red colour and is set within a b
 Fire Opal Chain	A fine gold chain set with a fire opal.
 Flail of Flagellation	This imposing, three-headed flail has a +2 bonus to attack and damage rolls. Any creature that takes damage from this flail may immediately make a saving throw against any one ongoing effect that is affecting them.
 Frostbite Lilly	A pure white lily that becomes rigid when picked. Its petals are icy cold and shatter like glass if mishandled.
-Gauntlets	The curse of the gauntlets was that no magic would ever help you, beneficial or baneful and anything you were in contact with would lose its magical properties while you're touching it. found out the contact one when visiting flying mage's tower. I was no longer welcome there, but with certain classes the gloves are pretty sweet even considering the downside. Oh also the curse had a very specific trigger, the gauntlets could only be removed if you cast remove curse on them and then had a chaotic neutral halfling pull them off of you with the intention of stealing them. even if you hacked your arms off and then had regeneration cast on you your hands would grow back with the gauntlets on them.
+Cursed Gauntlets	No magic can affect you. The gauntlets can only be removed with Remove Curse.
 Giant Temple Candles	Six giant temple candles. Each is 6' tall, 1' thick, and weighs 100 lbs. They are made of fine white wax, rolled in gold dust, and set with emeralds. (320 gps each)
-Girdle of Femininity/Masculinity	"The cursed Girdle of Femininity and Masculinity, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover.	"
+Girdle of Femininity/Masculinity	"The cursed Girdle of Femininity and Masculinity, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover.
 Gold Circlet	A gold circlet set with four aquamarines.
 Gold Idol	A small gold idol.
 Gold Plated Idols	Gold plated idols ' possession = death penalty
@@ -154,9 +152,9 @@ Silver Platter of Feathers	A light silver platter, 6 inches in diameter, etched 
 Spire of the Manticore	"You gain a +1 bonus to attack and damage rolls with this magical weapon, and it deals an additional 1d8 poison damage. The damage increases by 1d8 if the target is a Monstrosity or Beast.
 Star of Morning's Glory	This Morningstar is made of solid wrought steel, with a heavy spiked head. It behaves like a normal Morningstar, except within 60ft of Evil and Undead creatures and within an hour of Dawn. In any of these cases, the head glows like the tip of a Sunrod, and it becomes a Morningstar +2 which stuns for 1d4+1 rnds on a Critical. Fortitude saves vs stun, with a DC equal to the player's attack roll. Cannot be used by Evil creatures.
 Star Ruby	A translucent ruby with a white star-shaped center.
-Star Sapphire	"Star Sapphire is a precious variation of the sapphire, however is more translucent, with a white star highlighted in its center. A star sapphire has been known to ornament devices which protect against magic.	"
+Star Sapphire	Star Sapphire is a precious variation of the sapphire, however is more translucent, with a white star highlighted in its center. A star sapphire has been known to ornament devices which protect against magic.
 Stones of Ruin	A simple leather pouch filled with 4 small runestones.
-Sun Gem	"This round and polished stone glows with a fierce light and seems to dispel the shadows around you.	"
+Sun Gem	"This round and polished stone glows with a fierce light and seems to dispel the shadows around you.
 Sword of Bleeding	A sharp one-sided blade that is slightly curved.
 Telescoping Glaive	This is a magical Glaive, with an ornately decorated shaft made of solid (but light) steel. The blade is made of silver, and floats near the end unattached to the shaft. Three keywords act on this weapon: anda, sinta, and pahta (long, short, and closed, in Elven). Anda is the longest extent, and the weapon acts as a two-handed glaive. Sinta makes the weapon shorten and behave as a one-handed axe, and pahta shortens the weapon to throwing-axe size. The blade also changes shape and position to fit these weapon styles.
 The Clegane Bowl	This large basin has bloodstains permanently ingrained in it. Any liquid placed in the Clegane Bowl immediately turns into Potion of Greater Hype. When consumed, a dose of this potion doubles the Strength score of the user for 1 hour, up to a maximum of 30 Strength.
@@ -192,10 +190,43 @@ Tracking Dagger
 The Patient Man's Key Ring	
 Adjatha the Drinker	This blade belonged to Dabbar, a long dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
 Albruin	Basalin was a large man, rumored, far from his hearing, to be a werebear. He long wielded the bastard sword Albruin in the protection of his village, slaying giant spiders that plagued the area. The sword protected him from their poison and also allowed him to see invisible Red Wizards who controlled some of the more fantastic variants. The reason for their enmity is unknown.
-Algernon's Cloak	"Algernon's cloak is imbued with magical properties such that the wearer will seem to shine with an inner glow.	"
+Algernon's Cloak	"Algernon's cloak is imbued with magical properties such that the wearer will seem to shine with an inner glow.
 Exceptionally Roguish Hat	"A wide, leather hat, garnished with gold-inlaid thread and exotic bird feathers. Very Vogue.
 Ring of Contrariness	
 Bag of Hurling	
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
+{1d20} gold pieces
 {1d20} gold pieces
 {1d20} gold pieces
 {1d20} gold pieces
@@ -343,3 +374,29 @@ An explosive petard	Used to blast walls or gates. Blasts inward in a 5-foot radi
 A tunnel bomb	An explosive device placed in a tunnel dug under an enemy's fortifications or forces to destroy them from below. Blasts upwards, dealing 6d8 damage in a 10ft cone.
 The eye of a {beast}
 A small bottle of fairy dust
+A {MATERIAL}-encrusted fiddle	Plays {adj}
+A flute made of {MATERIAL}	Plays {adj}
+Forged {REGION} banknotes	Worth {1d100} GP
+Gnomish-Riveted Gauntlets	These sturdy, leather gauntlets are embedded with metal rivets and reinforced for durability. They grant proficiency with tinkering tools and grant advantage on any crafting check that uses Dexterity.	These gauntlets also act as makeshift hammers, enabling the user to improvise small metal repairs or secure nails with ease.
+An Elvish device that can be used to detect the presense of spirits
+An Elvish torchlight	When a hand is circled over the head of the torch it is lit. Mysteriously burns without oil.
+A {MATERIAL} harmonica	Tuned to play the traditional notes of {RACE} music
+Disk of Balance	A disk of finely polished stone. On one side, the Elvish rune for death is inscribed in blackest obsidian. Upon the other, the Dwarven rune for life is inscribed in the palest ivory.
+Bronze Tower Shield	A tower shield of bronze, cast into the likeness of a chimera's heads and enameled to provide the appropriate colors. Requires 17 STR. +3 AC, Stealth Disadvantage.
+A {BEAST} heart
+A bronzewood ring inscribed with the Elvish word for "hope"
+A {COLOR} locket; when it's opened, an elven voice whispers "Always"
+A tiny skull carved from dark wood
+A finger bone inscribed with an unknown sigil
+An ivory flute which produces no sound
+A small journal made from preserved leaves	Signed {NAME}
+A miniature airship in a bottle
+A tincture of antivenom	As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.
+A spellcaster's staff	Fixated on top is a {COLOR} orb used as a Spellcaster's Focus
+A pierced {COLOR} dragonscale on a cord
+A statuette of a dragon carved from black bone
+A brass disk bearing the silhouette of a black dragon
+A small egg-shaped piece of polished bone
+A bone fragment with brass inlaid runes
+A single large seed that's warm to the touch
+Barding armor	Used for a small animal like a dog or cat

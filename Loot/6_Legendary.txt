@@ -39,7 +39,7 @@ Gnomish Stop Clock
 Key Dagger
 Sword that can cut through dimensions  
 Ring that grants true invisibility  
-Cloak that allows unlimited flight  
+A {color} cloak	Allows wearer to take flight for up to 1hr in duration up to speeds of 40MPH
 Amulet that fully regenerates limbs  
 Shield that deflects all magic  
 Staff that summons powerful storms  
@@ -134,4 +134,6 @@ Ring that summons a powerful dragon when worn
 Staff that can create earthquakes  
 Armor that absorbs and stores magic for later use  
 Amulet that grants immunity to death magic  
-Cloak that transports the wearer to an alternate dimension when in danger  
+Cloak that transports the wearer to an alternate dimension when in danger.
+A genie's lamp	Made of gold and various {GEM} gemstones. When rubbed, a djinn will appear to grant 3 wishes.
+Adamantine Ingot	Craftable into any one-handed weapon that deals critical damage on any success attack roll.

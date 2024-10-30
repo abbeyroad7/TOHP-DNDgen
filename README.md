@@ -43,7 +43,8 @@ Current tags include:
 - {RACE} Generates a random Race description name. Example: Elvish, gnomish, dwarvish
 - {RACENAME} Generates the base name of a random race. Example: Elf, gnome, dwarf
 - {COLOR} Generates a random color and its associated Hex value
-- {1d20} Various different dice rollers that can be used for quantities
+- {1d20} Various shorthand dice rollers that can be used for quantities
+- {/r5d100} A dice rolling function if a roll formula is not present
 - {BEAST} Generates a random name of a creature or monstrosity anywhere in the world
 - {MAMMAL} Based on the global "Habitat" variable, a random mammal from that climate is selected
 - {REPTILE}

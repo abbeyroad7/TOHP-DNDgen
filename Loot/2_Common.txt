@@ -923,3 +923,5 @@ A {ROLE}'s uniform
 A {ROLE}'s uniform
 A {ROLE}'s uniform
 A {ROLE}'s uniform
+A crowbar
+A dagger

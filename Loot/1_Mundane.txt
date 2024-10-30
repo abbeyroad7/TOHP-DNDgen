@@ -364,3 +364,4 @@ Woven straw hat with a hole in the brim
 {flora}	Plant sample
 {flora}	Plant sample
 Common clothes
+A {FABRIC} cloth

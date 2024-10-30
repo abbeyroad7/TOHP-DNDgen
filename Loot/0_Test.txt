@@ -1,1 +1,1 @@
-Concussion Grenade	[qftis]
+{Table-DungeonChambers}	{Table-DungeonChamberContents}

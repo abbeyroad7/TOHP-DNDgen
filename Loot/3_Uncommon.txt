@@ -564,8 +564,4 @@ Zulabar's Fist-Stick	A trolls hand mounted on a three foot rod. It will grasp ob
 {SUBJECT} painting on canvas	Signed by {NAME}
 {SUBJECT} painting on canvas	Signed by {NAME}
 {SUBJECT} painting on canvas	Signed by {NAME}
-A {ROLE}'s uniform
-A {ROLE}'s uniform
-A {ROLE}'s uniform
-A {ROLE}'s uniform
-A {ROLE}'s uniform
+Crampons	A crampon is a metal plate with spikes that is strapped to the sole of a boot. A creature wearing crampons can't fall prone while moving across slippery ice.

@@ -1,4 +1,4 @@
-;v3.2.1
+;v3.5.0
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -7,10 +7,7 @@
 ;Prompt individual banks/rarities
 ;Select all to FoundryImport
 ;Add Item pictures to lootbanks
-;Specify rolltables, wildmagic
-;Tag identifiers to signal qty, FRUIT.3, simplifyt base code to recursive loop
 ;Animal mixer
-;A true dice roller, grab digits from pattern
 ;edit nouns for loot, queue\nouns1
 ;Natural language syntax, for words ending in s, a/an, etc.
 ;GUI to regen certain aspects
@@ -107,11 +104,8 @@ Inputbox, QtyMax,,,,200,100
 			Prompt := QtyMaxPrompt.2
 			;Msgbox %Prompt%	;Debug
 		}
-QtyMin := Ceil(QtyMax / 2)
-;Msgbox %QtyMin%
-Random, Qty, %QtyMin%, %QtyMax%
-
-Loop, %Qty%
+		
+Loop, %QtyMax%
 {
 	;Condition
 	{	;Collapse
@@ -147,33 +141,33 @@ Loop, %Qty%
 				{
 					Random, BookRnd, 1, 52
 						If BookRnd between 1 and 3
-							Loot = {CASE}Almanac	Reads 'The Almanac of {ADJ} {NOUN}'
+							Loot = {CASE}Reads 'The Almanac of {ADJ} {NOUN}'
 						If BookRnd between 4 and 6
-							Loot = {CASE}Dictionary	Reads 'The Dictionary of {ADJ} {NOUN}'
+							Loot = {CASE}Reads 'The Dictionary of {ADJ} {NOUN}'
 						If BookRnd between 7 and 10
-							Loot = {CASE}Book	Reads '{ADJ} {NOUN}'
+							Loot = {CASE}Reads '{ADJ} {NOUN}'
 						If BookRnd between 11 and 14
-							Loot = {CASE}Book	Reads '{RACE} {NOUN}'
+							Loot = {CASE}Reads '{RACE} {NOUN}'
 						If BookRnd between 15 and 18
-							Loot = {CASE}Book	Reads '{COLOR} {NOUN}'
+							Loot = {CASE}Reads '{COLOR} {NOUN}'
 						If BookRnd between 19 and 21
-							Loot = {CASE}Biography	Reads 'The Biography of {NAME}'
+							Loot = {CASE}Reads 'The Biography of {NAME}'
 						If BookRnd between 22 and 24
-							Loot = {CASE}Book	Reads 'Tales of {SUBJECT}'
+							Loot = {CASE}Reads 'Tales of {SUBJECT}'
 						If BookRnd between 25 and 26
-							Loot = {CASE}Book	Reads 'The Legend of {SUBJECT}'
+							Loot = {CASE}Reads 'The Legend of {SUBJECT}'
 						If BookRnd between 27 and 30
-							Loot = {CASE}Book	Reads 'The History of {SUBJECT}'
+							Loot = {CASE}Reads 'The History of {SUBJECT}'
 						If BookRnd between 31 and 33
-							Loot = {CASE}Book	Reads 'The Short Stories of {SUBJECT}'
+							Loot = {CASE}Reads 'The Short Stories of {SUBJECT}'
 						If BookRnd between 34 and 42
-							Loot = {CASE}Book	Reads 'The {SUBJECT}'
+							Loot = {CASE}Reads 'The {SUBJECT}'
 						If BookRnd between 43 and 48
-							Loot = {CASE}Book	Reads '{SUBJECT}s'
+							Loot = {CASE}Reads '{SUBJECT}s'
 						If BookRnd between 49 and 50
-							Loot = {CASE}Book	Reads 'The {LOC} {BEAST}'
+							Loot = {CASE}Reads 'The {LOC} {BEAST}'
 						If BookRnd between 51 and 52
-							Loot = {CASE}Book	Reads 'The Study of {SUBJECT}'
+							Loot = {CASE}Reads 'The Study of {SUBJECT}'
 				}
 			If (Instr(Prompt, "gp"))
 				{
@@ -231,6 +225,11 @@ Loop, %Qty%
 					fLines = %5_Lines%
 					;Msgbox %4_Lines%
 					;NC = 1
+				}
+			If (Instr(Prompt, "dungeon"))
+				{
+					Loot = Dungeon				
+					NC = 1
 				}
 			Goto, Randomize	;Skip rarity tables
 		}
@@ -728,6 +727,97 @@ Loop, %Qty%
 				Loot := StrReplace(Loot, "{bonusmodTABLE}", bonusmodTable)
 				Loot := StrReplace(Loot, "{bonusmod}", bonusmod)
 			}
+			If (InStr(Loot, "{/r"))
+			{	;Collapse
+				rollX := StrSplit(Loot, "{/r")
+				Roll := rollX.2
+				Roll := StrReplace(Roll, "}")
+				
+				Dice := StrSplit(Roll, "d")
+				nDice := Dice.1
+				Value := Dice.2
+				
+				DiceSum := 0
+				Loop, %nDice%
+				{
+					Random, DiceRoll, 1, %Value%
+					;Msgbox %DiceRoll%
+					DiceSum += %DiceRoll%
+				}
+				Loot := RegexReplace(Loot, "{/r.+}", DiceSum)
+			}
+			RoomGenerator:
+			If (InStr(Loot, "{Table-"))
+			{	;Collapse
+				Table0 := StrSplit(Loot, "{Table-")
+				Table := Table0.2
+				Table := StrReplace(Table, "}")
+				TableDir = %Dir%\Banks\Tables\%Table%.txt
+				Array := []
+				ArrayCount := 0
+				
+				Loop, Read, %TableDir%
+					{						
+						ArrayCount += 1
+						Array.Push(A_LoopReadLine)
+					}
+				StartRange:
+				{
+					StartLine = % Array[1]
+					StartLine := StrSplit(StartLine, A_Tab)
+					Start := StartLine.1
+					
+					Start := StrSplit(Start, "-")
+					StartRange := Start.1
+					Start_end := Start.2
+					;Msgbox %StartRange% goes to %Start_End%
+				}
+				
+				EndRange:
+				{
+					EndLine = % Array[ArrayCount]
+					EndLine := StrSplit(EndLine, A_Tab)
+					End := EndLine.1
+					
+					End := StrSplit(End, "-")
+					End_start := End.1
+					EndRange := End.2
+					
+					If(EndRange = "00")
+						EndRange = 100
+					;Msgbox %StartRange% goes to %EndRange%
+				}
+				
+				Random, TableRoll, %StartRange%, %EndRange%
+				for index, element in Array
+					{	 
+						EndLine = % Array[index]
+						EndLine := StrSplit(EndLine, A_Tab)
+						End := EndLine.1
+						
+						End := StrSplit(End, "-")
+						StartRange := End.1
+						EndRange := End.2
+						
+						If(EndRange = "00")
+							EndRange = 100
+						
+						;MsgBox % "Element number " . index . " is " . element
+						;Msgbox %StartRange%
+						;Msgbox %TableRoll%
+						
+						If (TableRoll <= StartRange)
+						{
+							Line = % element
+							LineBefore := StrSplit(Line, A_Tab)
+							Line := LineBefore.2
+							;Msgbox %Line%
+							Goto, EscapeArray
+						}
+					}
+				EscapeArray:
+				Loot = %Line%
+			}
 			LootReplacements:
 			{	;Collapse
 				Loot := StrReplace(Loot, "{1d100}", 1d100)
@@ -824,6 +914,7 @@ Action:
 {
 	MouseGetPos, , , id, control
 	GuiControlGet buttonText, , %control%
+	
 	Clipboard = ## %buttonText%`n`n
 	
 	FoundryImport:

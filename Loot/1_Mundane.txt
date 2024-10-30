@@ -1,5 +1,41 @@
-Oily Rags	{1d4} oily rags in an old wicker basket.
-Pickle	On the floor, you find a single pickle wrapped in an oily paper bag. It has a strong distinct smell, but otherwise seems like a normal pickle.
+"Eau D'Ogre" Perfume	Someone has managed to cram all the stench of an Ogre into one reeking bottle. Why? The world may never know. No human should ever willingly apply this to their body or attire.        
+A bag of fingernails
+A bag of {COLOR} bugs
+A blade broken from its hilt
+A block of firewood
+A bottle of an unknown {COLOR} beverage	{FLAVOR} taste
+A bucket
+A child's stuffed {BEAST}
+A collection of butterfly wings
+A container filled with barley
+A cork from a bottle of {BEVERAGE}
+A cup of an unknown {COLOR} beverage	{FLAVOR} taste
+A drawing of a {SUBJECT}
+A fishing hook
+A framed portrait of a female {RACE}
+A framed portrait of a male {RACE}
+A glass of an unknown {COLOR} beverage	{FLAVOR} taste
+A jar of {BEAST} toenails
+A jug of an unknown {COLOR} beverage	{FLAVOR} taste
+A pair of eyeglasses
+A piece of bark
+A random twig
+A roll of sticky paper	Used to trap insects like flies
+A single carpenter's nail
+A single knitting needle
+A small bag of ants
+A small branch
+A small container filled with a {COLOR} ash
+A small pair of rusty pliers
+A spool of thread
+A tooth on a string
+A transaction receipt
+A used toothbrush
+A vial of desert sand
+A {bird} feather
+A {material} club
+A {RACE} doll
+Adamantine Dust	This is a small jar of Adamantine dust, most likely the end result of exposing a Drow item to the light of day. It seems the previous owner wasn't quite ready to let go of it.
 Ancient Sword	A used, slightly rusted double-bladed sword.
 Andar Gem	Andar is hard and durable, yielding translucent gems that flash green-red or brown-red when properly faceted.
 Banded Agate Gem	A round translucent white gemstone with a ring of striped brown through its center.
@@ -7,56 +43,112 @@ Barrel o' Eels	A large barrel of pickled eels. The barrel can be re-used, but it
 Barrel o' Nails	A newly crafted barrel filled with iron nails. Might be difficult for the players to get this around if they don't have a cart.
 Beaver Pelts	A string of {1d8} beaver pelts.
 Belt	A leather belt.
+Bits of coral pieces
 Black Velvet Mask	An ornate black velvet mask sitched with silver thread.
+Blackened frying pan
 Blank Scroll	A blank scroll. It could have any spell in the world on it, eventually. The possibilities are endless.
 Blanket	A thick woolen blanket. Something like this is perfect for wrapping up during those long cold nights spent staring at a cave wall.
 Blood Stained Dress	A blood-stained dress which, despite being found in ruins which have lain undisturbed for centuries, is still a vibrant, stunning blue.
 Blood-Soaked Book	A blood-soaked book; a partially written history about a long-lost keep on the borderlands. The last written page is done in a different hand, and is scrawled with 'The rules have changed!' in large, bold letters. Roughly a third of the book (of 100 pages) has been used. 
 Blue Quartz Gem	A small quartz gemstone shaped in a bevelled square. It is transparent pale blue in color.
 Blue Scarf	A finely woven blue wool scarf.
+Boat Oar	"Made for paddling boats, but it was made sturdy enough to fight strong currents. Maybe it's useful for self-defense in a pinch.
 Bone Butter Churn	A butter churn made of bone slats, bound with hoops of silver. A scrimshaw scene depicting a crowd of human villagers beating a Halfling with shovels and hoes wraps around it.
 Bone Dice	A pair of engraved bone dice.
 Bone Fragments	Bits of bone from an unknown creature.
 Bone Needle	A long needle carved out of bone.
+Bottle of dark ink, half-full
+Box of iron nails
+Brass doorknob
+Brass key, heavy and unmarked
+Broken ink pen
+Broken pickaxe head
 Broken Sword	This is simply a regular sword that has been partially broken, in combat or however. Most people would just get rid of it, but maybe this sword has a nice hilt or sentimental value. 
+Broken wooden comb
+Broken wooden shield
+Bronze brooch shaped like a leaf
+Bronze candle holder, missing its base
+Bronze token with a star shape etched in
+Bundle of chicken feathers
+Bundle of dried flowers
+Bundle of mismatched cutlery
+Bundle of old love letters
+Bundle of old twigs tied with twine
+Bundle of sewing needles
+Bundle of wilted herbs
 Candle	Six red wax candles. 
+Carved Beads	A string of wooden carved beads, tied into a bracelet.
 Carved Bone Statuette	A carved ox bone female figure statue on a wooden base. The statue is {1d20} in height.
+Carved wooden totem of an owl
 Chalk	A small piece of chalk used to draw on any hard surface.
+Charcoal drawing of a cat
+Clay pot filled with soil
+Cloth patch sewn with a dragon insignia
 Cloth Scrap	An old scrap of cloth from a shirt or sheet of some kind. 
 Cloth-of-gold Vestments	These holy garments are made of silk interwoven with gold threads.
+Club	A crude club made to clobber animals and people alike, carved roughly from a thick cedar branch.
+Coil of thin wire
+Coiled rope bracelet
 Comb	A small wooden comb.
 Cooking Pot	A cast iron cooking pot. It smells like it was last used for soup.
 Copper Acorns	Heavy, solid copper acorns with perfect natural detail.
-Carved Beads	A string of wooden carved beads, tied into a bracelet.
-Horseshoe
-Copper Ring	A simple piece of jewlery.
 Copper Chalice	A small copper chalice with a silver filigree.
+Copper coin with a strange symbol
+Copper Ring	A simple piece of jewlery.
+Copper thimble
+Cracked lantern
+Cracked magnifying glass
+Cracked seashell
 Crowbar	Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.
 Crude Box	A wooden box. Carved by someone who has had no formal training in woodworking, and it shows.
 Crude Holy Symbol	A crudely carved wooden holy symbol.
 Crude Pipe	A crudely carved wooden pipe.
 Curious Powder Box	Metal box of unidentifiable powder.
 Dead Fey	A long-dead fey, dried and petrified as a trophy and hanging from ceiling.
+Dead Rat	An old dead rat. It has begun to decay, and eminates an unpleasant smell.
 Deer Bust	The mounted head of a deer, it's impossibly massive horns have broken in places.
 Demon's Vale Wine	A one-gallon cask of Demon's Vale Wine; a fiery red wine known to be made from hot peppers.
 Dice (6 Sided)	{1d6} six sided dice. Probably used in some silly tabletop game.
 Dire Bat Wings	Hanging from a drying rack are two large Dire Bat wings. It is unclear how long they have been seperated from the rest of the bat, but they are in good condition and could potentially be used as a crafting material.
 Dried Flower	A flower that has been dried out to preserve it.
+Dried orange peel
+Dull iron dagger with a cracked hilt
+Dull iron pendant with a star symbol
+Dull pair of scissors
 Dust Ruby	A ruby the size of a man's fist which sparkles and gleams with the promise of untold wealth in the faintest of lights, but which crumbles to dust upon the lightest touch.
+Eating utensils
 Electrum Bracer	An archer's bracer of leather and electrum.
-Leather Ball	A leather ball stuffed with chicken feathers. On a DC 15 peception check the player can find an electrum ring amongst the feathers.
+Empty bird's nest
+Empty scroll case
+Empty snuff box
+Empty spice jar
 Empty Vial	An empty vial, just waiting to be filled with something more valuable than itself.
+Empty vial with a cracked stopper
 Eye Agate Gem	This simple agate gem has translucent circles of white dotted around its surface which bring to mind the image of an eye.
+Faded, water-stained family portrait
+Farming Hoe	A farming tool primarily used for tilling fields. Its fine craftsmanship is sturdy enough to withstand backbreaking fieldwork, but its battle applications are untested.
+Farming Pitchfork	A farming tool used to collect hay efficiently. It's light enough to be used by anyone. The four prongs are very sharp.
 Fat Cat Statue	A life sized copper statue of a fat cat with amber eyes that purrs when stroked. Curiously, it does not detect as magic.
+Feathered quill, ink-stained at the tip
 Fine Cheese	A 5' diameter wheel of fine, aged cheese
+Fishing bait
+Fishing Harpoon	A fisherman's tool that excels at catching large fish. Its particularly sharp spearhead makes it valuable as a weapon as well.
+Fishing hook tied with old string
 Fishing Tackle	Useful for catching fish.
+Flat stone painted with bright colors
 Flesh Shield	A small wooden shield bound in human skin bearing a tattoo that appears to be some sort of map. The skin is held in place with a rim of beaten copper.
 Flint & Steel	A carved steel striker and a piece of shaped flint that allows the user to start a fire.
+Folded parchment with a smudged map
+Folded piece of stained silk
 Fool's Gold	A handheld water pan with a number of chunks of pyrite in it, otherwise known as "Fool's Gold". You might be able to convince someone that these nuggets are real gold, but not for very long.
+Fragment of a broken arrow
+Fragment of a broken shield
 Fragrant Torches	A bag containing {1d8} torches infused with pleasant fragrances. This may have been owned by a tanner, to cover the overwhelming stench of tannin that is used in the leathermaking process.
 Garlic	A wreath of eight garlic buds.
+Garotte Wire	The Garrote Wire can only be used on a medium or small creature while the user has advantage on the attack roll. On hit, the target takes 1d4 slashing damage and is grappled. Until the grapple ends, the target cannot breath and begins to choke, and the user has advantage on attack rolls against it.
 Gem	A teal gem.
 Gem of Azurite	A small Azurite gem. It is opaque and a deep mottled blue in colour.
+Glass marble with a swirl of red inside
 Glass Sphere	A 14 inch diameter sealed glass sphere containing water and an ornamental fish.
 Glittering Glass	A sparkling handful of raw gems.
 Glitternight Dust	This is a tiny jar of glitternight dust. (a narcotic)
@@ -64,6 +156,8 @@ Glow Stone	A small green stone that gives off a feint light that's practically i
 Goat Jerky	A pound of goat jerky.
 Gold Bracelet	A small gold bracelet. It's design is plain so as to be appropriate for anyone.
 Gold Locket	A charming golden locket with a painted portrait inside.
+Green glass bottle filled with sand
+Half-burned wax candle
 Hammer	A crosspeen hammer forged from steel. It has a gently crowned flat face that has been hardened and tempered for toughness. The handle is hand carved ash, flame treated and oiled.
 Hand Mirror	
 Hematite	A rather dull gray-black hematite gem with the remains of a necklace fasten on its back.
@@ -73,10 +167,13 @@ Holy Symbol	A wooden holy symbol.
 Honey	A quart of honey.
 Honeysuckle Potion	A small, crystal vial of a clear, viscous liquid that smells strongly of honeysuckle.
 Hope Chest	A delicately carved hope chest of polished cherry wood. The box contains nothing but a remarkably fine, gray sand drawn from some unknown locale. Beneath the new moon, this sand glows a faint blue.
+Horseshoe
+Hourglass	
 Inhalation Herbs & Essences	Inhalation herbs & essences provide natural healing remedies for all manner of symptoms such as headaches, colds and flu.
 Ink	A vial of black ink, for use with a quill.
 Iron Buckle	An iron belt buckle that's beginning to rust.
 Iron Earring	An iron earring. Missing it's twin.
+Iron horseshoe with a nail still attached
 Iron Nail	A large iron nail, useful for fixing things together.
 Iron Spike	A large iron spike, useful for fixing heavy items together.
 Iron Torc	An iron torc with six small silver figurines: A hare, a horse, a spear, a wolf's head, a simple circle, and an oak tree.
@@ -87,11 +184,16 @@ Keg o' Nails	A 35 lb keg of iron nails
 Knee Breeches	A pair of bear fur knee breeches, slightly worn from having been used when horse riding.
 Lantern	A slightly rusty old lantern with a glass casing.
 Lapis Lazuli Gem	A gem of lapis lazuli, dark blue in colour with light yellow flecks.
+Large acorn with a hole bored in the top
 Large Pile of Coal	A large pile of coal. Two small, rough diamonds are hidden near the bottom. (20gp, 25 gp)
 Lead Coins	Satchel of {1d20} gold painted lead coins.
+Leather Ball	A leather ball stuffed with chicken feathers. On a DC 15 peception check the player can find an electrum ring amongst the feathers.
 Leather Quiver	
 Leather Satchel	
+Leather-bound journal
 Little Riding Hood	A bright red hooded cape sized for a child, spattered with dried blood.
+Loose string of wooden beads
+Loose, rusted chain link
 Lynx Eye Gem	"Lynx eye is a specific type of labradorite (a feldspar gemstone). Labradorite as a class of stones is pale to dark gray and has patches of colored reflections. This ""flash"" is most commonly blue but can be of all shades. ""Green Flash"" labradorite is called lynx eye in the Realms.
 Lynx Eye Gem	Lynx eye is a special type of labradorite. It is pale to dark grey and has patches of coloured reflections. This "flash" is most commonly blue but can be of all shades. "Green Flash" labradorite is called Lynx Eye in the local regions.
 Magnifying Glass	
@@ -99,36 +201,121 @@ Malachite Gem	A large malachite gem. It is striated light and dark green across 
 Man Mask	A mask carved to look like the face of a man, but which has been fitted for something wholly other.
 Mistletoe	{1d4} sprigs of mistletoe
 Moss Agate Gem	A beautiful moss agate gem. It is a translucent pink with a mossy gray texture.
+Mudbrick Chocolate	Well, it's brown, but that doesn't necessarily make it chocolate. Still, at least its sweet. In an unusual and repugnant way.
 Net	An unused fishing net made out of spun mammoth hairs.
 Obsidian Gem	A small opaque black gem.
 Oil	A flask of oil suitable for use in a lantern. 
+Oily Rags	{1d4} oily rags in an old wicker basket.
+Old brass compass, needle stuck
+Old brass padlock with no key
+Old clay vase
 Old Hat	A ragged old hat with a moth eaten brim.
+Old horseshoe file
+Old iron buckle
 Old Pouch	An old pouch. Works as any pouch might, but it has a hole in it.
 Old Round Shield	Father's old round shield, beneath the boss is the sigil of ______, valiant conduct by the bearer may draw the eye of the God.
 Old Saddlebag	A rotten saddlebag with a few coins spilling out. The copper coins have some verdigris and the silver coins are badly tarnished.
+Old tin picture frame
 Old Wheelbarrow	A rotting wheelbarrow holding 167 torches.
+Pair of broken spectacles
+Pair of iron nails, slightly bent
+Pair of mismatched gloves
+Pair of reading glasses
+Pair of rusted handcuffs
+Pair of tattered boots, too small for a human
 Parchment	A spare bit of parchment.
+Peg Leg	You'll never know if the owner willingly parted with this prosthetic. You do know that it makes an effective cudgel.
 Pick Axe	A straight wooden handle with a curved iron pick useful for breaking up rocky surfaces or hard earth. It would not make for an effecitve weapon, but without the head the handle would make for a rudimentary club.
+Pickle	On the floor, you find a single pickle wrapped in an oily paper bag. It has a strong distinct smell, but otherwise seems like a normal pickle.
+Piece of chalk
+Piece of driftwood smoothed by water
+Piece of flint
+Pill casket	Contains 100 tasteless blue pills that produce no discernible effect when swallowed
 Playing Cards	A classic 52 card set of playing cards.
+Polished stone with an odd rune scratched into it
+Porcelain doll head
 Potpourri	A fragrant bowl of potpourri.
+Pouch of old tobacco
+Prick Axe	A pick axe has a curved iron head that is useful for breaking up rocky surfaces. A prick axe has an uncomfortable knobbly handle and the axe head constantly falls off.
+Quarterstaff	A length of stoud wood ranging six to nine feet in length and shod with metal at both ends.
+Raisins	' tin of raisins.
 Rhodochrosite Gem	This rhodochrosite gem is a light pink colour and shaped to resemble a small heart.
 River Stone	A stone that has been worn down to a smooth finish. Probably from a river bed.
+Roll of twine
 Rope	{1d100} of rope
+Rusty iron key
+Sack of Flower Bulbs	A sack of prized flower bulbs
+Sales Receipt	Receipt for delivery of slaves
+Sausages	Package of {1d6} sausages
 Saw	
 Scroll Case	
+Service Record	A scroll detailing the bound service of two men-at-arms sworn to six months of service.
+Set of old iron keys on a ring
+Set of six worn dice
+Set of three mismatched buttons
+Shard of colored glass
+Sheet of crumpled, blank parchment
+Shiny pebble with specks of quartz
+Sickle	A farming tool that can be used as a weapon if needed. It has a long curved blade attached to a short wooden handle.
 Silk Handkerchief	This silk handkerchief is embroidered with a pale pink pattern.
+Silver Brooch	A silver brooch depicting a mage's tower. (This could be a pass for magical wards at the mage's tower, at the DM's discretion.)
+Silver button with a rose engraving
+Silver Chalice	A finely made silver chalice etched in arcane symbols. An arcane check will find no trace of magic, however, and it may be that these are simply aesthetic.
 Silver Ewer	A large jug with a wide mouth coated in silver.
+Silver spoon with a bent handle
+Silver Spoons	A set of 8 silver spoons.
+Silver-tipped Quill	A silver-tipped quill with an elaborate white feather.
+Simple clay mug
+Single boot with a broken lace
+Small ball of hardened wax
+Small bone carving of a dog
+Small brass bell missing its clapper
+Small brass cog from a clock
+Small ceramic jar with a missing lid
+Small clay figurine of a horse
+Small leather pouch filled with marbles
 Small Mirror	A slightly dirty mirror set in a painted wooden frame.
+Small pouch of sunflower seeds
+Small sack of dried beans
+Small sack of salt
+Small vial of sour-smelling oil
+Small wooden box containing bird eggshell fragments
+Small wooden spoon
+Small wooden toy horse
+Smuggler's Dagger	A broad dagger with a hilt that can be unscrewed. The space revealed is sufficient to hold up to 25 coins, and currently holds 10 gold coins and 15 silver coins.
+Snail Dye	A 1 quart jar of rare purple snail dye.
 Soap	Some fresh, waxy soap. It smells faintly of lavender.
+Some {COLOR} chalk
+Soup Ladel	A kitchen implement often used for serving delicious soups. It was carved from the wood of a sturdy tree, so it actually packs quite the wallop.
 Spork of Positive Reinforcement	that says encouraging things like "Everything's GREAT!" and "Your body temperature is squarely within normal human range!"
+Square of embroidered cloth
 Steel Chain	A steel chain measuring 1 foot long.
 Steel Lockbox
+Stone with a hole in the center
+Straw Broom	A straw broom
+Tactical Defense Stick	Tactical defense stick'
+Tarnished brass locket with an old photo inside
+Tarnished bronze chisel
+Tattered book of children's stories
+The beak of a {bird}
+The skeletal remains of a small unknown animal
+Threadbare scarf
+Thunderstone Amulet	A small chain with flint stone in the shape of a triangle hanging from it. Popular tradition states that this is a "Thunderstone", a rock that has fallen from the sky during a storm. The fact that is resembles a primitive axe head, however, may fall upon deaf ears. 
+Tied bundle of incense sticks
 Tiger Eye Gem	Translucent brown with a bright golden center.
+Tin badge in the shape of a star
 Tin Cup	A tin drinking cup.
+Tin cup dented on one side
 Tinderbox	A full tinderbox.
+Tiny brass lock, no key
+Tiny cracked mirror
 Tobacco	A small amount of tobacco wrapped in a large soft leaf.
 Torch	A short stick with oil-soaked cloth wrapped around one end so it can burn as a torch.
+Torn leather strap
+Torn page from an old book
+Torn tapestry with a faded scene of battle
 Turquoise Gem	"Turquoise is an opaque aqua stone with darker mottling, and is found in the more arid reaches of the Realms. Horsemen will often place a sliver of this stone in a horse's harness as a sign of good luck.
+Two-Sided Die	This perculiar dice is made out of copper and has two sides. Engraved on one side is the portrait of a long forgotten ruler, on the other is an ornate two headed chimera. Useful for making decisions. Doesn't roll well.
 Unreadable Note	A paper note that's been left on a damp floor. It's completely illegible.
 Used Whetstone	An old whetstone and a half-used vial of oil. The stone itself is ever-so-slightly worn into a curve from years of use, but it will be decades before it's wear renders it useless.
 Vanishing Ring	
@@ -138,215 +325,42 @@ Waterskin	A waterskin made from a sheep's bladder.
 Weighted Die (6 Sided)	A weighted dice.
 Whistle	A small wooden whistle.
 Wolf Pelt	A grey and white wolf pelt.
+Wolfsbane	{1d8} springs of wolfsbane
 Wooden Board	A weather worn wooden board, inscribed with patterns which make it clear that it was once used for a game whose rules have long since been lost to time.
+Wooden box filled with dried leaves
+Wooden mask depicting a frowning face
+Wooden Mop	Just a mop to the untrained eye, it excels at tidying up the place. But it owes its sturdy construction to a true craftsman, so it actually has some combat merit.
+Wooden needle case with a single needle
+Wooden pipe carved with vines
+Wooden Plate	A carved wooden plate.
+Wooden ring with a sun symbol carved in it
 Wooden Spike	A long wooden spike, used to fix soft items together or kill vampires while they sleep.
+Wooden spinning top
+Wooden whistle with no sound
 Wormrose Incense	
 Wormscrape	A narcotic made from the petal of a wormrose flower.
-Raisins	' tin of raisins.
-Club	A crude club made to clobber animals and people alike, carved roughly from a thick cedar branch.
-Quarterstaff	A length of stoud wood ranging six to nine feet in length and shod with metal at both ends.
-Sickle	A farming tool that can be used as a weapon if needed. It has a long curved blade attached to a short wooden handle.
-Thunderstone Amulet	A small chain with flint stone in the shape of a triangle hanging from it. Popular tradition states that this is a "Thunderstone", a rock that has fallen from the sky during a storm. The fact that is resembles a primitive axe head, however, may fall upon deaf ears. 
-Soup Ladel	A kitchen implement often used for serving delicious soups. It was carved from the wood of a sturdy tree, so it actually packs quite the wallop.
-Farming Hoe	A farming tool primarily used for tilling fields. Its fine craftsmanship is sturdy enough to withstand backbreaking fieldwork, but its battle applications are untested.
-Boat Oar	"Made for paddling boats, but it was made sturdy enough to fight strong currents. Maybe it's useful for self-defense in a pinch.
-Wooden Mop	Just a mop to the untrained eye, it excels at tidying up the place. But it owes its sturdy construction to a true craftsman, so it actually has some combat merit.
-Farming Pitchfork	A farming tool used to collect hay efficiently. It's light enough to be used by anyone. The four prongs are very sharp.
-Fishing Harpoon	A fisherman's tool that excels at catching large fish. Its particularly sharp spearhead makes it valuable as a weapon as well.
-Silver Chalice	A finely made silver chalice etched in arcane symbols. An arcane check will find no trace of magic, however, and it may be that these are simply aesthetic.
-Silver-tipped Quill	A silver-tipped quill with an elaborate white feather.
-Smuggler's Dagger	A broad dagger with a hilt that can be unscrewed. The space revealed is sufficient to hold up to 25 coins, and currently holds 10 gold coins and 15 silver coins.
-{1d20} Marbles	
-Dead Rat	An old dead rat. It has begun to decay, and eminates an unpleasant smell.
-Hourglass	
-Garotte Wire	The Garrote Wire can only be used on a medium or small creature while the user has advantage on the attack roll. On hit, the target takes 1d4 slashing damage and is grappled. Until the grapple ends, the target cannot breath and begins to choke, and the user has advantage on attack rolls against it.
-Two-Sided Die	This perculiar dice is made out of copper and has two sides. Engraved on one side is the portrait of a long forgotten ruler, on the other is an ornate two headed chimera. Useful for making decisions. Doesn't roll well.
-Mudbrick Chocolate	Well, it's brown, but that doesn't necessarily make it chocolate. Still, at least its sweet. In an unusual and repugnant way.
-"Eau D'Ogre" Perfume	Someone has managed to cram all the stench of an Ogre into one reeking bottle. Why? The world may never know. No human should ever willingly apply this to their body or attire.        
-Wooden Plate	A carved wooden plate.
-Sack of Flower Bulbs	A sack of prized flower bulbs
-Sales Receipt	Receipt for delivery of slaves
-Sausages	Package of {1d6} sausages
-Service Record	A scroll detailing the bound service of two men-at-arms sworn to six months of service.
-Silver Brooch	A silver brooch depicting a mage's tower. (This could be a pass for magical wards at the mage's tower, at the DM's discretion.)
-Silver Spoons	A set of 8 silver spoons.
-Snail Dye	A 1 quart jar of rare purple snail dye.
-Straw Broom	A straw broom
-Tactical Defense Stick	Tactical defense stick'
-Wolfsbane	{1d8} springs of wolfsbane
-Peg Leg	You'll never know if the owner willingly parted with this prosthetic. You do know that it makes an effective cudgel.
-Prick Axe	A pick axe has a curved iron head that is useful for breaking up rocky surfaces. A prick axe has an uncomfortable knobbly handle and the axe head constantly falls off.
-Adamantine Dust	This is a small jar of Adamantine dust, most likely the end result of exposing a Drow item to the light of day. It seems the previous owner wasn't quite ready to let go of it.
-Rusty iron key
-Leather-bound journal
-Small sack of dried beans
-Wooden pipe carved with vines
-{color} Cloak
-Silver button with a rose engraving
-Pair of mismatched gloves
-Iron horseshoe with a nail still attached
-Stone with a hole in the center
-Copper coin with a strange symbol
-Bundle of chicken feathers
-Shard of colored glass
-Fishing hook tied with old string
-Clay pot filled with soil
-Bronze candle holder, missing its base
-Half-burned wax candle
-Folded parchment with a smudged map
-Small leather pouch filled with marbles
-Broken wooden comb
-Tin cup dented on one side
-Roll of twine
-A single knitting needle
-Shiny pebble with specks of quartz
-Wooden whistle with no sound
-Cracked magnifying glass
-Wooden mask depicting a frowning face
-Small brass bell missing its clapper
-Bundle of old twigs tied with twine
-Pair of iron nails, slightly bent
-Cloth patch sewn with a dragon insignia
-Tied bundle of incense sticks
-Tin badge in the shape of a star
-Empty vial with a cracked stopper
-Small bone carving of a dog
 Worn deck of playing cards
-Loose string of wooden beads
-Bottle of dark ink, half-full
-Copper thimble
-Sheet of crumpled, blank parchment
-Silver spoon with a bent handle
-Set of six worn dice
-Wooden box filled with dried leaves
-Pouch of old tobacco
-Large acorn with a hole bored in the top
-Tiny cracked mirror
-Dried orange peel
-Bronze brooch shaped like a leaf
-Loose, rusted chain link
-Fragment of a broken arrow
-Small sack of salt
-Pair of broken spectacles
-Dull iron dagger with a cracked hilt
-Set of three mismatched buttons
-Feathered quill, ink-stained at the tip
-Piece of driftwood smoothed by water
-Small clay figurine of a horse
-Torn page from an old book
-Blackened frying pan
-Brass doorknob
-Square of embroidered cloth
-Small vial of sour-smelling oil
-Set of old iron keys on a ring
-Carved wooden totem of an owl
-Small ball of hardened wax
-Empty bird's nest
-Coiled rope bracelet
-Flat stone painted with bright colors
-Pair of rusted handcuffs
-Woven straw hat with a hole in the brim
-Glass marble with a swirl of red inside
-Torn leather strap
-Empty snuff box
-Tiny brass lock, no key
-Cracked seashell
-Small brass cog from a clock
-Wooden spinning top
-Single boot with a broken lace
-Small pouch of sunflower seeds
-Broken ink pen
-Tattered book of children's stories
-Green glass bottle filled with sand
-Charcoal drawing of a cat
-Wooden ring with a sun symbol carved in it
-Small wooden spoon
-Piece of flint
-Bundle of wilted herbs
-Fragment of a broken shield
-Old iron buckle
-Pair of tattered boots, too small for a human
-Polished stone with an odd rune scratched into it
-Threadbare scarf
-Brass key, heavy and unmarked
-A tooth on a string
-Torn tapestry with a faded scene of battle
-Piece of chalk
-Folded piece of stained silk
-Bronze token with a star shape etched in
-Bundle of mismatched cutlery
-Small wooden box containing bird eggshell fragments
-{1d4} Lockpicks
-{1d20} Almonds
-{1d8} Acorns
-The skeletal remains of a small unknown animal
-{1d12} severed ant heads
-A small bag of ants
-A small container filled with a {COLOR} ash
-{1d4} bolts from an Automaton
-{1d4} Autumn leaves
-Fishing bait
-A piece of bark
-A container filled with barley
-{1d4} beets
-{1d4} {COLOR} beetles
-A cup of an unknown {COLOR} beverage	{FLAVOR} taste
-A glass of an unknown {COLOR} beverage	{FLAVOR} taste
-A bottle of an unknown {COLOR} beverage	{FLAVOR} taste
-A jug of an unknown {COLOR} beverage	{FLAVOR} taste
-A blade broken from its hilt
-A block of firewood
-A small branch
-A bag of {COLOR} bugs
-{1d4} {COLOR} buttons
-{1d2} cow testicles
-Some {COLOR} chalk
-A jar of {BEAST} toenails
-A used toothbrush
-A transaction receipt
-{1d6} tree saplings
-A random twig
-Eating utensils
-A collection of butterfly wings
-A {material} club
-Bits of coral pieces
-A cork from a bottle of {BEVERAGE}
-A vial of desert sand
-A {RACE} doll
-A drawing of a {SUBJECT}
-{flora}	Plant sample
-{flora}	Plant sample
-{flora}	Plant sample
-{flora}	Plant sample
-{flora}	Plant sample
-{flora}	Plant sample
-{flora}	Plant sample
-A pair of eyeglasses
-A {bird} feather
-The beak of a {bird}
-A bag of fingernails
-A fishing hook
-A roll of sticky paper	Used to trap insects like flies
-A framed portrait of a female {RACE}
-A framed portrait of a male {RACE}
-{1d4} small metal gears
-Cracked lantern
-Bundle of sewing needles
-Simple clay mug
-Old brass padlock with no key
-Wooden needle case with a single needle
-Dull pair of scissors
-A spool of thread
-Broken wooden shield
-Small ceramic jar with a missing lid
-Old clay vase
-A single carpenter's nail
-Old horseshoe file
-Tarnished bronze chisel
 Worn-out saddle bag
-Coil of thin wire
-A small pair of rusty pliers
-Broken pickaxe head
-Box of iron nails
-Empty spice jar
-Empty scroll case
+Woven straw hat with a hole in the brim
+{1d12} severed ant heads
+{1d20} Almonds
+{1d20} Marbles	
+{1d2} cow testicles
+{1d4} Autumn leaves
+{1d4} beets
+{1d4} bolts from an Automaton
+{1d4} Lockpicks
+{1d4} small metal gears
+{1d4} {COLOR} beetles
+{1d4} {COLOR} buttons
+{1d6} tree saplings
+{1d8} Acorns
+{color} Cloak
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+{flora}	Plant sample
+Common clothes

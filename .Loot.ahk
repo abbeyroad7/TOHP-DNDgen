@@ -1,28 +1,23 @@
-;v3.0.0
+;v3.2.1
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
 ;If category prompt is entered, it does not exit the mode correctly
 ;# Todo
+;Prompt individual banks/rarities
+;Select all to FoundryImport
 ;Add Item pictures to lootbanks
 ;Specify rolltables, wildmagic
 ;Tag identifiers to signal qty, FRUIT.3, simplifyt base code to recursive loop
 ;Animal mixer
-;A hyperlink tag
 ;A true dice roller, grab digits from pattern
-;Banks: food, food ingredients, religions
-;Items, 5e.tools
-;Weapons, seperate from general db, prompt-only
-;Combine names and loot.ahk
 ;edit nouns for loot, queue\nouns1
-;Fill out race names db
 ;Natural language syntax, for words ending in s, a/an, etc.
 ;GUI to regen certain aspects
-;Loop tags
 ;Icons, export snapshot to clipboard
 ;Grab first image off of google
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
-Debug = 1	;1=off
+Debug = 0	;1=off
 Level = 4	;Specify player's current level
 Habitat = Temperate	;Specify your world's habitat
 ;Import
@@ -184,6 +179,10 @@ Loop, %Qty%
 				{
 					Loot = {1d20} gold pieces
 				}
+			If (Instr(Prompt, "gem"))
+				{
+					Loot = {GEM}
+				}
 			If (Instr(Prompt, "sp"))
 				{
 					Loot = {1d50} silver pieces
@@ -222,6 +221,14 @@ Loop, %Qty%
 					;Msgbox rarity set to Rare
 					Rarity = 4_Rare.txt
 					fLines = %4_Lines%
+					;Msgbox %4_Lines%
+					;NC = 1
+				}
+			If (Instr(Prompt, "vr"))
+				{
+					;Msgbox rarity set to Rare
+					Rarity = 5_VeryRare.txt
+					fLines = %5_Lines%
 					;Msgbox %4_Lines%
 					;NC = 1
 				}
@@ -558,6 +565,24 @@ Loop, %Qty%
 				;Msgbox %Gems%	;Debug
 				Loot := StrReplace(Loot, "{GEM}", Gems)
 			}
+			If (InStr(Loot, "{ROLE}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Quests\.ROLEs.ini
+					ROLEs_Lines = %A_Index%
+				Random, ROLEsRnd, 1, ROLEs_Lines
+				FileReadLine, ROLEs, %Dir%\Banks\Quests\.ROLEs.ini, ROLEsRnd
+				;Msgbox %ROLEs%	;Debug
+				Loot := StrReplace(Loot, "{ROLE}", ROLEs)
+			}
+			If (InStr(Loot, "{POISON}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Weapons\.Poisons.ini
+					POISONs_Lines = %A_Index%
+				Random, POISONsRnd, 1, POISONs_Lines
+				FileReadLine, POISONs, %Dir%\Banks\Weapons\.Poisons.ini, POISONsRnd
+				;Msgbox %POISONs%	;Debug
+				Loot := StrReplace(Loot, "{POISON}", POISONs)
+			}
 			If (InStr(Loot, "{CHEESE}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\Foods\.Cheese.ini
@@ -575,6 +600,15 @@ Loop, %Qty%
 				FileReadLine, spice, %Dir%\Banks\Foods\.spices.ini, spiceRnd
 				;Msgbox %spice%	;Debug
 				Loot := StrReplace(Loot, "{spice}", spice)
+			}
+			If (InStr(Loot, "{BREAD}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Foods\.BREADs.ini
+					BREADLines = %A_Index%
+				Random, BREADRnd, 1, BREADLines
+				FileReadLine, BREAD, %Dir%\Banks\Foods\.BREADs.ini, BREADRnd
+				;Msgbox %BREAD%	;Debug
+				Loot := StrReplace(Loot, "{BREAD}", BREAD)
 			}
 			If (InStr(Loot, "{FRUIT}"))
 			{	;Collapse
@@ -719,6 +753,18 @@ Loop, %Qty%
 				
 				Loot := StrReplace(Loot, "{hp}", hp)
 			}
+			If (InStr(Loot, "["))	;Gamebooks
+			{	;Collapse
+				Loot := StrSplit(Loot, "`n[")
+				HB := Loot.2
+				HB := StrReplace(HB, "]")
+				Loot := Loot.1
+				Item := StrReplace(Loot, " ", "%20")
+				Loot = %Loot% +	;+ button
+				
+				URL = https://5e.tools/items.html#%Item%_%HB%
+				;Run, %URL%
+			}
 			If (InStr(Loot, "{CASE}"))	;Mixed case, use for titles
 				{
 					Loot := StrReplace(Loot, "{CASE}")
@@ -789,12 +835,17 @@ Action:
 				Winactivate, Foundry Virtual Tabletop
 			else
 			{
-				Msgbox,,,Foundry instance not found. Returning...,2
-				Return
+				;Msgbox,,,Foundry instance not found. Returning...,2
+				Goto, ActionEnd
 			}
 		}
 		Send ^v
 		
+		ActionEnd:
+		If (HB != "")	;Gamebooks
+		{
+			Run, %URL%
+		}
 	}
 }
 

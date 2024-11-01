@@ -15,7 +15,7 @@ Due to its random nature, this tool is meant to be used as a **supplementary** l
 
 The script is built to randomly select a Prompt line from a loot table and swap out any present tag identifiers with a random line from a corresponding wordbank. Tag identifiers are read as {COLOR}, {RACE}, {BEAST} in the Table and can further add variety in the responses to yield a unique response every time the generator is run.
 
-In addition, the script copies generated text to your Clipboard for ease of use.
+In addition, the script can read from Tables as well. Using a tag identifier for any of the available tables in the Loot\Banks\Tables folder, you can reference table in your rarity banks.
 
 ## ![Examples](https://github.com/abbeyroad7/TOHP-DNDgen/tree/main/Loot/.Screenshots)
 {CONDITION} A tombstone  Reads 'Here lies {NAME}. Cause of death: {SUBJECT}'

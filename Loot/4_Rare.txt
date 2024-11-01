@@ -367,50 +367,6 @@ Whispering Bauble	A glass orb with a small slit opening, braced by fine grey met
 Worldly Tortoise	A small tortoise (STR 2, DEX 1, WIL 6, 1hp, Armour 1) that knows the way to anywhere you ask, but gets there very slowly. 
 Yellow Sapphire	A transparent fiery yellow or yellow' green Sapphire.
 {1d20} Ammunition +2	You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hit a target, the ammunition is no longer magical. Value listed is for individual units.
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
-{1d20} gold pieces
 {1d2} walrus tusks
 {1d4} Black Ghost Orchid Seeds	A creature that consumes one of these black seeds is affected by the spell feign death. If the creature is unaware of the pod's effects or does not wish to be affected, it can resist the effect by succeeding on a DC 16 Constitution saving throw
 {1d4} small black spheres	A short fuse protrudes from the top. When lit, it envelops the surrounding 15ft in a sphere of darkness for a duration of 60s.
@@ -425,4 +381,53 @@ Yellow Sapphire	A transparent fiery yellow or yellow' green Sapphire.
 {1d8} lbs of whale blubber
 Diplomat's Pack	A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox.
 Disguise Kit	Ability: Charisma	Utilize: Apply makeup (DC 10)	Craft: Costume	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
-Dragon's Blood	[erlw]
+Dragon's Blood [erlw]
+Jeweler's Tools	Ability: Intelligence	Utilize: Discern a gem's value (DC 15)	Craft: Arcane Focus, Holy Symbol	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
+Painter's Tools	Ability: Wisdom	Utilize: Paint a recognizable image of something you've seen (DC 10)	Craft: Druidic Focus, Holy Symbol	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
+A wooden staff	Adorned with {GEM} and {MATERIAL}. Likely used as a druidic focus. 	Uses Staff statblock +2 bonus damage.
+A dulcimer [xphb]
+Dungeoneer's Pack [xphb]
+Dynamite [tdcsr]
+Erasing Notebook	A small notebook that causes anything written in it to disappear after 1 hour
+A crystal lens	Made of ivory and gold that causes anything observed through it to appear to be surrounded by motes of multicolored light
+A small golden pyramid	Inscribed with elven symbols and about the size of a walnut
+A cloak pin	Made from enamel in the shape of a butterfly; when you take the pin off, it turns into a real butterfly, and returns when you are ready to put your cloak back on again
+A small songbird	Made of enamel, gold wire, and precious stone; uttering the songbird's name in Elvish causes the trinket to emit that bird's birdsong
+A small enamel flower	When put in one's hair, animates, tying back the wearer's hair with a living vine with flowers; plucking a single flower from this vine returns it to its inanimate form
+Exotic Saddle	A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. An Exotic Saddle is required for riding an aquatic or a flying mount.
+Painted wooden key whose teeth change configuration every day at dawn
+Golden pendant charm shaped like a leprechaun
+Tiny wooden box containing a croquet set sized for pixies or sprites
+Chess piece shaped like a dancing satyr wearing a bishop's hat and clutching a gnarled staff	May come alive when interacted with.
+Saltshaker shaped like a wizard's tower
+Crystal orb that allows a nonsleeping race who holds it to sleep
+Spool of glistening silver thread
+Sheet of music that goblins find upsetting when they hear it played or sung
+Rotten ogre's tooth with the Elvish glyph for "moon" etched into it
+Tiny duskwood coffin containing the ashes of a troll
+Sprite's skull covered in ink fingerprints
+Rock that floats and is small enough to hide in your closed fist
+8-ounce, glass wine bottle that magically reassembles itself 1 minute after being broken
+Bar of soap that smells like something memorable from your childhood
+Pair of green leprechaun boots tied together by their laces
+Mask that helps you remember your dreams if you wear it while you sleep
+Notebook that shows what's written on it only when held upside down
+Silvered pinecone
+Copper coin with a smiling satyr's face on one side and a satyr's skull on the other
+Flail [xphb]
+The amputated hands of a {BEAST} with flensing claws
+Forgery Kit [xphb]
+A swatch of silvery fur that's cold to the touch, possibly from a winter wolf
+Glaur [scag]
+A giant goose egg	{Table-GooseEggTrinket}
+Griffon Egg
+Horror Trinket	{Table-HorrorTrinket}
+Icewind Dale Trinket	{Table-IcewindDaleTrinket}
+Iron Ball [https://5e.tools/adventure.html#IDRotF,17,chain%20lightning,0]
+Keg Of Alchemist's Fire [lox]
+Khyber Trinket {Table-KhyberTrinket}
+An Elvish longhorn [https://5e.tools/items.html#longhorn_scag]
+A puzzle box bedecked with amber
+Matchless Pipe	A switch made of flint is built into the bowl of this fine wooden smoking pipe. With a few flicks of the switch, the pipe lights itself.
+Monster Hunter's Pack [vrgr]
+{Table-MournlandTrinket}

@@ -1,8 +1,9 @@
-;v3.5.0
+;v3.6.33
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
 ;If category prompt is entered, it does not exit the mode correctly
+;Tables show roll range sometimes, seems to break randomly on ranges with hyphens
 ;# Todo
 ;Prompt individual banks/rarities
 ;Select all to FoundryImport
@@ -14,7 +15,15 @@
 ;Icons, export snapshot to clipboard
 ;Grab first image off of google
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
-Debug = 0	;1=off
+Debug = 1	;1=off
+DebugCheck:
+{
+	DebugSize := 0
+	FileGetSize, DebugSize, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\0_Test.txt
+	If (DebugSize > 0)
+		Debug = 0
+}
+
 Level = 4	;Specify player's current level
 Habitat = Temperate	;Specify your world's habitat
 ;Import
@@ -237,38 +246,51 @@ Loop, %QtyMax%
 	;Rarity	
 	{	;Collapse
 	Random, RarityRnd, 1, 100
-		If Debug = 0	;Debug
-			RarityRnd = 150
-			
-		If RarityRnd = 150
+		If Debug = 0
 		{
+			RarityRnd = 150
 			Rarity = 0_Test.txt
 			fLines = %0_Lines%
 		}
-		If RarityRnd between 1 and 35
+		If RarityRnd between 1 and 20	;Currency copper
+		{
+			Curr = {1d50} copper pieces
+			Loot = %CURR%
+		}
+		If RarityRnd between 21 and 30
 		{
 			Rarity = 1_Mundane.txt
 			fLines = %1_Lines%
 		}
-		If RarityRnd between 36 and 80
+		If RarityRnd between 31 and 65
 		{
 			Rarity = 2_Common.txt
 			fLines = %2_Lines%
 		}
-		If RarityRnd between 81 and 92
+		If RarityRnd between 66 and 75
 		{
 			Rarity = 3_Uncommon.txt
 			fLines = %3_Lines%
 		}
-		If RarityRnd between 93 and 98
+		If RarityRnd between 76 and 85	;Currency silver
+		{
+			Curr = {1d20} gold pieces
+			Loot = %CURR%
+		}
+		If RarityRnd between 86 and 89
 		{
 			Rarity = 4_Rare.txt
 			fLines = %4_Lines%
 		}
-		If RarityRnd between 98 and 99
+		If RarityRnd between 90 and 91
 		{
 			Rarity = 5_VeryRare.txt
 			fLines = %5_Lines%
+		}
+		If RarityRnd between 92 and 99	;Currency gold
+		{
+			Curr = {1d20} gold pieces
+			Loot = %CURR%
 		}
 		If RarityRnd = 100
 		{
@@ -582,6 +604,15 @@ Loop, %QtyMax%
 				;Msgbox %POISONs%	;Debug
 				Loot := StrReplace(Loot, "{POISON}", POISONs)
 			}
+			If (InStr(Loot, "{DRUG}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Misc\.DRUGs.ini
+					DRUGs_Lines = %A_Index%
+				Random, DRUGsRnd, 1, DRUGs_Lines
+				FileReadLine, DRUGs, %Dir%\Banks\Misc\.DRUGs.ini, DRUGsRnd
+				;Msgbox %DRUGs%	;Debug
+				Loot := StrReplace(Loot, "{DRUG}", DRUGs)
+			}
 			If (InStr(Loot, "{CHEESE}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\Foods\.Cheese.ini
@@ -752,6 +783,7 @@ Loop, %QtyMax%
 				Table0 := StrSplit(Loot, "{Table-")
 				Table := Table0.2
 				Table := StrReplace(Table, "}")
+				;Msgbox %Table%
 				TableDir = %Dir%\Banks\Tables\%Table%.txt
 				Array := []
 				ArrayCount := 0
@@ -769,8 +801,6 @@ Loop, %QtyMax%
 					
 					Start := StrSplit(Start, "-")
 					StartRange := Start.1
-					Start_end := Start.2
-					;Msgbox %StartRange% goes to %Start_End%
 				}
 				
 				EndRange:
@@ -779,9 +809,13 @@ Loop, %QtyMax%
 					EndLine := StrSplit(EndLine, A_Tab)
 					End := EndLine.1
 					
-					End := StrSplit(End, "-")
-					End_start := End.1
-					EndRange := End.2
+					If (InStr(End, "-"))
+						{
+							End := StrSplit(End, "-")
+							EndRange := End.2
+						}
+					Else
+						EndRange = %End%
 					
 					If(EndRange = "00")
 						EndRange = 100
@@ -808,15 +842,14 @@ Loop, %QtyMax%
 						
 						If (TableRoll <= StartRange)
 						{
-							Line = % element
-							LineBefore := StrSplit(Line, A_Tab)
-							Line := LineBefore.2
-							;Msgbox %Line%
+							;Line = %element%
+							element := RegExReplace(element, "[0-9]")
+							element := Trim(element, "`t-")
 							Goto, EscapeArray
 						}
 					}
 				EscapeArray:
-				Loot = %Line%
+				Loot := RegexReplace(Loot, "{Table.+}", element)
 			}
 			LootReplacements:
 			{	;Collapse
@@ -845,15 +878,25 @@ Loop, %QtyMax%
 			}
 			If (InStr(Loot, "["))	;Gamebooks
 			{	;Collapse
-				Loot := StrSplit(Loot, "`n[")
-				HB := Loot.2
+				LootSplit := StrSplit(Loot, "[")
+				If (InStr(Loot, " ["))
+					LootSplit := StrSplit(Loot, " [")
+				HB := LootSplit.2
 				HB := StrReplace(HB, "]")
-				Loot := Loot.1
+				;Msgbox %HB%
+				If (InStr(HB, "http"))
+					{
+						URL = %HB%
+						Loot := RegexReplace(Loot, "\[.+\]", "+")
+						;Loot = %Loot% +	;+ button
+						Goto, GamebooksEnd
+					}
+				Loot := LootSplit.1
 				Item := StrReplace(Loot, " ", "%20")
 				Loot = %Loot% +	;+ button
-				
 				URL = https://5e.tools/items.html#%Item%_%HB%
-				;Run, %URL%
+				;Msgbox %URL%
+				GamebooksEnd:
 			}
 			If (InStr(Loot, "{CASE}"))	;Mixed case, use for titles
 				{
@@ -907,6 +950,7 @@ GUIShow:
 {
 	Gui -Caption
 	Gui, Show, AutoSize Center
+	Winset, Alwaysontop, , A
 	pause
 }
 

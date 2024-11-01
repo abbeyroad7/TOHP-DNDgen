@@ -18,6 +18,7 @@ A book that reads '{REGION} Folklore'
 A bouqet of {COLOR} flowers
 A bracelet made with {MATERIAL}
 A bracelet made with {MATERIAL}	Engraved with the name '{NAME}'
+A broken dagger with a wavy blade and a serpentine hilt
 A bull-fighting flag
 A calico cat named {NAME}
 A caltrop	As an action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature moving through the area at half speed doesn't need to make the saving throw.
@@ -28,9 +29,10 @@ A census report of {LOC}
 A ceremonial uniform
 A ceremonious, hand-crossbow used for dueling
 A chain necklace made of {MATERIAL}
+A chain-link ring	Once donned, won't come off without pulling painfully hard
 A chef's hat
 A clay sculpture of a {subject}
-A Climber's Kit	[PHB]
+A Climber's Kit [PHB]
 A cloak pin that shines faintly in darkness  
 A collapsable oar
 A complicated crystal board game that you don't know how to play
@@ -46,6 +48,7 @@ A jar of red powder, warm to the touch
 A key that fits no known lock  
 A kitten
 A landscape of {LOC} on canvas	Signed by {NAME}
+A map made of concentric circles that can be rotated around the page
 A map of the constellations in the nightsky
 A metal bracelet that displays the number of steps you've taken since your last long rest
 A metal rod that is unbreakable  
@@ -70,6 +73,7 @@ A scintillating {color} disk	Of unknown material.
 A scrap of cloth that mends itself when torn  
 A sealed envelope addressed to {name}	About {subject}
 A sealed envelope addressed to {name}	About {subject}
+A sheet of parchment embossed with tactile lettering, glowing red
 A silver mirror that fogs up when someone tells a lie nearby  
 A silver spoon that changes temperature based on mood
 A silver {COLOR} alloy	A bar worth {1d8}GP
@@ -262,6 +266,7 @@ Coin that lands on its edge when flipped
 Companion Cube	A Companion Cube: It was created by a wizard who had stuck himself in a tower to show complete dedication to his studies. However, after several decades he became so lonely that he chose to make a friend... literally. Using what little non-component materials he had laying around his tower, he created a small cube and gave it sentience. It was able to communicate telepathically with anyone who made a link with the cube. Unfortunately, the wizard eventually died and the cube became lonely. Unable to travel and find a new friend, the cube simply sat there and waited for anyone to come along. Anyone seeing the cube would be compelled to be with the cube and have it in their possession. Upon holding the cube, they would feel the need to keep it with them at all times, and protect it as if it were their own child. Little by little, the connection between the cube and it's possessor would grow, until the two would be inseparable.
 Coral Circlet	A dark crimson Coral gemstone fitted into a golden circlet.
 Coral necklace that smells faintly of the sea  
+Crampons	A crampon is a metal plate with spikes that is strapped to the sole of a boot. A creature wearing crampons can't fall prone while moving across slippery ice.
 Crayon Torches	This set of 12 torches burn different colors. There are two sets of Red, Yellow, Blue, Green, Orange and Purple torches.
 Crystal goblet that never spills  
 Crystal Sword	When used this sword will deliver 1 instant hit for max damage, including bonuses. Once used, the sword shatters into crystal shards. Anyone within one square must roll reflex or take 1d4 damage from shard pieces.
@@ -275,6 +280,7 @@ Devil Salts	Awakens any creature from sleep or unconsciousness, but they flail a
 Dice Mace	
 Double-barreled Crossbow	Loads 2 bolts. Multi-attack rules.
 Dragon Statuette	A statuette of a dragon, forged from the finest mithril, which responds to yes or no questions which are posed to it in draconic. The answers given may appear prophetic or oracular, but are actually random.
+Dragonchess Set [xphb]
 Druid's Magnet	A wood chip which acts as a magnet, despite its non-metallic nature.
 Drums of Endurance	Once per day, give +10ft to movement, and +1 to attack and damage rolls to all allies.
 Dryad Bomb	A so-called "Dryad Bomb", called such because when thrown it creates a mess of magically grown tangles and vines. Appears to be a glowing orange orb surrounded by a series of vines and roots.
@@ -288,10 +294,13 @@ Elven Bomb	An orange-yellow shell with small claw-like protrusions. This appears
 Elven Engraved Combs	An elegant carved comb of oak, engraved with the name Aethelren and decorated with twin dragons. Elsewhere, a similar comb of ash, engraved with the name Ilthorien and decorated with twin unicorns, can be found.
 Empty Mason Jar	This magical mason jar is made of uneven, lumpy, blue-green glass with a copper lid. No matter what is placed in this transparent jar, it will always appear to be empty from the outside--so long as the lid is on. On the lid is pressed 'calasse,' Elven for 'clean.' It cannot hold more than its actual volume.
 Enchanted Apple	A purple-colored apple. (This enchanted apple has all the properties of a potion of Cure Light Wounds. 50gp)
+Entertainer's Pack [xphb]
 Exploding Gold Coins	Exploding gold coins (Looks legit. Should avoid contact with real gold coins for safety...)
 Exploding Rations	Exploding rations ' breathe weapon 1d6 hours for 1 use of color theme type
+Explosive Seed [egw]
 F**k You Fireworks	These appear to be normal Gnomish fireworks (although even those might seem unique and valuable to anyone unfamiliar with Gnomish ingenuity) but when they are eventually set off they spell out giant obscenities across the night's sky. It seems, in retrospect, that they may have been created by a rather angry Gnome. Sadly, whomever created the fireworks and who they were originally intended for will forever remain a mystery.
 Feather that always floats gently to the ground  
+Fine Clothes
 Finely Woven Rug	A finely made 10' x 12' wool floor rug. The center of the rug depicts a scene of siege warfare. A Halfling is being flung over a city wall by a trebuchet.
 Flask of Nightmare Ale	Half-full flask of nightmare ale ' 1 sip = 1d4 hours fear check per hour; full measure = 1d4 hours horrifying hallucinations vs DC save for early retirement
 Flask of St. Cuthbert	A pair of steel flasks, sealed with wax bearing the symbol of St. Cuthbert. (Holy water, 25 gp each)
@@ -306,9 +315,10 @@ Giant-King's Necklace	Giant-King's platinum necklace with crimson diamond worn b
 Glaive	This is a short pole-arm resembling a Fauchard or Guan do, with an additional spike for thrusting. It deals slashing damage when wielded in one hand and piercing damage when wielded in two hands.
 Glass bottle that fills itself with seawater  
 Glass magnifying lens with an odd tint  
-Glassblower's Tools	[xphb]
+Glassblower's Tools [xphb]
 Globe of Invulnerability	Globe of Invulnerability (It's a snowglobe. Not even the gods themselves can destroy it.)
 Gloves of Slapping	Gloves that improve a skill but will randomly force the user to slap an ally/NPC during conversations at the DM's discretion.
+Gluebomb [tdcsr]
 Gnome Bomb	An ornate, egg-shaped device made with cast bronze. There is a pin in the top of the device with an etched note indicating the following: PULL THYS PINNE AND WAITE TENNE COUNTS BEFORRE BOOME. When the pin is pulled, an urgent ticking sound begins to eminate from the device.
 Gnome Camo Paint	This paint provides no protection, but grants 10 to disguise. The only way it works, however, is if the wearer is wearing no clothes, and covered head to toe in the stuff. It's hilarious when a disguise check fails, and they realize they are staring at a naked Gnome.
 Gnome Timepiece	A magical time-keeping device produced by a Gnomish artisan. Opening this circular locket allows you to check the current time based on where a delicate hand is pointing. On one half of the circular face is an ornate night's sky with a crescent moon indicating midnight. On the other half is a blue sky, with a bright sun indicating mid-day. It's unclear how the magic has been infused with the device, as no arcane presence is detectable, but pulling the silver panel off the back of the locket simply exposes a number of delicate, ticking gears. Gnome magic is compicated.
@@ -318,14 +328,20 @@ Gold Ring	A small gold ring set with bloodstones.
 Golden Arrows	A quiver of golden arrows, They are devoid of supernatural properties, but despite their unusual composition will perform as normal arrows would.
 Golden brooch shaped like an eye  
 Golden Tablet	A tablet of pure gold, inscribed with the core rites and beliefs of a venerable religion. Careful study of this tablet, however, will reveal subtle ' but important ' differences between these ancient practices and the current practices of the religion in question.
+Grappling Hook [xphb]
 Greataxe of Blindness	This is a large greataxe, with a steel shaft and silver floating blade much like the Telescoping Glaive. 
 Greedy Bag of Holding	This appears to be a common cloth sack about 2 feet by 4 feet in size. 
 Griffon Bomb	A metallic egg-shaped weapon which, when thrown, sprouts magical wings and hovers above it's intended target.
+Handaxe [xphb]
 Hat that always stays on, even in strong wind  
+Healer's Kit [xphb]
 Heart Shaped Token	A small, heart-shaped token carved out of rose-colored sandstone, holding the mad soul of a princess who was trapped there by a sorcerer many centuries ago. Her body remains in the hidden royal sepulchers of her homeland, perfectly preserved by ancient magic.
+Herbalism Kit [xphb]
 Hero Dolls	These start getting made after the party does something particularly heroic. Little cloth dolls that look like party members, when squeezed, the caster spouts illusionary flames, the cleric spouts prayers "Praise Avandra!", the fighter has kung-fu action where he swings his sword.
 Holy Ice Symbol	An ornate block of ice carved into an ancient holy symbol. The carving has a subtle taint of magic to it, but it's not exactly clear what prevents it from melting.
+Horn [xphb]
 Horn Coral Gem	A deep black coral, similar to angel's skin save for its solid color. It is incredibly difficult to work with, and is used in jewelry as a polished twig or branch of material, or is cut cabochon.
+Hunting Trap [xphb]
 Hypnotic Spinning Top	
 Illusionary Coin Bag	
 Immovable Rod	This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
@@ -352,13 +368,18 @@ Lockpicking tools carved from bone
 Longsword of Balanced Sums	The Longsword of Balanced Sums. Functions exactly like a generic +2 Longsword... except when you crit miss. Then it heals the target for half its max hit points.
 Lucky Coin	You must have this item with you for 24 hours for it to become attuned to you. Once attuned, you may choose the result any time it is flipped, regardless of who actually flips it. Possible commands include heads, tails, and edge.
 Lucky Dodge Belt	Once an encounter, the player can choose to roll a d20 and use that as their base AC instead of Player must take the value of the roll.
+Lute [xphb]
+Lyre [xphb]
 Magic Litmus Paper	Litmus magic paper: This paper can be used as a standard action by rubbing it on an object. It either detects no magic and can be used again, or changed color and brightness to reflect the school(s) and strengths of magic on the object.
 Magical Soap	A bar of soap that can remove any stain
+Manacles [xphb]
 Map of a city that doesn't seem to exist  
+Mason's Tools	Ability: Strength	Utilize: Chisel a symbol or hole in stone (DC 10)	Craft: Block and Tackle	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
 Meal Table	A stone table in the midst of the wilderness which is, nevertheless, always filled with a fresh meal whenever travelers come across it.
 Medallion of Courage	"Once per day, swift. remove AC of target granted by armor, last one turn. user takes penalty to AC equal to target for same duration.
 Menesta's Book of Stored Skill	This magical book has no discernable writings on the outside, or on any page. As soon as it is opened up, ask the player for the first three skills that come to mind. As soon as they tell you, the first page of the book becomes a table of contents with three chapters. The names of the chapters are the three skills they mentioned. Turning to the page of a skill chapter causes the book to disappear in a colored burst of light'and leaves the user with a permanent +1 rank to said skill. If their ranks are maxed out, the book is wasted.
 Merchant's Dagger Box	A merchant's leather case containing a selection of twenty well-made daggers of varying designs.
+Merchant's Scale	A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth.
 Metal spoon that never gets hot  
 Minting Tools	A set of dies and hammers for minting the king's coinage.
 Mithral Armor	Mithril is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
@@ -387,6 +408,7 @@ Porcelain Discs	One hundred and sixteen 3' white porcelain discs, each has a 1 o
 Portable Light	A palm-sized cylinder that emits a harmless ray of glowing blue light when squeezed
 Potion of False Bluff	A potion vial containing a sweet. honey-smelling golden syrup. There is a label on the vial written in common, which reads "Potion of Deception".
 Potion of Harmless Flaying	A pearlescent green potion in a glass vial that seems to swirl playfully when started at.
+Potted daffodil that sways when near a source of music
 Pouch of Healing Potions	A large carry pouch made from the skin of a monkey. Inside are {1d6} Potions of Greater Healing. 
 Pouch of Mushrooms	A small brown pouch that smells faintly musty. Inside it are {1d4} colourful mushrooms that are unrecognizable, even to a particularly knowledgeable alchemist or naturist. If determined, a painstaking delve through a herbalists library might identify the mushrooms as "sub-space mushrooms" in a madly written diary of a man claiming to be a deposed king called Cooper.
 Puppet Theater	An elegant puppet theater. Although its wood is brightly polished and the red of its satin curtains is bright and fresh, the hand-painted sign upon its front (reading 'The Wondrous Show of Punch and Judy' in carnival lettering) is chipped and faded. If the curtains are opened (using a set of finely woven pulley ropes which lie inside the theater), the puppets ' stored in a concealed compartment 'backstage' ' will come to life and perform elaborate shows of their own volition.
@@ -409,7 +431,6 @@ Screaming Arrows	A quarry of 20 Screaming Arrows ' intimidate/fear check
 Sentient Dagger of Sneaking	This sentient dagger attempts to help anytime it's owner tries to sneak by whistling inconspicuously.  For some reason it seems to have been discarded.
 Set of dice that always land on 7  
 Set of glass vials, none of them breakable  
-Set of jeweler's tools with delicate silver detailing  
 Shell Paste Lotion	A small metal tin which has been carefully labelled. Instructions are included on the inside of the lid, "Smear on bare skin to grow a natural defence." The paste inside is white and gritty. It smells like coconut.
 Shirt that always feels perfectly cool in hot weather  
 Shrunken Head	Shrunken head with command word ' 1 ray spell per hour
@@ -417,6 +438,7 @@ Signet Ring of Gold	A large signet ring of gold, worked with a unicorn crest. An
 Silk Robe	A long silk robe with golden embroidery.
 Silver comb that untangles any knot  
 Silver cufflinks engraved with strange symbols  
+Silver hand mirror with a nymph-shaped handle
 Silver locket that occasionally ticks  
 Silver Necklace	This silver necklace has a gemstone pendant.
 Silver quill that never dulls  
@@ -463,6 +485,8 @@ Thirsty Cup
 This weapon functions both as a lute and a weapon. When used as a lute, it is considered to be a lute and does not require a separate proficiency bonus to play. However, if the user rolls a critical miss with the weapon (a 1 on an attack roll) the lute may become slightly damaged and will require the user to spend an hour to retune it. If the instrument is not returned, whenever the instrument is played, the user is disadvantaged on the Perform check. This weapon can also be used as a bard's spellcasting focus.
 Throwing Axe of Appendage Severing	If the user of this throwing axe manages a critical hit, it will sever an appendage. ' critical = appendage severed
 Thunder Pommel	When embedded in the hilt of a weapon. -deal and additional 1d6 lightning damage on attacks with an odd 1d20 roll
+Tinker's Tools [xphb]
+Tiny electrum whistle that only Fey can hear
 Tiny metal cube that floats in water  
 Tiny Phantasm	A floating mass of swirling colours the size of a penny. It follows your every command and leaves a multicolour trail across any surface it touches. Cannot physically interact in any other way.
 Tiny stone amulet, always faintly warm  
@@ -472,11 +496,13 @@ Townshend's Cudgel	"Townshend's Crudgels was invented by its namesake, Peter ""U
 Trap Detection Key	A token/key designed to deactivate all traps within the dungeon, requires activation at security box in secret depths of deepest part of dungeon
 Troglodyte Egg	A brown and red flecked egg, about the size of a loaf of bread, that gives off a rancid scent.
 Troll-Rubber Boots	Troll-rubber boots.
+Two yew rings linked together
 Underworld Currency	Underworld Currency ' lead coins; purple rocks/crystals, fairy dust, dragon scales, dna globules (rocks/capsules with runic understanding of specific creatures), tally bones, soul traps/crystals
 Visikus	This dagger belonged to the great druid, Marcek, a wise and cunning elf who fell only to the fiery Wyrm, Brazzemel, during his quest to reclaim the lost Eladrin spell tomes. Marcek inherited this dagger from his master and mentor, Garbasen the Sage, who crafted it with ancient Eladrin magic. Covered in etched runes and jewels, this dagger holds a legendary history and a powerful magic core.
 Wand of Eye-Poking	A wand of eye poking, four charges. It will unerringly poke out the eye of a target creature within arm's reach.
 Water Opal	"Water Opal is a colourless, clear opal with a play of colour. It is rare and valuable in the Realms, where it is used in scrying devices.
 Waterskin of Inexplicable Amelioration	A sheep's bladder waterskin. It is lined with a suedelike fabric which has been beautifully stiched with the image of a stag's head. 
+Wax candle that roars and crackles like a bonfire while lit
 Woodcutter's axe with a strangely balanced handle  
 Wooden chest with a lock that has no keyhole  
 Woolen scarf that never seems to get wet  
@@ -499,42 +525,6 @@ Zulabar's Fist-Stick	A trolls hand mounted on a three foot rod. It will grasp ob
 {1d4} cooked bull hooves
 {1d4} inch ball of amber
 {1d4} {BIRD} talons
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
-{1d50} silver pieces
 {1d6} ankheg eggs
 {1d6} Slices of cactus meat
 {beast} eyes
@@ -564,4 +554,3 @@ Zulabar's Fist-Stick	A trolls hand mounted on a three foot rod. It will grasp ob
 {SUBJECT} painting on canvas	Signed by {NAME}
 {SUBJECT} painting on canvas	Signed by {NAME}
 {SUBJECT} painting on canvas	Signed by {NAME}
-Crampons	A crampon is a metal plate with spikes that is strapped to the sole of a boot. A creature wearing crampons can't fall prone while moving across slippery ice.

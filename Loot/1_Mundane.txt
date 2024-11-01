@@ -216,7 +216,6 @@ Old Pouch	An old pouch. Works as any pouch might, but it has a hole in it.
 Old Round Shield	Father's old round shield, beneath the boss is the sigil of ______, valiant conduct by the bearer may draw the eye of the God.
 Old Saddlebag	A rotten saddlebag with a few coins spilling out. The copper coins have some verdigris and the silver coins are badly tarnished.
 Old tin picture frame
-Old Wheelbarrow	A rotting wheelbarrow holding 167 torches.
 Pair of broken spectacles
 Pair of iron nails, slightly bent
 Pair of mismatched gloves
@@ -365,3 +364,5 @@ Woven straw hat with a hole in the brim
 {flora}	Plant sample
 Common clothes
 A {FABRIC} cloth
+Set of false wooden teeth
+A dented brass compass with a red needle

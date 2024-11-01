@@ -116,4 +116,13 @@ Winged Eye	This extremely tiny Beholder creature has wings in addition to its te
 Zoltar's Pearlescent Ring	A simple white pearlescent ring. Curse: Lose 1d4 max health once per day. The effect stacks each day. Once worn, this ring cannot be removed. Any attempt to remove the ring sees it reappear after a few seconds. Any attempt to circumvent the curse by removing the ring finger sees it appear on a different finger. If the wearer removes every finger, the curse ends. Should they fail to get the curse removed before their health falls below 0 they become an undead thrall.
 {1d20} Ammunition +3	You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hit a target, the ammunition is no longer magical. Value listed is for individual units.
 {1d8} Arrows of Slaying +2	An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common. Value listed is for each arrow.
-Concussion Grenade	[qftis]
+Concussion Grenade [qftis]
+A golden compass	Points toward the nearest portal to the Feywild within 10 miles
+Enchanted Three-Dragon Ante Set [llk]
+Fargab [dsotdq]
+Vitrified eye of a displacer beast
+Old invitation to a banquet in the Summer Court, written in ink on vellum in Sylvan
+A soot-stained sock in which a nugget of coal magically appears each day at dawn
+Wooden pan flute that attracts harmless local fauna when played
+A single scale from a {COLOR} dragon
+The head of a broken statue that houses the consciousness of a snarky sage

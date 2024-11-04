@@ -159,7 +159,7 @@ Gold Locket	A charming golden locket with a painted portrait inside.
 Green glass bottle filled with sand
 Half-burned wax candle
 Hammer	A crosspeen hammer forged from steel. It has a gently crowned flat face that has been hardened and tempered for toughness. The handle is hand carved ash, flame treated and oiled.
-Hand Mirror	
+Hand Mirror
 Hematite	A rather dull gray-black hematite gem with the remains of a necklace fasten on its back.
 Holy Bones	A reliquary containing the bones of an ancient holy man
 Holy Book	An old tome, written for the clergy of Pelor. It has a stiff leather dust jacket which has been worn down on the spine and a broken clasp once used to attach a chain
@@ -168,7 +168,7 @@ Honey	A quart of honey.
 Honeysuckle Potion	A small, crystal vial of a clear, viscous liquid that smells strongly of honeysuckle.
 Hope Chest	A delicately carved hope chest of polished cherry wood. The box contains nothing but a remarkably fine, gray sand drawn from some unknown locale. Beneath the new moon, this sand glows a faint blue.
 Horseshoe
-Hourglass	
+Hourglass
 Inhalation Herbs & Essences	Inhalation herbs & essences provide natural healing remedies for all manner of symptoms such as headaches, colds and flu.
 Ink	A vial of black ink, for use with a quill.
 Iron Buckle	An iron belt buckle that's beginning to rust.
@@ -188,15 +188,15 @@ Large acorn with a hole bored in the top
 Large Pile of Coal	A large pile of coal. Two small, rough diamonds are hidden near the bottom. (20gp, 25 gp)
 Lead Coins	Satchel of {1d20} gold painted lead coins.
 Leather Ball	A leather ball stuffed with chicken feathers. On a DC 15 peception check the player can find an electrum ring amongst the feathers.
-Leather Quiver	
-Leather Satchel	
+Leather Quiver
+Leather Satchel
 Leather-bound journal
 Little Riding Hood	A bright red hooded cape sized for a child, spattered with dried blood.
 Loose string of wooden beads
 Loose, rusted chain link
 Lynx Eye Gem	"Lynx eye is a specific type of labradorite (a feldspar gemstone). Labradorite as a class of stones is pale to dark gray and has patches of colored reflections. This ""flash"" is most commonly blue but can be of all shades. ""Green Flash"" labradorite is called lynx eye in the Realms.
 Lynx Eye Gem	Lynx eye is a special type of labradorite. It is pale to dark grey and has patches of coloured reflections. This "flash" is most commonly blue but can be of all shades. "Green Flash" labradorite is called Lynx Eye in the local regions.
-Magnifying Glass	
+Magnifying Glass
 Malachite Gem	A large malachite gem. It is striated light and dark green across its polished surface.
 Man Mask	A mask carved to look like the face of a man, but which has been fitted for something wholly other.
 Mistletoe	{1d4} sprigs of mistletoe
@@ -246,8 +246,8 @@ Rusty iron key
 Sack of Flower Bulbs	A sack of prized flower bulbs
 Sales Receipt	Receipt for delivery of slaves
 Sausages	Package of {1d6} sausages
-Saw	
-Scroll Case	
+Saw
+Scroll Case
 Service Record	A scroll detailing the bound service of two men-at-arms sworn to six months of service.
 Set of old iron keys on a ring
 Set of six worn dice
@@ -317,7 +317,7 @@ Turquoise Gem	"Turquoise is an opaque aqua stone with darker mottling, and is fo
 Two-Sided Die	This perculiar dice is made out of copper and has two sides. Engraved on one side is the portrait of a long forgotten ruler, on the other is an ornate two headed chimera. Useful for making decisions. Doesn't roll well.
 Unreadable Note	A paper note that's been left on a damp floor. It's completely illegible.
 Used Whetstone	An old whetstone and a half-used vial of oil. The stone itself is ever-so-slightly worn into a curve from years of use, but it will be decades before it's wear renders it useless.
-Vanishing Ring	
+Vanishing Ring
 Walking Stick	A wooden walking stick.
 Wasplight Lantern	A dozen glow wasps in a round wire cage with handle. Equal to a torch light at night. Require food and water daily.
 Waterskin	A waterskin made from a sheep's bladder.
@@ -336,14 +336,14 @@ Wooden ring with a sun symbol carved in it
 Wooden Spike	A long wooden spike, used to fix soft items together or kill vampires while they sleep.
 Wooden spinning top
 Wooden whistle with no sound
-Wormrose Incense	
+Wormrose Incense
 Wormscrape	A narcotic made from the petal of a wormrose flower.
 Worn deck of playing cards
 Worn-out saddle bag
 Woven straw hat with a hole in the brim
 {1d12} severed ant heads
 {1d20} Almonds
-{1d20} Marbles	
+{1d20} Marbles
 {1d2} cow testicles
 {1d4} Autumn leaves
 {1d4} beets
@@ -366,3 +366,5 @@ Common clothes
 A {FABRIC} cloth
 Set of false wooden teeth
 A dented brass compass with a red needle
+String	10 feet long. You can tie a knot in it as a Utilize action.
+Traveler's Clothes

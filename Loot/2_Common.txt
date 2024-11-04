@@ -23,7 +23,7 @@ A calendar
 A camp cot
 A canteen	{1d100}% full
 A case for reading glasses
-A ceramic jar painted with a depiction of {SUBJ}
+A ceramic jar painted with a depiction of {SUBJECT}
 A child's doll of a dragon, woven from leather cords
 A children's toy of a {SUBJECT}	Made in {LOC}
 A children's toy of a {SUBJECT}	Made in {LOC}
@@ -231,7 +231,7 @@ Bottle of {RACE} beer	{UP}{COLOR} color. {FLAVOR} taste
 Bottle of {RACE} beer	{UP}{COLOR} color. {FLAVOR} taste
 Bottle of {RACE} beer	{UP}{COLOR} color. {FLAVOR} taste
 Bottle of {RACE} beer	{UP}{COLOR} color. {FLAVOR} taste
-Bountiful Spade	
+Bountiful Spade
 Brandistock	"This peculiar spear-like weapon is popular among travelers and law enforcement. The brandistock's three-pronged head is retractable, which renders it indistinguishable from a quarterstaff (unless closely inspected). Extending the blades is instantaneous, but pulling them back requires you to spend an action.
 Brass candle snuffer
 Brass candlestick
@@ -243,7 +243,7 @@ Bronze ring engraved with leaves
 Bundle of dried lavender
 Bundle of firewood
 Bundle of hay
-Burning Oil	
+Burning Oil
 Camp supplies	A bedroll, water canteen, {1d4} food provisions, {1d50} ft of rope
 Carnelian Gemstone	This is an opaque orange gemstone set in a small brooch.
 Carpenter's Tools [PHB]
@@ -340,7 +340,7 @@ Foul Ivory Statue	A life sized ivory carving of a chicken.
 Frost Giant's Necklace	A frost giant necklace of silver upon which are pierced 17 human-sized hands. All of them appear to be the right hand of their former owner.
 Frosted Dagger	A simple dagger with a blue hilt. The blade is almost always covered in frost.
 Frying Pan	A heavy cast iron frying pan. This can be used for frying, searing, browning and whacking people over the head! It has the remnants of this morning's breakfast smeared around it's rim. Damage is doubled when wielder has proficiency with cooking.
-Fungus Spores	
+Fungus Spores
 Fur Basket	A wicker basket with a pair of mink furs within.
 Giggle Water
 Glaive	A three bladed disk which can either be used in melee or as a thrown weapon. The circular handle is made from dark wood and has the design of an owl's head in the middle.
@@ -450,7 +450,7 @@ Pair of well-worn leather boots
 Pair of wooden chopsticks
 Pair of woolen socks
 Pair of work gloves
-Pendulum	
+Pendulum
 Permanently Damp Rag	A damp rag which carries a faint musty smell.
 Pewter mug with a chipped rim
 Phoenix Egg	"Phoenix Egg" from a peddler in the City of Brass. After consulting with a few scholars, he later found that (at least in my world lore) Phoenixes are born of primal energy and not hatched, and that he had in fact purchased a very large jar of Alchemist's Fire.
@@ -849,11 +849,11 @@ A {ROLE}'s uniform
 A {ROLE}'s uniform
 A crowbar
 A dagger
-Leatherworker's Tools	Ability: Dexterity	Utilize: Add a design to a leather item (DC 10)	Craft: Sling, Whip, Hide Armor, Leather Armor, Studded Leather Armor, Backpack, Crossbow Bolt Case, Map or Scroll Case, Parchment, Pouch, Quiver, Waterskin	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.	Ability: Intelligence	Utilize: Discern what a ceramic object held in the past 24 hours (DC 15)	Craft: Jug, Lamp
-Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
-Smith's Tools	Ability: Strength	Utilize: Pry open a door or container (DC 20)	Craft: Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip), Medium armor (except Hide), Heavy armor, Ball Bearings, Bucket, Caltrops, Chain, Crowbar, Firearm Bullets, Grappling Hook, Iron Pot, Iron Spikes, Sling Bullets	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
-Weaver's Tools	Ability: Dexterity	Utilize: Mend a tear in clothing (DC 10), or sew a Tiny design (DC 10)	Craft: Padded Armor, Basket, Bedroll, Blanket, Fine Clothes, Net, Robe, Rope, Sack, String, Tent, Traveler's Clothes	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
-Woodcarver's Tools	Ability: Dexterity	Utilize: Carve a pattern in wood (DC 10)	Craft: Club, Greatclub, Quarterstaff, Ranged weapons (except Pistol, Musket, and Sling), Arcane Focus, Arrows, Bolts, Druidic Focus, Ink Pen, Needles	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
+Leatherworker's Tools [xphb]
+Artisan's Tools [xphb]
+Smith's Tools [xphb]
+Weaver's Tools [xphb]
+Woodcarver's Tools [xphb]
 Explorer's Pack [xphb]
 Tiny pair of sharp, iron scissors
 Pendant that shows the phases of the moon
@@ -873,3 +873,37 @@ Mess Kit	This tin box contains a cup and simple cutlery. The box clamps together
 Mess Kit	This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.
 Mess Kit	This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.
 A handmirror
+Navigator's Tools [xphb]
+Oil Flask
+Oil Flask
+Oil Flask
+Oil Flask
+Oil Flask
+Oil Flask
+Oil Flask
+Olisuba Leaf	These dried leaves of the Olisuba tree, when steeped to make a tea, can help a body recover from strenuous activity. If you drink a dose of Olisuba tea during a long rest, your exhaustion level is reduced by 2 instead of 1 at the end of that long rest.
+A {color} bottle of perfume[https://5e.tools/items.html#perfume_xphb]	Smells {FLAVOR}
+A {color} bottle of {RACE} perfume[https://5e.tools/items.html#perfume_xphb]	Smells {FLAVOR}
+A {color} bottle of {RACE} perfume[https://5e.tools/items.html#perfume_xphb]	Top notes of {SPICE}, heart notes of {FRUIT} and bass notes of {FLORA}
+A {color} bottle of {RACE} perfume[https://5e.tools/items.html#perfume_xphb]	Top notes of {SPICE}, heart notes of {FRUIT} and bass notes of {FLORA}
+A {color} bottle of {RACE} perfume[https://5e.tools/items.html#perfume_xphb]	Top notes of {SPICE}, heart notes of {FRUIT} and bass notes of {FLORA}
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Rations
+Sealing Wax
+Sickle [xphb]
+Sling [xphb]
+Smith's Tools [xphb]
+A bar of {FLORA}-scented soap
+Tent	A Tent sleeps up to two Small or Medium creatures.

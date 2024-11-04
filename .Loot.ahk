@@ -1,4 +1,4 @@
-;v3.6.33
+;v3.8.0
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -33,7 +33,7 @@ Habitat = Temperate	;Specify your world's habitat
 Vars:
 Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot
 NamesDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
-
+Tog_Currency := false
 If Debug = 0
 	{
 		Loop, Read, %Dir%\0_Test.txt	;testing purposes
@@ -113,7 +113,6 @@ Inputbox, QtyMax,,,,200,100
 			Prompt := QtyMaxPrompt.2
 			;Msgbox %Prompt%	;Debug
 		}
-		
 Loop, %QtyMax%
 {
 	;Condition
@@ -143,7 +142,6 @@ Loop, %QtyMax%
 			Condition = Barely Recognizable
 		;Msgbox %Condition%
 	}
-	
 	If (Prompt != "")	;Prompt is not empty
 		{
 			If (Instr(Prompt, "book"))
@@ -242,55 +240,57 @@ Loop, %QtyMax%
 				}
 			Goto, Randomize	;Skip rarity tables
 		}
-	
 	;Rarity	
 	{	;Collapse
+	;Msgbox %Currency_tog%
+	
 	Random, RarityRnd, 1, 100
 		If Debug = 0
 		{
 			RarityRnd = 150
 			Rarity = 0_Test.txt
 			fLines = %0_Lines%
-		}
-		If RarityRnd between 1 and 20	;Currency copper
+		}  
+		If RarityRnd between 1 and 20	;Currency/gems
 		{
-			Curr = {1d50} copper pieces
+			Random, CurrencyRnd, 1, 100
+			{
+				If CurrencyRnd between 1 and 60
+					Type_Currency = {/r1d50} copper
+				If CurrencyRnd between 61 and 80
+					Type_Currency = {/r2d15} silver
+				If CurrencyRnd between 81 and 90
+					Type_Currency = {1d8} {GEM}s
+				If CurrencyRnd between 91 and 100
+					Type_Currency = {1d20} gold
+			}
+			Curr = %Type_Currency% pieces
 			Loot = %CURR%
 		}
-		If RarityRnd between 21 and 30
+		If RarityRnd between 21 and 40
 		{
 			Rarity = 1_Mundane.txt
 			fLines = %1_Lines%
 		}
-		If RarityRnd between 31 and 65
+		If RarityRnd between 41 and 80
 		{
 			Rarity = 2_Common.txt
 			fLines = %2_Lines%
 		}
-		If RarityRnd between 66 and 75
+		If RarityRnd between 81 and 93
 		{
 			Rarity = 3_Uncommon.txt
 			fLines = %3_Lines%
 		}
-		If RarityRnd between 76 and 85	;Currency silver
-		{
-			Curr = {1d20} gold pieces
-			Loot = %CURR%
-		}
-		If RarityRnd between 86 and 89
+		If RarityRnd between 94 and 97
 		{
 			Rarity = 4_Rare.txt
 			fLines = %4_Lines%
 		}
-		If RarityRnd between 90 and 91
+		If RarityRnd between 98 and 99
 		{
 			Rarity = 5_VeryRare.txt
 			fLines = %5_Lines%
-		}
-		If RarityRnd between 92 and 99	;Currency gold
-		{
-			Curr = {1d20} gold pieces
-			Loot = %CURR%
 		}
 		If RarityRnd = 100
 		{
@@ -327,6 +327,79 @@ Loop, %QtyMax%
 	}
 		IfStatements:
 		{	;Collapse
+			If (InStr(Loot, "{Table-"))
+			{	;Collapse
+				Table0 := StrSplit(Loot, "{Table-")
+				Table := Table0.2
+				Table := StrReplace(Table, "}")
+				;Msgbox %Table%
+				TableDir = %Dir%\Banks\Tables\%Table%.txt
+				Array := []
+				ArrayCount := 0
+				
+				Loop, Read, %TableDir%
+					{						
+						ArrayCount += 1
+						Array.Push(A_LoopReadLine)
+					}
+				StartRange:
+				{
+					StartLine = % Array[1]
+					StartLine := StrSplit(StartLine, A_Tab)
+					Start := StartLine.1
+					
+					Start := StrSplit(Start, "-")
+					StartRange := Start.1
+				}
+				
+				EndRange:
+				{
+					EndLine = % Array[ArrayCount]
+					EndLine := StrSplit(EndLine, A_Tab)
+					End := EndLine.1
+					
+					If (InStr(End, "-"))
+						{
+							End := StrSplit(End, "-")
+							EndRange := End.2
+						}
+					Else
+						EndRange = %End%
+					
+					If(EndRange = "00")
+						EndRange = 100
+					;Msgbox %StartRange% goes to %EndRange%
+				}
+				
+				Random, TableRoll, %StartRange%, %EndRange%
+				for index, element in Array
+					{	 
+						EndLine = % Array[index]
+						EndLine := StrSplit(EndLine, A_Tab)
+						End := EndLine.1
+						
+						End := StrSplit(End, "-")
+						StartRange := End.1
+						EndRange := End.2
+						
+						If(EndRange = "00")
+							EndRange = 100
+						
+						;MsgBox % "Element number " . index . " is " . element
+						;Msgbox %StartRange%
+						;Msgbox %TableRoll%
+						
+						If (TableRoll <= StartRange)
+						{
+							;Line = %element%
+							element := RegExReplace(element, "[0-9]")
+							element := Trim(element, "`t-")
+							Goto, EscapeArray
+						}
+					}
+				EscapeArray:
+				Loot := RegexReplace(Loot, "{Table.+}", element)
+			}
 			If (InStr(Loot, "{SUBJECT}"))
 			{
 					Random, SubjectRnd, 1, 8
@@ -418,6 +491,15 @@ Loop, %QtyMax%
 				FileReadLine, Patterns, %Dir%\Banks\.Patterns.ini, PatternsRnd
 				;Msgbox %Patterns%	;Debug
 				Loot := StrReplace(Loot, "{PATTERN}", Patterns)
+			}
+			If (InStr(Loot, "{EMBLEM}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Misc\.EMBLEMs.ini
+					EMBLEM_Lines = %A_Index%
+				Random, EMBLEMRnd, 1, EMBLEM_Lines
+				FileReadLine, EMBLEM, %Dir%\Banks\Misc\.EMBLEMs.ini, EMBLEMRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{EMBLEM}", EMBLEM)
 			}
 			If (InStr(Loot, "{FABRIC}"))
 			{	;Collapse
@@ -567,6 +649,24 @@ Loop, %QtyMax%
 				FileReadLine, BEVERAGE, %Dir%\Banks\Foods\.BEVERAGEs.ini, BEVERAGERnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{BEVERAGE}", BEVERAGE)
+			}
+			If (InStr(Loot, "{WOOD}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Misc\.WOODs.ini
+					WOOD_Lines = %A_Index%
+				Random, WOODRnd, 1, WOOD_Lines
+				FileReadLine, WOOD, %Dir%\Banks\Misc\.WOODs.ini, WOODRnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{WOOD}", WOOD)
+			}
+			If (InStr(Loot, "{SHAPE}"))
+			{	;Collapse
+				Loop, Read, %Dir%\Banks\Misc\.SHAPEs.ini
+					SHAPE_Lines = %A_Index%
+				Random, SHAPERnd, 1, SHAPE_Lines
+				FileReadLine, SHAPE, %Dir%\Banks\Misc\.SHAPEs.ini, SHAPERnd
+				;Msgbox %Beastiary%	;Debug
+				Loot := StrReplace(Loot, "{SHAPE}", SHAPE)
 			}
 			If (InStr(Loot, "{FLAVOR}"))
 			{	;Collapse
@@ -777,80 +877,6 @@ Loop, %QtyMax%
 				}
 				Loot := RegexReplace(Loot, "{/r.+}", DiceSum)
 			}
-			RoomGenerator:
-			If (InStr(Loot, "{Table-"))
-			{	;Collapse
-				Table0 := StrSplit(Loot, "{Table-")
-				Table := Table0.2
-				Table := StrReplace(Table, "}")
-				;Msgbox %Table%
-				TableDir = %Dir%\Banks\Tables\%Table%.txt
-				Array := []
-				ArrayCount := 0
-				
-				Loop, Read, %TableDir%
-					{						
-						ArrayCount += 1
-						Array.Push(A_LoopReadLine)
-					}
-				StartRange:
-				{
-					StartLine = % Array[1]
-					StartLine := StrSplit(StartLine, A_Tab)
-					Start := StartLine.1
-					
-					Start := StrSplit(Start, "-")
-					StartRange := Start.1
-				}
-				
-				EndRange:
-				{
-					EndLine = % Array[ArrayCount]
-					EndLine := StrSplit(EndLine, A_Tab)
-					End := EndLine.1
-					
-					If (InStr(End, "-"))
-						{
-							End := StrSplit(End, "-")
-							EndRange := End.2
-						}
-					Else
-						EndRange = %End%
-					
-					If(EndRange = "00")
-						EndRange = 100
-					;Msgbox %StartRange% goes to %EndRange%
-				}
-				
-				Random, TableRoll, %StartRange%, %EndRange%
-				for index, element in Array
-					{	 
-						EndLine = % Array[index]
-						EndLine := StrSplit(EndLine, A_Tab)
-						End := EndLine.1
-						
-						End := StrSplit(End, "-")
-						StartRange := End.1
-						EndRange := End.2
-						
-						If(EndRange = "00")
-							EndRange = 100
-						
-						;MsgBox % "Element number " . index . " is " . element
-						;Msgbox %StartRange%
-						;Msgbox %TableRoll%
-						
-						If (TableRoll <= StartRange)
-						{
-							;Line = %element%
-							element := RegExReplace(element, "[0-9]")
-							element := Trim(element, "`t-")
-							Goto, EscapeArray
-						}
-					}
-				EscapeArray:
-				Loot := RegexReplace(Loot, "{Table.+}", element)
-			}
 			LootReplacements:
 			{	;Collapse
 				Loot := StrReplace(Loot, "{1d100}", 1d100)
@@ -941,7 +967,6 @@ Loop, %QtyMax%
 			Gui, Font, s14 cWhite, Centaur bold
 			GUI, add, button, gAction w700, %Loot%
 		}
-		
 }	;End of Qty loop
 
 ;Goto, Start

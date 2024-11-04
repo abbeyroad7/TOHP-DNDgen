@@ -119,7 +119,7 @@ Backpack of Effortlessness	Halves the weight of anything placed inside of it. No
 Bad Coin	A coin that always comes up tails. Placing it anywhere tails side down causes it to flip itself over after 1 round. It takes 50 pounds of pressure to prevent this flip.
 Bag of Angel Feathers	{1d6} angel feathers aura of good; razor sharp; stronger than steel (can be used as weapon like dagger)
 Bag of Ash	The Bag of Ash acts like a jar of infinite water, except it just makes a grey, sooty ash.
-Bag of Hurling	
+Bag of Hurling
 Bag of Tricks, Rust	This ordinary rust coloured cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
 Bag of Tricks, Tan	"This ordinary tan cloth bag appears to be empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points. The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. Once three fuzzy objects have been pulled from the bag, the bag cannot be used again until the next dawn.
 Banshee Spirit Dagger	"Despite appearing to be a normal dagger, even those not able to recognise the presence of magic can tell that there is something imbued in the unassuming metal hilt and blade.
@@ -252,7 +252,7 @@ Hollow Glass Sphere	A hollow glass sphere of surprising proportions: nearly thre
 Hyperstone	Once per day this item grants one extra attack for it's user.
 If you aren't a dwarf, you gain the following additional benefits while wearing the belt: You have advantage on saving throws against poison, and you have resistance against poison damage. You have darkvision out to a range of 60 feet. You can speak, read, and write Dwarvish. "
 In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one.
-Insanity Blade	
+Insanity Blade
 Iron Key Cylinder	A small thumb-button storage cylinder that releases an iron key when pressed
 Javelin of Explosions	5x range, normal range 5x dmg, 2xs range = 4xs dmg, 3xs range = 3xs dmg, etc' - explodes & destroyed after use except at 5xs or 4xs range
 Jeweled Anklet	A jeweled anklet.
@@ -285,7 +285,7 @@ Ornate Longsword	This longsword seems to have been made more for show than for u
 Outdated Book of Prophecies	A small, leather-bound book filled with prophecies. All of them will be found to be true, but the last of them is dated just a few weeks ago.
 Owlbear Costume	An owlbear costume. Gives the wearer a +10 to disguise when attempting to disguise as an Owlbear.
 Oxygen Reader	A handheld device containing a glowing green gem that darkens when no oxygen is present
-Painter's Supplies	Ability: Wisdom	Utilize: Paint a recognizable image of something you've seen (DC 10)	Craft: Druidic Focus, Holy Symbol
+Painter's Supplies [xphb]
 Pearl Necklace	A necklace string of small pink pearls.
 Pendant that allows the wearer to see through illusions  
 Pendant that grants resistance to cold  
@@ -304,8 +304,8 @@ Prism of Paranoia	This cursed item hovers just behind whoever it is attuned to, 
 Quiver that refills with arrows every dawn  
 Rafting Cloak	An cherrywood cloak that repels water perfectly.
 Ring Mail of Three Wishes	This armor is Leather Armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Three rings across the chest are made of brilliant gold that sheds dim light similar to daybreak.
-Ring of Contrariness	
-Ring of Contrariness	
+Ring of Contrariness
+Ring of Contrariness
 Ring of Ghosts	Ring of Ghosts: the wearer of the ring can see and communicate with the ghost of any intelligent being that has died in the past 24 hours within a 1 mile radius. After the 24 hours, the ghost disappears. The ghosts are only visible and audible to the wearer, but remain intangible. Also, the ghosts likely aren't very cooperative if the players killed them.
 Ring that allows brief teleportation once per day  
 Ring that allows the wearer to breathe underwater  
@@ -325,7 +325,7 @@ Shield that reflects magic back at the caster
 Silver and Gold Brooch	A simple but finely made silver and gold brooch.
 Silver Chalice	A silver chalice set with moonstones.
 Silver Platter of Feathers	A light silver platter, 6 inches in diameter, etched with ornate feathers.
-Spear of the Hunter	
+Spear of the Hunter
 Spire of the Manticore	"You gain a +1 bonus to attack and damage rolls with this magical weapon, and it deals an additional 1d8 poison damage. The damage increases by 1d8 if the target is a Monstrosity or Beast.
 Staff that can heal minor injuries  
 Staff that can summon a weak thunderstorm  
@@ -346,11 +346,11 @@ Telescoping Glaive	This is a magical Glaive, with an ornately decorated shaft ma
 The Clegane Bowl	This large basin has bloodstains permanently ingrained in it. Any liquid placed in the Clegane Bowl immediately turns into Potion of Greater Hype. When consumed, a dose of this potion doubles the Strength score of the user for 1 hour, up to a maximum of 30 Strength.
 The eye of a {beast}
 The Iron Thorn	This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
-The Patient Man's Key Ring	
+The Patient Man's Key Ring
 The spinal column of a {BEAST}
 Tome of Alchemy	A large tome, bound in leather and clasped with gold. A closer inspection of this volume will reveal that each page is perfectly preserved dragon scale which has been inscribed with the black blood of a fiend. The book describes the four spirits (quicksilver, orpiment, sal ammoniac, sulfur) and seven bodies (gold, silver, iron, quicksilver, lead, tin, copper) of traditional alchemy.
 Topaz	A yellow facet cut Topaz gemstone.
-Tracking Dagger	
+Tracking Dagger
 Uncut Diamond	An uncut chunk of raw diamond. It is easily the size of a dwarf's fist and is likely worth a substantial sum to the right jewel maker.
 Undead Knife	Knife of a god of undeath. It turned whoever owned it immediately undead.
 until the next dawn. The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons.
@@ -382,8 +382,8 @@ Yellow Sapphire	A transparent fiery yellow or yellow' green Sapphire.
 Diplomat's Pack	A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox.
 Disguise Kit	Ability: Charisma	Utilize: Apply makeup (DC 10)	Craft: Costume	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
 Dragon's Blood [erlw]
-Jeweler's Tools	Ability: Intelligence	Utilize: Discern a gem's value (DC 15)	Craft: Arcane Focus, Holy Symbol	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
-Painter's Tools	Ability: Wisdom	Utilize: Paint a recognizable image of something you've seen (DC 10)	Craft: Druidic Focus, Holy Symbol	Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.	If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
+Jeweler's Tools [xphb]
+Painter's Tools [xphb]
 A wooden staff	Adorned with {GEM} and {MATERIAL}. Likely used as a druidic focus. 	Uses Staff statblock +2 bonus damage.
 A dulcimer [xphb]
 Dungeoneer's Pack [xphb]
@@ -431,3 +431,30 @@ A puzzle box bedecked with amber
 Matchless Pipe	A switch made of flint is built into the bowl of this fine wooden smoking pipe. With a few flicks of the switch, the pipe lights itself.
 Monster Hunter's Pack [vrgr]
 {Table-MournlandTrinket}
+Murgaxor's Elixir of Life	Whoever drinks this concoction gains advantage on death saving throws for 24 hours.
+Muroosa Balm	This paste made from the muroosa bush is known to help prevent sunburn, but it is also a fire retardant. After spending 1 minute applying a quarter pint of muroosa balm to your skin, you gain resistance against fire damage for 1 hour.	A dose of muroosa balm sufficient for treating sunburn costs 1 gp.
+Narycrash [dsotdq]
+Nimbewright Detector [wdh]
+Oloore Root Teabag	[tdcsr]
+{Table-PlanarPhilosopherTrinket}
+Poisoner's Kit	[xphb]
+Portable Ram [xphb]
+Ryath Root	Any creature that ingests a ryath root gains 2d4 temporary hit points. A creature that consumes more than one ryath root in a 24-hour period must succeed on a DC 13 Constitution saving throw or suffer the poisoned condition for 1 hour.
+{Table-SarlonaTrinket}
+{Table-SecondhandStealTrinket}
+Shawm [xphb]
+Signal Whistle [xphb]
+{Table-SilverquillTrinket}
+Sleep Grenade [qftis]
+Songhorn [scag]
+Soothsalts [egw]
+A spellbook with an unknown spell	{SPELL}
+Stink Bomb [tdcsr]
+Tangler Grenade [wdmm]
+Thieves' Tools [xphb]
+Tinker's Tools [xphb]
+Tocken [scag]
+Tome of Strahd	The Tome of Strahd is an ancient work penned by Strahd, a tragic tale of how he came to his fallen state. The book is bound in a thick leather cover with steel hinges and fastenings. The pages are of parchment and very brittle. Most of the book is written in the curious shorthand that only Strahd employs. Stains and age have made most of the work illegible, but several paragraphs remain intact.
+Vial Of Stardust [wdmm]
+Viol [xphb]
+A {WOOD} wand	Painted {COLOR} with a {EMBLEM} on the hilt

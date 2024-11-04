@@ -13,12 +13,12 @@ Amulet that grants the power of teleportation to others
 Amulet that prevents any form of detection  
 Amulet that stores and releases the power of the sun  
 Apparatus of Kwalish	An apparatus of Kwalish appears to be a large, sealed iron barrel, but it has a secret catch that opens a hatch in one end. Inside, a character finds ten levers. The levers perform various functions, including extending or retracting the legs, tail, pincers and feelers, covering and uncovering the portholes, moving the apparatus, snapping its pincers, opening and closing its magically-lit "eyes", rising and sinking in water, and opening or closing the hatch. When activated the apparatus looks like a giant lobster.
-Apple of the Gods	Apple of the God’s – gain random ability of 1 god aspect at risk of save vs death, then random forbidden fruit side effect; ability is 1 per day/50% chance success
+Apple of the Gods	Apple of the God's – gain random ability of 1 god aspect at risk of save vs death, then random forbidden fruit side effect; ability is 1 per day/50% chance success
 Armor +3	You have a +3 bonus to AC while wearing this armor. 
 Armor of Invulnerability	You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.
 Armor that absorbs all non-magical damage  
 Armor that absorbs and stores magic for later use  
-Armor that adapts to the wearer’s enemies  
+Armor that adapts to the wearer's enemies  
 Armor that allows the wearer to survive in any environment  
 Armor that can shift to fit any form  
 Armor that grows stronger with each battle  
@@ -68,10 +68,10 @@ Gauntlets that manipulate the essence of magic
 Gloves that can reshape the fabric of the universe  
 Gloves that can shape raw magic  
 Gloves that grant superhuman strength  
-Gnomish Stop Clock	
+Gnomish Stop Clock
 Golden Halo	A necklace of large gold-and-platinum prayer beads, 12 beads in all. They project a feeling of safety and austere silence.
 Hallowed Skin	A thick, flesh-like leather vest adorned with occult symbols and human teeth. Parts of it are ragged with wear, and it feels clammy to the touch.
-Helm that allows the wearer to control others’ minds  
+Helm that allows the wearer to control others' minds  
 Helm that allows the wearer to manipulate dreams  
 Helm that allows the wearer to see invisible creatures  
 Helm that grants complete immunity to mental attacks  

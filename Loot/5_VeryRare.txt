@@ -61,7 +61,7 @@ Encyclopedic Cylinder	A black metal cylinder that dictates the history of an unk
 Essence Extractor	Extract the consciousness of a pacified or willing being to be stored within. The consciousness can be injected into the still warm body of a dead being, giving them a new body to inhabit. 
 Fulcrum Ring	A plain, heavy ring of dark metal. It seems occasionally heavy.
 Gauntlets of Emberforge	These gauntlets are forged from volcanic rock. They are warm when worn and glow faintly with red embers.	The wearer gains resistance to fire damage. Once per day, the wearer can slam their fists together to create a fiery shockwave, dealing 3d8 fire damage to all creatures within 5 feet.
-Gauntlets of Wild Surge	Fashioned from entwined branches and bark that twist around the wearer’s arms, these gauntlets pulse with wild, untamed energy.	A spellcaster can use the gauntlets to risk a “wildsurge” at the cost of spending 1 hit dice, casting a spell at one level higher than normal. Doing so requires a roll on the Wild Magic table.
+Gauntlets of Wild Surge	Fashioned from entwined branches and bark that twist around the wearer's arms, these gauntlets pulse with wild, untamed energy.	A spellcaster can use the gauntlets to risk a “wildsurge” at the cost of spending 1 hit dice, casting a spell at one level higher than normal. Doing so requires a roll on the Wild Magic table.
 Gladiator's Prizeblade	A high quality, perfectly balanced gladius that is excessively comfortable to wield. The blade only seems to sharpen with use.
 Gold Crown	A jeweled gold crown of superb quality.
 Gold Jewelry Box	A solid gold jewelry box with a platinum filigree.
@@ -126,3 +126,4 @@ A soot-stained sock in which a nugget of coal magically appears each day at dawn
 Wooden pan flute that attracts harmless local fauna when played
 A single scale from a {COLOR} dragon
 The head of a broken statue that houses the consciousness of a snarky sage
+Shatterstick [bgdia]

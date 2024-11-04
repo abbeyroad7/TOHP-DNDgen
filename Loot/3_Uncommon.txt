@@ -193,7 +193,7 @@ Armageddon Diorama	A tiny diorama made of oak and silver, depicting a prophecy o
 Armentarious' Scroll Tube	A very large scroll tube containing the plans for many of the ancient war engines of Armentarious.
 Astrologer's Chart	An astrologer's chart, inscribed with the finest instruments and the greatest precision upon a vellum which is both supple and expensive. Close inspection by those with the proper knowledge, however, reveals that these charts were constructed around an entirely different night sky ' and, possibly, a calendrical system and length of year unlike anything known upon this world.
 Aumurille's Chest	A miniature golden chest with tiny emeralds lining the top that trace out a mage's sigil. The chest is crafted in exquisite detail. (This is the material component of a 'Secret Chest' (from the spell of the same name) for the ruthless lady-mage Aumurille, who will likely want it back....)
-Axe of Blood	
+Axe of Blood
 Backpack Parachute	A humanoid wearing this piece of gear can deploy the parachute as a reaction while falling, or as an action otherwise. The parachute requires at least a 10-foot cube of unoccupied space in which to deploy, and it doesn't open fast enough to slow a fall of less than 60 feet. If it has sufficient time and space to deploy properly, the parachute allows its wearer to land without taking falling damage. Once it has been used, the parachute takes 10 minutes to repack.
 Bag of Holding	This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action. If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate. Placing a bag of holding inside an extradimensional space created by a Heward's handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened. 
 Bag of Saffron	A small bag of saffron. It can be used to flavor the parties travel rations, but is probably more valuable as a trade good.
@@ -255,7 +255,7 @@ Cap of Water Breathing	The word 'STYX' is sewn into the inner headband of this c
 Carved bone knife with a hollow handle  
 Ceramic Jars	4 ceramic canopic jars, holding the stomach, intestines, lungs, and liver of a long-ago monarch. Each has a golden lid with a likeness of a paunchy, hook-nosed man with pale skin and a squint.
 Ceramic pot that always keeps its contents at the perfect temperature  
-Charm of Frost	
+Charm of Frost
 Cheesecake
 Chess Set	A large, boxed chess set. All the pieces are small, dead pixies somehow sealed within glass.
 Chrysoberyl Gem	Chrysoberyl is a hard, transparent, green gem which is usually facet-cut. It is said that Chrysoberyl has ties to the outer planes and hence its use with battling demonic possession and the undead.        
@@ -277,7 +277,7 @@ Debt of a Soul	Debt of a Soul A soul-ownership contract for {NAME}
 Deck of Cards	An ancient deck of cards with five suits: Clovers, Swords, Clubs, Hearts, and Dragons.
 Decrepit Skeleton in Armor	The skeletal remains of a long-dead warrior, wearing a suit of plate armor which has long since tarnished. The name of every warrior to ever die by the last wearer's hand has been inscribed upon the front and back of the chest plate, covering nearly every inch of its surface with chaotically written, black runes.
 Devil Salts	Awakens any creature from sleep or unconsciousness, but they flail and scream in terror for a few seconds first. They have no memory of this afterwards. 
-Dice Mace	
+Dice Mace
 Double-barreled Crossbow	Loads 2 bolts. Multi-attack rules.
 Dragon Statuette	A statuette of a dragon, forged from the finest mithril, which responds to yes or no questions which are posed to it in draconic. The answers given may appear prophetic or oracular, but are actually random.
 Dragonchess Set [xphb]
@@ -288,7 +288,7 @@ Duergar Compass	This compass is carved out of heavy, hard Petrebony (a wood that
 Dust of Appearance	Stack of 4, user covers 20ft radius in magic dust that shows anything that is hidden or dispellable.
 Dust of Coughing and Sneezing	Magical dust that makes anyone cough and sneeze (combat)
 Dust of Dispelling	stack of 4, user covers 20ft radius in magic dust that shows anything that is hidden or dispellable.
-Dwarven Bomb	
+Dwarven Bomb
 Edible Greatsword	Works like a normal greatsword. Great tasting and low in calories! Regenerates 6 inches per day.
 Elven Bomb	An orange-yellow shell with small claw-like protrusions. This appears more to have been grown rather than constructed.
 Elven Engraved Combs	An elegant carved comb of oak, engraved with the name Aethelren and decorated with twin dragons. Elsewhere, a similar comb of ash, engraved with the name Ilthorien and decorated with twin unicorns, can be found.
@@ -342,8 +342,8 @@ Holy Ice Symbol	An ornate block of ice carved into an ancient holy symbol. The c
 Horn [xphb]
 Horn Coral Gem	A deep black coral, similar to angel's skin save for its solid color. It is incredibly difficult to work with, and is used in jewelry as a polished twig or branch of material, or is cut cabochon.
 Hunting Trap [xphb]
-Hypnotic Spinning Top	
-Illusionary Coin Bag	
+Hypnotic Spinning Top
+Illusionary Coin Bag
 Immovable Rod	This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
 Iron box that grows warmer the closer it gets to the ocean  
 Iron crowbar, slightly twisted  
@@ -417,7 +417,7 @@ Rabbit's Foot	A lucky rabbit's foot which hangs from a golden chain. Although se
 Raven Feather Fans	A pair of pole mounted fans made of giant raven feathers
 Raven Pen	A pen made from a raven's feather. Through some magical means it writes continuously from an inexhaustible supply of golden ink upon whatever piece of parchment may be near by.
 Ricochet Sling	 Ricochet-sling ' up to 4 targets (d4 for targets, attack roll each; first attack fail causes ricochet to end [unless a tie, in the case of a tie to AC the ricochet continues])
-Ring of Bad Luck	
+Ring of Bad Luck
 Ring of Dubious Might	A silver ring, encrusted with a small topaz. Upon wearing it on their finger, the wearer feels incredibly strong and confident. However, entering combat, their confidence immediately dissipates, leaving them terrified.
 Ring of Fake Invisibility	A silver ring inlaid with a trasluscent pearl. There is an inscription in Elvish which reads, "To Elabella, perhaps now you will find your mirror less engrossing."
 Ring of Good Luck	This ring imbues the wearer +1 on all saves.
@@ -467,9 +467,9 @@ Stem-Stone	Pebble that transforms into whatever inorganic substance it last touc
 Storm Giant Coins	Thirty storm giant minted gold coins, each is the size of a dinner plate and weighs 17 lbs. The image stuck on the coins shows a giant hand flicking a human off a table.
 Storm Giant Horn	A horn fashioned from the translucent bone of a storm giant. Those who put their ear to the horn hear it whisper the sounds of an unknown village square. Whether the village which they hear is ' or was ' a real place is a mystery which may never be solved. (Twin horn in village square allows communication between the two).
 Suck Tube	A handheld tube that sucks in dust when squeezed and captures it in a detachable compartment
-Susej Cup	
+Susej Cup
 Sword of Battle Fury	Battle Fury-grants the feat Cleave
-Sword of Frost	
+Sword of Frost
 Talking Toad	Enchanted talking toad ' polymorphed noble ' knowledge of multiple regions, religions & other worldly strangeness
 Tapestry	A large, well-made tapestry depicting a local duke.
 Tapestry showing an ever-changing battle scene  
@@ -481,7 +481,7 @@ The Living Lantern	An an ordinary candle lamp with a glass surround and handle.
 The Rhinoclean Helm	The Rhinoclean helm is a large iron cap with visor shaped like the head of a certain kind of beetle. The helm's wearer has advantage on bull rushes and can stand up from being prone once on each of its turns without expending movement. 
 The Rhinocles Helm	The Rhinocles helm is a large iron cap with visor shaped like the head of a certain kind of beetle. The helm's wearer has advantage on bull rushes and can stand up from being prone once on each of its turns without expending movement.
 The severed tongue of a {BEAST}
-Thirsty Cup	
+Thirsty Cup
 This weapon functions both as a lute and a weapon. When used as a lute, it is considered to be a lute and does not require a separate proficiency bonus to play. However, if the user rolls a critical miss with the weapon (a 1 on an attack roll) the lute may become slightly damaged and will require the user to spend an hour to retune it. If the instrument is not returned, whenever the instrument is played, the user is disadvantaged on the Perform check. This weapon can also be used as a bard's spellcasting focus.
 Throwing Axe of Appendage Severing	If the user of this throwing axe manages a critical hit, it will sever an appendage. ' critical = appendage severed
 Thunder Pommel	When embedded in the hilt of a weapon. -deal and additional 1d6 lightning damage on attacks with an odd 1d20 roll
@@ -554,3 +554,31 @@ Zulabar's Fist-Stick	A trolls hand mounted on a three foot rod. It will grasp ob
 {SUBJECT} painting on canvas	Signed by {NAME}
 {SUBJECT} painting on canvas	Signed by {NAME}
 {SUBJECT} painting on canvas	Signed by {NAME}
+A {color} pan flute [https://5e.tools/items.html#pan%20flute_xphb]
+Potter's Tools [xphb]
+Priest's Pack [xphb]
+Rain Catcher [toa]
+Rider's Pack (minus the draft horse) [https://5e.tools/items.html#rider's%20pack_3mxt]
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+A {COLOR} robe made of {FABRIC}
+Scholar's Pack [xphb]
+Sinda Berries (10) [toa]
+Snowshoes [idrotf]
+Spyglass	Objects viewed through a Spyglass are magnified to twice their size.
+Tantan [scag]
+Theki Root	This thick marsh root tastes bitter but is thought to aid digestive health. When you use an action to consume a dose, you gain advantage on saving throws against the effects of poisonous or toxic substances for 8 hours.
+Thelarr [scag]
+Trapper's Pack [xphb]
+{Table-Trinket}
+{Table-Trinket}
+{Table-Trinket}
+{Table-Trinket}
+{Table-Trinket}
+{Table-Trinket}

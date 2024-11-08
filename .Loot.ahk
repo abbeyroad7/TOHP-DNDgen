@@ -1,4 +1,4 @@
-;v3.8.0
+;v3.8.03
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -242,8 +242,6 @@ Loop, %QtyMax%
 		}
 	;Rarity	
 	{	;Collapse
-	;Msgbox %Currency_tog%
-	
 	Random, RarityRnd, 1, 100
 		If Debug = 0
 		{
@@ -277,26 +275,26 @@ Loop, %QtyMax%
 			Rarity = 2_Common.txt
 			fLines = %2_Lines%
 		}
-		If RarityRnd between 81 and 93
+		If RarityRnd between 81 and 94
 		{
 			Rarity = 3_Uncommon.txt
 			fLines = %3_Lines%
 		}
-		If RarityRnd between 94 and 97
+		If RarityRnd between 95 and 98
 		{
 			Rarity = 4_Rare.txt
 			fLines = %4_Lines%
 		}
-		If RarityRnd between 98 and 99
+		If RarityRnd between 99 and 100
 		{
 			Rarity = 5_VeryRare.txt
 			fLines = %5_Lines%
 		}
-		If RarityRnd = 100
-		{
-			Rarity = 6_Legendary.txt
-			fLines = %6_Lines%
-		}	
+		;If RarityRnd = 100
+		;{
+		;	Rarity = 6_Legendary.txt
+		;	fLines = %6_Lines%
+		;}	
 	}	
 	
 	
@@ -912,9 +910,9 @@ Loop, %QtyMax%
 				;Msgbox %HB%
 				If (InStr(HB, "http"))
 					{
-						URL = %HB%
+						URL%A_Index% = %HB%
+						;Msgbox %URL1% %URL2%
 						Loot := RegexReplace(Loot, "\[.+\]", "+")
-						;Loot = %Loot% +	;+ button
 						Goto, GamebooksEnd
 					}
 				Loot := LootSplit.1
@@ -962,8 +960,8 @@ Loop, %QtyMax%
 			;Msgbox %Action1%
 			GUI, Color, 050505	;GUI bg color
 			Gui, Font, s10 cGray, Centaur
-			GUI, add, text, gAction, (%CONDITION%) %Rarity%
-	
+			GUI, add, button, gAction, (%CONDITION%) %Rarity%
+			
 			Gui, Font, s14 cWhite, Centaur bold
 			GUI, add, button, gAction w700, %Loot%
 		}
@@ -979,11 +977,19 @@ GUIShow:
 	pause
 }
 
+Click:
+{
+Msgbox test
+}
+
 Action:
 {
 	MouseGetPos, , , id, control
+	MouseGetPos, , , class, classNN
+	Index := StrReplace(classNN, "button")
+	Index = % URL%Index%
+	;Msgbox %Index%
 	GuiControlGet buttonText, , %control%
-	
 	Clipboard = ## %buttonText%`n`n
 	
 	FoundryImport:
@@ -1000,11 +1006,10 @@ Action:
 			}
 		}
 		Send ^v
-		
 		ActionEnd:
 		If (HB != "")	;Gamebooks
 		{
-			Run, %URL%
+			Run, %Index%
 		}
 	}
 }

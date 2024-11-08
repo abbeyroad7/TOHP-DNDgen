@@ -1,9 +1,4 @@
 "The Art of Potionmaking" by Zygmunt Brigge	A large, leather-bound tome has a large illustrated potion vial stitched into the front cover. Above the illustration, written in Dwarven is the title; "The Art of Potionmaking". Further examination reveals this to be a comprehensive guide to potionmaking written by a Dwarf called Zygmunt Brigge.
-A bag of {GEM}s
-A bag of {GEM}s
-A bag of {GEM}s
-A bag of {GEM}s
-A bag of {GEM}s
 A banjo
 A banknote worth {1d100} GP
 A bankvault key
@@ -582,3 +577,20 @@ Trapper's Pack [xphb]
 {Table-Trinket}
 {Table-Trinket}
 {Table-Trinket}
+Whip [xphb]
+Wildroot [toa]
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}
+A {GEM}

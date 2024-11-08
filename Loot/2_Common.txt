@@ -167,21 +167,6 @@ A {COLOR} {BIRD} feather
 A {COLOR} {BIRD} feather
 A {COLOR} {BIRD} feather
 A {COLOR}-painted teapot	Depicts a {SUBJECT}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
-A {GEM}
 A {MATERIAL} ashtray
 A {material} compass
 A {material} figurine of a {SUBJECT}
@@ -907,3 +892,7 @@ Sling [xphb]
 Smith's Tools [xphb]
 A bar of {FLORA}-scented soap
 Tent	A Tent sleeps up to two Small or Medium creatures.
+A waterskin made of {MAMMAL} leather
+Weaver's Tools [xphb]
+Woodcarver's Tools [xphb]
+Writing Kit [xphb]

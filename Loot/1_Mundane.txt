@@ -179,7 +179,7 @@ Iron Spike	A large iron spike, useful for fixing heavy items together.
 Iron Torc	An iron torc with six small silver figurines: A hare, a horse, a spear, a wolf's head, a simple circle, and an oak tree.
 Ivory Peg Leg	Whale ivory leg prosthetic
 Jar o' Eyeballs	A jar containing six eyeballs (2 human, 1 goblin, 1 ogre, 1 worg, and 1 hawk) in a clear liquid.
-Jerked Meats	' of jerked meat
+Jerked Meats	{1d6} strips of jerked {BEAST} meat
 Keg o' Nails	A 35 lb keg of iron nails
 Knee Breeches	A pair of bear fur knee breeches, slightly worn from having been used when horse riding.
 Lantern	A slightly rusty old lantern with a glass casing.
@@ -292,7 +292,6 @@ Steel Chain	A steel chain measuring 1 foot long.
 Steel Lockbox
 Stone with a hole in the center
 Straw Broom	A straw broom
-Tactical Defense Stick	Tactical defense stick'
 Tarnished brass locket with an old photo inside
 Tarnished bronze chisel
 Tattered book of children's stories

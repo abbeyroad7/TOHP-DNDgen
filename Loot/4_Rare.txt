@@ -458,3 +458,13 @@ Tome of Strahd	The Tome of Strahd is an ancient work penned by Strahd, a tragic 
 Vial Of Stardust [wdmm]
 Viol [xphb]
 A {WOOD} wand	Painted {COLOR} with a {EMBLEM} on the hilt
+Whistle-Stick [oga]
+Willowshade Oil [egw]
+{Table-WitherbloomTrinket}
+{Table-Xen'drikTrinket}
+Yarting [scag]
+A bag of {GEM}s
+A bag of {GEM}s
+A bag of {GEM}s
+A bag of {GEM}s
+A bag of {GEM}s

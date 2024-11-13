@@ -1,13 +1,12 @@
-;v3.06.2
+;v3.07.11
 ;;Todo
 ;PersonalityType
-;Alignment
 ;Weight/Height *multiplier of race
 ;Quirks
 ;Identifiable characteristics
 ;Purpose
 ;Ideals
-;Background +abilityscores/feats
+;Goal +abilityscores/feats
 ;Origin
 ;Age
 ;Family
@@ -16,11 +15,9 @@
 ;Weapons
 ;Level
 
-;Tables
 ;Tagging system for races
 ;Cleanup code, brackets
 ;Queue for first/last names only
-;D20 stats, race, weapons, etc
 ;When importing to foundry, seperate pics by race
 #Requires AutoHotkey v1.1+
 #SingleInstance Force
@@ -28,6 +25,7 @@ Import:
 {
 	ImportVars:
 	{
+		BaseDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts
 		Habitat = Temperate
 		Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
 		NPCDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\NPC
@@ -36,15 +34,16 @@ Import:
 	}
 	ImportNPC:
 	{
-		Loop, Read, %NPCDir%\Alignments.ini
-			Alignments_Lines = %A_Index%
-		Loop, Read, %NPCDir%\Backgrounds.ini
-			Backgrounds_Lines = %A_Index%
+		Loop, Read, %NPCDir%\Goals.ini
+			Goals_Lines = %A_Index%
+		Loop, Read, %NPCDir%\Roles.ini
+			Roles_Lines = %A_Index%
 	}
 }
 
 Prompt:
 {
+	DebugMode = 0
 	Inputbox, Race,,,,200,100
 		If InStr(Race, " ")
 			{
@@ -59,8 +58,10 @@ Prompt:
 			}
 		If InStr(Race, "db")
 			{
+				DebugMode = 1
 				Race = human
 				ImgDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%\Male
+				Gender = m
 				Goto, Start
 			}
 		If Race =
@@ -87,24 +88,29 @@ Prompt:
 
 Start:
 {
-FirstFile = %Dir%\%Race%\%Race%_%Gender%.txt
-LastFile_0 = %Dir%\%Race%\%Race%_s0.txt
-LastFile_1 = %Dir%\%Race%\%Race%_s1.txt
-LastFile_2 = %Dir%\%Race%\%Race%_s2.txt
-;Msgbox %FirstFile%
-
-RaceSetDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%
-if !FileExist(RaceSetDir)
+	FirstFile = %Dir%\%Race%\%Race%_%Gender%.txt
+	LastFile_0 = %Dir%\%Race%\%Race%_s0.txt
+	LastFile_1 = %Dir%\%Race%\%Race%_s1.txt
+	LastFile_2 = %Dir%\%Race%\%Race%_s2.txt
+	;Msgbox %FirstFile%
+	
+	RaceSetDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%
+	if !FileExist(RaceSetDir)
+		{
+			Msgbox Error 404: %RACE% not found
+			Reload
+		}
+	If (DebugMode = 1)
 	{
-		Msgbox Error 404: %RACE% not found
-		Reload
+		;random_file = %RaceDir%\.debug.webp
+		random_file = %RaceDir%\.debug.png
+		Goto, ImageGUI
 	}
 }
 
 Image:
 {
 ;Gui, Destroy
-
 array := []  ; initialise array
 loop, files, %ImgDir%\*.*  ; match any file
     array.push(a_loopFileFullPath)  ; append file to the end of the array
@@ -118,6 +124,14 @@ Clipboard = %random_file%
 
 ImageGUI:
 {
+	If InStr(random_file, "webp")
+	{
+		filePath = %random_file%
+		hBitmap := HBitmapFromWebP(filePath, width, height)
+		random_file = HBITMAP:%hBitmap%
+		#Include, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Libraries\DecodeWebP.ahk
+	}
+	
 	Gui, MainWindow:New
 	Gui, Margin, 0, 0
 	Gui , Add, Picture, h600 w-1, %random_file%
@@ -125,7 +139,7 @@ ImageGUI:
 	Gui, Color, %color%
 	Gui, +LastFound -Caption +ToolWindow -Border +Resize
 	;Winset, TransColor, %color%
-	Gui, Show, x500 y300
+	Gui, Show, x400 y150
 	GUI, New
 	Gui, +LastFound -Caption +ToolWindow -Border +Resize
 }
@@ -149,16 +163,54 @@ CountNames:
 
 NPC:
 {
-	Alignments:
+	Goals:
 	{
-		Random, AlignmentsRnd, 1, Alignments_Lines
-		FileReadLine, NPC_Alignment, %NPCDir%\Alignments.ini, AlignmentsRnd
-		;Msgbox %NPC_Alignment%	;debug
+		Random, GoalsRnd, 1, Goals_Lines
+		FileReadLine, NPC_Goal, %NPCDir%\Goals.ini, GoalsRnd
 	}
-	Backgrounds:
+	Family:
 	{
-		Random, BackgroundsRnd, 1, Backgrounds_Lines
-		FileReadLine, NPC_Background, %NPCDir%\Backgrounds.ini, BackgroundsRnd
+		Random, 1d6, 1, 6
+		Random, 1d6x2, 1, 6
+		
+		Siblings:
+		{
+			Random, SiblingsVar, 0, 4
+			If SiblingsVar = 0
+				Siblings = only child
+			If SiblingsVar = 1
+				Siblings = %1d6% brothers
+			If SiblingsVar = 2
+				Siblings = %1d6% sisters
+			If SiblingsVar between 3 and 4
+				Siblings = %1d6% sisters, %1d6x2% brothers
+		}
+		Parents:
+		{
+			Random, ParentsVar, 0, 12
+			If ParentsVar = 0
+				Parents = Deceased parents,
+			If ParentsVar = 1
+				Parents = A father,
+			If ParentsVar = 2
+				Parents = A mother,
+			If ParentsVar = 3
+				Parents = Abandoned by father,
+			If ParentsVar = 4
+				Parents = Abandoned by mother,
+			If ParentsVar = 5
+				Parents = Abandoned by both parents,
+			If ParentsVar = 6
+				Parents = Parents are missing,
+			If ParentsVar between 7 and 12
+				Parents = A mother and father,
+		}
+		NPC_Family = %Parents% %Siblings%
+	}
+	Role:
+	{
+		Random, RolesRnd, 1, Roles_Lines
+		FileReadLine, NPC_Role, %NPCDir%\Roles.ini, RolesRnd
 	}
 }
 
@@ -190,6 +242,14 @@ Generate:
 			Last_0 := StrReplace(Last_0, "{COLOR}", Color.1)
 			Last_1 := StrReplace(Last_1, "{COLOR}", Color.1)
 			Last_2 := StrReplace(Last_2, "{COLOR}", Color.1)
+			MainGenNoun:
+				{	;Collapse
+					Random, NounsRnd, 1, 6
+					Loop, Read, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt
+						Noun_Lines = %A_Index%
+					Random, NounsRndLine, 1, %Noun_Lines%					
+					FileReadLine, Noun, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
+				}
 		}
 		
 		IfStatements:
@@ -205,6 +265,114 @@ Generate:
 					Last_0 := StrReplace(Last_0, "{FLORA}", Flora)
 					Last_1 := StrReplace(Last_1, "{FLORA}", Flora)
 					Last_2 := StrReplace(Last_2, "{FLORA}", Flora)
+				}
+			If (InStr(NPC_Goal, "{FAMILY}")) || If (InStr(NPC_Flaw, "{FAMILY}")) || If (InStr(NPC_Bond, "{FAMILY}")) || If (InStr(NPC_Ideal, "{FAMILY}")) || If (InStr(NPC_Quirk, "{FAMILY}"))
+				{	;Collapse
+					FAMILYFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\NPC\Family.ini
+					Loop, Read, %FAMILYFile%
+						FAMILY_Lines = %A_Index%
+					Random, FAMILYRnd, 1, FAMILY_Lines
+					FileReadLine, FAMILY, %FAMILYFile%, FAMILYRnd
+					NPC_FamilyReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{FAMILY}", FAMILY)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{FAMILY}", FAMILY)
+						NPC_Bond := StrReplace(NPC_Bond, "{FAMILY}", FAMILY)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{FAMILY}", FAMILY)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{FAMILY}", FAMILY)
+					}
+				}
+			If (InStr(NPC_Goal, "{DRUG}")) || If (InStr(NPC_Flaw, "{DRUG}")) || If (InStr(NPC_Bond, "{DRUG}")) || If (InStr(NPC_Ideal, "{DRUG}")) || If (InStr(NPC_Quirk, "{DRUG}"))
+				{	;Collapse
+					DRUGFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Misc\.Drugs.ini
+					Loop, Read, %DRUGFile%
+						DRUG_Lines = %A_Index%
+					Random, DRUGRnd, 1, DRUG_Lines
+					FileReadLine, DRUG, %DRUGFile%, DRUGRnd
+					NPC_DrugReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{DRUG}", DRUG)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{DRUG}", DRUG)
+						NPC_Bond := StrReplace(NPC_Bond, "{DRUG}", DRUG)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{DRUG}", DRUG)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{DRUG}", DRUG)
+					}
+				}
+			If (InStr(NPC_Goal, "{DISEASE}")) || If (InStr(NPC_Flaw, "{DISEASE}")) || If (InStr(NPC_Bond, "{DISEASE}")) || If (InStr(NPC_Ideal, "{DISEASE}")) || If (InStr(NPC_Quirk, "{DISEASE}"))
+				{	;Collapse
+					DISEASEFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Effects\Disease.ini
+					Loop, Read, %DISEASEFile%
+						DISEASE_Lines = %A_Index%
+					Random, DISEASERnd, 1, DISEASE_Lines
+					FileReadLine, DISEASE, %DISEASEFile%, DISEASERnd
+					NPC_DISEASEReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{DISEASE}", DISEASE)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{DISEASE}", DISEASE)
+						NPC_Bond := StrReplace(NPC_Bond, "{DISEASE}", DISEASE)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{DISEASE}", DISEASE)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{DISEASE}", DISEASE)
+					}
+				}
+			If (InStr(NPC_Goal, "{ROLE}")) || If (InStr(NPC_Flaw, "{ROLE}")) || If (InStr(NPC_Bond, "{ROLE}")) || If (InStr(NPC_Ideal, "{ROLE}")) || If (InStr(NPC_Quirk, "{ROLE}"))
+				{	;Collapse
+					ROLEFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Quests\Roles.ini
+					Loop, Read, %ROLEFile%
+						ROLE_Lines = %A_Index%
+					Random, ROLERnd, 1, ROLE_Lines
+					FileReadLine, ROLE, %ROLEFile%, ROLERnd
+					NPC_ROLEReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{ROLE}", ROLE)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{ROLE}", ROLE)
+						NPC_Bond := StrReplace(NPC_Bond, "{ROLE}", ROLE)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{ROLE}", ROLE)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{ROLE}", ROLE)
+					}
+				}
+			If (InStr(NPC_Goal, "{GOD}")) || If (InStr(NPC_Flaw, "{GOD}")) || If (InStr(NPC_Bond, "{GOD}")) || If (InStr(NPC_Ideal, "{GOD}")) || If (InStr(NPC_Quirk, "{GOD}"))
+				{	;Collapse
+					GODFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Gods.ini
+					Loop, Read, %GODFile%
+						GOD_Lines = %A_Index%
+					Random, GODRnd, 1, GOD_Lines
+					FileReadLine, GOD, %GODFile%, GODRnd
+					NPC_GODReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{GOD}", GOD)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{GOD}", GOD)
+						NPC_Bond := StrReplace(NPC_Bond, "{GOD}", GOD)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{GOD}", GOD)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{GOD}", GOD)
+					}
+				}
+			If (InStr(NPC_Goal, "{SUBJECT}")) || If (InStr(NPC_Flaw, "{SUBJECT}")) || If (InStr(NPC_Bond, "{SUBJECT}")) || If (InStr(NPC_Ideal, "{SUBJECT}")) || If (InStr(NPC_Quirk, "{SUBJECT}"))
+				{	;Collapse
+					Subject = {NOUN}
+					NPC_SUBJECTReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{SUBJECT}", SUBJECT)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{SUBJECT}", SUBJECT)
+						NPC_Bond := StrReplace(NPC_Bond, "{SUBJECT}", SUBJECT)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{SUBJECT}", SUBJECT)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{SUBJECT}", SUBJECT)
+					}
+				}
+			If (InStr(NPC_Goal, "{NOUN}")) || If (InStr(NPC_Flaw, "{NOUN}")) || If (InStr(NPC_Bond, "{NOUN}")) || If (InStr(NPC_Ideal, "{NOUN}")) || If (InStr(NPC_Quirk, "{NOUN}"))
+				{	;Collapse
+					Random, NounsRnd, 1, 6
+					Loop, Read, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt
+						Noun_Lines = %A_Index%
+					Random, NounsRndLine, 1, %Noun_Lines%					
+					FileReadLine, Noun, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
+					NPC_NOUNReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{NOUN}", NOUN)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{NOUN}", NOUN)
+						NPC_Bond := StrReplace(NPC_Bond, "{NOUN}", NOUN)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{NOUN}", NOUN)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{NOUN}", NOUN)
+					}
 				}
 			If (InStr(Loot, "{Table-"))
 			{	;Collapse
@@ -313,9 +481,24 @@ Generate:
 	
 	GUIBody:
 	{
-		GUI, add, text, gAction3 x10 y70 r1, ~%NPC_Alignment%	~%NPC_Background%
-		GUI, add, text, gAction3 x10 r2, Test
+		GUICasing:
+		{
+			if Gender = m
+				FullGender = Male
+			if Gender = f
+				FullGender = Female
+			StringUpper, Race, Race, T
+		}
+		Gui, Font, s12 cGray, Centaur
+		GUI, add, text, gAction3 x15 r1 w500, %FullGender% %Race% | %NPC_Role% | %NPC_Family%
+		
+		Gui, Font, s14 cWhite, Centaur
+		GUI, add, text, gAction3 x10 w500 r2 y80, ~Currently thinking about %NOUN%
+		GUI, add, text, gAction3 x10 w500 r2 y110, ~%NPC_Goal%
+		
 		Gui, Show, x1000 y250
+		
+		NPC_Body = %FullGender% %Race% | %NPC_Role% | %NPC_Family%`n~Currently thinking about %NOUN%`n~%NPC_Goal%
 	}
 	
 	pause	;press Escape to resume
@@ -364,7 +547,7 @@ FoundryImport:
 	MouseClick, right, 929, 1363	;Right click macro
 	MouseClick, left, 932, 1234	;Edit macro menu
 	
-	Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
+	Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n"system.details.biography.value": "%NPC_Body%",`n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
 	MouseClick, left, 1232, 831	;body
 	Send ^a{Backspace}^v
 	MouseClick, left, 1477, 1018	;Execute
@@ -382,10 +565,10 @@ FoundryImport:
 
 EndofFile:
 {
-Escape::
++Escape::
 {
 	Reload
 }
-+Escape::ExitApp
+^+Escape::ExitApp
 }
 return

@@ -1,33 +1,33 @@
-;v3.07.11
+;v3.5.0
 ;;Todo
-;PersonalityType
-;Weight/Height *multiplier of race
-;Quirks
-;Identifiable characteristics
-;Purpose
-;Ideals
-;Goal +abilityscores/feats
-;Origin
-;Age
-;Family
-;Relationships +Most valued person
-;Religion
-;Weapons
+;Statblocks
+;Cap scores at 20
+;Weapons	Base on class proficiencies
 ;Level
 
+;Incorporate biography on FoundryImport
 ;Tagging system for races
 ;Cleanup code, brackets
 ;Queue for first/last names only
 ;When importing to foundry, seperate pics by race
+
+;Merge scripts with use of an import library
 #Requires AutoHotkey v1.1+
 #SingleInstance Force
 Import:
 {
 	ImportVars:
 	{
+		PlayerCount = 7
+		PlayerLevel = 4
+		ProficiencyBonus = 2	;3 at lvl5 https://5e.tools/tables.html#proficiency%20bonus_xphb	For npcs, not PCs
+		
+		ChallengeRating := Round(PlayerCount / 4 * 1.1 * PlayerLevel, 0)
+			;Msgbox %ChallengeRating%
 		BaseDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts
 		Habitat = Temperate
 		Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
+		LootDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks
 		NPCDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\NPC
 		RaceDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient
 		RaceList = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names\.List.txt
@@ -38,6 +38,12 @@ Import:
 			Goals_Lines = %A_Index%
 		Loop, Read, %NPCDir%\Roles.ini
 			Roles_Lines = %A_Index%
+		Loop, Read, %BaseDir%\Loot\Banks\.Gods.ini
+			Gods_Lines = %A_Index%
+		Loop, Read, %BaseDir%\Loot\Banks\NPC\Traits.ini
+			Traits_Lines = %A_Index%
+		Loop, Read, %BaseDir%\Loot\Banks\NPC\Quirks.ini
+			Quirks_Lines = %A_Index%
 	}
 }
 
@@ -60,7 +66,6 @@ Prompt:
 			{
 				DebugMode = 1
 				Race = human
-				ImgDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%\Male
 				Gender = m
 				Goto, Start
 			}
@@ -139,7 +144,7 @@ ImageGUI:
 	Gui, Color, %color%
 	Gui, +LastFound -Caption +ToolWindow -Border +Resize
 	;Winset, TransColor, %color%
-	Gui, Show, x400 y150
+	Gui, Show, x250 y150
 	GUI, New
 	Gui, +LastFound -Caption +ToolWindow -Border +Resize
 }
@@ -163,6 +168,190 @@ CountNames:
 
 NPC:
 {
+	Level:
+	{
+		PlayerLevelMax := PlayerLevel + 2
+		Random, NPC_Level, 0, %PlayerLevelMax%
+		;Msgbox %LevelRnd%
+	}
+	Classes:
+	{
+		Loop, Read, %NPCDir%\Classes.ini
+			Classes_Lines = %A_Index%
+		Random, ClassesRnd, 1, Classes_Lines
+		FileReadLine, NPC_Class, %NPCDir%\Classes.ini, ClassesRnd
+	}
+	Statblock:	;4d6 drop low method
+	{
+		Loop 6
+		{
+			LST:=[]
+			StatRoll:=[]
+			Loop 4
+			{
+				StatRollRnd := 0
+				Random, StatRollRnd, 1, 6
+				StatRoll[A_Index]:=StatRollRnd
+				LST.=StatRoll[A_Index] "`n"
+			}
+			Sort LST,R
+			;MsgBox % LST
+			
+			DIV:=InStr(LST,"`n")
+			Lowest_Roll:=SubStr(LST,6,DIV)
+			;MsgBox % Lowest_Roll
+			StatRoll := StrReplace(LST, Lowest_Roll,,,1)
+			;Msgbox %StatRoll%
+			
+			StatRoll := StrSplit(StatRoll, "`n")
+			StatRoll%A_Index% := StatRoll.1 + StatRoll.2 + StatRoll.3
+			;Msgbox % StatRoll%A_Index%
+		}
+		
+		Scores:
+		{
+			STR = % StatRoll1
+			DEX = % StatRoll2
+			CON = % StatRoll3
+			INT = % StatRoll4
+			WIS = % StatRoll5
+			CHA = % StatRoll6
+		}
+	}
+	Classes_StatIntegration:
+	{
+		If NPC_Class = Artificer
+		{
+			Random, Class_cho, 1, 2
+				If Class_cho = 1
+					INT := INT + ProficiencyBonus
+				If Class_cho = 2
+					CON := CON + ProficiencyBonus
+		}
+		If NPC_Class = Barbarian
+		{
+			Random, Class_cho, 1, 3
+				If Class_cho = 1
+					STR := STR + ProficiencyBonus
+				If Class_cho = 2
+					DEX := DEX + ProficiencyBonus
+				If Class_cho = 3
+					WIS := WIS + ProficiencyBonus
+		}
+		If NPC_Class = Bard
+		{
+			Random, Class_cho, 1, 6
+				If Class_cho = 1
+					STR := STR + ProficiencyBonus
+				If Class_cho = 2
+					DEX := DEX + ProficiencyBonus
+				If Class_cho = 3
+					WIS := WIS + ProficiencyBonus
+				If Class_cho = 4
+					CON := CON + ProficiencyBonus
+				If Class_cho = 5
+					INT := INT + ProficiencyBonus
+				If Class_cho = 6
+					CHA := CHA + ProficiencyBonus
+		}
+		If NPC_Class = Cleric
+		{
+			Random, Class_cho, 1, 3
+				If Class_cho = 1
+					WIS := WIS + ProficiencyBonus
+				If Class_cho = 2
+					INT := INT + ProficiencyBonus
+				If Class_cho = 3
+					CHA := CHA + ProficiencyBonus
+		}
+		If NPC_Class = Druid
+		{
+			Random, Class_cho, 1, 2
+				If Class_cho = 1
+					WIS := WIS + ProficiencyBonus
+				If Class_cho = 2
+					INT := INT + ProficiencyBonus
+		}
+		If NPC_Class = Fighter
+		{
+			Random, Class_cho, 1, 3
+				If Class_cho = 1
+					STR := STR + ProficiencyBonus
+				If Class_cho = 2
+					DEX := DEX + ProficiencyBonus
+				If Class_cho = 3
+					WIS := WIS + ProficiencyBonus
+		}
+		If NPC_Class = Monk
+		{
+			Random, Class_cho, 1, 3
+				If Class_cho = 1
+					STR := STR + ProficiencyBonus
+				If Class_cho = 2
+					DEX := DEX + ProficiencyBonus
+				If Class_cho = 3
+					INT := INT + ProficiencyBonus
+		}
+		If NPC_Class = Paladin
+		{
+			Random, Class_cho, 1, 3
+				If Class_cho = 1
+					STR := STR + ProficiencyBonus
+				If Class_cho = 2
+					CHA := CHA + ProficiencyBonus
+				If Class_cho = 3
+					WIS := WIS + ProficiencyBonus
+		}
+		If NPC_Class = Ranger
+		{
+			Random, Class_cho, 1, 3
+				If Class_cho = 1
+					STR := STR + ProficiencyBonus
+				If Class_cho = 2
+					DEX := DEX + ProficiencyBonus
+				If Class_cho = 3
+					WIS := WIS + ProficiencyBonus
+		}
+		If NPC_Class = Rogue
+		{
+			Random, Class_cho, 1, 4
+				If Class_cho = 1
+					DEX := DEX + ProficiencyBonus
+				If Class_cho = 2
+					WIS := WIS + ProficiencyBonus
+				If Class_cho = 3
+					INT := INT + ProficiencyBonus
+				If Class_cho = 4
+					CHA := CHA + ProficiencyBonus
+		}
+		If NPC_Class = Sorcerer
+		{
+			Random, Class_cho, 1, 2
+				If Class_cho = 1
+					CHA := CHA + ProficiencyBonus
+				If Class_cho = 2
+					INT := INT + ProficiencyBonus
+		}
+		If NPC_Class = Warlock
+		{
+			Random, Class_cho, 1, 2
+				If Class_cho = 1
+					CHA := CHA + ProficiencyBonus
+				If Class_cho = 2
+					INT := INT + ProficiencyBonus
+		}
+		If NPC_Class = Wizard
+		{
+			Random, Class_cho, 1, 2
+				If Class_cho = 1
+					WIS := WIS + ProficiencyBonus
+				If Class_cho = 2
+					INT := INT + ProficiencyBonus
+		}
+		
+		;Msgbox %STR% STR | %DEX% DEX | %CON% CON | %INT% INT | %WIS% WIS | %CHA% CHA
+		AbilityScores = %STR% STR | %DEX% DEX | %CON% CON | %INT% INT | %WIS% WIS | %CHA% CHA
+	}
 	Goals:
 	{
 		Random, GoalsRnd, 1, Goals_Lines
@@ -170,8 +359,8 @@ NPC:
 	}
 	Family:
 	{
-		Random, 1d6, 1, 6
-		Random, 1d6x2, 1, 6
+		Random, 1d6, 1, 4
+		Random, 1d6x2, 1, 4
 		
 		Siblings:
 		{
@@ -205,13 +394,65 @@ NPC:
 			If ParentsVar between 7 and 12
 				Parents = A mother and father,
 		}
-		NPC_Family = %Parents% %Siblings%
+		Relationship:
+		{
+			Random, RelationshipVar, 0, 25
+			If RelationshipVar = 0
+				Relationship = Lonely
+			If RelationshipVar between 1 and 3
+				Relationship = Single
+			If RelationshipVar between 4 and 5
+				Relationship = Cheating
+			If RelationshipVar between 6 and 8
+				Relationship = Married
+			If RelationshipVar between 9 and 10
+				Relationship = Widowed
+			If RelationshipVar = 11
+				Relationship = Gay relationship
+			If RelationshipVar = 12
+				Relationship = Polymarous relationship
+			If RelationshipVar = 13
+				Relationship = Complicated relationship
+			If RelationshipVar = 14
+				Relationship = Obsessed
+			If RelationshipVar between 15 and 16
+				Relationship = Recent breakup
+			If RelationshipVar = 17
+				Relationship = Infatuated
+			If RelationshipVar = 18
+				Relationship = Polygamous relationship
+			If RelationshipVar between 19 and 20
+				Relationship = Dating
+			If RelationshipVar between 21 and 25
+				Relationship = Straight relationship
+		}
+		NPC_Family = %Parents% %Siblings% | %Relationship%
 	}
 	Role:
 	{
 		Random, RolesRnd, 1, Roles_Lines
 		FileReadLine, NPC_Role, %NPCDir%\Roles.ini, RolesRnd
 	}
+	Religion:
+	{
+		Random, GodsRnd, 1, Gods_Lines
+		FileReadLine, NPC_Gods, %BaseDir%\Loot\Banks\.Gods.ini, GodsRnd
+	}
+	Traits:
+	{
+		Random, TraitRnd1, 1, Traits_Lines
+		FileReadLine, NPC_Trait1, %BaseDir%\Loot\Banks\NPC\Traits.ini, TraitRnd1
+		Random, TraitRnd2, 1, Traits_Lines
+		FileReadLine, NPC_Trait2, %BaseDir%\Loot\Banks\NPC\Traits.ini, TraitRnd2
+		
+		Traits = ~Others would describe them as %NPC_Trait1%
+	}
+	Quirks:
+	{
+		Random, QuirksRnd, 1, Quirks_Lines
+		FileReadLine, NPC_Quirk, %BaseDir%\Loot\Banks\NPC\Quirks.ini, QuirksRnd
+	}
+
 }
 
 Generate:
@@ -282,6 +523,38 @@ Generate:
 						NPC_Ideal := StrReplace(NPC_Ideal, "{FAMILY}", FAMILY)
 					}
 				}
+			If (InStr(NPC_Goal, "{BEAST}")) || If (InStr(NPC_Flaw, "{BEAST}")) || If (InStr(NPC_Bond, "{BEAST}")) || If (InStr(NPC_Ideal, "{BEAST}")) || If (InStr(NPC_Quirk, "{BEAST}"))
+				{	;Collapse
+					BEASTFile = %LootDir%\Beastiary\.Global.txt
+					Loop, Read, %BEASTFile%
+						BEAST_Lines = %A_Index%
+					Random, BEASTRnd, 1, BEAST_Lines
+					FileReadLine, BEAST, %BEASTFile%, BEASTRnd
+					NPC_BEASTReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{BEAST}", BEAST)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{BEAST}", BEAST)
+						NPC_Bond := StrReplace(NPC_Bond, "{BEAST}", BEAST)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{BEAST}", BEAST)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{BEAST}", BEAST)
+					}
+				}
+			If (InStr(NPC_Goal, "{EMBLEM}")) || If (InStr(NPC_Flaw, "{EMBLEM}")) || If (InStr(NPC_Bond, "{EMBLEM}")) || If (InStr(NPC_Ideal, "{EMBLEM}")) || If (InStr(NPC_Quirk, "{EMBLEM}"))
+				{	;Collapse
+					EMBLEMFile = %LootDir%\Misc\.Emblems.ini
+					Loop, Read, %EMBLEMFile%
+						EMBLEM_Lines = %A_Index%
+					Random, EMBLEMRnd, 1, EMBLEM_Lines
+					FileReadLine, EMBLEM, %EMBLEMFile%, EMBLEMRnd
+					NPC_EMBLEMReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{EMBLEM}", EMBLEM)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{EMBLEM}", EMBLEM)
+						NPC_Bond := StrReplace(NPC_Bond, "{EMBLEM}", EMBLEM)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{EMBLEM}", EMBLEM)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{EMBLEM}", EMBLEM)
+					}
+				}
 			If (InStr(NPC_Goal, "{DRUG}")) || If (InStr(NPC_Flaw, "{DRUG}")) || If (InStr(NPC_Bond, "{DRUG}")) || If (InStr(NPC_Ideal, "{DRUG}")) || If (InStr(NPC_Quirk, "{DRUG}"))
 				{	;Collapse
 					DRUGFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Misc\.Drugs.ini
@@ -332,11 +605,8 @@ Generate:
 				}
 			If (InStr(NPC_Goal, "{GOD}")) || If (InStr(NPC_Flaw, "{GOD}")) || If (InStr(NPC_Bond, "{GOD}")) || If (InStr(NPC_Ideal, "{GOD}")) || If (InStr(NPC_Quirk, "{GOD}"))
 				{	;Collapse
-					GODFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Gods.ini
-					Loop, Read, %GODFile%
-						GOD_Lines = %A_Index%
-					Random, GODRnd, 1, GOD_Lines
-					FileReadLine, GOD, %GODFile%, GODRnd
+					Random, GODRnd, 1, Gods_Lines
+					FileReadLine, GOD, %BaseDir%\Loot\Banks\.Gods.ini, GODRnd
 					NPC_GODReplacements:
 					{
 						NPC_Goal := StrReplace(NPC_Goal, "{GOD}", GOD)
@@ -344,6 +614,21 @@ Generate:
 						NPC_Bond := StrReplace(NPC_Bond, "{GOD}", GOD)
 						NPC_Quirk := StrReplace(NPC_Quirk, "{GOD}", GOD)
 						NPC_Ideal := StrReplace(NPC_Ideal, "{GOD}", GOD)
+					}
+				}
+			If (InStr(NPC_Goal, "{LANGUAGE}")) || If (InStr(NPC_Flaw, "{LANGUAGE}")) || If (InStr(NPC_Bond, "{LANGUAGE}")) || If (InStr(NPC_Ideal, "{LANGUAGE}")) || If (InStr(NPC_Quirk, "{LANGUAGE}"))
+				{	;Collapse
+					Loop, Read, %LootDir%\.Languages.ini
+						Languages_Lines = %A_Index%
+					Random, LANGUAGERnd, 1, LANGUAGEs_Lines
+					FileReadLine, LANGUAGE, %LootDir%\.Languages.ini, LANGUAGERnd
+					NPC_LANGUAGEReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{LANGUAGE}", LANGUAGE)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{LANGUAGE}", LANGUAGE)
+						NPC_Bond := StrReplace(NPC_Bond, "{LANGUAGE}", LANGUAGE)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{LANGUAGE}", LANGUAGE)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{LANGUAGE}", LANGUAGE)
 					}
 				}
 			If (InStr(NPC_Goal, "{SUBJECT}")) || If (InStr(NPC_Flaw, "{SUBJECT}")) || If (InStr(NPC_Bond, "{SUBJECT}")) || If (InStr(NPC_Ideal, "{SUBJECT}")) || If (InStr(NPC_Quirk, "{SUBJECT}"))
@@ -356,6 +641,22 @@ Generate:
 						NPC_Bond := StrReplace(NPC_Bond, "{SUBJECT}", SUBJECT)
 						NPC_Quirk := StrReplace(NPC_Quirk, "{SUBJECT}", SUBJECT)
 						NPC_Ideal := StrReplace(NPC_Ideal, "{SUBJECT}", SUBJECT)
+					}
+				}
+			If (InStr(NPC_Goal, "{ADJ}")) || If (InStr(NPC_Flaw, "{ADJ}")) || If (InStr(NPC_Bond, "{ADJ}")) || If (InStr(NPC_Ideal, "{ADJ}")) || If (InStr(NPC_Quirk, "{ADJ}"))
+				{	;Collapse
+					Random, ADJsRnd, 1, 12
+					Loop, Read, %LootDir%\Adj\Adj%ADJsRnd%.txt
+						ADJ_Lines = %A_Index%
+					Random, ADJsRndLine, 1, %ADJ_Lines%					
+					FileReadLine, ADJ, %LootDir%\Adj\Adj%ADJsRnd%.txt, ADJsRndLine
+					NPC_ADJReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{ADJ}", ADJ)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{ADJ}", ADJ)
+						NPC_Bond := StrReplace(NPC_Bond, "{ADJ}", ADJ)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{ADJ}", ADJ)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{ADJ}", ADJ)
 					}
 				}
 			If (InStr(NPC_Goal, "{NOUN}")) || If (InStr(NPC_Flaw, "{NOUN}")) || If (InStr(NPC_Bond, "{NOUN}")) || If (InStr(NPC_Ideal, "{NOUN}")) || If (InStr(NPC_Quirk, "{NOUN}"))
@@ -372,6 +673,53 @@ Generate:
 						NPC_Bond := StrReplace(NPC_Bond, "{NOUN}", NOUN)
 						NPC_Quirk := StrReplace(NPC_Quirk, "{NOUN}", NOUN)
 						NPC_Ideal := StrReplace(NPC_Ideal, "{NOUN}", NOUN)
+					}
+				}
+			If (InStr(NPC_Goal, "{NOUNAbstractRemoved}")) || If (InStr(NPC_Flaw, "{NOUNAbstractRemoved}")) || If (InStr(NPC_Bond, "{NOUNAbstractRemoved}")) || If (InStr(NPC_Ideal, "{NOUNAbstractRemoved}")) || If (InStr(NPC_Quirk, "{NOUNAbstractRemoved}"))
+				{	;Collapse
+					NounsAbstractRemovedFile = %LootDir%\Nouns\NounsAbstractRemoved.txt
+					Loop, Read, %NounsAbstractRemovedFile%
+						NOUNAbstractRemoved_Lines = %A_Index%
+					Random, NOUNAbstractRemovedsRndLine, 1, %NOUNAbstractRemoved_Lines%					
+					FileReadLine, NOUNAbstractRemoved, %NounsAbstractRemovedFile%, NOUNAbstractRemovedsRndLine
+					NPC_NOUNAbstractRemovedReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{NOUNAbstractRemoved}", NOUNAbstractRemoved)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{NOUNAbstractRemoved}", NOUNAbstractRemoved)
+						NPC_Bond := StrReplace(NPC_Bond, "{NOUNAbstractRemoved}", NOUNAbstractRemoved)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{NOUNAbstractRemoved}", NOUNAbstractRemoved)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{NOUNAbstractRemoved}", NOUNAbstractRemoved)
+					}
+				}
+			If (InStr(NPC_Goal, "{Anatomy}")) || If (InStr(NPC_Flaw, "{Anatomy}")) || If (InStr(NPC_Bond, "{Anatomy}")) || If (InStr(NPC_Ideal, "{Anatomy}")) || If (InStr(NPC_Quirk, "{Anatomy}"))
+				{	;Collapse
+					Loop, Read, %LootDir%\Misc\.Anatomy.ini
+						Anatomy_Lines = %A_Index%
+					Random, AnatomysRndLine, 1, %Anatomy_Lines%		
+					FileReadLine, Anatomy, %LootDir%\Misc\.Anatomy.ini, AnatomysRndLine
+					NPC_AnatomyReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{Anatomy}", Anatomy)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{Anatomy}", Anatomy)
+						NPC_Bond := StrReplace(NPC_Bond, "{Anatomy}", Anatomy)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{Anatomy}", Anatomy)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{Anatomy}", Anatomy)
+					}
+				}
+			If (InStr(NPC_Goal, "{COLOR}")) || If (InStr(NPC_Flaw, "{COLOR}")) || If (InStr(NPC_Bond, "{COLOR}")) || If (InStr(NPC_Ideal, "{COLOR}")) || If (InStr(NPC_Quirk, "{COLOR}"))
+				{	;Collapse
+					Loop, Read, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Colors.ini
+						COLOR_Lines = %A_Index%
+					Random, COLORsRndLine, 1, %COLOR_Lines%					
+					FileReadLine, COLOR, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Colors.ini, COLORsRndLine
+					
+					NPC_COLORReplacements:
+					{
+						NPC_Goal := StrReplace(NPC_Goal, "{COLOR}", COLOR)
+						NPC_Flaw := StrReplace(NPC_Flaw, "{COLOR}", COLOR)
+						NPC_Bond := StrReplace(NPC_Bond, "{COLOR}", COLOR)
+						NPC_Quirk := StrReplace(NPC_Quirk, "{COLOR}", COLOR)
+						NPC_Ideal := StrReplace(NPC_Ideal, "{COLOR}", COLOR)
 					}
 				}
 			If (InStr(Loot, "{Table-"))
@@ -449,6 +797,11 @@ Generate:
 			}
 		}
 		
+		Replaced_NPCGen:
+		{
+			Quirks = ~They have a recognizable %NPC_Quirk%
+		}
+		
 		Output:
 		{
 			If FileExist(LastFile_0)
@@ -490,15 +843,18 @@ Generate:
 			StringUpper, Race, Race, T
 		}
 		Gui, Font, s12 cGray, Centaur
-		GUI, add, text, gAction3 x15 r1 w500, %FullGender% %Race% | %NPC_Role% | %NPC_Family%
+		GUI, add, text, gAction3 x15 +wrap w600, %FullGender% %Race% | %NPC_Role% | %NPC_Family% | Lvl_%NPC_Level% %NPC_Class%
 		
 		Gui, Font, s14 cWhite, Centaur
-		GUI, add, text, gAction3 x10 w500 r2 y80, ~Currently thinking about %NOUN%
-		GUI, add, text, gAction3 x10 w500 r2 y110, ~%NPC_Goal%
+		GUI, add, text, gAction3 x10 w600 r2, %Traits%
+		GUI, add, text, gAction3 x10 w600 r2, ~%NPC_Goal%
+		GUI, add, text, gAction3 x10 w600 r3, %Quirks%
+		GUI, add, text, gAction3 x10 w600 r4, ~Currently thinking about %NOUN%
+		GUI, add, text, gAction3 x10 w600 y330, %AbilityScores%`n
 		
-		Gui, Show, x1000 y250
+		Gui, Show, x800 y250
 		
-		NPC_Body = %FullGender% %Race% | %NPC_Role% | %NPC_Family%`n~Currently thinking about %NOUN%`n~%NPC_Goal%
+		NPC_Body = %FullGender% %Race% | %NPC_Role% | %NPC_Family% | Worships %NPC_Gods%`n~Currently thinking about %NOUN%`n~%NPC_Goal%
 	}
 	
 	pause	;press Escape to resume
@@ -565,10 +921,10 @@ FoundryImport:
 
 EndofFile:
 {
-+Escape::
+Escape::
 {
 	Reload
 }
-^+Escape::ExitApp
++Escape::ExitApp
 }
 return

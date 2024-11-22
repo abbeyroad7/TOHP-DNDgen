@@ -1,4 +1,4 @@
-;v3.8.03
+;v3.8.05
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -695,10 +695,10 @@ Loop, %QtyMax%
 			}
 			If (InStr(Loot, "{POISON}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Weapons\.Poisons.ini
+				Loop, Read, %Dir%\Banks\WeaponsMundane\.Poisons.ini
 					POISONs_Lines = %A_Index%
 				Random, POISONsRnd, 1, POISONs_Lines
-				FileReadLine, POISONs, %Dir%\Banks\Weapons\.Poisons.ini, POISONsRnd
+				FileReadLine, POISONs, %Dir%\Banks\WeaponsMundane\.Poisons.ini, POISONsRnd
 				;Msgbox %POISONs%	;Debug
 				Loot := StrReplace(Loot, "{POISON}", POISONs)
 			}
@@ -960,7 +960,7 @@ Loop, %QtyMax%
 			;Msgbox %Action1%
 			GUI, Color, 050505	;GUI bg color
 			Gui, Font, s10 cGray, Centaur
-			GUI, add, button, gAction, (%CONDITION%) %Rarity%
+			GUI, add, text, gAction, (%CONDITION%) %Rarity%
 			
 			Gui, Font, s14 cWhite, Centaur bold
 			GUI, add, button, gAction w700, %Loot%

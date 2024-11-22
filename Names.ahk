@@ -1,13 +1,9 @@
-;v3.5.0
+;v3.8.2
 ;;Todo
-;Statblocks
-;Cap scores at 20
-;Weapons	Base on class proficiencies
-;Level
+;Change family dynamics per race, var set for sibling max, etc
 
 ;Incorporate biography on FoundryImport
 ;Tagging system for races
-;Cleanup code, brackets
 ;Queue for first/last names only
 ;When importing to foundry, seperate pics by race
 
@@ -97,7 +93,7 @@ Start:
 	LastFile_0 = %Dir%\%Race%\%Race%_s0.txt
 	LastFile_1 = %Dir%\%Race%\%Race%_s1.txt
 	LastFile_2 = %Dir%\%Race%\%Race%_s2.txt
-	;Msgbox %FirstFile%
+	;Msgbox %LastFile_0%
 	
 	RaceSetDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient\%Race%
 	if !FileExist(RaceSetDir)
@@ -220,133 +216,437 @@ NPC:
 	}
 	Classes_StatIntegration:
 	{
+		LoadoutQty:
+		{
+			If NPC_Level > 3
+				Loadout = 2
+			If NPC_Level < 4
+				Random, Loadout, 0, 2
+			SimpleMartial = Simple
+			MeleeRanged = Melee
+			ArmorType = Light
+			Shield := []
+		}
 		If NPC_Class = Artificer
 		{
-			Random, Class_cho, 1, 2
+			ArtificerClass_Proficiency:
+			{
+				Random, Class_cho, 1, 2
 				If Class_cho = 1
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
 				If Class_cho = 2
-					CON := CON + ProficiencyBonus
+					SavingThrowCON := CON + ProficiencyBonus
+			}
+			
+			ArtificerWeapon:
+			{
+				Random, MeleeRanged, 1, 2
+				If MeleeRanged = 1
+					MeleeRanged = Melee
+				If MeleeRanged = 2
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			ArtificerArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				Random, ArmorType, 1, 2
+				If ArmorType = 1
+					ArmorType = Light
+				If ArmorType = 2
+					ArmorType = Medium
+			}
 		}
 		If NPC_Class = Barbarian
 		{
 			Random, Class_cho, 1, 3
 				If Class_cho = 1
-					STR := STR + ProficiencyBonus
+					SavingThrowSTR := STR + ProficiencyBonus
 				If Class_cho = 2
-					DEX := DEX + ProficiencyBonus
+					SavingThrowDEX := DEX + ProficiencyBonus
 				If Class_cho = 3
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
+					
+			BarbarianWeapon:
+			{
+				Random, SimpleMartial, 1, 100
+				If SimpleMartial between 1 and 40
+					SimpleMartial = Simple
+				If SimpleMartial between 41 and 100
+					SimpleMartial = Martial
+					
+				MeleeRanged = Melee
+			}
+			
+			BarbarianArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				Random, ArmorType, 1, 2
+				If ArmorType = 1
+					ArmorType = Light
+				If ArmorType = 2
+					ArmorType = Medium
+			}
 		}
 		If NPC_Class = Bard
 		{
 			Random, Class_cho, 1, 6
 				If Class_cho = 1
-					STR := STR + ProficiencyBonus
+					SavingThrowSTR := STR + ProficiencyBonus
 				If Class_cho = 2
-					DEX := DEX + ProficiencyBonus
+					SavingThrowDEX := DEX + ProficiencyBonus
 				If Class_cho = 3
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
 				If Class_cho = 4
-					CON := CON + ProficiencyBonus
+					SavingThrowCON := CON + ProficiencyBonus
 				If Class_cho = 5
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
 				If Class_cho = 6
-					CHA := CHA + ProficiencyBonus
+					SavingThrowCHA := CHA + ProficiencyBonus
+					
+			BardWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 60
+					MeleeRanged = Melee
+				If MeleeRanged between 61 and 100
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			BardArmor:
+			{
+				Shields := []
+				ArmorType = Light
+			}
 		}
 		If NPC_Class = Cleric
 		{
 			Random, Class_cho, 1, 3
 				If Class_cho = 1
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
 				If Class_cho = 2
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
 				If Class_cho = 3
-					CHA := CHA + ProficiencyBonus
+					SavingThrowCHA := CHA + ProficiencyBonus
+					
+			ClericWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 60
+					MeleeRanged = Melee
+				If MeleeRanged between 61 and 100
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			ClericArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				Random, ArmorType, 1, 2
+				If ArmorType = 1
+					ArmorType = Light
+				If ArmorType = 2
+					ArmorType = Medium
+			}
 		}
 		If NPC_Class = Druid
 		{
 			Random, Class_cho, 1, 2
 				If Class_cho = 1
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
 				If Class_cho = 2
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
+					
+			DruidWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 60
+					MeleeRanged = Melee
+				If MeleeRanged between 61 and 100
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			DruidArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				ArmorType = Light
+			}
 		}
 		If NPC_Class = Fighter
 		{
 			Random, Class_cho, 1, 3
 				If Class_cho = 1
-					STR := STR + ProficiencyBonus
+					SavingThrowSTR := STR + ProficiencyBonus
 				If Class_cho = 2
-					DEX := DEX + ProficiencyBonus
+					SavingThrowDEX := DEX + ProficiencyBonus
 				If Class_cho = 3
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
+					
+			FighterWeapon:
+			{
+				Random, SimpleMartial, 1, 100
+				If SimpleMartial between 1 and 20
+					SimpleMartial = Simple
+				If SimpleMartial between 21 and 100
+					SimpleMartial = Martial
+					
+				MeleeRanged = Melee
+			}
+			
+			FighterArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				Random, ArmorType, 1, 3
+				If ArmorType = 1
+					ArmorType = Light
+				If ArmorType = 2
+					ArmorType = Medium
+				If ArmorType = 3
+					ArmorType = Heavy
+			}
 		}
 		If NPC_Class = Monk
 		{
 			Random, Class_cho, 1, 3
 				If Class_cho = 1
-					STR := STR + ProficiencyBonus
+					SavingThrowSTR := STR + ProficiencyBonus
 				If Class_cho = 2
-					DEX := DEX + ProficiencyBonus
+					SavingThrowDEX := DEX + ProficiencyBonus
 				If Class_cho = 3
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
+					
+			MonkWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 60
+					MeleeRanged = Melee
+				If MeleeRanged between 61 and 100
+					MeleeRanged = Ranged
+					
+				Random, SimpleMartial, 1, 100
+				If SimpleMartial between 1 and 45
+					SimpleMartial = Simple
+				If SimpleMartial between 46 and 100
+					SimpleMartial = Martial
+			}
+			
+			MonkArmor:
+			{
+				Shield := []
+				ArmorType := []
+			}
 		}
 		If NPC_Class = Paladin
 		{
 			Random, Class_cho, 1, 3
 				If Class_cho = 1
-					STR := STR + ProficiencyBonus
+					SavingThrowSTR := STR + ProficiencyBonus
 				If Class_cho = 2
-					CHA := CHA + ProficiencyBonus
+					SavingThrowCHA := CHA + ProficiencyBonus
 				If Class_cho = 3
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
+					
+			PaladinWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 60
+					MeleeRanged = Melee
+				If MeleeRanged between 61 and 100
+					MeleeRanged = Ranged
+					
+				Random, SimpleMartial, 1, 100
+				If SimpleMartial between 1 and 45
+					SimpleMartial = Simple
+				If SimpleMartial between 46 and 100
+					SimpleMartial = Martial
+			}
+			
+			PaladinArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				Random, ArmorType, 1, 3
+				If ArmorType = 1
+					ArmorType = Light
+				If ArmorType = 2
+					ArmorType = Medium
+				If ArmorType = 3
+					ArmorType = Heavy
+			}
 		}
 		If NPC_Class = Ranger
 		{
 			Random, Class_cho, 1, 3
 				If Class_cho = 1
-					STR := STR + ProficiencyBonus
+					SavingThrowSTR := STR + ProficiencyBonus
 				If Class_cho = 2
-					DEX := DEX + ProficiencyBonus
+					SavingThrowDEX := DEX + ProficiencyBonus
 				If Class_cho = 3
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
+			
+			RangerWeapon:
+			{
+				Random, SimpleMartial, 1, 100
+				If SimpleMartial between 1 and 20
+					SimpleMartial = Simple
+				If SimpleMartial between 21 and 100
+					SimpleMartial = Martial
+					
+				MeleeRanged = Ranged
+			}
+			
+			RangerArmor:
+			{
+				Random, Shield, 0, 1
+				If Shield = 0
+					Shield := []
+				If Shield = 1
+					Shield = , Shield
+				Random, ArmorType, 1, 2
+				If ArmorType = 1
+					ArmorType = Light
+				If ArmorType = 2
+					ArmorType = Medium
+			}
 		}
 		If NPC_Class = Rogue
 		{
 			Random, Class_cho, 1, 4
 				If Class_cho = 1
-					DEX := DEX + ProficiencyBonus
+					SavingThrowDEX := DEX + ProficiencyBonus
 				If Class_cho = 2
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
 				If Class_cho = 3
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
 				If Class_cho = 4
-					CHA := CHA + ProficiencyBonus
+					SavingThrowCHA := CHA + ProficiencyBonus
+			
+			RogueWeapon:
+			{
+				Random, SimpleMartial, 1, 100
+				If SimpleMartial between 1 and 20
+					SimpleMartial = Simple
+				If SimpleMartial between 21 and 100
+					SimpleMartial = Martial
+					
+				MeleeRanged = Ranged
+			}
+			
+			RogueArmor:
+			{
+				Shield := []
+				ArmorType = Light
+			}
 		}
 		If NPC_Class = Sorcerer
 		{
 			Random, Class_cho, 1, 2
 				If Class_cho = 1
-					CHA := CHA + ProficiencyBonus
+					SavingThrowCHA := CHA + ProficiencyBonus
 				If Class_cho = 2
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
+					
+			SorcererWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 80
+					MeleeRanged = Melee
+				If MeleeRanged between 81 and 100
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			SorcererArmor:
+			{
+				Shield := []
+				ArmorType := []
+			}
 		}
 		If NPC_Class = Warlock
 		{
 			Random, Class_cho, 1, 2
 				If Class_cho = 1
-					CHA := CHA + ProficiencyBonus
+					SavingThrowCHA := CHA + ProficiencyBonus
 				If Class_cho = 2
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
+					
+			WarlockWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 80
+					MeleeRanged = Melee
+				If MeleeRanged between 81 and 100
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			WarlockArmor:
+			{
+				Shield := []
+				ArmorType = Light
+			}
 		}
 		If NPC_Class = Wizard
 		{
 			Random, Class_cho, 1, 2
 				If Class_cho = 1
-					WIS := WIS + ProficiencyBonus
+					SavingThrowWIS := WIS + ProficiencyBonus
 				If Class_cho = 2
-					INT := INT + ProficiencyBonus
+					SavingThrowINT := INT + ProficiencyBonus
+					
+			WizardWeapon:
+			{
+				Random, MeleeRanged, 1, 100
+				If MeleeRanged between 1 and 80
+					MeleeRanged = Melee
+				If MeleeRanged between 81 and 100
+					MeleeRanged = Ranged
+					
+				SimpleMartial = Simple
+			}
+			
+			WizardArmor:
+			{
+				Shield := []
+				ArmorType := []
+			}
+		}
+		
+		Races_StatIntegration:
+		{
+			#Include D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Libraries\Races_StatIntegration.ahk
 		}
 		
 		;Msgbox %STR% STR | %DEX% DEX | %CON% CON | %INT% INT | %WIS% WIS | %CHA% CHA
@@ -452,7 +752,54 @@ NPC:
 		Random, QuirksRnd, 1, Quirks_Lines
 		FileReadLine, NPC_Quirk, %BaseDir%\Loot\Banks\NPC\Quirks.ini, QuirksRnd
 	}
-
+	Weapons:
+	{
+		Random, MagicMundane, 1, 100
+			if MagicMundane between 1 and 90	;MundaneWeapons
+				WeaponFolder = WeaponsMundane
+			if MagicMundane between 91 and 100	;MagicWeapons
+			{
+				Random, WeaponMagicRnd, 1, 100
+				if WeaponMagicRnd between 1 and 70
+					WeaponMagic = Uncommon
+				if WeaponMagicRnd between 71 and 80
+					WeaponMagic = Rare
+				if WeaponMagicRnd between 81 and 90
+					WeaponMagic = VeryRare
+				if WeaponMagicRnd between 98 and 99
+					WeaponMagic = Legendary
+				if WeaponMagicRnd = 100
+					WeaponMagic = Artifact
+				
+				WeaponFolder = WeaponsMagic\Rarity_%WeaponMagic%
+			}
+		
+		WeaponFile = %LootDir%\%WeaponFolder%\%SimpleMartial%%MeleeRanged%.ini
+		;Msgbox %WeaponFile%	;debug
+		if !FileExist(WeaponFile)
+		{
+			;Msgbox Reroll	;debug
+			MagicMundane := []
+			WeaponMagicRnd := []
+			Goto, Weapons
+		}
+		
+		Loop, Read, %WeaponFile%
+			Weapons_Lines = %A_Index%
+		Random, WeaponsRnd, 1, Weapons_Lines
+		FileReadLine, NPC_Weapons, %WeaponFile%, WeaponsRnd
+	}
+	Armors:
+	{
+		ArmorFile = %LootDir%\Armors\%ArmorType%Armor.ini
+		Loop, Read, %ArmorFile%
+			Armor_Lines = %A_Index%
+		Random, ArmorRnd, 1, Armor_Lines
+		FileReadLine, NPC_Armor, %ArmorFile%, ArmorRnd
+		
+		;Msgbox %ArmorType% Armor %Shield%
+		NPC_Armor = %NPC_Armor%%Shield%
+	}
 }
 
 Generate:
@@ -497,12 +844,12 @@ Generate:
 		{
 			If (InStr(Last_0, "{FLORA}")) || If (InStr(Last_1, "{FLORA}")) || If (InStr(Last_2, "{FLORA}"))
 				{	;Collapse
-					FloraFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Beastiary\Flora\%Habitat%.ini
+					FloraFile = %LootDir%\Beastiary\Flora\%Habitat%.ini
 					Loop, Read, %FloraFile%
 						Flora_Lines = %A_Index%
 					Random, FloraRnd, 1, Flora_Lines
 					FileReadLine, Flora, %FloraFile%, FloraRnd
-					;Msgbox %Mammals%	;Debug
+					;Msgbox %Habitat%	;Debug
 					Last_0 := StrReplace(Last_0, "{FLORA}", Flora)
 					Last_1 := StrReplace(Last_1, "{FLORA}", Flora)
 					Last_2 := StrReplace(Last_2, "{FLORA}", Flora)
@@ -809,11 +1156,13 @@ Generate:
 				Random, LastA, 1, 2
 				if (LastA = 1)
 					Goto, Combine
-				Loop, Read, %LastFile_0%
-				s0Lines = %A_Index%
-				NameArray = %First% %Last_0%
-				;Msgbox %Clipboard%
-				Goto, End
+				if (LastA = 2)
+				{
+					Loop, Read, %LastFile_0%
+					NameArray%A_Index% = %First% %Last_0%
+					;Msgbox %Last_0%
+					Goto, End
+				}
 			}
 		}
 		Combine:
@@ -850,7 +1199,9 @@ Generate:
 		GUI, add, text, gAction3 x10 w600 r2, ~%NPC_Goal%
 		GUI, add, text, gAction3 x10 w600 r3, %Quirks%
 		GUI, add, text, gAction3 x10 w600 r4, ~Currently thinking about %NOUN%
-		GUI, add, text, gAction3 x10 w600 y330, %AbilityScores%`n
+		GUI, add, text, gAction3 x10 w600 y320, ~Equipped with a %NPC_Weapons%, %NPC_Armor%
+		GUI, add, text, gAction3 x10 w600 y400, %AbilityScores%
+		;GUI, add, text, gAction3 x10 w600 y460, Acrobatics | Animal Handling | Arcana | Athletics | Deception | History | Insight | Intimidation | Investigation | Medicine | Nature | Perception | Performance | Persuasion | Religion | Sleight of Hand | Stealth | Survival
 		
 		Gui, Show, x800 y250
 		

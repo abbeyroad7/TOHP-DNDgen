@@ -1,9 +1,6 @@
 {COLOR}
 {COLOR}
 {COLOR}
-{COLOR}
-{COLOR}
-{COLOR}
 Luck
 Hare
 Burrow

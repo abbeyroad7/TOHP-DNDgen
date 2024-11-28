@@ -101,7 +101,6 @@ Minotaur
 Myconid
 Myconid
 Naga
-Nickname
 Ogre
 Ogre
 Orc

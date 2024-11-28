@@ -1,11 +1,17 @@
-;v3.8.05
+; Change these to fit your world.
+WorldSettings:
+{
+	Habitat = Temperate	;Your current environmental climate. Options: Global, Coast, Desert, Jungle, Ocean, Temperate, Tundra
+	Level = 4	;Player's current level
+}
+
+;v4.0.0
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
 ;If category prompt is entered, it does not exit the mode correctly
 ;Tables show roll range sometimes, seems to break randomly on ranges with hyphens
 ;# Todo
-;Prompt individual banks/rarities
 ;Select all to FoundryImport
 ;Add Item pictures to lootbanks
 ;Animal mixer
@@ -15,84 +21,94 @@
 ;Icons, export snapshot to clipboard
 ;Grab first image off of google
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
-Debug = 1	;1=off
-DebugCheck:
-{
-	DebugSize := 0
-	FileGetSize, DebugSize, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\0_Test.txt
-	If (DebugSize > 0)
-		Debug = 0
-}
 
-Level = 4	;Specify player's current level
-Habitat = Temperate	;Specify your world's habitat
 ;Import
 {	;collapse import
-#Requires AutoHotkey v1.1+
-#SingleInstance Force
-Vars:
-Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot
-NamesDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
-Tog_Currency := false
-If Debug = 0
+	#Requires AutoHotkey v1.1+
+	#SingleInstance Force
+	Debug = 1	;1=off
+	
+	DebugCheck:
+		{
+			DebugSize := 0
+			FileGetSize, DebugSize, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\0_Test.txt
+			If (DebugSize > 0)
+				Debug = 0
+		}
+	IconSet:
 	{
-		Loop, Read, %Dir%\0_Test.txt	;testing purposes
-			0_Lines = %A_Index%
+		I_Icon = C:\Program Files\AutoHotkey\Icons\Loot.ico
+		ICON [I_Icon]                        ;Changes a compiled script's icon (.exe)
+		if I_Icon <>
+		IfExist, %I_Icon%
+			Menu, Tray, Icon, %I_Icon%   ;Changes menu tray icon 
 	}
-Loop, Read, %Dir%\Banks\.Colors.ini
-   C_Lines = %A_Index%
-Loop, Read, %Dir%\1_Mundane.txt
-   1_Lines = %A_Index%
-Loop, Read, %Dir%\2_Common.txt
-   2_Lines = %A_Index%
-Loop, Read, %Dir%\3_Uncommon.txt
-   3_Lines = %A_Index%
-Loop, Read, %Dir%\4_Rare.txt
-   4_Lines = %A_Index%
-Loop, Read, %Dir%\5_VeryRare.txt
-   5_Lines = %A_Index%
-Loop, Read, %Dir%\6_Legendary.txt
-   6_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Nouns\Nouns1.txt
-   N1_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Nouns\Nouns2.txt
-   N2_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Nouns\Nouns3.txt
-   N3_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Nouns\Nouns4.txt
-   N4_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Nouns\Nouns5.txt
-   N5_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Nouns\Nouns6.txt
-   N6_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj1.txt
-   Adj1_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj2.txt
-   Adj2_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj3.txt
-   Adj3_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj4.txt
-   Adj4_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj5.txt
-   Adj5_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj6.txt
-   Adj6_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj7.txt
-   Adj7_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj8.txt
-   Adj8_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj9.txt
-   Adj9_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj10.txt
-   Adj10_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj11.txt
-   Adj11_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Adj\Adj12.txt
-   Adj12_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\Races.txt
-   Race_Lines = %A_Index%
-Loop, Read, %Dir%\Banks\RaceNames.txt
-   RaceNames_Lines = %A_Index%
+	
+	Filepaths:
+	{
+		Dir = %A_ScriptDir%\Loot
+		NamesDir = %A_ScriptDir%\Names
+	}
+	
+	If Debug = 0
+		{
+			Loop, Read, %Dir%\0_Test.txt	;testing purposes
+				0_Lines = %A_Index%
+		}
+	Loop, Read, %Dir%\Banks\Colors.ini
+	C_Lines = %A_Index%
+	Loop, Read, %Dir%\1_Mundane.txt
+	1_Lines = %A_Index%
+	Loop, Read, %Dir%\2_Common.txt
+	2_Lines = %A_Index%
+	Loop, Read, %Dir%\3_Uncommon.txt
+	3_Lines = %A_Index%
+	Loop, Read, %Dir%\4_Rare.txt
+	4_Lines = %A_Index%
+	Loop, Read, %Dir%\5_VeryRare.txt
+	5_Lines = %A_Index%
+	Loop, Read, %Dir%\6_Legendary.txt
+	6_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Nouns\Nouns1.txt
+	N1_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Nouns\Nouns2.txt
+	N2_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Nouns\Nouns3.txt
+	N3_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Nouns\Nouns4.txt
+	N4_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Nouns\Nouns5.txt
+	N5_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Nouns\Nouns6.txt
+	N6_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj1.txt
+	Adj1_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj2.txt
+	Adj2_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj3.txt
+	Adj3_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj4.txt
+	Adj4_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj5.txt
+	Adj5_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj6.txt
+	Adj6_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj7.txt
+	Adj7_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj8.txt
+	Adj8_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj9.txt
+	Adj9_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj10.txt
+	Adj10_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj11.txt
+	Adj11_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Adj\Adj12.txt
+	Adj12_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\Races.txt
+	Race_Lines = %A_Index%
+	Loop, Read, %Dir%\Banks\RaceNames.txt
+	RaceNames_Lines = %A_Index%
 }
 Start:
 NC = 0
@@ -106,13 +122,20 @@ Inputbox, QtyMax,,,,200,100
 		If QtyMax < 1
 			Exit
 	}
+	;If (InStr(QtyMax, A_Space))
+	;{
+	;	QtyMaxPrompt := StrSplit(QtyMax, A_Space)
+	;	QtyMax := QtyMaxPrompt.1
+	;	Prompt := QtyMaxPrompt.2
+	;	;Msgbox %Prompt%	;Debug
+	;}
 	If (InStr(QtyMax, A_Space))
-		{
-			QtyMaxPrompt := StrSplit(QtyMax, A_Space)
-			QtyMax := QtyMaxPrompt.1
-			Prompt := QtyMaxPrompt.2
-			;Msgbox %Prompt%	;Debug
-		}
+	{
+		QtyMaxPrompt := StrSplit(QtyMax, A_Space)
+		QtyMax := QtyMaxPrompt.1
+		Prompt := QtyMaxPrompt.2
+		;Msgbox %Prompt%	;Debug
+	}
 Loop, %QtyMax%
 {
 	;Condition
@@ -144,6 +167,21 @@ Loop, %QtyMax%
 	}
 	If (Prompt != "")	;Prompt is not empty
 		{
+			WildCardPrompter:
+			{
+				Loot = %Prompt%
+				;Msgbox %Loot%
+				NC = 1
+				
+				Prompt_File = %Dir%\Banks\%Prompt%.ini
+				Loop, Read, %Prompt_File%
+					Prompt_Lines = %A_Index%
+				Random, PromptRnd, 1, Prompt_Lines
+				FileReadLine, PromptCho, %Prompt_File%, PromptRnd
+				;Msgbox %PromptCho%	;Debug
+				Loot := StrReplace(Loot, Loot, PromptCho)
+			}
+			
 			If (Instr(Prompt, "book"))
 				{
 					Random, BookRnd, 1, 52
@@ -235,7 +273,16 @@ Loop, %QtyMax%
 				}
 			If (Instr(Prompt, "dungeon"))
 				{
-					Loot = Dungeon				
+					Loot = Dungeon
+					NC = 1
+				}
+			If (Instr(Prompt, "pf"))
+				{
+					PF0 := StrSplit(Prompt, "pf")
+					PF := PF0.2
+					
+					Loot = {PF-%PF%}
+					;Msgbox %Loot%
 					NC = 1
 				}
 			Goto, Randomize	;Skip rarity tables
@@ -305,7 +352,7 @@ Loop, %QtyMax%
 		Random, RaceRnd, 1, %Race_Lines%
 		Random, RaceNamesRnd, 1, %RaceNames_Lines%
 			FileReadLine, Loot, %Dir%\%Rarity%, %FirstRnd%
-			FileReadLine, COLOR, %Dir%\Banks\.Colors.ini, %ColorRnd%
+			FileReadLine, COLOR, %Dir%\Banks\Colors.ini, %ColorRnd%
 			FileReadLine, RaceNames, %Dir%\Banks\RaceNames.txt, %RaceNamesRnd%
 			COLOR := StrSplit(COLOR, A_Tab)
 			Random, 1d100, 1, 100
@@ -398,6 +445,21 @@ Loop, %QtyMax%
 				EscapeArray:
 				Loot := RegexReplace(Loot, "{Table.+}", element)
 			}
+			If (InStr(Loot, "{PF-"))
+			{	;Collapse
+				PF0 := StrSplit(Loot, "{PF-")
+				PF := PF0.2
+				PF := StrReplace(PF, "}")
+				;Msgbox %PF%
+				
+				PrefabFile = %Dir%\Banks\Prefabs\%PF%.ini
+				Loop, Read, %PrefabFile%
+					PF_Lines = %A_Index%
+				Random, PFRnd, 1, PF_Lines
+				FileReadLine, PFLine, %PrefabFile%, PFRnd
+				;Msgbox %PFLine%	;Debug
+				Loot := StrReplace(Loot, Loot, PFLine)
+			}
 			If (InStr(Loot, "{SUBJECT}"))
 			{
 					Random, SubjectRnd, 1, 8
@@ -483,46 +545,46 @@ Loop, %QtyMax%
 				}
 			If (InStr(Loot, "{PATTERN}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Patterns.ini
+				Loop, Read, %Dir%\Banks\Patterns.ini
 					Patterns_Lines = %A_Index%
 				Random, PatternsRnd, 1, Patterns_Lines
-				FileReadLine, Patterns, %Dir%\Banks\.Patterns.ini, PatternsRnd
+				FileReadLine, Patterns, %Dir%\Banks\Patterns.ini, PatternsRnd
 				;Msgbox %Patterns%	;Debug
 				Loot := StrReplace(Loot, "{PATTERN}", Patterns)
 			}
 			If (InStr(Loot, "{EMBLEM}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Misc\.EMBLEMs.ini
+				Loop, Read, %Dir%\Banks\Misc\EMBLEMs.ini
 					EMBLEM_Lines = %A_Index%
 				Random, EMBLEMRnd, 1, EMBLEM_Lines
-				FileReadLine, EMBLEM, %Dir%\Banks\Misc\.EMBLEMs.ini, EMBLEMRnd
+				FileReadLine, EMBLEM, %Dir%\Banks\Misc\EMBLEMs.ini, EMBLEMRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{EMBLEM}", EMBLEM)
 			}
 			If (InStr(Loot, "{FABRIC}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Fabrics.ini
+				Loop, Read, %Dir%\Banks\Fabrics.ini
 					Fabric_Lines = %A_Index%
 				Random, FabricRnd, 1, Fabric_Lines
-				FileReadLine, Fabrics, %Dir%\Banks\.Fabrics.ini, FabricRnd
+				FileReadLine, Fabrics, %Dir%\Banks\Fabrics.ini, FabricRnd
 				;Msgbox %Patterns%	;Debug
 				Loot := StrReplace(Loot, "{FABRIC}", Fabrics)
 			}
 			If (InStr(Loot, "{LANGUAGE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.LANGUAGEs.ini
+				Loop, Read, %Dir%\Banks\LANGUAGEs.ini
 					LANGUAGE_Lines = %A_Index%
 				Random, LANGUAGERnd, 1, LANGUAGE_Lines
-				FileReadLine, LANGUAGEs, %Dir%\Banks\.LANGUAGEs.ini, LANGUAGERnd
+				FileReadLine, LANGUAGEs, %Dir%\Banks\LANGUAGEs.ini, LANGUAGERnd
 				;Msgbox %Patterns%	;Debug
 				Loot := StrReplace(Loot, "{LANGUAGE}", LANGUAGEs)
 			}
 			If (InStr(Loot, "{BEAST}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Beastiary\.Global.txt
+				Loop, Read, %Dir%\Banks\Beastiary\Global.txt
 					Beastiary_Lines = %A_Index%
 				Random, BeastiaryRnd, 1, Beastiary_Lines
-				FileReadLine, Beastiary, %Dir%\Banks\Beastiary\.Global.txt, BeastiaryRnd
+				FileReadLine, Beastiary, %Dir%\Banks\Beastiary\Global.txt, BeastiaryRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{BEAST}", Beastiary)
 			}
@@ -614,163 +676,163 @@ Loop, %QtyMax%
 			}
 			If (InStr(Loot, "{LOC}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Locations.ini
+				Loop, Read, %Dir%\Banks\Locations.ini
 					Loc_Lines = %A_Index%
 				Random, LocRnd, 1, Loc_Lines
-				FileReadLine, Location, %Dir%\Banks\.Locations.ini, LocRnd
+				FileReadLine, Location, %Dir%\Banks\Locations.ini, LocRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{LOC}", Location)
 			}
 			If (InStr(Loot, "{GOD}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Gods.ini
+				Loop, Read, %Dir%\Banks\Gods.ini
 					Loc_Lines = %A_Index%
 				Random, LocRnd, 1, Loc_Lines
-				FileReadLine, God, %Dir%\Banks\.Gods.ini, LocRnd
+				FileReadLine, God, %Dir%\Banks\Gods.ini, LocRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{GOD}", God)
 			}
 			If (InStr(Loot, "{REGION}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Regions.ini
+				Loop, Read, %Dir%\Banks\Regions.ini
 					Region_Lines = %A_Index%
 				Random, RegionRnd, 1, Region_Lines
-				FileReadLine, Region, %Dir%\Banks\.Regions.ini, RegionRnd
+				FileReadLine, Region, %Dir%\Banks\Regions.ini, RegionRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{Region}", Region)
 			}
 			If (InStr(Loot, "{BEVERAGE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.Beverages.ini
+				Loop, Read, %Dir%\Banks\Foods\Beverages.ini
 					BEVERAGE_Lines = %A_Index%
 				Random, BEVERAGERnd, 1, BEVERAGE_Lines
-				FileReadLine, BEVERAGE, %Dir%\Banks\Foods\.BEVERAGEs.ini, BEVERAGERnd
+				FileReadLine, BEVERAGE, %Dir%\Banks\Foods\BEVERAGEs.ini, BEVERAGERnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{BEVERAGE}", BEVERAGE)
 			}
 			If (InStr(Loot, "{WOOD}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Misc\.WOODs.ini
+				Loop, Read, %Dir%\Banks\Misc\WOODs.ini
 					WOOD_Lines = %A_Index%
 				Random, WOODRnd, 1, WOOD_Lines
-				FileReadLine, WOOD, %Dir%\Banks\Misc\.WOODs.ini, WOODRnd
+				FileReadLine, WOOD, %Dir%\Banks\Misc\WOODs.ini, WOODRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{WOOD}", WOOD)
 			}
 			If (InStr(Loot, "{SHAPE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Misc\.SHAPEs.ini
+				Loop, Read, %Dir%\Banks\Misc\SHAPEs.ini
 					SHAPE_Lines = %A_Index%
 				Random, SHAPERnd, 1, SHAPE_Lines
-				FileReadLine, SHAPE, %Dir%\Banks\Misc\.SHAPEs.ini, SHAPERnd
+				FileReadLine, SHAPE, %Dir%\Banks\Misc\SHAPEs.ini, SHAPERnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{SHAPE}", SHAPE)
 			}
 			If (InStr(Loot, "{FLAVOR}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Flavors.ini
+				Loop, Read, %Dir%\Banks\Flavors.ini
 					Flavors_Lines = %A_Index%
 				Random, FlavorsRnd, 1, Flavors_Lines
-				FileReadLine, Flavors, %Dir%\Banks\.Flavors.ini, FlavorsRnd
+				FileReadLine, Flavors, %Dir%\Banks\Flavors.ini, FlavorsRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{FLAVOR}", Flavors)
 			}
 			If (InStr(Loot, "{GEM}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Gems.ini
+				Loop, Read, %Dir%\Banks\Gems.ini
 					Gems_Lines = %A_Index%
 				Random, GemsRnd, 1, Gems_Lines
-				FileReadLine, Gems, %Dir%\Banks\.Gems.ini, GemsRnd
+				FileReadLine, Gems, %Dir%\Banks\Gems.ini, GemsRnd
 				;Msgbox %Gems%	;Debug
 				Loot := StrReplace(Loot, "{GEM}", Gems)
 			}
 			If (InStr(Loot, "{ROLE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Quests\.ROLEs.ini
+				Loop, Read, %Dir%\Banks\Quests\ROLEs.ini
 					ROLEs_Lines = %A_Index%
 				Random, ROLEsRnd, 1, ROLEs_Lines
-				FileReadLine, ROLEs, %Dir%\Banks\Quests\.ROLEs.ini, ROLEsRnd
+				FileReadLine, ROLEs, %Dir%\Banks\Quests\ROLEs.ini, ROLEsRnd
 				;Msgbox %ROLEs%	;Debug
 				Loot := StrReplace(Loot, "{ROLE}", ROLEs)
 			}
 			If (InStr(Loot, "{POISON}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\WeaponsMundane\.Poisons.ini
+				Loop, Read, %Dir%\Banks\WeaponsMundane\Poisons.ini
 					POISONs_Lines = %A_Index%
 				Random, POISONsRnd, 1, POISONs_Lines
-				FileReadLine, POISONs, %Dir%\Banks\WeaponsMundane\.Poisons.ini, POISONsRnd
+				FileReadLine, POISONs, %Dir%\Banks\WeaponsMundane\Poisons.ini, POISONsRnd
 				;Msgbox %POISONs%	;Debug
 				Loot := StrReplace(Loot, "{POISON}", POISONs)
 			}
 			If (InStr(Loot, "{DRUG}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Misc\.DRUGs.ini
+				Loop, Read, %Dir%\Banks\Misc\DRUGs.ini
 					DRUGs_Lines = %A_Index%
 				Random, DRUGsRnd, 1, DRUGs_Lines
-				FileReadLine, DRUGs, %Dir%\Banks\Misc\.DRUGs.ini, DRUGsRnd
+				FileReadLine, DRUGs, %Dir%\Banks\Misc\DRUGs.ini, DRUGsRnd
 				;Msgbox %DRUGs%	;Debug
 				Loot := StrReplace(Loot, "{DRUG}", DRUGs)
 			}
 			If (InStr(Loot, "{CHEESE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.Cheese.ini
+				Loop, Read, %Dir%\Banks\Foods\Cheese.ini
 					cheeseLines = %A_Index%
 				Random, cheeseRnd, 1, cheeseLines
-				FileReadLine, Cheese, %Dir%\Banks\Foods\.Cheese.ini, cheeseRnd
+				FileReadLine, Cheese, %Dir%\Banks\Foods\Cheese.ini, cheeseRnd
 				;Msgbox %Cheese%	;Debug
 				Loot := StrReplace(Loot, "{cheese}", Cheese)
 			}
 			If (InStr(Loot, "{SPICE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.spices.ini
+				Loop, Read, %Dir%\Banks\Foods\spices.ini
 					spiceLines = %A_Index%
 				Random, spiceRnd, 1, spiceLines
-				FileReadLine, spice, %Dir%\Banks\Foods\.spices.ini, spiceRnd
+				FileReadLine, spice, %Dir%\Banks\Foods\spices.ini, spiceRnd
 				;Msgbox %spice%	;Debug
 				Loot := StrReplace(Loot, "{spice}", spice)
 			}
 			If (InStr(Loot, "{BREAD}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.BREADs.ini
+				Loop, Read, %Dir%\Banks\Foods\BREADs.ini
 					BREADLines = %A_Index%
 				Random, BREADRnd, 1, BREADLines
-				FileReadLine, BREAD, %Dir%\Banks\Foods\.BREADs.ini, BREADRnd
+				FileReadLine, BREAD, %Dir%\Banks\Foods\BREADs.ini, BREADRnd
 				;Msgbox %BREAD%	;Debug
 				Loot := StrReplace(Loot, "{BREAD}", BREAD)
 			}
 			If (InStr(Loot, "{FRUIT}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.FRUITs.ini
+				Loop, Read, %Dir%\Banks\Foods\FRUITs.ini
 					FRUIT_Lines = %A_Index%
 				Random, FRUITRnd, 1, FRUIT_Lines
-				FileReadLine, FRUIT, %Dir%\Banks\Foods\.FRUITs.ini, FRUITRnd
+				FileReadLine, FRUIT, %Dir%\Banks\Foods\FRUITs.ini, FRUITRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{FRUIT}", FRUIT)
 			}
 			If (InStr(Loot, "{Vegetable}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.Vegetables.ini
+				Loop, Read, %Dir%\Banks\Foods\Vegetables.ini
 					Loc_Lines = %A_Index%
 				Random, LocRnd, 1, Loc_Lines
-				FileReadLine, Vegetable, %Dir%\Banks\Foods\.Vegetables.ini, LocRnd
+				FileReadLine, Vegetable, %Dir%\Banks\Foods\Vegetables.ini, LocRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{Vegetable}", Vegetable)
 			}
 			If (InStr(Loot, "{Nut}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Foods\.Nuts.ini
+				Loop, Read, %Dir%\Banks\Foods\Nuts.ini
 					Loc_Lines = %A_Index%
 				Random, LocRnd, 1, Loc_Lines
-				FileReadLine, Nut, %Dir%\Banks\Foods\.Nuts.ini, LocRnd
+				FileReadLine, Nut, %Dir%\Banks\Foods\Nuts.ini, LocRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{Nut}", Nut)
 			}
 			If (InStr(Loot, "{Material}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\.Materials.ini
+				Loop, Read, %Dir%\Banks\Materials.ini
 					Loc_Lines = %A_Index%
 				Random, LocRnd, 1, Loc_Lines
-				FileReadLine, Material, %Dir%\Banks\.Materials.ini, LocRnd
+				FileReadLine, Material, %Dir%\Banks\Materials.ini, LocRnd
 				;Msgbox %Beastiary%	;Debug
 				Loot := StrReplace(Loot, "{Material}", Material)
 			}

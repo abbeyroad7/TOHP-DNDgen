@@ -1,4 +1,4 @@
-;v3.8.2
+;v3.8.3
 ;;Todo
 ;Change family dynamics per race, var set for sibling max, etc
 
@@ -12,6 +12,14 @@
 #SingleInstance Force
 Import:
 {
+	IconChange:
+	{
+		I_Icon = C:\Program Files\AutoHotkey\Icons\Names.ico
+		ICON [I_Icon]                        ;Changes a compiled script's icon (.exe)
+		if I_Icon <>
+		IfExist, %I_Icon%
+			Menu, Tray, Icon, %I_Icon%   ;Changes menu tray icon 
+	}
 	ImportVars:
 	{
 		PlayerCount = 7
@@ -936,7 +944,7 @@ Generate:
 				}
 			If (InStr(NPC_Goal, "{ROLE}")) || If (InStr(NPC_Flaw, "{ROLE}")) || If (InStr(NPC_Bond, "{ROLE}")) || If (InStr(NPC_Ideal, "{ROLE}")) || If (InStr(NPC_Quirk, "{ROLE}"))
 				{	;Collapse
-					ROLEFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Quests\Roles.ini
+					ROLEFile = %LootDir%\NPC\Roles.ini
 					Loop, Read, %ROLEFile%
 						ROLE_Lines = %A_Index%
 					Random, ROLERnd, 1, ROLE_Lines

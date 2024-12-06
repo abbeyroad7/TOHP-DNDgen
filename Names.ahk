@@ -1,4 +1,4 @@
-;v3.8.3
+;v3.8.4
 ;;Todo
 ;Change family dynamics per race, var set for sibling max, etc
 
@@ -34,6 +34,7 @@ Import:
 		LootDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks
 		NPCDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\NPC
 		RaceDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient
+		BeastPhotos = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Beasts
 		RaceList = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names\.List.txt
 	}
 	ImportNPC:
@@ -54,6 +55,7 @@ Import:
 Prompt:
 {
 	DebugMode = 0
+	BeastMode = 0
 	Inputbox, Race,,,,200,100
 		If InStr(Race, " ")
 			{
@@ -72,6 +74,20 @@ Prompt:
 				Race = human
 				Gender = m
 				Goto, Start
+			}
+		If InStr(Race, "beast")
+			{
+				Random, BeastAttitudeRnd, 1, 100
+					if BeastAttitudeRnd between 1 and 40
+						BeastAttitude = Aggressive
+					if BeastAttitudeRnd between 41 and 80
+						BeastAttitude = Neutral
+					if BeastAttitudeRnd between 81 and 100
+						BeastAttitude = Friendly
+				
+				ImgDir = %BeastPhotos%\%BeastAttitude%
+				BeastMode = 1
+				Goto, Image
 			}
 		If Race =
 			{
@@ -121,7 +137,7 @@ Image:
 {
 ;Gui, Destroy
 array := []  ; initialise array
-loop, files, %ImgDir%\*.*  ; match any file
+loop, Files, %ImgDir%\*, FDR  ; match any file
     array.push(a_loopFileFullPath)  ; append file to the end of the array
 
 total_file_count := array.maxIndex()
@@ -847,7 +863,7 @@ Generate:
 					FileReadLine, Noun, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
 				}
 		}
-		
+	
 		IfStatements:
 		{
 			If (InStr(Last_0, "{FLORA}")) || If (InStr(Last_1, "{FLORA}")) || If (InStr(Last_2, "{FLORA}"))
@@ -1181,12 +1197,38 @@ Generate:
 		}
 		End:
 		
+		BeastCheck:
+		{
+			If BeastMode = 1
+			{
+				GUI, Color, 050505	;GUI bg color
+				Goto, BeastGUIBody
+			}
+			If BeastMode = 0
+				Goto, GUICode
+		}
+		
 		GUICode:
 		{
-		GUI, Color, 050505	;GUI bg color
-		Gui, Font, s14 cWhite, Centaur
-		GUI, add, button, gAction%A_Index% y10, % NameArray%A_Index%
+			GUI, Color, 050505	;GUI bg color
+			Gui, Font, s14 cWhite, Centaur
+			GUI, add, button, gAction%A_Index% y10, % NameArray%A_Index%
 		}
+	}
+	
+	If BeastMode = 0
+		Goto, GuiBody
+	
+	BeastGUIBody:
+	{
+		Gui, Font, s12 cGray, Centaur
+		GUI, add, text, gAction3 x15 +wrap w600, BeastGen
+		
+		Gui, Font, s14 cWhite, Centaur
+		GUI, add, text, gAction3 x10 w600 r2, %Traits%
+
+		
+		Gui, Show, x800 y250
 	}
 	
 	GUIBody:

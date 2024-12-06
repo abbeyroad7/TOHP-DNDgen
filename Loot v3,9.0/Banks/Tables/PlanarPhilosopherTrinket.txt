@@ -1,6 +1,0 @@
-1	Locket with a picture of {NAME} and an inscription you cannot read
-2	Bleached cranium rat skull with colored glass beads in its eye sockets
-3	Torn parchment with half a rebus painted on it
-4	Bracelet of twisted razorvine stems
-5	Fragment of a bronze blade covered in verdigris
-6	Broken holy symbol of a forgotten god

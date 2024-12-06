@@ -1,4 +1,0 @@
-Background tables have been combined into 1 bank to give more variety.
-
-Quirks.ini derives material and inspiration from the following:
-https://shinywords.com/character-mannerisms/#Physical-Mannerisms

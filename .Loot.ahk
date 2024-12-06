@@ -5,7 +5,7 @@ WorldSettings:
 	Level = 4	;Player's current level
 }
 
-;v4.0.0
+;v3.9.1
 ;# Restructure
 ;Rewrite code to loop through tags
 ;# Bugs
@@ -1002,6 +1002,10 @@ Loop, %QtyMax%
 			If (InStr(Loot, "`t"))	;Tab
 				{
 					Loot := StrReplace(Loot, A_TAB, "`n`n")
+				}
+			If (InStr(Loot, "{"))	;Final check
+				{
+					Goto, Randomize
 				}
 		}
 		If NC = 0

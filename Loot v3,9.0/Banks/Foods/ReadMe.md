@@ -1,1 +1,0 @@
-For intents and purposes, I am using the culinary definitions of fruits and vegetables.

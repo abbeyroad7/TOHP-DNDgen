@@ -1,4 +1,4 @@
-;v3.8.4
+;v3.9.0
 ;;Todo
 ;Change family dynamics per race, var set for sibling max, etc
 
@@ -87,6 +87,7 @@ Prompt:
 				
 				ImgDir = %BeastPhotos%\%BeastAttitude%
 				BeastMode = 1
+				Race = Beast
 				Goto, Image
 			}
 		If Race =
@@ -1225,9 +1226,8 @@ Generate:
 		GUI, add, text, gAction3 x15 +wrap w600, BeastGen
 		
 		Gui, Font, s14 cWhite, Centaur
-		GUI, add, text, gAction3 x10 w600 r2, %Traits%
+		GUI, add, text, gAction3 x10 w600 r2, %AbilityScores%
 
-		
 		Gui, Show, x800 y250
 	}
 	
@@ -1291,27 +1291,31 @@ FoundryImport:
 	
 	FoundryImage = moulinette/tiles/custom/TOHP/Tokens/NPC/%FoundryName%.webp
 	
-	SetTitleMatchMode, 2
-	if WinExist("Foundry Virtual Tabletop")
-		Winactivate, Foundry Virtual Tabletop
-	else
-	{
-		Msgbox,,,Foundry instance not found. Returning...,2
-		Return
-	}
+	;SetTitleMatchMode, 2
+	;if WinExist("Foundry Virtual Tabletop")
+	;	Winactivate, Foundry Virtual Tabletop
+	;else
+	;{
+	;	Msgbox,,,Foundry instance not found. Returning...,2
+	;	Return
+	;}
 	
-	MouseGetPos, PosX, PosY
-	MouseClick, right, 929, 1363	;Right click macro
-	MouseClick, left, 932, 1234	;Edit macro menu
+	;MouseGetPos, PosX, PosY
+	;MouseClick, right, 929, 1363	;Right click macro
+	;MouseClick, left, 932, 1234	;Edit macro menu
 	
-	Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n"system.details.biography.value": "%NPC_Body%",`n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
-	MouseClick, left, 1232, 831	;body
-	Send ^a{Backspace}^v
-	MouseClick, left, 1477, 1018	;Execute
-	Sleep 50
-	Send {Escape 2}
-	Clipboard = %FoundryName%
+	;Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n"system.details.biography.value": "%NPC_Body%",`n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
+	;MouseClick, left, 1232, 831	;body
+	;Send ^a{Backspace}^v
+	;MouseClick, left, 1477, 1018	;Execute
+	;Sleep 50
+	;Send {Escape 2}
+	;Clipboard = %FoundryName%
 	;MouseMove, PosX, PosY	;Return to OG pos
+	
+	Clipboard = %FoundryName%
+	Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n"system.details.biography.value": "%NPC_Body%",`n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
+	
 	Run, %ImgPath%
 	Run, "K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\NPC\.NewBorder.pdn"
 	

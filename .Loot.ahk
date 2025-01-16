@@ -2,12 +2,10 @@
 WorldSettings:
 {
 	Habitat = Temperate	;Your current environmental climate. Options: Global, Coast, Desert, Jungle, Ocean, Temperate, Tundra
-	Level = 4	;Player's current level
+	Level = 5	;Player's current level
 }
-
-;v3.9.1
+;v4.0.11
 ;# Restructure
-;Rewrite code to loop through tags
 ;# Bugs
 ;If category prompt is entered, it does not exit the mode correctly
 ;Tables show roll range sometimes, seems to break randomly on ranges with hyphens
@@ -18,7 +16,6 @@ WorldSettings:
 ;edit nouns for loot, queue\nouns1
 ;Natural language syntax, for words ending in s, a/an, etc.
 ;GUI to regen certain aspects
-;Icons, export snapshot to clipboard
 ;Grab first image off of google
 ;combining icon+color+material as an overlay in GUI, experiment w/ transparency masks
 
@@ -182,38 +179,6 @@ Loop, %QtyMax%
 				Loot := StrReplace(Loot, Loot, PromptCho)
 			}
 			
-			If (Instr(Prompt, "book"))
-				{
-					Random, BookRnd, 1, 52
-						If BookRnd between 1 and 3
-							Loot = {CASE}Reads 'The Almanac of {ADJ} {NOUN}'
-						If BookRnd between 4 and 6
-							Loot = {CASE}Reads 'The Dictionary of {ADJ} {NOUN}'
-						If BookRnd between 7 and 10
-							Loot = {CASE}Reads '{ADJ} {NOUN}'
-						If BookRnd between 11 and 14
-							Loot = {CASE}Reads '{RACE} {NOUN}'
-						If BookRnd between 15 and 18
-							Loot = {CASE}Reads '{COLOR} {NOUN}'
-						If BookRnd between 19 and 21
-							Loot = {CASE}Reads 'The Biography of {NAME}'
-						If BookRnd between 22 and 24
-							Loot = {CASE}Reads 'Tales of {SUBJECT}'
-						If BookRnd between 25 and 26
-							Loot = {CASE}Reads 'The Legend of {SUBJECT}'
-						If BookRnd between 27 and 30
-							Loot = {CASE}Reads 'The History of {SUBJECT}'
-						If BookRnd between 31 and 33
-							Loot = {CASE}Reads 'The Short Stories of {SUBJECT}'
-						If BookRnd between 34 and 42
-							Loot = {CASE}Reads 'The {SUBJECT}'
-						If BookRnd between 43 and 48
-							Loot = {CASE}Reads '{SUBJECT}s'
-						If BookRnd between 49 and 50
-							Loot = {CASE}Reads 'The {LOC} {BEAST}'
-						If BookRnd between 51 and 52
-							Loot = {CASE}Reads 'The Study of {SUBJECT}'
-				}
 			If (Instr(Prompt, "gp"))
 				{
 					Loot = {1d20} gold pieces
@@ -351,24 +316,20 @@ Loop, %QtyMax%
 		Random, ColorRnd, 1, %C_Lines%
 		Random, RaceRnd, 1, %Race_Lines%
 		Random, RaceNamesRnd, 1, %RaceNames_Lines%
-			FileReadLine, Loot, %Dir%\%Rarity%, %FirstRnd%
-			FileReadLine, COLOR, %Dir%\Banks\Colors.ini, %ColorRnd%
-			FileReadLine, RaceNames, %Dir%\Banks\RaceNames.txt, %RaceNamesRnd%
-			COLOR := StrSplit(COLOR, A_Tab)
-			Random, 1d100, 1, 100
-			Random, 1d50, 1, 50
-			Random, 1d20, 1, 20
-			Random, 1d12, 1, 12
-			Random, 1d8, 1, 8
-			Random, 1d6, 1, 6
-			Random, 1d4, 1, 4
-			Random, 1d2, 1, 2
-			Random, NounsRnd, 1, N%1d6%_Lines
-			Random, AdjRnd, 1, Adj%1d12%_Lines
-			FileReadLine, Noun, %Dir%\Banks\Nouns\Nouns%1d6%.txt, NounsRnd	;Banks
-			FileReadLine, Adj, %Dir%\Banks\Adj\Adj%1d12%.txt, AdjRnd
-			FileReadLine, Race, %Dir%\Banks\Races.txt, RaceRnd
-			;Msgbox Race:%Race% Noun:%Noun% Adj:%Adj%	;Testing
+		FileReadLine, Loot, %Dir%\%Rarity%, %FirstRnd%
+		FileReadLine, COLOR, %Dir%\Banks\Colors.ini, %ColorRnd%
+		FileReadLine, RaceNames, %Dir%\Banks\RaceNames.txt, %RaceNamesRnd%
+		COLOR := StrSplit(COLOR, A_Tab)
+		Random, 1d100, 1, 100
+		Random, 1d50, 1, 50
+		Random, 1d20, 1, 20
+		Random, 1d12, 1, 12
+		Random, 1d8, 1, 8
+		Random, 1d6, 1, 6
+		Random, 1d4, 1, 4
+		Random, 1d2, 1, 2
+		FileReadLine, Race, %Dir%\Banks\Races.txt, RaceRnd
+		;Msgbox Race:%Race% Noun:%Noun% Adj:%Adj%	;Testing
 	}
 		IfStatements:
 		{	;Collapse
@@ -462,87 +423,87 @@ Loop, %QtyMax%
 			}
 			If (InStr(Loot, "{SUBJECT}"))
 			{
-					Random, SubjectRnd, 1, 8
-						If SubjectRnd between 1 and 3
-							Subject = {NOUN}
-						If SubjectRnd between 4 and 5
-							Subject = {NAME}
-						If SubjectRnd = 6
-							Subject = {LOC}
-						If SubjectRnd between 7 and 8
-							Subject = {BEAST}
-					Loot := StrReplace(Loot, "{SUBJECT}", Subject)
-				}
+				Random, SubjectRnd, 1, 8
+					If SubjectRnd between 1 and 3
+						Subject = {NOUN}
+					If SubjectRnd between 4 and 5
+						Subject = {NAME}
+					If SubjectRnd = 6
+						Subject = {LOC}
+					If SubjectRnd between 7 and 8
+						Subject = {BEAST}
+				Loot := StrReplace(Loot, "{SUBJECT}", Subject,,1)
+			}
 			If (InStr(Loot, "{NAME}"))
 			{
-					GenderRnd:
-					{
-						Random, MF, 1, 2
-						if (MF = "1")
-							Gender = m
-						if (MF = "2")
-							Gender = f
-					}
-					NameImport:
-					{	;Collapse
-						NameDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
-						RaceNames = Human	;Debug
-						FirstFile = %NameDir%\%RaceNames%\%RaceNames%_%Gender%.txt
-						LastFile_0 = %NameDir%\%RaceNames%\%RaceNames%_s0.txt
-						LastFile_1 = %NameDir%\%RaceNames%\%RaceNames%_s1.txt
-						LastFile_2 = %NameDir%\%RaceNames%\%RaceNames%_s2.txt
-						;Msgbox %FirstFile% %LastFile_2%	;Debug
-					}
-					CountNames:
-					{	;Collapse
-						Loop, Read, %FirstFile%
-							firstLines = %A_Index%
-						;Msgbox firstLines %firstLines%
-						If FileExist(LastFile_0)
-						{
-							Loop, Read, %LastFile_0%
-							s0Lines = %A_Index%
-							Sur0 = true
-						}
-						Loop, Read, %LastFile_1%
-							s1Lines = %A_Index%
-						Loop, Read, %LastFile_2%
-							s2Lines = %A_Index%
-					}
-					GenName:
-					{	;Collapse
-						Random, FirstRnd, 1, %firstLines%
-						Random, LastRnd_0, 1, %s0Lines%
-						Random, LastRnd_1, 1, %s1Lines%
-						Random, LastRnd_2, 1, %s2Lines%
-						
-						Read:
-						FileReadLine, FirstName, %FirstFile%, %FirstRnd%
-							;Msgbox %First%
-						If FileExist(LastFile_0)
-							FileReadLine, Last_0, %LastFile_0%, %LastRnd_0%
-						FileReadLine, Last_1, %LastFile_1%, %LastRnd_1%
-						FileReadLine, Last_2, %LastFile_2%, %LastRnd_2%
-							StringLower, Last_2b, Last_2
-						
-						Output:
-						If FileExist(LastFile_0)
-						{
-							Random, LastA, 1, 2
-							if (LastA = 1)
-								Goto, Combine
-							Loop, Read, %LastFile_0%
-							s0Lines = %A_Index%
-							Name = %FirstName% %Last_0%
-							Goto, End
-						}
-						Combine:
-						Name = %FirstName% %Last_1%%Last_2b%
-						;Msgbox %Name%
-					}
-					End:
-					Loot := StrReplace(Loot, "{NAME}", Name)
+				GenderRnd:
+				{
+					Random, MF, 1, 2
+					if (MF = "1")
+						Gender = m
+					if (MF = "2")
+						Gender = f
 				}
+				NameImport:
+				{	;Collapse
+					NameDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
+					RaceNames = Human	;Debug
+					FirstFile = %NameDir%\%RaceNames%\%RaceNames%_%Gender%.txt
+					LastFile_0 = %NameDir%\%RaceNames%\%RaceNames%_s0.txt
+					LastFile_1 = %NameDir%\%RaceNames%\%RaceNames%_s1.txt
+					LastFile_2 = %NameDir%\%RaceNames%\%RaceNames%_s2.txt
+					;Msgbox %FirstFile% %LastFile_2%	;Debug
+				}
+				CountNames:
+				{	;Collapse
+					Loop, Read, %FirstFile%
+						firstLines = %A_Index%
+					;Msgbox firstLines %firstLines%
+					If FileExist(LastFile_0)
+					{
+						Loop, Read, %LastFile_0%
+						s0Lines = %A_Index%
+						Sur0 = true
+					}
+					Loop, Read, %LastFile_1%
+						s1Lines = %A_Index%
+					Loop, Read, %LastFile_2%
+						s2Lines = %A_Index%
+				}
+				GenName:
+				{	;Collapse
+					Random, FirstRnd, 1, %firstLines%
+					Random, LastRnd_0, 1, %s0Lines%
+					Random, LastRnd_1, 1, %s1Lines%
+					Random, LastRnd_2, 1, %s2Lines%
+					
+					Read:
+					FileReadLine, FirstName, %FirstFile%, %FirstRnd%
+						;Msgbox %First%
+					If FileExist(LastFile_0)
+						FileReadLine, Last_0, %LastFile_0%, %LastRnd_0%
+					FileReadLine, Last_1, %LastFile_1%, %LastRnd_1%
+					FileReadLine, Last_2, %LastFile_2%, %LastRnd_2%
+						StringLower, Last_2b, Last_2
+					
+					Output:
+					If FileExist(LastFile_0)
+					{
+						Random, LastA, 1, 2
+						if (LastA = 1)
+							Goto, Combine
+						Loop, Read, %LastFile_0%
+						s0Lines = %A_Index%
+						Name = %FirstName% %Last_0%
+						Goto, End
+					}
+					Combine:
+					Name = %FirstName% %Last_1%%Last_2b%
+					;Msgbox %Name%
+				}
+				End:
+				Loot := StrReplace(Loot, "{NAME}", Name,, 1)
+			}
 			If (InStr(Loot, "{PATTERN}"))
 			{	;Collapse
 				Loop, Read, %Dir%\Banks\Patterns.ini
@@ -551,6 +512,26 @@ Loop, %QtyMax%
 				FileReadLine, Patterns, %Dir%\Banks\Patterns.ini, PatternsRnd
 				;Msgbox %Patterns%	;Debug
 				Loot := StrReplace(Loot, "{PATTERN}", Patterns)
+			}
+			If (InStr(Loot, "{NOUN}"))
+			{	;Collapse
+				Random, 1d6, 1, 6
+				Loop, Read, %Dir%\Banks\Nouns\NOUNs%1d6%.txt
+					NOUNs_Lines = %A_Index%
+				Random, NOUNsRnd, 1, NOUNs_Lines
+				FileReadLine, NOUNs, %Dir%\Banks\Nouns\NOUNs%1d6%.txt, NOUNsRnd
+				;Msgbox %NOUNs%	;Debug
+				Loot := StrReplace(Loot, "{NOUN}", NOUNs,, 1)
+			}
+			If (InStr(Loot, "{ADJ}"))
+			{	;Collapse
+				Random, 1d12, 1, 12
+				Loop, Read, %Dir%\Banks\ADJ\ADJ%1d12%.txt
+					ADJs_Lines = %A_Index%
+				Random, ADJsRnd, 1, ADJs_Lines
+				FileReadLine, ADJs, %Dir%\Banks\ADJ\ADJ%1d12%.txt, ADJsRnd
+				;Msgbox %ADJs%	;Debug
+				Loot := StrReplace(Loot, "{ADJ}", ADJs,, 1)
 			}
 			If (InStr(Loot, "{EMBLEM}"))
 			{	;Collapse
@@ -748,10 +729,10 @@ Loop, %QtyMax%
 			}
 			If (InStr(Loot, "{ROLE}"))
 			{	;Collapse
-				Loop, Read, %Dir%\Banks\Quests\ROLEs.ini
+				Loop, Read, %Dir%\Banks\NPC\ROLEs.ini
 					ROLEs_Lines = %A_Index%
 				Random, ROLEsRnd, 1, ROLEs_Lines
-				FileReadLine, ROLEs, %Dir%\Banks\Quests\ROLEs.ini, ROLEsRnd
+				FileReadLine, ROLEs, %Dir%\Banks\NPC\ROLEs.ini, ROLEsRnd
 				;Msgbox %ROLEs%	;Debug
 				Loot := StrReplace(Loot, "{ROLE}", ROLEs)
 			}
@@ -949,8 +930,6 @@ Loop, %QtyMax%
 				Loot := StrReplace(Loot, "{1d2}", 1d2)
 				Loot := StrReplace(Loot, "{COLOR}", COLOR.1)
 				Loot := StrReplace(Loot, "{COLOR}", COLOR.1)
-				Loot := StrReplace(Loot, "{NOUN}", Noun)
-				Loot := StrReplace(Loot, "{ADJ}", Adj)
 				Loot := StrReplace(Loot, "{RACE}", Race)
 				Loot := StrReplace(Loot, A_Tab, "`n`n")
 			}
@@ -986,7 +965,7 @@ Loop, %QtyMax%
 			}
 			If (InStr(Loot, "{CASE}"))	;Mixed case, use for titles
 				{
-					Loot := StrReplace(Loot, "{CASE}")
+					Loot := StrReplace(Loot, "{CASE}",,, 1)
 					StringUpper, Loot, Loot, T
 				}
 			If (InStr(Loot, "{UP}"))	;Use to uppercase individual tags
@@ -1005,7 +984,7 @@ Loop, %QtyMax%
 				}
 			If (InStr(Loot, "{"))	;Final check
 				{
-					Goto, Randomize
+					Goto, IfStatements
 				}
 		}
 		If NC = 0

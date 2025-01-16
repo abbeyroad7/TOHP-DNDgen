@@ -594,3 +594,10 @@ A {GEM}
 A {GEM}
 A {GEM}
 A {GEM}
+A {COLOR} {PATTERN} kilt made from {FABRIC}
+A {COLOR} {PATTERN} kilt made from {FABRIC}
+A {COLOR} kite
+A monocle
+Mukluk {MATERIAL} boots
+A {SUBJECT} patch
+A patch belonging to a local {ROLE} Guild

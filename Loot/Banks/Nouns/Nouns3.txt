@@ -61,7 +61,6 @@ ellipse
 elm
 elongation
 elver
-email
 emanate
 embarrassment
 embassy

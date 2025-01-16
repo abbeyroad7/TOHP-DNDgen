@@ -890,9 +890,6 @@ subsidiary
 subsidy
 substance
 substitution
-subtitle
-suburb
-subway
 success
 succotash
 suck
@@ -996,5 +993,4 @@ synonym
 synthesis
 syrup
 system
-t-shirt
 tab

@@ -155,10 +155,20 @@ Race_Deity:
 		%Any% := 30
 	}
 }
+Race_Beast:
+{
+	If (Race = "Beast")	;Beasts typically have low INT/CHA, high DEX/STR, using below modifiers
+	{
+		INT := Round(INT / 2.5)
+		CHA := Round(CHA / 2.25)
+		DEX := Round(DEX * 1.2)
+		STR := Round(STR * 1.3)
+	}
+}
 
 Race_Check:
 {
-	If (Race = "Deity" || Race = "Fiend")
+	If (Race = "Deity" || Race = "Fiend" || Race = "Beast")
 		Goto, Cap_StatsEnd
 	Else
 		Goto, Cap_Stats

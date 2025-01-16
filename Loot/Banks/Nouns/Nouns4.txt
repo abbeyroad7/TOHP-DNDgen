@@ -395,7 +395,6 @@ lantern
 lap
 laparoscope
 lapdog
-laptop
 larch
 lard
 larder
@@ -801,7 +800,6 @@ metronome
 mezzanine
 microlending
 micronutrient
-microphone
 microwave
 mid-course
 midden

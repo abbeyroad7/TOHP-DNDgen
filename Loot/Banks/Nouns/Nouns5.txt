@@ -10,11 +10,7 @@ neglect
 negligee
 negotiation
 neighbor
-neighborhood
-neighbour
-neighbourhood
 neologism
-neon
 neonate
 nephew
 nerve
@@ -23,14 +19,7 @@ nestling
 nestmate
 net
 netball
-netbook
 netsuke
-network
-networking
-neurobiologist
-neuron
-neuropathologist
-neuropsychiatry
 news
 newsletter
 newspaper
@@ -45,7 +34,6 @@ nickel
 nickname
 niece
 night
-nightclub
 nightgown
 nightingale
 nightlife
@@ -84,8 +72,6 @@ nougat
 noun
 nourishment
 novel
-nucleotidase
-nucleotide
 nudge
 nuke
 number
@@ -132,10 +118,8 @@ octave
 octavo
 octet
 octopus
-odometer
 odyssey
 oeuvre
-off-ramp
 offence
 offense
 offer
@@ -146,7 +130,6 @@ official
 offset
 oil
 okra
-oldie
 oleo
 olive
 omega
@@ -155,14 +138,12 @@ omission
 omnivore
 oncology
 onion
-online
 onset
 opening
 opera
 operating
 operation
 operator
-ophthalmologist
 opinion
 opium
 opossum
@@ -225,7 +206,6 @@ oval
 ovary
 oven
 overcharge
-overclocking
 overcoat
 overexertion
 overflight
@@ -244,9 +224,7 @@ ox
 oxford
 oxygen
 oyster
-ozone
 pace
-pacemaker
 pack
 package
 packaging
@@ -412,7 +390,6 @@ pentagon
 peony
 people
 pepper
-pepperoni
 percent
 percentage
 perception
@@ -443,7 +420,6 @@ petitioner
 petticoat
 pew
 pharmacist
-pharmacopoeia
 phase
 pheasant
 phenomenon
@@ -452,7 +428,6 @@ pheromone
 philanthropy
 philosopher
 philosophy
-phone
 phosphate
 photo
 photodiode
@@ -475,8 +450,6 @@ picket
 pickle
 pickup
 picnic
-picture
-picturesque
 pie
 piece
 pier
@@ -580,7 +553,6 @@ pocket
 pocket-watch
 pocketbook
 pod
-podcast
 poem
 poet
 poetry
@@ -617,7 +589,6 @@ poor
 pop
 popcorn
 poppy
-popsicle
 popularity
 population
 populist
@@ -742,8 +713,6 @@ profile
 profit
 progenitor
 program
-programme
-programming
 progress
 progression
 prohibition
@@ -871,10 +840,6 @@ racing
 racism
 racist
 rack
-radar
-radiator
-radio
-radiosonde
 radish
 raffle
 raft
@@ -883,8 +848,6 @@ rage
 raid
 rail
 railing
-railroad
-railway
 raiment
 rain
 rainbow
@@ -902,7 +865,6 @@ ramen
 ramie
 ranch
 rancher
-randomisation
 randomization
 range
 ranger
@@ -978,7 +940,6 @@ referendum
 reflection
 reform
 refreshments
-refrigerator
 refuge
 refund
 refusal

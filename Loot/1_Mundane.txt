@@ -367,3 +367,4 @@ Set of false wooden teeth
 A dented brass compass with a red needle
 String	10 feet long. You can tie a knot in it as a Utilize action.
 Traveler's Clothes
+{PATTERN} loincloth

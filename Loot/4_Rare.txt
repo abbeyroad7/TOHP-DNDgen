@@ -468,3 +468,5 @@ A bag of {GEM}s
 A bag of {GEM}s
 A bag of {GEM}s
 A bag of {GEM}s
+A {COLOR} {PATTERN} kimono made from {FABRIC}
+{COLOR} licorice

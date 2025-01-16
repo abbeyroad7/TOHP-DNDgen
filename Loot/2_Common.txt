@@ -466,7 +466,8 @@ Ring of Fire Detection
 Ring of the Adventurous Limb	 If worn on a hand, the entire arm will vanish.  It will return after 24 hours have elapsed.  Roll a d10: 1 - tattoo on arm, 2 - arm injured, 3 - gained a ring, probably a wedding ring, 4 - ring missing, 5-10 - nothing special.  It will have a similar effect on legs.
 Rolled-up fishing net
 Rolled-up tapestry depicting a meadow
-Rolled-up weathered parchment
+Rolled-up {COLOR} parchment
+Rolled-up {COLOR} parchment
 Royal Documents	Collection of documents with traces of royal bloodlines
 Rusted garden trowel
 Sack of birdseed
@@ -896,3 +897,17 @@ A waterskin made of {MAMMAL} leather
 Weaver's Tools [xphb]
 Woodcarver's Tools [xphb]
 Writing Kit [xphb]
+A jar of {FRUIT} jam
+A jar of {FRUIT} jam
+A mallet
+Box of {/r1d30} matches
+A jar of {RACE} molasses
+A jar of {RACE} margarine
+A bag of oats
+Sheet of {COLOR} parchment
+A {RACE} pastry
+A {RACE} pastry
+A {RACE} pastry
+A pastry made of {FRUIT} filling
+A pastry made of {FRUIT} filling
+A pastry made of {MEAT} filling

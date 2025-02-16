@@ -1,12 +1,11 @@
 ;v3.9.0
 ;;Todo
 ;Change family dynamics per race, var set for sibling max, etc
-
+;Use ImageSearch for FoundryImport
 ;Incorporate biography on FoundryImport
 ;Tagging system for races
 ;Queue for first/last names only
 ;When importing to foundry, seperate pics by race
-
 ;Merge scripts with use of an import library
 #Requires AutoHotkey v1.1+
 #SingleInstance Force

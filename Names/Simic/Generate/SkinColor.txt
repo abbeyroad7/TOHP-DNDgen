@@ -1,0 +1,30 @@
+﻿African
+Asian
+Asian
+Black
+Black
+Blue
+Blue
+Blue
+Blue
+Caribbean
+Chinese
+Eastern European
+European
+Gray
+Gray
+Gray
+Hispanic
+Hispanic
+Indian
+Japanese
+Latin
+Middle Eastern
+Middle Eastern
+Native American
+Pacific Islander
+Slavic
+White
+White
+White
+White

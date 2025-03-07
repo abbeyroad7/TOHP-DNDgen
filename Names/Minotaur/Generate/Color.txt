@@ -1,0 +1,11 @@
+black
+black
+white
+white
+white
+gray
+gray
+tan
+tan
+tan
+yellow

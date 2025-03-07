@@ -1,0 +1,11 @@
+black
+black
+blue
+blue
+cyan
+cyan
+white
+white
+white
+white
+white

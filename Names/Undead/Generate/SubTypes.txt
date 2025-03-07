@@ -1,0 +1,6 @@
+Dwarf Zombie
+Elf Zombie
+Rotting Corpse
+Rotting Leper
+Skeleton
+Zombie

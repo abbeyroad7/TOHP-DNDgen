@@ -1,0 +1,15 @@
+black
+black
+black
+blue
+brown
+brown
+brown
+gold
+ivory
+red
+tan
+tan
+white
+white
+yellow

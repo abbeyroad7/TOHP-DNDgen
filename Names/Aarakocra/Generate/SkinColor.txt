@@ -1,0 +1,8 @@
+﻿Red
+Orange
+Yellow
+Black
+Brown
+Gray
+White
+Tan

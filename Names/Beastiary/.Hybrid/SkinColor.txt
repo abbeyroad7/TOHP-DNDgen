@@ -1,0 +1,11 @@
+﻿Black
+Blue
+Brown
+Burgundy
+Gray
+Green
+Red
+Speckled
+Striped
+Tan
+White

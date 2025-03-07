@@ -1,4 +1,4 @@
-;v3.9.0
+;v3.9.1
 ;;Todo
 ;Change family dynamics per race, var set for sibling max, etc
 ;Use ImageSearch for FoundryImport
@@ -27,14 +27,16 @@ Import:
 		
 		ChallengeRating := Round(PlayerCount / 4 * 1.1 * PlayerLevel, 0)
 			;Msgbox %ChallengeRating%
-		BaseDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts
-		Habitat = Temperate
-		Dir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names
-		LootDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks
-		NPCDir = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\NPC
+		
 		RaceDir = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Sapient
 		BeastPhotos = K:\Documents\Foundry\Data\moulinette\tiles\custom\TOHP\Tokens\Homebrew\Beasts
-		RaceList = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Names\.List.txt
+		
+		Habitat = Temperate
+		BaseDir = %A_ScriptDir%
+		Dir = %A_ScriptDir%\Names
+		LootDir = %A_ScriptDir%\Loot\Banks
+		NPCDir = %A_ScriptDir%\Loot\Banks\NPC
+		RaceList = %A_ScriptDir%\Names\.List.txt
 	}
 	ImportNPC:
 	{
@@ -154,7 +156,7 @@ ImageGUI:
 		filePath = %random_file%
 		hBitmap := HBitmapFromWebP(filePath, width, height)
 		random_file = HBITMAP:%hBitmap%
-		#Include, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Libraries\DecodeWebP.ahk
+		#Include, %A_ScriptDir%\Libraries\DecodeWebP.ahk
 	}
 	
 	Gui, MainWindow:New
@@ -670,7 +672,7 @@ NPC:
 		
 		Races_StatIntegration:
 		{
-			#Include D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Libraries\Races_StatIntegration.ahk
+			#Include %A_ScriptDir%\Libraries\Races_StatIntegration.ahk
 		}
 		
 		;Msgbox %STR% STR | %DEX% DEX | %CON% CON | %INT% INT | %WIS% WIS | %CHA% CHA
@@ -845,7 +847,7 @@ Generate:
 			FileReadLine, Last_2, %LastFile_2%, %LastRnd_2%
 				StringLower, Last_2b, Last_2
 			
-			ColorFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Colors.ini
+			ColorFile = %A_ScriptDir%\Loot\Banks\.Colors.ini
 			Loop, Read, %ColorFile%
 			C_Lines = %A_Index%
 			Random, ColorRnd, 1, %C_Lines%
@@ -857,10 +859,10 @@ Generate:
 			MainGenNoun:
 				{	;Collapse
 					Random, NounsRnd, 1, 6
-					Loop, Read, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt
+					Loop, Read, %A_ScriptDir%\Loot\Banks\Nouns\Nouns%NounsRnd%.txt
 						Noun_Lines = %A_Index%
 					Random, NounsRndLine, 1, %Noun_Lines%					
-					FileReadLine, Noun, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
+					FileReadLine, Noun, %A_ScriptDir%\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
 				}
 		}
 	
@@ -880,7 +882,7 @@ Generate:
 				}
 			If (InStr(NPC_Goal, "{FAMILY}")) || If (InStr(NPC_Flaw, "{FAMILY}")) || If (InStr(NPC_Bond, "{FAMILY}")) || If (InStr(NPC_Ideal, "{FAMILY}")) || If (InStr(NPC_Quirk, "{FAMILY}"))
 				{	;Collapse
-					FAMILYFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\NPC\Family.ini
+					FAMILYFile = %A_ScriptDir%\Loot\Banks\NPC\Family.ini
 					Loop, Read, %FAMILYFile%
 						FAMILY_Lines = %A_Index%
 					Random, FAMILYRnd, 1, FAMILY_Lines
@@ -928,7 +930,7 @@ Generate:
 				}
 			If (InStr(NPC_Goal, "{DRUG}")) || If (InStr(NPC_Flaw, "{DRUG}")) || If (InStr(NPC_Bond, "{DRUG}")) || If (InStr(NPC_Ideal, "{DRUG}")) || If (InStr(NPC_Quirk, "{DRUG}"))
 				{	;Collapse
-					DRUGFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Misc\.Drugs.ini
+					DRUGFile = %A_ScriptDir%\Loot\Banks\Misc\.Drugs.ini
 					Loop, Read, %DRUGFile%
 						DRUG_Lines = %A_Index%
 					Random, DRUGRnd, 1, DRUG_Lines
@@ -944,7 +946,7 @@ Generate:
 				}
 			If (InStr(NPC_Goal, "{DISEASE}")) || If (InStr(NPC_Flaw, "{DISEASE}")) || If (InStr(NPC_Bond, "{DISEASE}")) || If (InStr(NPC_Ideal, "{DISEASE}")) || If (InStr(NPC_Quirk, "{DISEASE}"))
 				{	;Collapse
-					DISEASEFile = D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Effects\Disease.ini
+					DISEASEFile = %A_ScriptDir%\Loot\Banks\Effects\Disease.ini
 					Loop, Read, %DISEASEFile%
 						DISEASE_Lines = %A_Index%
 					Random, DISEASERnd, 1, DISEASE_Lines
@@ -1033,10 +1035,10 @@ Generate:
 			If (InStr(NPC_Goal, "{NOUN}")) || If (InStr(NPC_Flaw, "{NOUN}")) || If (InStr(NPC_Bond, "{NOUN}")) || If (InStr(NPC_Ideal, "{NOUN}")) || If (InStr(NPC_Quirk, "{NOUN}"))
 				{	;Collapse
 					Random, NounsRnd, 1, 6
-					Loop, Read, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt
+					Loop, Read, %A_ScriptDir%\Loot\Banks\Nouns\Nouns%NounsRnd%.txt
 						Noun_Lines = %A_Index%
 					Random, NounsRndLine, 1, %Noun_Lines%					
-					FileReadLine, Noun, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
+					FileReadLine, Noun, %A_ScriptDir%\Loot\Banks\Nouns\Nouns%NounsRnd%.txt, NounsRndLine
 					NPC_NOUNReplacements:
 					{
 						NPC_Goal := StrReplace(NPC_Goal, "{NOUN}", NOUN)
@@ -1079,10 +1081,10 @@ Generate:
 				}
 			If (InStr(NPC_Goal, "{COLOR}")) || If (InStr(NPC_Flaw, "{COLOR}")) || If (InStr(NPC_Bond, "{COLOR}")) || If (InStr(NPC_Ideal, "{COLOR}")) || If (InStr(NPC_Quirk, "{COLOR}"))
 				{	;Collapse
-					Loop, Read, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Colors.ini
+					Loop, Read, %A_ScriptDir%\Loot\Banks\.Colors.ini
 						COLOR_Lines = %A_Index%
 					Random, COLORsRndLine, 1, %COLOR_Lines%					
-					FileReadLine, COLOR, D:\Documents\Notes\DND\DND\Quartz\DM\Scripts\Loot\Banks\.Colors.ini, COLORsRndLine
+					FileReadLine, COLOR, %A_ScriptDir%\Loot\Banks\.Colors.ini, COLORsRndLine
 					
 					NPC_COLORReplacements:
 					{
@@ -1254,7 +1256,7 @@ Generate:
 		
 		Gui, Show, x800 y250
 		
-		NPC_Body = %FullGender% %Race% | %NPC_Role% | %NPC_Family% | Worships %NPC_Gods%`n~Currently thinking about %NOUN%`n~%NPC_Goal%
+		NPC_Body = %FullGender% %Race% | %NPC_Role% | %NPC_Family% | Worships %NPC_Gods% | ~Currently thinking about %NOUN% | ~%NPC_Goal%
 	}
 	
 	pause	;press Escape to resume
@@ -1283,6 +1285,8 @@ FoundryImport:
 	SleepDur = 50
 	ImgPath = %random_file%
 	;Msgbox %ImgPath%
+	Clipboard = %FoundryName%
+	Clipwait
 	
 	;FoundryImage := StrReplace(random_file, "\", "/")
 	;FoundryImage := StrSplit(FoundryImage, "Data/")
@@ -1312,7 +1316,6 @@ FoundryImport:
 	;Clipboard = %FoundryName%
 	;MouseMove, PosX, PosY	;Return to OG pos
 	
-	Clipboard = %FoundryName%
 	Clipboard = const img = "%FoundryImage%"; `nconst actor = await Actor.create({ `n  name: "%FoundryName%", `n  type: "npc", `n  img: img, `n"system.details.biography.value": "%NPC_Body%",`n  prototypeToken: { `n    texture: { `n      src: img, `n      scaleX: 1.2, `n      scaleY: 1.2 `n    }, `n    width: 1.2, `n    height: 1.2 `n  } `n});
 	
 	Run, %ImgPath%

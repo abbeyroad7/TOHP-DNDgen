@@ -1,0 +1,18 @@
+﻿Bald Eagle
+Bird of Prey
+Condor
+Eagle
+Falcon
+Golden Eagle
+Goshawk
+Harpy Eagle
+Harrier bird
+Hawk
+Kestrel bird
+Osprey
+Sea Eagle
+Sparrowhawk
+Vulture
+{SkinColor} Eagle
+{SkinColor} Falcon
+{SkinColor} Hawk

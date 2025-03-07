@@ -1,0 +1,7 @@
+ebony
+gray
+green
+jade
+obsidian
+purple
+yellow

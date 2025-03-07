@@ -1,0 +1,9 @@
+orange
+blue
+green
+auburn
+brown
+hazel
+gray
+black
+white

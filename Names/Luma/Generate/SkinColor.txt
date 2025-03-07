@@ -1,0 +1,16 @@
+﻿Black
+Blue
+Brown
+Cyan
+Gold
+Gray
+Green
+Multicolored
+Olive
+Orange
+Peach
+Purple
+Red
+Tan
+White
+Yellow

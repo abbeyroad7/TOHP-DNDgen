@@ -1,0 +1,9 @@
+Dwarf
+Elf
+Elf
+Elf
+Human
+Human
+Human
+Human
+Orc

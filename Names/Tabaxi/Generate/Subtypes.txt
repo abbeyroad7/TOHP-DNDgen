@@ -1,0 +1,26 @@
+﻿{SkinColor} Bobcat
+Calico cat
+Caracal
+{SkinColor} Cat
+{SkinColor} Cat
+{SkinColor} Cat
+{SkinColor} Cat
+Cheetah
+Cheetah
+Cougar
+Jaguar
+Jaguar
+{SkinColor} Leopard
+{SkinColor} Leopard
+{SkinColor} Leopard
+Lynx
+Lynx
+{SkinColor} Maine Coon
+Ocelot
+Ocelot
+Siamese Cat
+Siberian Tiger
+Snow Leopard
+Sphynx Cat
+{SkinColor} Tiger
+{SkinColor} Wildcat

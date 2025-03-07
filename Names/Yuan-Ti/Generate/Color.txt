@@ -1,0 +1,12 @@
+black
+black
+blue
+brown
+burgundy
+gray
+green
+olive
+orange
+red
+tan
+white

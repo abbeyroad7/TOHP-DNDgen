@@ -1,0 +1,2 @@
+Lioness, bald
+Lion, {HairColor} mane

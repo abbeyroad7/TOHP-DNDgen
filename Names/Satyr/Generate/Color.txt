@@ -1,0 +1,4 @@
+black
+brown
+gray
+white

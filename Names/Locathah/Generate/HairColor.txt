@@ -1,0 +1,17 @@
+﻿black
+blue
+brown
+crimson
+cyan
+gold
+gray
+green
+lime
+olive
+orange
+pink
+purple
+red
+silver
+tan
+yellow

@@ -1,0 +1,11 @@
+black
+brown
+brown
+brown
+gold
+gold
+gold
+gold
+gold
+gray
+white

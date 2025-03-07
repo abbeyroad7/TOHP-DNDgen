@@ -1,6 +1,5 @@
 Aarokocran
 Aasimaran
-Amphibian
 Arborenian
 Autognomish
 Bugbearan
@@ -13,6 +12,7 @@ Dwarven
 Eladrin
 Elven
 Faeric
+Fiend
 Firbolgic
 Floran
 Gallusian
@@ -25,6 +25,7 @@ Gnollish
 Gnomish
 Goblin
 Goliathan
+Gorgon
 Grungish
 Hadozee
 Halfling
@@ -49,13 +50,14 @@ Mapachian
 Mer
 Minotaurian
 Myconidic
-Nagian
 Ogrish
 Orcish
 Owlin
 Plasmoidic
 Porcein
 Satyrine
+Scurrian
+Shadar-Kain
 Simic
 Sirenian
 Skaven
@@ -63,7 +65,6 @@ Tabaxian
 Thrikreenian
 Tieflingish
 Tortish
-Tritonian
 Troll
 Ursine
 Vedalken

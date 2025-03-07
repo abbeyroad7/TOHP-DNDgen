@@ -1,0 +1,6 @@
+Black
+White
+Red
+Yellow
+Silver
+Gold

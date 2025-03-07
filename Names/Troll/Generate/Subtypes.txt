@@ -1,0 +1,3 @@
+﻿Animal
+Orc
+Yeti

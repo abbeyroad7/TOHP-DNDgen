@@ -1,0 +1,12 @@
+blue
+blue
+cyan
+gray
+green
+teal
+white
+white
+white
+white
+yellow
+yellow

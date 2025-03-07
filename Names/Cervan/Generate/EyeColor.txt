@@ -1,0 +1,6 @@
+amber
+black
+brown
+gray
+green
+hazel

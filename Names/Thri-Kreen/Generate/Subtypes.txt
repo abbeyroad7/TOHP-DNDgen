@@ -1,0 +1,41 @@
+﻿{SkinColor} Ant
+{SkinColor} Ant
+{SkinColor} Ant
+{SkinColor} Aphid
+Honeybee
+Honeybee
+Bumblebee
+Bumblebee
+{SkinColor} Beetle
+{SkinColor} Beetle
+{SkinColor} Beetle
+{SkinColor} Butterfly
+{SkinColor} Butterfly
+{SkinColor} Butterfly
+{SkinColor} Caterpillar
+{SkinColor} Caterpillar
+{SkinColor} Centipede
+{SkinColor} Cicada
+{SkinColor} Cockroach
+{SkinColor} Cricket
+{SkinColor} Dragonfly
+{SkinColor} Dragonfly
+{SkinColor} Fly
+{SkinColor} Grasshopper
+{SkinColor} Grasshopper
+Ladybug
+{SkinColor} Mantis
+{SkinColor} Mantis
+{SkinColor} Mantis
+{SkinColor} Mantis
+{SkinColor} Mosquito
+{SkinColor} Moth
+{SkinColor} Moth
+{SkinColor} Moth
+{SkinColor} Scarab
+{SkinColor} Stickbug
+{SkinColor} Stickbug
+{SkinColor} Termite
+{SkinColor} Wasp
+{SkinColor} Wasp
+{SkinColor} Wasp

@@ -2,7 +2,7 @@
 ;dark fantasy
 ;cfg 2.4-4.0
 ;
-;v1.4.0
+;v1.5.0
 ;# Todo
 ;Age
 ;# Not working
@@ -105,8 +105,8 @@ Start:
 	
 	RaceBuilder:
 	{
-		;Race = Beastiary	;debug
-		;Gender = male	;debug
+		;Race = Changeling	;debug
+		Gender = female	;debug
 		RaceDir = %NameDir%\%Race%\Generate
 		BeastDir = %NameDir%\Beastiary
 	}
@@ -224,6 +224,26 @@ Start:
 		}
 	}
 	
+	IniTracker:
+	{
+		IniFile = %A_ScriptDir%\Libraries\Generate.ini
+		IniRead, Iteration, %IniFile%, Filename, Iteration
+
+		If (Iteration = 1) || If (Iteration = 2)
+		{
+			nIteration := Iteration + 1
+			IniWrite, %nIteration%, %IniFile%, Filename, Iteration
+		}
+		If (Iteration = 3)
+		{
+			nIteration = 1
+			IniWrite, %nIteration%, %IniFile%, Filename, Iteration
+		}
+		
+		Tab = Tab%Iteration%
+		Filename = %Race%-%Gender%-%Rand%
+		IniWrite, %Filename%, %IniFile%, Filename, %Tab%
+	}
 	Output = %MainPrompt%
 	
 	Clipboard = %Output%, %PromptSuffix%
@@ -238,5 +258,47 @@ EndofFile:
 		Reload
 	}
 	+Escape::ExitApp
+	!s::
+	{
+		Rand = % rand(10)
+		Filename = %Filename%-%Rand%
+		If Race = Beastiary
+			Filename = %Rand%
+		Send % Filename
+	return
+	}
+	!1::
+	{
+		IniRead, Filename, %IniFile%, Filename, Tab1
+		Rand = % rand(10)
+		Filename = %Filename%-%Rand%
+		Send % Filename
+	return
+	}
+	!2::
+	{
+		IniRead, Filename, %IniFile%, Filename, Tab2
+		Rand = % rand(10)
+		Filename = %Filename%-%Rand%
+		Send % Filename
+	return
+	}
+	!3::
+	{
+		IniRead, Filename, %IniFile%, Filename, Tab3
+		Rand = % rand(10)
+		Filename = %Filename%-%Rand%
+		Send % Filename
+	return
+	}
 }
 return
+
+rand(len) {
+	Global chars := "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", clen := StrLen(chars)
+	Loop, %len% {
+	Random, rnd, 1, %clen%
+	string .= SubStr(chars, rnd, 1)
+	}
+	Return string
+}

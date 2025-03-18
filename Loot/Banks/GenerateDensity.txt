@@ -19,6 +19,9 @@ Eladrin
 Elf
 Fairy
 Fiend
+Fiend
+Fiend
+Fiend
 Firbolg
 Floran
 Gallus
